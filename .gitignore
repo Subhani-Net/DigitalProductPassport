@@ -10,6 +10,9 @@ dist/
 # Reference clones live here (external repos, not part of our source)
 reference/
 
+# Scratch / spike artifacts (not part of our source)
+scratch/
+
 # Local runtime
 *.log
 .env

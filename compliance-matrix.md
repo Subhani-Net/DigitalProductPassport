@@ -20,10 +20,10 @@ Per `AGENTS.md`, every build chunk must update it.
 
 | ID | Guideline / standard | Source | Our implementation | Test harness | Evidence | Status |
 |----|----------------------|--------|--------------------|--------------|----------|--------|
-| *(to add from chunk C1 onward)* | | | | | | |
+| T1-REG-001 | Mock EU registry registration: metadata entry + reachable DPP at liveURL (decentralized hosting), reoId from JWT claim, Proof-of-Registration JWT | CIRPASS-2 mock-eu-registry (v1.1.1) | S1 spike: REST POST via client-credentials token; static DPP host on :9090 | mock-eu-registry :8082 + Keycloak :8180 (realm cirpass-2), client `eo-EO-529900T8BM49AURSDO10` | 201 → registryId `e3eb36a2-a965-11f1-b830-05558a99e842`; dppHash `sha256:caecf7ef…`; proof JWT retrieved (reoId `EO-529900T8BM49AURSDO10`, reoName `EO-Company123`) — 2026-09-05 | Passing |
 
 ## Pending harness set-up
 
-- [ ] CIRPASS-2 mock registry running locally (S1)
-- [ ] TracePass iron & steel JSON Schema loaded as validator
+- [x] CIRPASS-2 mock registry running locally (S1 — docker compose env up, all 8 services healthy)
+- [ ] TracePass iron & steel JSON Schema loaded as validator (needs schema uploaded to dpp-validator via `public-authority` client — defer until C2/C6)
 - [ ] EC DPP Registry "User Guide for Economic Operators" reviewed (L2)
