@@ -42,6 +42,36 @@ for thinking like a software builder.
 | 2. Data exchange | How do we securely move data between companies? | Decentralised data spaces, Eclipse Dataspace Connectors (EDC), access-control policies |
 | 3. Semantic | How do we format data so everyone understands it? | JSON-LD schemas, Asset Administration Shells (AAS) |
 
+## Registry portability & provider migration (design principle, verified)
+
+**The model (S1 + mock registry verified):** the DPP Registry stores only registration
+metadata: `upi`, `reoId`, `liveURL`, `backupURL`, `commodityCode`, `facilitiesId`,
+`granularityLevel` + `dppHash`/`contentType`. The full passport payload is hosted by the EO
+or their provider and reached via `liveURL`. Product identity that travels (printed QRs,
+registry URI) is the registry's stable URI — **not** the provider's host.
+
+**Migration mechanics (mock v1.1.1):**
+- Updating an entry = re-registering the same `upi` with a new `liveURL`/`backupURL`.
+  Default strategy `MODIFY` overwrites in place and **keeps `registryId`** (QRs stay valid);
+  owner-only via reoId-from-JWT-claim.
+- **No bulk endpoint exists** (API surface: registerDPP/addMetadata POSTs, proof GET only).
+  A mass migration = one request per UPI; each request re-fetches the live payload and
+  recomputes `dppHash` (fetch is unconditional in v1.1.1). Strategy `NONE` would refuse updates.
+- Official registry: bulk/rate-limit behaviour unverified (User Guide PDF pending L2 review).
+
+**The design principle (our platform must implement this):**
+Registry metadata should point to an **EO-owned stable URL namespace** (`dpp.company.com/…`),
+with the service provider operating *behind* that domain (DNS/CNAME). Then provider
+migration in or out is a **DNS change, not a registry migration** — zero metadata updates,
+stable URIs and printed QRs. `backupURL` gives a parallel-run transition window.
+
+**Engineering consequence for us (the "provision"):** as a service provider we must offer
+- customer-controlled domains / stable redirect layer owned by the EO (not our host as the
+  registry-recorded URL), and
+- (optional wedge) a throttled **bulk re-registration client** for customers migrating off
+  legacy provider-hosted URLs.
+Watch the **DPP Service Provider Delegated Act (Q2–Q3 2027)** for formalised portability duties.
+
 ## Relation to existing KB notes
 
 - Aligns with `saas-opportunity.md`: the identification + data-exchange layers are the

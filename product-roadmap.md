@@ -75,6 +75,16 @@ today.
   sold twice — first for the wedge (CBAM / unsold disclosure), then extended to the DPP
   module. See Phase P1 exit criteria below.
 
+### Platform design principle — EO-owned URL namespace (no registry lock-in)
+
+Registry metadata points to the **customer's own stable domain**, not to our host. We operate
+behind that domain (DNS/CNAME). Consequence for customers: joining/leaving us is a DNS change,
+never a mass re-registration of historical DPPs; printed QRs/registry URIs never break. This
+is a required engineering capability (C6: stable redirect layer / customer domains + optional
+bulk re-registration client for migrations) and a sales argument. See `architecture.md`
+"Registry portability & provider migration". Watch: **DPP Service Provider Delegated Act
+(Q2–Q3 2027)** may formalise portability duties for us.
+
 ## 3. Targets (top-level goals)
 
 1. **T1 — Vertical 1 live:** Steel & Aluminium compliance product with PCF computation,
@@ -99,7 +109,8 @@ today.
   schema validation).
   *Exit:* a CBAM-verified embedded-emissions output *and* a verifiable, CELEX-traceable steel
   passport end-to-end from the same fabricated supplier dataset — proving the
-  sell-twice engine.
+  sell-twice engine. Includes the EO-owned URL namespace capability (stable redirect layer /
+  customer domains) per the platform design principle.
 - **P2 — Vertical 1 GTM (Steel & Aluminium):** **Cert Tier 2 self-assurance** completed and
   recorded in the compliance matrix; security baseline (TISAX/ISO 27001 readiness); pilot
   customer. Two revenue streams: (a) **CBAM/emissions data service (now)**; (b) **EU Registry

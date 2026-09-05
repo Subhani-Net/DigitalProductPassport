@@ -120,6 +120,10 @@ the commercial wedge into steel/aluminium and textiles customers years before th
 - **CPR (construction):** applicable since Jan 2026, construction DPP phasing 2026–2032.
 - **PPWR (packaging):** technical-file obligation Aug 2026; packaging DPP track live 2026.
 
+**Watch item — DPP Service Provider Delegated Act (Q2–Q3 2027):** regulates third-party DPP
+service providers (our SaaS role). May impose registration and **portability** duties —
+relevant to the EO-owned-URL-namespace design principle (`architecture.md`).
+
 > Source: terrnix.com / cbam-tools.com — CBAM definitive phase 2026 — article — Jun 2026
 > Source: European Commission (environment) — New EU rules to stop destruction of unsold clothes and shoes — gov — 9 Feb 2026
 > Source: EY Law BE — ESPR disclosure of unsold products — article — 7 Apr 2026
