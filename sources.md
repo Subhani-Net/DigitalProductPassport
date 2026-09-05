@@ -1,0 +1,61 @@
+# Sources
+
+Bibliography of every source collected so far. New sources get appended as you browse,
+attend seminars, or watch webcasts.
+
+## Articles & media
+
+| Source | Title / topic | Type | Date | URL |
+|--------|---------------|------|------|-----|
+| Renoon | Digital Product Passport data requirements | article | 30 Jul 2026 | https://renoon.com |
+| MoveTheNeedle.news | EU DPP Registry is live — what manufacturers must do | article | 21 Aug 2026 | https://movetheneedle.news |
+| GOV.UK | EU Battery Passport requirements survey | gov | 15 Jun 2026 | https://www.gov.uk |
+
+## Official EU
+
+| Source | Title / topic | Type | Date | URL |
+|--------|---------------|------|------|-----|
+| European Commission (single-market-economy) | Digital Product Passport — batteries mandatory | gov | 15 Aug 2026 | https://single-market-economy.ec.europa.eu |
+| European Commission (single-market-economy) | Digital Product Passport — main page (delegated-act timeline, DPP Registry live) | gov | updated Aug 2026 | https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en |
+| European Commission | ESPR First Working Plan 2025–2030 (COM(2025) 187) | gov | 16 Apr 2025 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52025DC0187 |
+| JRC Publications | Methodology for defining data requirements for the DPP (ESPR) | gov | 19 Mar 2026 | handle.jsp (JRC) |
+
+## GitHub / technical
+
+| Source | Title / topic | Type | Date | URL |
+|--------|---------------|------|------|-----|
+| OttoHandle/freeDPP | Open-source minimal DPP server (C#/.NET Core) | github | 28 May 2026 | https://github.com/OttoHandle/freeDPP |
+| CIRPASS-2 / Mock EU Registry | Mock EU registry service (verified; cloned to reference/) | github | 2026 | https://github.com/CIRPASS-2/mock-eu-registry |
+| CIRPASS-2 / deploy-resources | Full test env compose (Keycloak + registry + validator + renderer) | github | 2026 | https://github.com/CIRPASS-2/deploy-resources |
+| OpenEPCIS / DPP-Ready | DPP supply-chain bridge framework | github | [to verify] | [to verify] |
+| OpenDPP Catalogue / TracePass | JSON schema definitions (900+ fields) | github | [to verify] | [to verify] |
+| Databricks DPP Solution Accelerator | Data pipeline / passport generation | github | [to verify] | [to verify] |
+| Catena-X / Gaia-X | Cross-company data exchange models (EDC, AAS) | github | [to verify] | [to verify] |
+| W3C | DID Core 1.0 specification | spec | [to verify] | https://www.w3.org/TR/did-core/ |
+| GS1 | GS1 Digital Link Standard (developer docs) | spec | [to verify] | [to verify] |
+| CIRPASS Project | Public deliverables: DPP Architecture, Data Models | deliverable | [to verify] | [to verify] |
+| CIRPASS-2 (cirpass2.eu) | OpenDPP Catalogue — curated open-source DPP solutions | web | 2026 | https://cirpass2.eu/open-source-dpp-catalogue/ |
+| specmake.com | Digital Product Passports for Construction Products | article | 2026 | https://www.specmake.com/blog/digital-product-passport-construction-products |
+| eudigitalproductpassport.org | Construction products digital product passport | article | 2026 | https://eudigitalproductpassport.org/sectors/construction |
+| constructionproducts.org.uk | EU CPR — Digital Product Passports | article | 2026 | https://www.constructionproducts.org.uk |
+| dppwatch.co.uk | DPP for Construction Materials (CPR & ESPR guide) | article | 2026 | https://dppwatch.co.uk/guides/dpp-for-construction |
+| dpp-tool.com | ESPR Delegated Acts — Working Plan status by product group | article | 30 Aug 2026 | https://dpp-tool.com/en/blog/espr-delegated-acts/ |
+| GS1 support | Footwear/accessories not in the first textiles DA | article | 2025 | https://support.gs1.org |
+| terrnix.com / cbam-tools.com | CBAM definitive phase 2026 — importer obligations | article | Jun 2026 | https://terrnix.com / https://cbam-tools.com |
+| European Commission (environment) | New EU rules to stop destruction of unsold clothes and shoes | gov | 9 Feb 2026 | https://environment.ec.europa.eu |
+| EY Law BE | ESPR disclosure of unsold consumer products + destruction ban | article | 7 Apr 2026 | https://www.eylaw.be |
+| Eclipse Tractus-X | Digital Product Pass Verification add-on (mock wallet engine) | github | 2025 | [to verify] |
+| Catena-X | Data space certification (CABs e.g. TÜV Rheinland; SAMM/BAM, EDC, TISAX) | web | [to verify] | [to verify] |
+| Manufacturing-X / Material-X / Tex-X | Sector verticals for steel, aluminium, textiles | web | [to verify] | [to verify] |
+
+## Seminars & webcasts
+
+| Source | Title / topic | Type | Date | URL |
+|--------|---------------|------|------|-----|
+| DATA4CIRC & RecAL (EU projects) | Insights into Digital Product Passports & EU Innovation | webcast | 2026 | https://youtube.com/watch?v=si6j-ALrcjQ |
+
+## Add new sources here
+
+```
+| Source | Title / topic | Type | Date | URL |
+```

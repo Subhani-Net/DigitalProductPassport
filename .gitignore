@@ -1,0 +1,20 @@
+# Dependencies / build output
+node_modules/
+bin/
+obj/
+dist/
+*.user
+.vs/
+.idea/
+
+# Reference clones live here (external repos, not part of our source)
+reference/
+
+# Local runtime
+*.log
+.env
+.env.local
+
+# OS
+Thumbs.db
+.DS_Store
