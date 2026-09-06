@@ -44,6 +44,8 @@ Every entry ends with a source line:
 | `README.md` | This index (Map of Content) |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
 | `product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
+| `project-gantt.md` | Gantt project plan (derived from roadmap §5) |
+| `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 | `Inbox.md` | Raw capture area for new info |
 | `regulations.md` | EU laws, deadlines, obligations |
 | `standards.md` | CEN/CENELEC, schemas, data models |

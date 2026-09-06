@@ -5,6 +5,12 @@ Top-level product map and the path we take. Strategy references: `saas-opportuni
 (certification blueprints), `learning-roadmap.md` (how we learn the landscape),
 `regulations.md` (the legal driver).
 
+> **Single source of truth:** the dated, milestone-based master is **§5 Implementation
+> timeline**. Every dated statement in §3 (Targets), §4 (Phases) and §7 (Action plan), and the
+> derived `project-gantt.md`, must agree with §5. **Update §5 first, then propagate** — never
+> change a date only in one section.
+> Status anchor: **today = 6 Sept 2026**.
+
 ---
 
 ## 1. Vision (north star)
@@ -87,43 +93,52 @@ bulk re-registration client for migrations) and a sales argument. See `architect
 
 ## 3. Targets (top-level goals)
 
-1. **T1 — Vertical 1 live:** Steel & Aluminium compliance product with PCF computation,
-   certified-grade, submitted to EU Registry. Target: capture buyer *preparation* demand from
-   ~2027; obligation ~2028 (steel DA Q4 2026) then aluminium (~2029).
-2. **T2 — Vertical 2 live:** Textiles (fiber composition, GOTS/OEKO-TEX alignment),
-   DA Q3–Q4 2027, obligation ~2029.
+Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 2026);
+**M2** = CBAM engine sellable (~Jan 2027); **M3** = P1 exit / sell-twice proof (~Mar 2027).
+
+1. **T1 — Vertical 1 live (Steel & Aluminium).** Compliance product with PCF computation,
+   certified-grade, submitted to EU Registry. Path: **M2** → CBAM/emissions data revenue from
+   Q1–Q2 2027 (wedge); steel DPP production-ready H2 2027; live registry submission by the
+   ~2028 obligation; aluminium (~2029) rides the same engine.
+2. **T2 — Vertical 2 live (Textiles).** Textile module (fiber composition, GOTS/OEKO-TEX
+   alignment); wedge-in via unsold-disclosure duty from 2027; DPP module matured ahead of the
+   ~2029 obligation (DA Q3–Q4 2027).
 3. **T3 — Cross-vertical engine:** one core, N verticals; new vertical = schema + logic module.
 4. **T4 — Defensible moat:** at least one non-commodity layer (mass-balance/PCF engine,
    verification, or ZK) proven in production.
 
 ## 4. Phases & milestones
 
-- **P0 — Foundation (this phase):** complete `learning-roadmap.md` Phase 0–1; verify
-  Catena-X certification specifics; stand up sandbox (Catena-X/Tractus-X, CIRPASS-2 mock
-  registry). *Exit:* can submit a compliant test payload to the mock registry.
-- **P1 — Core engine MVP (CBAM-first):** ingestion + harmonization pipeline; **PCF /
-  embedded-emissions engine built to serve CBAM (verified embedded emissions) first**, then
-  extended to the steel/aluminium DPP fields; EDC + credential/verification core; passport
-  generator + lineage store. **Cert Tier 1 (legal-function conformance)** is a hard
-  acceptance criterion on every chunk (test against CIRPASS-2 mock registry + TracePass
-  schema validation).
-  *Exit:* a CBAM-verified embedded-emissions output *and* a verifiable, CELEX-traceable steel
-  passport end-to-end from the same fabricated supplier dataset — proving the
-  sell-twice engine. Includes the EO-owned URL namespace capability (stable redirect layer /
-  customer domains) per the platform design principle.
-- **P2 — Vertical 1 GTM (Steel & Aluminium):** **Cert Tier 2 self-assurance** completed and
-  recorded in the compliance matrix; security baseline (TISAX/ISO 27001 readiness); pilot
-  customer. Two revenue streams: (a) **CBAM/emissions data service (now)**; (b) **EU Registry
-  submission flow** as the DPP obligation approaches (~2028). **Cert Tier 3 (third-party CAB)
-  is a trigger** — only pursued when a customer/market requires it. *Exit:* paying pilot on
-  the CBAM wedge with a DPP-ready path.
-- **P3 — Vertical 2 (Textiles):** textile module (fiber composition, sustainability certs);
-  multi-tenant; scale the harmonization layer. Wedge-in-first: extend to the textiles
-  customer base via the **unsold-products disclosure duty (in force)** before the textiles
-  DA (Q3–Q4 2027) and obligation ~2029. Footwear excluded from DPP (separate study) — watch
-  item only (in scope for the disclosure duty now).
-- **P4 — Moat & scale:** lifecycle services (repair/reuse/secondary-market), verified-compute
-  / ZK layer, self-serve vertical builder.
+Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
+
+- **P0 — Foundation (Sep → late Oct 2026).** Complete `learning-roadmap.md` Phase 0–1
+  (guided blocks L1–L7); verify Catena-X specifics; sandbox stood up (done Sept: CIRPASS-2
+  env + S1 registry spike passed). *Exit = **M1** (late Oct):* wedge overlap map
+  (CBAM ∩ steel DPP fields) approved; decision gates D1–D7 closed and recorded.
+- **P1 — Core engine MVP (CBAM-first) (Nov 2026 → Mar 2027).** Ingestion + harmonization
+  pipeline; **PCF / embedded-emissions engine built to serve CBAM (verified embedded
+  emissions) first**, then extended to the steel/aluminium DPP fields; EDC + credential/
+  verification core; passport generator + lineage store. **Cert Tier 1 (legal-function
+  conformance)** is a hard acceptance criterion on every chunk (test against CIRPASS-2 mock
+  registry + TracePass schema validation).
+  *Exit = **M3** (Mar 2027):* a CBAM-verified embedded-emissions output *and* a verifiable,
+  CELEX-traceable steel passport end-to-end from the same fabricated supplier dataset —
+  proving the sell-twice engine. Includes the EO-owned URL namespace capability (stable
+  redirect layer / customer domains) per the platform design principle. **M2 (~Jan 2027)**
+  marks the CBAM engine sellable (first revenue point).
+- **P2 — Vertical 1 GTM (Steel & Aluminium) (Q2 2027 → 2028).** **Cert Tier 2 self-assurance**
+  completed and recorded in the compliance matrix; security baseline (TISAX/ISO 27001
+  readiness); pilot customer. Two revenue streams: (a) **CBAM/emissions data service (from
+  M2)**; (b) **EU Registry submission flow** live by the ~2028 obligation. **Cert Tier 3
+  (third-party CAB) is a trigger** — only pursued when a customer/market requires it.
+  *Exit:* paying pilot on the CBAM wedge with a DPP-ready path.
+- **P3 — Vertical 2 (Textiles) (2027 → 2029).** Textile module (fiber composition,
+  sustainability certs); multi-tenant; scale the harmonization layer. Wedge-in-first: extend
+  to the textiles customer base via the **unsold-products disclosure duty (in force)** before
+  the textiles DA (Q3–Q4 2027) and obligation ~2029. Footwear excluded from DPP (separate
+  study) — watch item only (in scope for the disclosure duty now).
+- **P4 — Moat & scale (2029+).** Lifecycle services (repair/reuse/secondary-market),
+  verified-compute / ZK layer, self-serve vertical builder.
 
 ## 5. Implementation timeline
 
@@ -193,17 +208,23 @@ with the EU Registry is functionally required. Paid certification is bought only
 
 ## 7. Action plan (next 30 / 60 / 90 days)
 
-- **0–30:** verify the unverified items (Catena-X/Tractus-X URLs, Material-X/Tex-X names,
-  ESPR timing for steel & textiles); complete learning Phase 1; pick build-vs-adopt per layer;
-  set up the compliance matrix skeleton + T1/T2 tooling (mock registry, TracePass validator);
-  confirm CBAM reporting mechanics (verified embedded emissions) as the wedge spec.
-- **30–60:** prototype the **CBAM-first PCF/embedded-emissions engine** + one vertical field
-  model (TracePass steel/aluminium fields); run T1 sandbox integration test against the mock
-  registry; first T2 conformance runs recorded.
-- **60–90:** core engine skeleton (small working chunks only); each chunk passes T1; map the
-  CBAM-verified output → steel DPP field overlap (the sell-twice proof); decide pilot
-  customer segment on the CBAM/emissions wedge; assess whether any near-term customer needs
-  T3 (else defer).
+Dated slices of §5 from the status anchor **6 Sept 2026**. Rolled status on the left.
+
+- **0–30 (6 Sep → ~6 Oct) — P0 learning:**
+  - ✅ Done Sept: M0 bootstrap; CIRPASS-2 env up (all 8 services); S1 registry spike passed
+    (evidence: compliance matrix `T1-REG-001`); L3 mock-registry recorded; git history
+    baseline (`8fd4a69`).
+  - 🔲 To do: L1 CBAM embedded-emissions rules (wedge spec); L2 EC Registry "User Guide for
+    Economic Operators"; L4 TracePass iron & steel fields (start). Compliance matrix rows for
+    each harness as it comes up.
+- **30–60 (~Oct → early Nov) — M1 gate:** finish L4, L5 (GS1 Digital Link), L6 (CEN/CENELEC),
+  L7 (Tractus-X); **M1:** wedge overlap map (CBAM ∩ steel DPP) approved; close decision gates
+  D1–D7 with recorded notes. Optional C2 data-contract kickoff.
+- **60–90 (Nov → Dec) — P1 chunks open:** C2 data contract (schemas-as-data, keystone);
+  C3 ingestion; C4 harmonization begin. Every chunk passes T1 (mock-registry-format payload)
+  and the fixture regression suite.
+
+Full dated view: §5. Gantt view: `project-gantt.md`.
 
 ## 8. Challenges
 
@@ -230,6 +251,7 @@ with the EU Registry is functionally required. Paid certification is bought only
 | Fragile codebase (fix-one-break-another) | Medium | High | AGENTS.md discipline: small chunks, dependency maps, verification per chunk |
 | Single vertical too small a market | Low-Medium | Medium | Phased vertical expansion off one core engine |
 | Funding/burn during long regulatory windows | Medium | High | CBAM-first wedge delivers wedge revenue during the DPP wait (metals now, textiles via disclosure); sandbox-first MVP; pilot revenue before scaling |
+| P1 slips past Q1 2027 (miss M2 CBAM revenue / M3 exit) | Medium | High | M2 (CBAM engine) is the first revenue point and is de-prioritised ahead of DPP-only features; per-chunk T1 regression gates; cut scope in C8/C9, not C5 |
 
 ## 10. Working cadence (how we build)
 
