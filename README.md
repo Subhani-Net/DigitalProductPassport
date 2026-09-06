@@ -6,9 +6,10 @@ gathered from browsing, seminars, and webcasts.
 
 ## How to add information (capture flow)
 
-1. Paste raw notes, links, seminar/webcast takeaways into `Inbox.md`.
-2. Ask the assistant to file it: the item gets sorted into the right topic file,
-   tagged with a citation (`Source: name — URL — type — date`).
+1. Paste raw notes, links, seminar/webcast takeaways into a message and ask the assistant
+   to file them.
+2. The item gets sorted into the right topic file (under `research/`), tagged with a
+   citation (`Source: name — URL — type — date`).
 3. Unverified material is marked `[Unverified]` until you confirm it.
 
 ## How to ask questions
