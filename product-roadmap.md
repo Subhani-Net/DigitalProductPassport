@@ -104,8 +104,10 @@ Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 
    alignment); wedge-in via unsold-disclosure duty from 2027; DPP module matured ahead of the
    ~2029 obligation (DA Q3–Q4 2027).
 3. **T3 — Cross-vertical engine:** one core, N verticals; new vertical = schema + logic module.
-4. **T4 — Defensible moat:** at least one non-commodity layer (mass-balance/PCF engine,
-   verification, or ZK) proven in production.
+4. **T4 — Defensible moat:** the **mass-balance/PCF + verification engine** proven in
+   production (delivered **M2 ~Jan 2027**, sold from P2). **ZK is an optional moat
+   *amplifier*, not the moat and not a prerequisite** — validated by the P2 ZK spike, adopted
+   only on customer pull.
 
 ## 4. Phases & milestones
 
@@ -132,6 +134,9 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
   readiness); pilot customer. Two revenue streams: (a) **CBAM/emissions data service (from
   M2)**; (b) **EU Registry submission flow** live by the ~2028 obligation. **Cert Tier 3
   (third-party CAB) is a trigger** — only pursued when a customer/market requires it.
+  **ZK opportunity spike (H2 2027, ~2–3 wks, research-only):** toy SNARK proving a PCF value
+  without revealing the underlying recipe/energy mix, tested against one pilot-customer
+  conversation → decision gate: adopt into P2.5 on pull, else defer to P4.
   *Exit:* paying pilot on the CBAM wedge with a DPP-ready path.
 - **P3 — Vertical 2 (Textiles) (2027 → 2029).** Textile module (fiber composition,
   sustainability certs); multi-tenant; scale the harmonization layer. Wedge-in-first: extend
@@ -139,7 +144,9 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
   the textiles DA (Q3–Q4 2027) and obligation ~2029. Footwear excluded from DPP (separate
   study) — watch item only (in scope for the disclosure duty now).
 - **P4 — Moat & scale (2029+).** Lifecycle services (repair/reuse/secondary-market),
-  verified-compute / ZK layer, self-serve vertical builder.
+  self-serve vertical builder. **ZK here only as the amplifier it is** — adopted on the
+  evidence of the P2 spike, never treated as the moat itself (the moat is the
+  mass-balance/PCF + verification engine, live since M2/P2).
 
 ## 5. Implementation timeline
 
@@ -168,7 +175,9 @@ unsold-textiles disclosure) whose data pipelines the DPP reuses.
 ### Phase 2 — V1 GTM (Steel & Aluminium): Q2 2027 → 2028
 - Q1–Q2 2027: pilot CBAM data customers (revenue now, DPP-ready data).
 - H2 2027: steel DPP module production-ready (ahead of ~2028 obligation); TISAX/ISO security
-  posture; T2 completed; T3 only on customer demand.
+  posture; T2 completed; T3 only on customer demand. **ZK opportunity spike (research-only,
+  2–3 wks):** toy SNARK proof over C5 output, tested with one pilot customer → decision gate
+  (adopt into P2.5 vs defer to P4).
 - 2028: steel obligation (~2028) → live EU Registry submission flow; aluminium prep (DA
   Q3–Q4 2027 → ~2029) rides the same engine.
 
@@ -178,7 +187,8 @@ unsold-textiles disclosure) whose data pipelines the DPP reuses.
 - 2028–2029: textile DPP module matured ahead of the ~2029 obligation.
 
 ### Phase 4 — Moat & scale: 2029+
-- Lifecycle services, verified-compute / ZK layer, self-serve vertical builder.
+- Lifecycle services, self-serve vertical builder. **ZK = optional amplifier only** (adopted
+  per the P2 spike evidence); the moat itself is already live since M2/P2.
 
 ### Timeline logic
 - **Earliest revenue point ~Jan–Feb 2027** (C5 CBAM engine) — the wedge decouples cashflow

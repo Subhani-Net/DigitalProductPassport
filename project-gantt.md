@@ -43,6 +43,7 @@ gantt
     CBAM pilot customers               :p2a, 2027-04-01, 65d
     security baseline TISAX/ISO        :p2b, 2027-04-01, 65d
     steel DPP production readiness     :p2c, 2027-07-01, 130d
+    ZK spike (research, toy SNARK)     :p2zk, 2027-09-01, 15d
     EU registry live submission        :p2d, 2028-01-03, 130d
     aluminium prep (same engine)       :p2e, 2028-01-03, 130d
 
@@ -51,7 +52,8 @@ gantt
     textile DPP module                 :p3b, 2028-01-03, 250d
 
     section Phase 4 — Moat & scale (P4)
-    lifecycle services + ZK + builder   :p4, 2029-01-02, 200d
+    lifecycle services + builder        :p4, 2029-01-02, 200d
+    ZK amplifier (only if P2 spike pulls) :p4zk, 2029-01-02, 120d
 
     section Regulatory anchors (indicative) [reg]
     steel DA (Q4 2026)                 :milestone, da_steel, 2026-12-31, 0d
@@ -86,11 +88,13 @@ gantt
 | CBAM pilot customers (P2) | 2027-04-01 | 2027-06-30 | M2 | revenue |
 | Security baseline (TISAX/ISO) | 2027-04-01 | 2027-06-30 | P1 | — |
 | Steel DPP production readiness | 2027-07-01 | 2027-12-31 | M3 | ~2028 |
+| **ZK spike (research-only, toy SNARK)** | 2027-09-01 | 2027-09-17 | C5 engine | decision gate → P2.5 vs P4 |
 | EU registry live submission | 2028-01-03 | 2028-06-30 | readiness | obligation |
 | Aluminium prep (same engine) | 2028-01-03 | 2028-06-30 | M3 | ~2029 |
 | Textiles wedge (disclosure duty) | 2027-07-01 | 2027-12-31 | M3 | — |
 | Textile DPP module | 2028-01-03 | 2029-06-30 | P1 | ~2029 |
-| Lifecycle services + ZK (P4) | 2029-01-02 | 2029-12-31 | P2/P3 | T4 |
+| Lifecycle services + builder (P4) | 2029-01-02 | 2029-12-31 | P2/P3 | T4 |
+| ZK amplifier (P4, only if spike pulls) | 2029-01-02 | 2029-06-30 | P2 spike | optional |
 
 ## Regulatory anchors (indicative, not ours)
 
@@ -107,5 +111,8 @@ gantt
 
 - Winter break (21–31 Dec 2026) shown explicitly; C5 moved to Jan.
 - P2 CBAM pilot revenue may begin earlier (as soon as M2 lands, even mid-Jan).
+- **Moat vs ZK:** the moat is the mass-balance/PCF + verification engine (M2/P2). The P2 ZK
+  spike is research-only (toy SNARK over C5 output) and decides whether ZK is adopted in
+  P2.5 or deferred to P4 as an optional amplifier — never a prerequisite.
 - All DPP deadlines indicative → every build is schemas-as-data; the wedge revenue does not
   depend on any DA.
