@@ -125,7 +125,53 @@ bulk re-registration client for migrations) and a sales argument. See `architect
 - **P4 — Moat & scale:** lifecycle services (repair/reuse/secondary-market), verified-compute
   / ZK layer, self-serve vertical builder.
 
-## 5. Certification & compliance model (tiered)
+## 5. Implementation timeline
+
+Dated view of the phases (anchor: today = Sept 2026). Every DPP deadline is indicative —
+no ESPR delegated act is adopted yet — so GTM is anchored on the in-force wedges (CBAM,
+unsold-textiles disclosure) whose data pipelines the DPP reuses.
+
+### Phase 0 — Foundation: Sep → late Oct 2026
+- Sep (done): M0 bootstrap; S1 registry spike passed; L3 mock-registry recorded.
+- Sep–Oct: guided learning L1 (CBAM rules), L2 (registry user guide), L4 (TracePass steel),
+  L6 (CEN/CENELEC), L5 (GS1 Digital Link), L7 (Tractus-X harness).
+- late Oct — **M1:** wedge overlap map (CBAM ∩ steel DPP fields) approved; decision gates
+  D1–D7 closed and recorded.
+
+### Phase 1 — Core engine (CBAM-first): Nov 2026 → Mar 2027
+| Chunk | Est. effort | Milestone |
+|---|---|---|
+| C2 data contract (schemas-as-data, keystone) | 1–2 wks | |
+| C3 ingestion + C4 harmonization | 3–4 wks | |
+| C5 CBAM/embedded-emissions engine | 3–4 wks | **M2 ~Jan 2027 — first sellable capability (CBAM wedge revenue can start)** |
+| C6 passport generator + registry submit + DPP host | 2–3 wks | T1 gate |
+| C7 T2 self-assurance run | 1 wk | |
+| C8 lineage + integrity | 2 wks | |
+| C9 sell-twice proof (one dataset → CBAM + steel passport) | 1–2 wks | **M3 ~Mar 2027 — P1 exit** |
+
+### Phase 2 — V1 GTM (Steel & Aluminium): Q2 2027 → 2028
+- Q1–Q2 2027: pilot CBAM data customers (revenue now, DPP-ready data).
+- H2 2027: steel DPP module production-ready (ahead of ~2028 obligation); TISAX/ISO security
+  posture; T2 completed; T3 only on customer demand.
+- 2028: steel obligation (~2028) → live EU Registry submission flow; aluminium prep (DA
+  Q3–Q4 2027 → ~2029) rides the same engine.
+
+### Phase 3 — Vertical 2 (Textiles): 2027 → 2029
+- 2027: wedge-in via unsold-products disclosure duty (in force 19 Jul 2026) — engage large
+  brands before the textiles DA lands (Q3–Q4 2027).
+- 2028–2029: textile DPP module matured ahead of the ~2029 obligation.
+
+### Phase 4 — Moat & scale: 2029+
+- Lifecycle services, verified-compute / ZK layer, self-serve vertical builder.
+
+### Timeline logic
+- **Earliest revenue point ~Jan–Feb 2027** (C5 CBAM engine) — the wedge decouples cashflow
+  from DPP regulatory drift.
+- **Battery 18 Feb 2027** is not our target but publicly validates live registry operation —
+  a confidence signal ahead of our steel launch.
+- Deliverables stay **schemas-as-data**: indicative dates shift, the data contract adapts.
+
+## 6. Certification & compliance model (tiered)
 
 **Principle:** certification is for *our own assurance* that we follow the guidelines.
 Third-party certification is **not mandatory** to provide DPP services — only interoperability
@@ -145,7 +191,7 @@ with the EU Registry is functionally required. Paid certification is bought only
 - **Security:** TISAX/ISO 27001 readiness starts early (P1) regardless — enterprise customers
   routinely demand security credentials independent of DPP.
 
-## 6. Action plan (next 30 / 60 / 90 days)
+## 7. Action plan (next 30 / 60 / 90 days)
 
 - **0–30:** verify the unverified items (Catena-X/Tractus-X URLs, Material-X/Tex-X names,
   ESPR timing for steel & textiles); complete learning Phase 1; pick build-vs-adopt per layer;
@@ -159,7 +205,7 @@ with the EU Registry is functionally required. Paid certification is bought only
   customer segment on the CBAM/emissions wedge; assess whether any near-term customer needs
   T3 (else defer).
 
-## 7. Challenges
+## 8. Challenges
 
 1. **Regulatory drift:** exact field sets and deadlines shift (343 in-force vs 187 anticipated
    fields today). System must treat schemas as data, not hard-coded.
@@ -172,7 +218,7 @@ with the EU Registry is functionally required. Paid certification is bought only
 5. **Certification effort:** CAB/TISAX audits are time + cost — mitigated by the tiered model
    (T1/T2 are free and continuous; T3 only on customer demand).
 
-## 8. Risks & mitigations
+## 9. Risks & mitigations
 
 | Risk | Likelihood | Impact | Mitigation |
 |------|-----------|--------|------------|
@@ -185,7 +231,7 @@ with the EU Registry is functionally required. Paid certification is bought only
 | Single vertical too small a market | Low-Medium | Medium | Phased vertical expansion off one core engine |
 | Funding/burn during long regulatory windows | Medium | High | CBAM-first wedge delivers wedge revenue during the DPP wait (metals now, textiles via disclosure); sandbox-first MVP; pilot revenue before scaling |
 
-## 9. Working cadence (how we build)
+## 10. Working cadence (how we build)
 
 Per `AGENTS.md`: iterate before acting → small chunks of working functionality → verify each
 chunk against dependent scenarios → keep EU Registry as the compliance target → build only
