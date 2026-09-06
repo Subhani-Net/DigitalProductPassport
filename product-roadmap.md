@@ -1,9 +1,9 @@
 # Product Roadmap — DPP Enabling-Software Platform
 
-Top-level product map and the path we take. Strategy references: `saas-opportunity.md`
-(commodity vs complex layers), `architecture.md` (3-layer stack), `standards.md`
-(certification blueprints), `learning-roadmap.md` (how we learn the landscape),
-`regulations.md` (the legal driver).
+Top-level product map and the path we take. Strategy references: `research/saas-opportunity.md`
+(commodity vs complex layers), `research/architecture.md` (3-layer stack), `research/standards.md`
+(certification blueprints), `research/learning-roadmap.md` (how we learn the landscape),
+`research/regulations.md` (the legal driver).
 
 > **Single source of truth:** the dated, milestone-based master is **§5 Implementation
 > timeline**. Every dated statement in §3 (Targets), §4 (Phases) and §7 (Action plan), and the
@@ -87,9 +87,9 @@ Registry metadata points to the **customer's own stable domain**, not to our hos
 behind that domain (DNS/CNAME). Consequence for customers: joining/leaving us is a DNS change,
 never a mass re-registration of historical DPPs; printed QRs/registry URIs never break. This
 is a required engineering capability (C6: stable redirect layer / customer domains + optional
-bulk re-registration client for migrations) and a sales argument. See `architecture.md`
-"Registry portability & provider migration". Watch: **DPP Service Provider Delegated Act
-(Q2–Q3 2027)** may formalise portability duties for us.
+bulk re-registration client for migrations) and a sales argument. See
+`research/architecture.md` "Registry portability & provider migration". Watch: **DPP Service
+Provider Delegated Act (Q2–Q3 2027)** may formalise portability duties for us.
 
 ## 3. Targets (top-level goals)
 
@@ -111,7 +111,8 @@ Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 
 
 Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
 
-- **P0 — Foundation (Sep → late Oct 2026).** Complete `learning-roadmap.md` Phase 0–1
+- **P0 — Foundation (Sep → late Oct 2026).** Complete `research/learning-roadmap.md` Phase
+  0–1
   (guided blocks L1–L7); verify Catena-X specifics; sandbox stood up (done Sept: CIRPASS-2
   env + S1 registry spike passed). *Exit = **M1** (late Oct):* wedge overlap map
   (CBAM ∩ steel DPP fields) approved; decision gates D1–D7 closed and recorded.

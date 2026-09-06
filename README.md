@@ -39,6 +39,7 @@ Every entry ends with a source line:
 
 ## Files
 
+### Root — operational docs
 | File | Contents |
 |------|----------|
 | `README.md` | This index (Map of Content) |
@@ -47,15 +48,20 @@ Every entry ends with a source line:
 | `project-gantt.md` | Gantt project plan (derived from roadmap §5) |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 | `Inbox.md` | Raw capture area for new info |
-| `regulations.md` | EU laws, deadlines, obligations |
-| `standards.md` | CEN/CENELEC, schemas, data models |
-| `companies.md` | Companies in scope (OEMs, battery makers, LMT, ESS, second-life, suppliers) |
-| `people.md` | Key people, speakers, experts |
-| `consultancies.md` | Consultancies, advisors, consortia & projects |
-| `tools.md` | Open-source repos, platforms, registries |
-| `saas-opportunity.md` | Market analysis of DPP enabling-SaaS opportunity |
-| `adjacent-opportunities.md` | Other business opportunities (fly ash / construction materials), CAMBEX |
-| `architecture.md` | DPP technical architecture: learning path + 3-layer framework |
-| `learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
-| `sources.md` | Full bibliography of all sources collected |
-| `glossary.md` | DPP terminology |
+
+### `research/` — knowledge base (initial research & reference)
+| File | Contents |
+|------|----------|
+| `research/DPP_Initial_Brainstorm.md` | Original raw brainstorm material |
+| `research/regulations.md` | EU laws, deadlines, obligations |
+| `research/standards.md` | CEN/CENELEC, schemas, data models |
+| `research/companies.md` | Companies in scope (OEMs, battery makers, LMT, ESS, second-life, suppliers) |
+| `research/people.md` | Key people, speakers, experts |
+| `research/consultancies.md` | Consultancies, advisors, consortia & projects |
+| `research/tools.md` | Open-source repos, platforms, registries |
+| `research/saas-opportunity.md` | Market analysis of DPP enabling-SaaS opportunity |
+| `research/adjacent-opportunities.md` | Other business opportunities (fly ash / construction materials), CAMBEX |
+| `research/architecture.md` | DPP technical architecture: learning path + 3-layer framework |
+| `research/learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
+| `research/sources.md` | Full bibliography of all sources collected |
+| `research/glossary.md` | DPP terminology |
