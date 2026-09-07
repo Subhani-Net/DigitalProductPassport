@@ -49,6 +49,8 @@ Every entry ends with a source line:
 | `project-gantt.md` | Gantt project plan (derived from roadmap §5) |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
+| `competition/` | Competitive landscape: matrix, threat scorecards, dossiers |
+| `research/` | Knowledge base (initial research & reference) |
 
 ### `research/` — knowledge base (initial research & reference)
 | File | Contents |

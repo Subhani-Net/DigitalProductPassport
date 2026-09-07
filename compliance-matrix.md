@@ -27,7 +27,11 @@ Per `AGENTS.md`, every build chunk must update it.
 - [x] CIRPASS-2 mock registry running locally (S1 — docker compose env up, all 8 services healthy)
 - [ ] TracePass iron & steel JSON Schema loaded as validator (needs schema uploaded to dpp-validator via `public-authority` client — defer until C2/C6)
 - [ ] EC DPP Registry "User Guide for Economic Operators" reviewed (L2)
-- [ ] **EU DPP Registry official testing environment** — request access (registry live since 20 Jul 2026 with a testing env; authoritative conformance target beyond the mock)
+- [ ] **EU DPP Registry testing environment** — public since 20 Jul 2026:
+  `https://registry.acc.product-passport.ec.europa.eu` (create a separate EU-login account
+  for testing); live env `https://registry.product-passport.ec.europa.eu`; helpdesk
+  `EC-HELPDESK-DPP@ec.europa.eu` (+32 2 296 04 31). Authoritative T1 conformance target
+  beyond the mock. (Source: EC DPP Registry page, 7 Sep 2026)
 - [ ] CEN/CENELEC DPP standard documents acquired (paywalled via national standards body — budget item; exact standard IDs to be confirmed in L6)
 
 ---
