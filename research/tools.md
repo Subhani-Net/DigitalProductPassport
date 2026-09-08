@@ -127,3 +127,57 @@ Workflow & Integration.
   mass-balance engines) behind the bridge to be venture-backed.
 - **Relevance to DPP:** Market positioning insight for anyone building DPP tooling.
 > Source: [Unverified] — analysis from initial research pass
+
+## What the EC provides vs what we build (schema / connectivity / security)
+
+Fact-based inventory (verified Sep 2026). Bottom line: **the EC provides schemas,
+templates, an operational registry (with a test env on the DPP side), and open-source
+reference implementations on the DPP side — but no turnkey client software for us. We
+build our platform; we do NOT re-invent the given schemas/patterns.**
+
+### CBAM side (DG TAXUD) — schemas & templates provided, no reference code
+
+- **CBAM Quarterly Report structure — XSD** published by the Commission ("QReport" XSD +
+  `stypes.xsd` in a ZIP) + **XLS structure**; uploading the ZIP auto-fills the quarterly
+  report in the registry. (EC CBAM file share / transitional registry manual)
+- **CBAM Communication Template (XLS, V2.1)** — the installation-operator → declarant data
+  template, with sector sheets.
+- **Connectivity:** declarant/operator portals are UI + file upload. **No public API
+  documented for CBAM** — our side builds the data pipeline and hands over portal-ready
+  files. **No EC open-source reference implementation exists for CBAM.**
+- **Security:** EU Login + 2FA for all registry users; standard TLS. No security SDK — we
+  apply the same OIDC/TLS patterns; the verification stamp stays third-party (locked).
+
+> Source: EC CBAM file share / transitional registry docs (XSD, XLS, communication template) — taxation-customs.ec.europa.eu — 7 Sep 2026
+
+### DPP side (DG GROW + CIRPASS-2) — reference implementations EXIST (we already cloned them)
+
+- **EU DPP Registry:** live 20 Jul 2026 + **testing environment**
+  (`registry.acc.product-passport.ec.europa.eu`); registration via secure UI **or API**;
+  decentralised hosting (metadata in registry, DPP data at operator's URL).
+- **EC-funded open-source reference implementations (CIRPASS-2, Apache-2.0):**
+  - `mock-eu-registry` — Quarkus service; **JSON Schema 2020-12** metadata validation;
+    **OIDC** auth; JWKS endpoint; detached JWS; Proof-of-Registration JWT (cloned →
+    `../reference/mock-eu-registry`, S1 spike passed against it).
+  - `deploy-resources` — full local stack (Keycloak + Postgres + registry + validator +
+    renderer) — our T1 conformance harness (cloned).
+  - `dpp-validator` — JSON Schema/SHACL DPP validation service.
+- **Schemas:** CEN/CENELEC DPP standards (six Jul 2026 + two Sept 2026 — normative, buy);
+  TracePass 913-field JSON schemas (open); registry metadata schema per implementing act.
+- **Security patterns to copy (from mock registry):** OIDC role mapping (admin/eo/eu),
+  JWKS-based proof verification, detached JWS integrity, eIDAS sealing as the future
+  signature layer; EU Login (OIDC) for the real registry.
+
+### What we build (not provided)
+
+1. Our platform: ingestion → canonical model → calculation engine → validation
+   intelligence → portal-ready outputs (CBAM XSD-conformant XML/XLS; DPP JSON-LD).
+2. Our own DPP host (liveURL/backupURL under the EO-owned domain) — mandated by the
+   decentralised hosting model.
+3. Our registration clients (registry API/UI flows, EORI linking management, O3CI-ready
+   supplier exports) — the real DPP Registry has an API; CBAM side is file/UI-based.
+4. Our trust/evidence layer (audit trails, dppHash chain, verifier enablement, later
+   zero-exposure attestation).
+
+> Sources: EC DPP Registry page (registry.acc…/helpdesk) — single-market-economy.ec.europa.eu — 7 Sep 2026;
+> CIRPASS-2 repos (cloned, verified) — github.com/CIRPASS-2 — Sep 2026
