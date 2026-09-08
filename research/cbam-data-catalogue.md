@@ -13,6 +13,14 @@ Template V2.1; IR 2025/2547 (definitive calc), IR 2025/2546 (verification); QRep
 Stage keys (MVP onboarding): S0 paper/manual · S1 files (CSV/XLSX/PDF) · S2 dynamic (ERP/
 MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 
+**Sides (two-sided flow):** sections A–F are **installation/supplier-side** (operator
+provides; verifier reviews); section **H is importer/declarant-side** (we format for the
+declarant). Section G spans both. This split is the C2 canonical-model boundary.
+
+**Scope note (completeness):** this catalogue covers **iron & steel and aluminium**
+(our verticals). CBAM goods out of scope for now: cement, fertilisers, hydrogen,
+electricity (fields exist in law but are not built in our MVP).
+
 ## A. Installation & operator identity (one record per installation)
 
 | # | Data item | Legal anchor | Likely source / format | Stage | Provided by |
@@ -21,9 +29,11 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 | A2 | Country of origin | IR 1773 Art 3(2) | declared | S0 | Operator |
 | A3 | Installation UN/LOCODE + coordinates of main emission source | IR 1773 Art 3(2) | registry/O3CI | S0 | Operator |
 | A4 | Production route (Annex II §3) + route-qualifying parameters | IR 1773 Art 3(2); IR 2547 | declared per route | S0 | Operator + consultant |
+| A4b | Route-qualifying parameter values (steel: EAF scrap ratio, DRI share, hot-metal ratio, BF coke rate; aluminium: cell technology) | Annex IV §2; Template Summary_Products | plant master data | S1 | consultant validates per route |
 | A5 | Steel-mill identification (per raw-material batch, steel) | IR 1773 Art 3(2) | MTC/EN 10204 3.1 | S1 | Mill / upstream |
 | A6 | CN/HS code(s) of goods | QReport XSD CommodityCode | commercial invoices | S0 | Importer |
 | A7 | Registered-operator status + verifier registration | definitive O3CI flow | EC registry | S0 | Operator/verifier |
+| A8 | Reporting period / installation reporting year | definitive annual declaration | declared | S0 | Operator |
 
 ## B. Direct emissions — source streams (fuels & process)
 
@@ -37,6 +47,7 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 | B6 | Process-emission inputs (e.g. limestone → CaCO3, electrodes, anodes) | Annex III Method A/B | purchase + chemistry data | S1 | standard factors allowed |
 | B7 | Mass-balance streams (input/output, negative outputs) | Annex III mass-balance method | production records, MES | S1/S2 | outputs negative AD |
 | B8 | Transfers in/out of gases (BF gas, COG inherent CO2) | Annex III transfer rules | meter/plant data | S2/S3 | destination attribution |
+| B9 | Flared / vented / unmonitored gas transfers | Annex III (counted at origin) | flare meters, plant records | S2/S3 | often missed by operators |
 
 ## C. Indirect emissions — electricity
 
@@ -48,6 +59,8 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 | C4 | PPA + Guarantees of Origin evidence (for actual/contractual factor) | Annex IV §5; RED II Art 19 | PPA/GO docs (AIB EECS) | S1 | only if claiming low factor |
 | C5 | Own generation / CHP heat-electricity allocation | Template C_InstEnergy; IR 1773 Eq.47 | plant energy logs | S2 | export heat/electricity rules |
 | C6 | Grid/self-consumption split | Annex IV boundary | meters | S3 | |
+| C7 | Imported/exported heat (steam/hot water) quantities + heat-source emission factor | Template C_InstEnergy / F_CHP | plant energy logs, contracts | S2 | frequently missed |
+| C8 | CHP fuel split + heat/electricity allocation basis | IR 1773 Annex III (Eq. 47) | plant records | S2 | consultant validates |
 
 ## D. Precursors (complex goods) — pass-through
 
@@ -66,6 +79,7 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 | E2 | Process allocation (per-process emissions → products) | Template D_Processes | MES/plant records | S2 | co-product allocation |
 | E3 | Product quality/chemistry (grade) per heat/batch | EN 10204 MTC / LIMS | PDF/CSV | S1 | links A5/E1 |
 | E4 | Output/mass of product + by-products | mass balance | weighbridge | S1 | by-products affect allocation |
+| E5 | Determination-type flag per product (actual vs default) | QReport XSD DirectEmissions DeterminationType (01=actual) | declared per CN line | S0 | core wedge lever |
 
 ## F. Aluminium-specific (PFC + energy intensity)
 
@@ -85,15 +99,28 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
 | G2 | Underlying evidence (source records, invoices, meter logs) | IR 2025/2546 (documentation review) | ERP/PDF/meter archives | S1/S2 | verifier-ready dossiers |
 | G3 | Accredited-verifier engagement + verification report | Art. 8; IR 2025/2546 | verification report (PDF) | S1 | stamp is third-party (locked) |
 | G4 | Actual-vs-default justification (where defaults used) | IR 2621; IR 2025/2547 | declared | S0 | defaults costlier by design |
+| G5 | Data-quality / uncertainty tier evidence (≤1.5% for >500 ktCO2/y; <7.5% below 10 ktCO2/y) | IR 1773 Annex III quality rules | metering/calibration records | S1/S2 | verifier checks tiers |
+| G6 | Verification scope & sampling plan artefacts (data-flow activities, control activities, risk analysis, site visit) | IR 2025/2546; Del 2025/2551 | verifier engagement docs | S1 | verifier-driven; we package evidence |
+
+## H. Importer / declarant & submission block (our importer-side output)
+
+| # | Data item | Legal anchor | Likely source / format | Stage | Notes |
+|---|-----------|--------------|------------------------|-------|-------|
+| H1 | Declarant identity + EORI number + role | QReport XSD Declarant block | importer master data | S0 | importer-side |
+| H2 | Per-consignment import data: net mass, procedure, measurement unit, origin country | QReport XSD ImportedQuantity | customs records, invoices | S0 | links EORI → supplier data |
+| H3 | Signatures / confirmations (methodology + data confirmation) | QReport XSD Signatures | declared | S0 | submission hygiene |
+| H4 | Supporting documents attachment (base64) | QReport XSD SupportingDocuments | PDFs | S1 | CoA/MTC/verification reports |
+| H5 | Formatting constraints (IDs an..17, codes n4, decimals dec16-6; EMU1 = tCO2e/t) | QReport XSD type rules | — | S0 | validation rules in C2 |
 
 ## MVP default path
 
-- **Day 1 (S0):** A1–A6, B1/B2 (from weighbridge + purchase + fuel records), C1/C3,
-  D1/D3 (defaults), E1 — enough for a **defaults-based baseline** and to show the
+- **Day 1 (S0):** A1–A6/A8, B1/B2 (from weighbridge + purchase + fuel records), C1/C3,
+  D1/D3 (defaults), E1/E5, H1–H3 — enough for a **defaults-based baseline** and to show the
   actual-vs-default saving.
-- **Pilot (S1):** + B3–B5 (CoA/lab), C4 (PPA/GO), D3 (verified supplier SEE), G1–G3
-  (evidence + verifier) — enables **verified actuals**.
-- **Scale (S2/S3):** ERP/MES/LIMS automation, then real-time meters/historian/CEMS.
+- **Pilot (S1):** + A4b, B3–B5 (CoA/lab), C4 (PPA/GO), D3 (verified supplier SEE),
+  E4, G1–G3/G6, H4 (evidence + verifier) — enables **verified actuals**.
+- **Scale (S2/S3):** ERP/MES/LIMS automation, CHP/heat rows (C7/C8), then real-time
+  meters/historian/CEMS (B9, C6).
 
 ## Notes & open items
 
@@ -103,3 +130,6 @@ MES/LIMS/utility) · S3 real-time (OPC UA/historian/CEMS).
   the core wedge is converting defaults → verified actuals.
 - QReport XSD (transitional) archived; definitive target = operator/verifier data model per
   IR 2025/2547 + O3CI fields (source list: EC CBAM file share + `research/sources.md`).
+- Revision r2 additions: sides mapping (installation vs importer), scope note, A4b/A8, B9
+  (flaring), C7/C8 (heat/CHP), E5 (determination flag), G5/G6 (quality/verification scope),
+  section H (importer/submission block + XSD formatting rules).
