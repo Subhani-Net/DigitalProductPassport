@@ -87,8 +87,12 @@ purchase via a national standards body.
 - **T3 CAB certification** — only on customer demand (P2+).
 
 **Hire (gated, not now):**
-- Steel PCF / mass-balance domain expert — at P2, only if calculation accuracy becomes a
-  liability or a differentiation lever (this is the defensible-IP layer).
+- **Domain consultant — EXTERNAL, verifier-grade (DECIDED Sep 2026).** Engaged **after**
+  connectivity + schema + transformation scaffolding is validated (C2–C4 done, workflow
+  designed) and **before C5**: adds details to the schema, data-capture identification, and
+  the CBAM/PCF calculation + validation models (metallurgy, industrial process, verifier
+  expectations). We buy the knowledge, never the stamp (independence rule) — the
+  verification stamp stays with partner accredited verifiers.
 - Regulatory/legal counsel — when the **DPP Service Provider delegated act** lands
   (Q2–Q3 2027); it defines duties for platforms like ours.
 - Verification-body partnership — at P2, for the customer verification path.

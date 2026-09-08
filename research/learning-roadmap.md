@@ -75,6 +75,21 @@ composition) for textiles. Remember: data-space certification ≠ legal EU DPP c
 **Hands-on:** take the battery category, map its TracePass fields into a JSON-LD/AAS model,
 and validate a sample payload against the bundled JSON Schema.
 
+### 1.4 Domain layer — industrial process & verifier expectations (with the consultant)
+
+Timing: the **external domain consultant (verifier-grade)** is engaged **after** the
+connectivity/schema/transformation scaffolding is validated (post-C4), to detail the
+schema, data-capture identification, and the CBAM/PCF calculation + validation models.
+
+- Steel routes: **BOF** (blast-oxygen: coke/coal, hot metal) vs **EAF** (scrap, electricity);
+  DRI/HBI inputs; mass flows (iron balance, yield), energy balance per tonne crude steel.
+- Aluminium: primary (electrolysis, anode effects — CF4/C2F6) vs secondary (remelt);
+  electricity intensity as the dominant emission driver.
+- What a CBAM verifier will test: activity-data traceability, emission-factor choice,
+  boundaries/allocation, mass-balance consistency, default-vs-actual thresholds.
+- Outcome: consultant-approved schema details + data-capture checklist + calculation model
+  notes, recorded as design contract inputs for C5 (we buy the knowledge, never the stamp).
+
 ---
 
 ## Phase 2 — Complex logic layers: the differentiators (est. 4–6 weeks)

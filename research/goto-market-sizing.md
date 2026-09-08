@@ -29,6 +29,13 @@ Market read for the CBAM → DPP platform (recorded Sep 2026). Tagging disciplin
 - **Three user classes:** supplier, importer, **and the verifier** — validation intelligence
   (evidence dossiers, audit trails, recalculation support) is productized *for verifiers*
   to make their audits efficient; their efficiency is our wedge on the assurance side.
+- **Moat = encoded validation intelligence (3-layer view).** Plumbing (schemas, transforms,
+  connectivity, registrations) is plain engineering — commodity. The moat is layer 3: the
+  schema/calculation/validation models that encode metallurgy + industrial-process +
+  verifier-grade judgment — designed in with an **external verifier-grade consultant**
+  (engaged after the C2–C4 scaffolding is validated, to detail schema, data capture and
+  calculation models). This is our differentiation vs plain-software competitors who have
+  only layers 1–2.
 
 ## Market shaping (facts, Sep 2026)
 

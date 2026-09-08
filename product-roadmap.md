@@ -69,6 +69,20 @@ Customer targets:
   not data sharing. Feasibility/timing still gated by the P2 ZK spike (§4).
 - Full sizing + pricing model: `research/goto-market-sizing.md`.
 
+### Moat = encoded validation intelligence (3-layer view, decided Sep 2026)
+
+- **Layer 1 — Plumbing:** schemas, transforms, connectivity, data-capture identification,
+  authority registrations. Plain software engineering — commodity, replaceable.
+- **Layer 2 — Regulated calculation:** CBAM/PCF rules, emission factors, actual-vs-default,
+  mass-balance. Deterministic public rules — engineerable, must be provably correct.
+- **Layer 3 — Validation intelligence:** which data is plausible and survives a verifier's
+  forensic review (BOF/EAF/DRI routes, anode effects, scrap fractions, energy-mix reality).
+  Requires metallurgy/industrial/verifier-grade knowledge — **this is the moat**, encoded in
+  our schema + calculation + validation models.
+- **Sourcing (decided):** external domain consultant (verifier-grade), engaged **after** the
+  C2–C4 scaffolding is validated, to detail schema, data capture, and calculation models for
+  C5. We buy the knowledge, never the stamp (stamp = partner verifiers, locked).
+
 ### Focus decision (verified against ESPR Working Plan, Sept 2026)
 
 - **Steel & Aluminium — validated as the first engine.** Iron & steel is the *first* ESPR
@@ -127,9 +141,10 @@ Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 
    ~2029 obligation (DA Q3–Q4 2027).
 3. **T3 — Cross-vertical engine:** one core, N verticals; new vertical = schema + logic module.
 4. **T4 — Defensible moat:** the **mass-balance/PCF + verification engine** proven in
-   production (delivered **M2 ~Jan 2027**, sold from P2). **ZK is an optional moat
-   *amplifier*, not the moat and not a prerequisite** — validated by the P2 ZK spike, adopted
-   only on customer pull.
+   production (delivered **M2 ~Jan 2027**, sold from P2) — moat = **encoded validation
+   intelligence** (3-layer view, §2) designed in with the external verifier-grade
+   consultant. **ZK is an optional moat *amplifier*, not the moat and not a prerequisite** —
+   validated by the P2 ZK spike, adopted only on customer pull.
 
 ## 4. Phases & milestones
 
@@ -187,8 +202,8 @@ unsold-textiles disclosure) whose data pipelines the DPP reuses.
 | Chunk | Est. effort | Milestone |
 |---|---|---|
 | C2 data contract (schemas-as-data, keystone) | 1–2 wks | |
-| C3 ingestion + C4 harmonization | 3–4 wks | |
-| C5 CBAM/embedded-emissions engine | 3–4 wks | **M2 ~Jan 2027 — first sellable capability (CBAM wedge revenue can start)** |
+| C3 ingestion + C4 harmonization | 3–4 wks | **scaffolding validated → domain consultant engaged (external, verifier-grade)** |
+| C5 CBAM/embedded-emissions engine (consultant details schema/data-capture/calculation models) | 3–4 wks | **M2 ~Jan 2027 — first sellable capability (CBAM wedge revenue can start)** |
 | C6 passport generator + registry submit + DPP host | 2–3 wks | T1 gate |
 | C7 T2 self-assurance run | 1 wk | |
 | C8 lineage + integrity | 2 wks | |

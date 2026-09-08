@@ -31,6 +31,7 @@ gantt
     C3 ingestion                       :c3, after c2, 10d
     C4 harmonization                   :c4, after c3, 15d
     winter break (no work)             :crit, wb, 2026-12-21, 10d
+    domain consultant (external)       :dc, 2027-01-04, 14d
     C5 CBAM emissions engine           :c5, after c4, 20d
     M2 CBAM sellable — first revenue   :milestone, m2, 2027-01-29, 1d
     C6 passport + host + registry (T1) :c6, after c5, 15d
@@ -80,6 +81,7 @@ gantt
 | C3 ingestion | 2026-11-16 | 2026-11-27 | C2 | T1 |
 | C4 harmonization | 2026-11-30 | 2026-12-18 | C3 | T1 |
 | (winter break) | 2026-12-21 | 2026-12-31 | — | — |
+| **Domain consultant engagement (external, verifier-grade)** | 2027-01-04 | 2027-01-22 | C3+C4 scaffolding validated | details schema, data capture, calc models → C5 |
 | C5 CBAM emissions engine | 2027-01-04 | 2027-01-29 | C4 | **M2** |
 | C6 passport generator + DPP host + registry submit | 2027-02-01 | 2027-02-19 | C5 | T1 gate |
 | C7 T2 self-assurance run | 2027-02-22 | 2027-02-26 | C6 | T2 |
