@@ -44,6 +44,10 @@ attend seminars, or watch webcasts.
 | terrnix.com / cbam-tools.com | CBAM definitive phase 2026 — importer obligations | article | Jun 2026 | https://terrnix.com / https://cbam-tools.com |
 | European Commission (environment) | New EU rules to stop destruction of unsold clothes and shoes | gov | 9 Feb 2026 | https://environment.ec.europa.eu |
 | EY Law BE | ESPR disclosure of unsold consumer products + destruction ban | article | 7 Apr 2026 | https://www.eylaw.be |
+| European Commission (TAXUD) | CBAM Registry — AMM / O3CI / DRMC workflows, manuals | gov | 7 Sep 2026 | https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-registry_en |
+| European Commission (TAXUD) | CBAM Registry Declarants portal manual v6.00 | gov | 21 Aug 2026 | PDF via registry page |
+| European Commission (TAXUD) | CBAM Registry O3CI (operators & verifiers) manual v4.00 | gov | 27 Aug 2026 | PDF via registry page |
+| European Commission (TAXUD) | Accredited Verifiers access/registration guidance | gov | 28 Aug 2026 | PDF via registry page |
 | Eclipse Tractus-X | Digital Product Pass Verification add-on (mock wallet engine) | github | 2025 | [to verify] |
 | Catena-X | Data space certification (CABs e.g. TÜV Rheinland; SAMM/BAM, EDC, TISAX) | web | [to verify] | [to verify] |
 | Manufacturing-X / Material-X / Tex-X | Sector verticals for steel, aluminium, textiles | web | [to verify] | [to verify] |

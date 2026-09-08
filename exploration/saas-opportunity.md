@@ -43,9 +43,9 @@ complexity makes enabling infrastructure defensible, high-margin, and predictabl
 
 ## Consistency with existing KB notes
 
-- Reinforces the `tools.md` strategic note: the "data transport bridge" is commoditized;
+- Reinforces the `../research/tools.md` strategic note: the "data transport bridge" is commoditized;
   the defensible layers (ZK crypto, mass-balance, lineage) are the moat.
-- ZKP/SNARK thread (see `standards.md`, `glossary.md`) is the crypto layer in challenge #4.
+- ZKP/SNARK thread (see `../research/standards.md`, `../research/glossary.md`) is the crypto layer in challenge #4.
 - Open questions: which vertical (textiles / batteries / electronics / industrial)?
   DIDs + Verifiable Credentials as *mandated* is [Unverified] — EU standard suite leans
   on GS1/JSON-LD; VCs/DIDs are an emerging layer, not yet a hard mandate.

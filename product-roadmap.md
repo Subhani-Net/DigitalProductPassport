@@ -1,6 +1,6 @@
 # Product Roadmap — DPP Enabling-Software Platform
 
-Top-level product map and the path we take. Strategy references: `research/saas-opportunity.md`
+Top-level product map and the path we take. Strategy references: `exploration/saas-opportunity.md`
 (commodity vs complex layers), `research/architecture.md` (3-layer stack), `research/standards.md`
 (certification blueprints), `research/learning-roadmap.md` (how we learn the landscape),
 `research/regulations.md` (the legal driver).

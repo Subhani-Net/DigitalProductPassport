@@ -74,7 +74,7 @@ Watch the **DPP Service Provider Delegated Act (Q2–Q3 2027)** for formalised p
 
 ## Relation to existing KB notes
 
-- Aligns with `saas-opportunity.md`: the identification + data-exchange layers are the
+- Aligns with `../exploration/saas-opportunity.md`: the identification + data-exchange layers are the
   hard/decentralised parts; the semantic layer maps to the 900+ field schemas in `tools.md`.
 - Adds AAS (Asset Administration Shells, from Industry 4.0) as a data-modelling route that
   was previously missing from the KB — a key option vs. pure JSON-LD.

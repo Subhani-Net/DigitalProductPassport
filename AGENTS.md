@@ -36,4 +36,4 @@ before and during work. Do not skip the checklist.
 - Every delivered chunk must leave the system working (not "mostly working, will fix later").
 - Cross-references: `product-roadmap.md` (the path we take), `research/learning-roadmap.md`,
   `research/architecture.md`, `research/standards.md`, `research/tools.md`,
-  `research/saas-opportunity.md`.
+  `exploration/saas-opportunity.md`.

@@ -67,7 +67,7 @@ EU laws, deadlines, and obligations that drive the Digital Product Passport.
   between 2026 and 2032**.
 - **Relevance to DPP:** The legal vehicle for fly ash / cement / concrete and other
   construction materials (a natural fit for the adjacent fly-ash opportunity in
-  `adjacent-opportunities.md`). DPP becomes mandatory for CE marking.
+  `../exploration/adjacent-opportunities.md`). DPP becomes mandatory for CE marking.
 - **Notes:** Construction is the sector with the most concrete timelines after batteries.
 > Source: eudigitalproductpassport.org — Construction products digital product passport — article — 2026
 > Source: constructionproducts.org.uk — EU CPR - Digital Product Passports — article — 2026

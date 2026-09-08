@@ -50,21 +50,26 @@ Every entry ends with a source line:
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
 | `competition/` | Competitive landscape: matrix, threat scorecards, dossiers |
-| `research/` | Knowledge base (initial research & reference) |
 
-### `research/` — knowledge base (initial research & reference)
+### `research/` — definitive & high-value reference
 | File | Contents |
 |------|----------|
-| `research/DPP_Initial_Brainstorm.md` | Original raw brainstorm material |
 | `research/regulations.md` | EU laws, deadlines, obligations |
+| `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/verifiers) + design implications |
+| `research/goto-market-sizing.md` | Business model, segments, sizing, pricing L/B/H |
 | `research/standards.md` | CEN/CENELEC, schemas, data models |
-| `research/companies.md` | Companies in scope (OEMs, battery makers, LMT, ESS, second-life, suppliers) |
-| `research/people.md` | Key people, speakers, experts |
-| `research/consultancies.md` | Consultancies, advisors, consortia & projects |
-| `research/tools.md` | Open-source repos, platforms, registries |
-| `research/saas-opportunity.md` | Market analysis of DPP enabling-SaaS opportunity |
-| `research/adjacent-opportunities.md` | Other business opportunities (fly ash / construction materials), CAMBEX |
 | `research/architecture.md` | DPP technical architecture: learning path + 3-layer framework |
 | `research/learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
+| `research/tools.md` | Open-source repos, platforms, registries |
 | `research/sources.md` | Full bibliography of all sources collected |
+
+### `exploration/` — initial/exploratory notes (lower priority, still searchable)
+| File | Contents |
+|------|----------|
+| `exploration/DPP_Initial_Brainstorm.md` | Original raw brainstorm material |
+| `exploration/saas-opportunity.md` | Early market analysis of DPP enabling-SaaS opportunity |
+| `exploration/adjacent-opportunities.md` | Other business ideas (fly ash / construction materials), CAMBEX |
+| `exploration/companies.md` | Early company lists (many entries [Unverified]) |
+| `exploration/people.md` | Early people notes |
+| `exploration/consultancies.md` | Early consultancies/consortia notes |
 | `research/glossary.md` | DPP terminology |

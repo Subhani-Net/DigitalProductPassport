@@ -2,11 +2,11 @@
 
 Purpose: understand the commodity open layers well enough to design on top of them, then
 build the complex logic layers that differentiate. Working assumption (from `tools.md` and
-`saas-opportunity.md`): the transport layers are free and standardized; the moat is in
+`../exploration/saas-opportunity.md`): the transport layers are free and standardized; the moat is in
 trust, verification, lineage, and harmonization logic.
 
 Cross-references: `regulations.md` · `standards.md` · `architecture.md` · `tools.md` ·
-`saas-opportunity.md` · `sources.md` · `glossary.md`
+`../exploration/saas-opportunity.md` · `sources.md` · `glossary.md`
 
 ---
 
@@ -17,7 +17,7 @@ Goal: know why the market exists and who is obligated.
 - Read `regulations.md`: ESPR (2024/1781) as the framework; Battery Regulation (2023/1542)
   and the 18 Feb 2027 deadline; Economic Operator concept; trickle-down compliance.
 - Read the EC DPP page and GOV.UK battery-passport survey (`sources.md`).
-- Internalize the commercial shape from `saas-opportunity.md`: the 4 revenue categories and
+- Internalize the commercial shape from `../exploration/saas-opportunity.md`: the 4 revenue categories and
   the moat argument.
 
 **Checkpoint:** explain, in one paragraph, why a Tier-2 chemical refiner in India is now
@@ -91,7 +91,7 @@ Goal: this is where a proprietary, venture-backed system must live (`tools.md` s
 - Ingest Tier 1–4 supplier data; the hard problem is verification and reconciliation
   (graph databases, identity resolution, data-quality scoring).
 - Study the battery value chain data (black mass, recycled content certificates) as the
-  concrete example (`companies.md`).
+  concrete example (`../exploration/companies.md`).
 
 ### 2.3 Cryptographic trust & verified compute
 - ZK proofs / SNARKs: what they prove, when they are justified, and the trade-offs
@@ -133,5 +133,6 @@ non-commodity component you can name.
 - CIRPASS-2 site (deliverables, newsletters, Expert Working Groups, Lighthouse Pilots):
   https://cirpass2.eu — subscribe to the stakeholder community.
 - Catalogue for reference implementations: https://cirpass2.eu/open-source-dpp-catalogue/
-- Data4Circ / RecAL webinar and the EuroCommerce angle (`people.md`, `consultancies.md`).
+- Data4Circ / RecAL webinar and the EuroCommerce angle (`../exploration/people.md`,
+  `../exploration/consultancies.md`).
 - Add every new source to `sources.md` as you go.
