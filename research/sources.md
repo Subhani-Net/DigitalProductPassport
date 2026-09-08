@@ -49,6 +49,9 @@ attend seminars, or watch webcasts.
 | European Commission (TAXUD) | CBAM Registry O3CI (operators & verifiers) manual v4.00 | gov | 27 Aug 2026 | PDF via registry page |
 | European Commission (TAXUD) | Accredited Verifiers access/registration guidance | gov | 28 Aug 2026 | PDF via registry page |
 | European Commission (TAXUD) | CBAM Quarterly Report structure XSD (+stypes.xsd) & XLS; Communication Template V2.1 | gov | 7 Sep 2026 | EC CBAM file share / transitional registry docs |
+| EUR-Lex | Reg (EU) 2023/956 Annex IV + IR (EU) 2023/1773 (CBAM methodology/reporting) | law | 2023 | https://eur-lex.europa.eu/eli/reg/2023/956/oj ; …/reg_impl/2023/1773/oj |
+| European Commission (TAXUD) | Definitive-phase acts: IR 2025/2547 (calc), IR 2025/2546 (verification), Del 2025/2551 (accreditation), IR 2024/3210 (registry), IR 2025/2621 (defaults) | law | 2024–25 | EC CBAM legislation & guidance page |
+| EEA / worldsteel / IAI | Grid emission factors; steel intensity indicators; aluminium LCI + PFC stats | dataset | 2026 | eea.europa.eu ; worldsteel.org ; international-aluminium.org |
 | Eclipse Tractus-X | Digital Product Pass Verification add-on (mock wallet engine) | github | 2025 | [to verify] |
 | Catena-X | Data space certification (CABs e.g. TÜV Rheinland; SAMM/BAM, EDC, TISAX) | web | [to verify] | [to verify] |
 | Manufacturing-X / Material-X / Tex-X | Sector verticals for steel, aluminium, textiles | web | [to verify] | [to verify] |
