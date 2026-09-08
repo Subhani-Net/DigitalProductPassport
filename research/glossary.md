@@ -114,3 +114,31 @@ DPP terminology. Add new terms as you encounter them.
 - **Sell-twice engine**: The harmonization + verified-data pipeline built once and sold for
   the in-force wedge (CBAM / unsold disclosure) now, then extended to the DPP module later
   (~2028–29).
+
+## CBAM workflow terminology (from research/cbam-registry-workflow.md)
+
+- **Accreditation**: credential granted by a national accreditation body to a *verifier*
+  (competence, independence, methodology). Applies to the **body**, never to data.
+- **Verification**: assurance review of the *data* — the accredited verifier checks the
+  operator's emissions data + evidence (traceability, recalculation, completeness,
+  plausibility, risk-sampling, possibly site visits) and issues a **verification report**.
+  Forensic-validity-style: "reasonable assurance", not absolute proof.
+- **Validation** (ETS-style term): checking the *monitoring plan/methodology* before use —
+  distinct from verifying the *reported numbers* after.
+- **O3CI**: "Operators of Third-Country Installations" — the CBAM Registry module where
+  non-EU installation operators upload/share installation + emissions data (confidential
+  treatment) and where accredited verifiers review it and issue verification reports.
+- **Registered Operator**: status of a non-EU installation operator after O3CI onboarding
+  (EU Login + 2FA, company docs, proof of representation).
+- **AMM**: Authorisation Management Module — where EU importers / indirect customs
+  representatives apply for authorised-CBAM-declarant status with their national authority.
+- **NCA**: National Competent Authority — the EU member-state authority granting
+  authorisations and receiving verifier-registration applications.
+- **DRMC**: Data Reconciliation for Monitoring and Control — reconciles declarant's goods,
+  emissions, certificates and penalties; monitors thresholds and the 50%-rule.
+- **EORI linking**: the mechanism by which a declarant shares its EORI number with the
+  supplier so the registry can connect the supplier's verified data to the declarant's
+  reports (data flows registry→declarant, never declarant→supplier-by-email).
+- **Actual vs default values**: actual = installation's own verified emissions; default =
+  conservative fallback figures when verified actual data is unavailable — defaults are
+  costlier by design.
