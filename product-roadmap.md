@@ -39,13 +39,29 @@ One core engine, multiple vertical modules ("build once, swap schemas").
 ADOPT (commodity):        GS1 Digital Link + Resolver · Keycloak (IAM/OID4VC) · EDC/AAS ·
                           CIRPASS-2 mock registry · open-dpp base platform (optional) · CEN/CENELEC
 BUILD (complex/defensible): PCF & recycled-content/mass-balance engines · data lineage/lifecycle ·
-                          verification & authenticity (VC/eIDAS; later ZK) · AI harmonization from legacy ERP
+                          verification & authenticity (VC/eIDAS) · **zero-exposure attestation
+                          (SNARK target trust layer, gated by the P2 ZK spike)** · AI harmonization
+                          from legacy ERP
 ```
 
 Customer targets:
 - **Primary:** EU-placed Economic Operators (manufacturers/importers) in steel, aluminium, textiles.
 - **Secondary:** Tier-N suppliers + exporters (India, UK, etc.) pulled in by trickle-down
   compliance who need cheap plug-and-play data adapters.
+
+### Product & business model (decided Sept 2026)
+
+- **Self-serve SaaS is the product; services are an offering or third-party — on the Xero
+  model.** Software open to all customers on both sides. Hand-holding services come from us
+  (optional managed line) or a **partner ecosystem** (verifiers, consultants, customs
+  agents = Xero's accountants) running on our platform.
+- **Two-sided product flow:** supplier side — ingestion + **validation of input** → suppliers
+  hold verifier-ready, proprietary-safe data; importer side — **validated input + formatting**
+  → CBAM XML/Excel, declaration-ready, audit-evidenced.
+- **Trust direction: aiming at SNARK / zero-exposed data.** Suppliers' proprietary detail is
+  never exposed to consumer/importer counterparties — proof by zero-knowledge attestation,
+  not data sharing. Feasibility/timing still gated by the P2 ZK spike (§4).
+- Full sizing + pricing model: `research/goto-market-sizing.md`.
 
 ### Focus decision (verified against ESPR Working Plan, Sept 2026)
 
