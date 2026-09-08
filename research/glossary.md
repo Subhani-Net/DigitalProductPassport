@@ -142,3 +142,15 @@ DPP terminology. Add new terms as you encounter them.
 - **Actual vs default values**: actual = installation's own verified emissions; default =
   conservative fallback figures when verified actual data is unavailable — defaults are
   costlier by design.
+- **Independence / self-review threat**: impartiality rule (ISO/IEC 17029 / ISO 14065): a
+  verifier cannot provide assurance on work performed by its own affiliated company — which
+  is why our platform's outputs need a *third-party* accredited verifier's stamp.
+- **Arm's-length verification entity**: a separate, firewalled legal entity we *might*
+  create to hold verifier accreditation — keep-open option gated on volume, not a roadmap
+  target (partner-only until volume justifies).
+- **Certificate surrender vs deduction**: declarants *purchase* CBAM certificates at the
+  ETS-linked price and *surrender* them to settle the annual declaration; the carbon price
+  already paid in the origin country is *deducted* from the liability.
+- **Workhorse vs stamp (our operating model)**: we run all data-layer activity (capture,
+  calculation, submission, validation intelligence) on both sides; the accredited verifier
+  provides the assurance stamp. Partner-only stamp, locked Sep 2026.

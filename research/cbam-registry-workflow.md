@@ -107,3 +107,10 @@ and issue the verification report that enables declarants to use actual verified
    extends the same principle to the importer-facing layer.
 4. **Verifier interop is part of the core flow** — the verifier lives in the same portal;
    our "verifier-ready evidence" must be aligned to the verification-report mechanics.
+5. **Operating model (locked Sep 2026): workhorse vs stamp.** We do all the workhorse
+   activity — capture, calculation, submission, validation intelligence on both sides. The
+   verification stamp comes from **partner accredited verifiers only**; our own arm's-length
+   accredited verification entity stays a keep-open option gated on volume (see
+   `../compliance-matrix.md` §3). Independence rule: a verifier cannot review work done by
+   its own affiliated company (self-review threat, ISO 17029/14065 impartiality), so the
+   stamp remains third-party (or firewalled) until volume justifies otherwise.

@@ -58,6 +58,12 @@ Customer targets:
 - **Two-sided product flow:** supplier side — ingestion + **validation of input** → suppliers
   hold verifier-ready, proprietary-safe data; importer side — **validated input + formatting**
   → CBAM XML/Excel, declaration-ready, audit-evidenced.
+- **Verification stamp: partner accredited verifiers only (locked Sep 2026).** We build
+  capability across the whole ecosystem except the stamp itself; an own arm's-length
+  verification entity is a keep-open option gated on volume (independence rule: verifiers
+  cannot assure their own affiliates' work). The verifier is our **third user class** —
+  validation intelligence (evidence dossiers, audit trails, recalculation support) is built
+  for them in C7/C8.
 - **Trust direction: aiming at SNARK / zero-exposed data.** Suppliers' proprietary detail is
   never exposed to consumer/importer counterparties — proof by zero-knowledge attestation,
   not data sharing. Feasibility/timing still gated by the P2 ZK spike (§4).

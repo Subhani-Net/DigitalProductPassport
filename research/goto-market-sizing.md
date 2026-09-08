@@ -20,6 +20,15 @@ Market read for the CBAM → DPP platform (recorded Sep 2026). Tagging disciplin
   proof via zero-knowledge attestation, not data sharing. SNARK stays gated by the P2 ZK
   spike for feasibility/timing (see `../product-roadmap.md` §4), but is now the explicit
   target architecture of the trust layer.
+- **Verification stamp = partner accredited verifiers only (locked Sep 2026).** We maximise
+  our capability everywhere in the ecosystem *except* the stamp itself: an own arm's-length
+  accredited verification entity is a keep-open option gated on volume, not a roadmap
+  target. Independence rule (ISO 17029/14065): a verifier cannot assure work done by its
+  own affiliate — so the stamp stays third-party until volume justifies a firewalled
+  separate entity.
+- **Three user classes:** supplier, importer, **and the verifier** — validation intelligence
+  (evidence dossiers, audit trails, recalculation support) is productized *for verifiers*
+  to make their audits efficient; their efficiency is our wedge on the assurance side.
 
 ## Market shaping (facts, Sep 2026)
 

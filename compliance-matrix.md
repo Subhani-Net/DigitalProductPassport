@@ -60,6 +60,7 @@ Per `AGENTS.md`, every build chunk must update it.
 | Passport generator (JSON-LD per CEN model) + DPP host (liveURL/backupURL, EO domain) | Targets 4, 5 | C6 |
 | Registration client (OIDC per-EO, register/update, proof verify via JWKS) | Target 5 | C6 |
 | Trust layer (dppHash chain, detached JWS, later eIDAS seal / VCs) | Targets 4, 5 | C8 |
+| **Verifier enablement / validation intelligence** (evidence dossiers, audit trails, recalculation support served to the verifier user class) | Targets 1, 2 | C7, C8 |
 | Conformance CI (mock registry, dpp-validator, TracePass, Tractus-X runs auto-recorded) | All | C7 |
 | Compliance-matrix automation (test runs → evidence rows, not manual notes) | All | C7+ |
 
@@ -74,10 +75,13 @@ purchase via a national standards body.
 **External validation/verification to include (non-negotiable):**
 - **Official EU DPP Registry testing environment** — the authoritative conformance target;
   request access now (test env launched 20 Jul 2026).
-- **Accredited CBAM verifier** — under Reg 2023/956 Art. 8, embedded-emissions data used by
-  declarants must be verified by an accredited body. We cannot verify ourselves: our C5
-  outputs must be designed to pass verifier scrutiny; at P2, partner with a verification
-  body (accreditation ISO 17029 / 14065) so customers get verified reports.
+- **Accredited CBAM verifier — partner-only (LOCKED Sep 2026).** Under Reg 2023/956 Art. 8,
+  embedded-emissions data used by declarants must be verified by an accredited body. We
+  cannot verify ourselves (independence/self-review rule, ISO 17029/14065): our C5 outputs
+  must be designed to pass verifier scrutiny, and at P2 we partner with an accredited
+  verification body (TÜV SÜD-type; India-reach preferred) so customers get verified
+  reports. **Own arm's-length verification entity = keep-open option gated on volume,
+  NOT a roadmap target.**
 - **Free harnesses (T1/T2):** CIRPASS-2 dpp-validator, TracePass schema validation,
   Tractus-X DPP Verification add-on — run in CI (C7).
 - **T3 CAB certification** — only on customer demand (P2+).
