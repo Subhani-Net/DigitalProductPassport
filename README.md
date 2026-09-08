@@ -44,6 +44,7 @@ Every entry ends with a source line:
 | File | Contents |
 |------|----------|
 | `README.md` | This index (Map of Content) |
+| `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
 | `product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
 | `project-gantt.md` | Gantt project plan (derived from roadmap §5) |
