@@ -64,6 +64,11 @@ Financial & operational details (incl. **guarantee**). Annual CBAM declaration
 - carbon price due in the country of origin for the embedded emissions (deductible)
 - quantity of CBAM certificates surrendered
 
+Fallback: where **verified actual values are not available**, the declarant may use the
+**EC default values** (IR (EU) 2025/2621) — which are punitive (~20–25% higher cost at
+€75.36/t), so actual verified data is commercially preferable. This is the core incentive
+that pulls suppliers into providing verifier-backed data.
+
 DRMC (Data Reconciliation for Monitoring and Control) reconciles imported goods,
 emissions, certificates and penalties; monitors the 50%-rule and thresholds.
 De minimis: importers ≤ 50 t/year of CBAM goods exempt (Omnibus, Oct 2025).
