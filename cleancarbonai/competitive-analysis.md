@@ -1,6 +1,6 @@
 # CleanCarbon.ai — Competitive Analysis (vs our roadmap)
 
-Fact-based read of their pipeline against our `../product-roadmap.md` P1/P2 (CBAM-first
+Fact-based read of their pipeline against our `../business/product-roadmap.md` P1/P2 (CBAM-first
 wedge → DPP). Goal: **replicate the wedge mechanics, out-build them on the DPP side.**
 
 ## What they actually are

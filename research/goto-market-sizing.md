@@ -18,7 +18,7 @@ Market read for the CBAM → DPP platform (recorded Sep 2026). Tagging disciplin
 - **Trust direction: aiming at SNARK / zero-exposed data.** Validation happens so that the
   supplier's proprietary detail is **never exposed to the consumer/importer counterparties** —
   proof via zero-knowledge attestation, not data sharing. SNARK stays gated by the P2 ZK
-  spike for feasibility/timing (see `../product-roadmap.md` §4), but is now the explicit
+  spike for feasibility/timing (see `../business/product-roadmap.md` §4), but is now the explicit
   target architecture of the trust layer.
 - **Verification stamp = partner accredited verifiers only (locked Sep 2026).** We maximise
   our capability everywhere in the ecosystem *except* the stamp itself: an own arm's-length

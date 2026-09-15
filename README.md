@@ -46,9 +46,19 @@ Every entry ends with a source line:
 | `README.md` | This index (Map of Content) |
 | `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
-| `product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
-| `project-gantt.md` | Gantt project plan (derived from roadmap §5) |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
+
+### `business/` — business track
+| File | Contents |
+|------|----------|
+| `business/product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
+| `business/project-gantt.md` | Gantt project plan (derived from roadmap §5) |
+| `business/fundraise-plan.md` | Fundraise plan (SEIS/EIS), costing |
+| `business/README.md` | Org-setup + business-planning activity tracker |
+
+### Competitive research
+| Folder | Contents |
+|------|----------|
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
 | `competition/` | Competitive landscape: matrix, threat scorecards, dossiers |
 
@@ -63,6 +73,7 @@ Every entry ends with a source line:
 | `research/learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
 | `research/tools.md` | Open-source repos, platforms, registries |
 | `research/sources.md` | Full bibliography of all sources collected |
+| `research/glossary.md` | DPP terminology |
 
 ### `exploration/` — initial/exploratory notes (lower priority, still searchable)
 | File | Contents |
@@ -73,4 +84,3 @@ Every entry ends with a source line:
 | `exploration/companies.md` | Early company lists (many entries [Unverified]) |
 | `exploration/people.md` | Early people notes |
 | `exploration/consultancies.md` | Early consultancies/consortia notes |
-| `research/glossary.md` | DPP terminology |

@@ -4,9 +4,9 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 
 ## Read this first, then
 
-1. `product-roadmap.md` — **§5 Implementation timeline** is the single source of truth
+1. `business/product-roadmap.md` — **§5 Implementation timeline** is the single source of truth
    (dated master); §7 is the 30/60/90 action plan.
-2. `project-gantt.md` — dated task view (derived from roadmap §5).
+2. `business/project-gantt.md` — dated task view (derived from roadmap §5).
 3. `compliance-matrix.md` — T2 self-certification evidence + operating model
    (conformance targets, capabilities, learn/hire/validate).
 4. `AGENTS.md` — working constraints (holistic, small chunks, iterate before acting,
@@ -42,8 +42,9 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 ## File map
 
 ```
-root:  README.md · AGENTS.md · product-roadmap.md · project-gantt.md ·
-       compliance-matrix.md · SESSION-CONTEXT.md (this file)
+root:  README.md · AGENTS.md · compliance-matrix.md · SESSION-CONTEXT.md (this file)
+business/: product-roadmap.md (§5 timeline = single source of truth) · project-gantt.md ·
+       fundraise-plan.md · README.md (org-setup + business-planning activity tracker)
 research/ (definitive & high-value): regulations.md · cbam-registry-workflow.md ·
        cbam-data-catalogue.md (r2) · cbam-input-sources.md · goto-market-sizing.md ·
        standards.md · architecture.md · learning-roadmap.md · tools.md · sources.md · glossary.md

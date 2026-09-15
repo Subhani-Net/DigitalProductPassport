@@ -34,6 +34,6 @@ before and during work. Do not skip the checklist.
 
 - Analysis and planning come before code. When asked to plan or analyze, no code is written.
 - Every delivered chunk must leave the system working (not "mostly working, will fix later").
-- Cross-references: `product-roadmap.md` (the path we take), `research/learning-roadmap.md`,
+- Cross-references: `business/product-roadmap.md` (the path we take), `research/learning-roadmap.md`,
   `research/architecture.md`, `research/standards.md`, `research/tools.md`,
   `exploration/saas-opportunity.md`.

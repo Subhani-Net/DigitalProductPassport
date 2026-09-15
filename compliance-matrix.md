@@ -1,7 +1,7 @@
 # Compliance Matrix
 
 Living record mapping **guideline/standard → our implementation → test evidence**. This IS
-our self-certification evidence (Tier 2 of the certification model in `product-roadmap.md`).
+our self-certification evidence (Tier 2 of the certification model in `business/product-roadmap.md`).
 Per `AGENTS.md`, every build chunk must update it.
 
 ## How to record a row

@@ -21,7 +21,7 @@ finding materially changes strategy — these are the candidates and conclusions
 
 | # | Finding | Proposed roadmap touch | Status |
 |---|---------|------------------------|--------|
-| 0 | **Model decision (Sep 2026):** self-serve SaaS + Xero-style partner services; two-sided validated flow; SNARK/zero-exposure trust target | recorded in `../product-roadmap.md` §2 + `../research/goto-market-sizing.md` | **Done** |
+| 0 | **Model decision (Sep 2026):** self-serve SaaS + Xero-style partner services; two-sided validated flow; SNARK/zero-exposure trust target | recorded in `../business/product-roadmap.md` §2 + `../research/goto-market-sizing.md` | **Done** |
 | 1 | EU DPP Registry **testing environment is public** (`registry.acc.product-passport.ec.europa.eu`, helpdesk EC-HELPDESK-DPP@ec.europa.eu) | compliance-matrix pending item: replace "request access" with concrete URL + create test-account task in L2 | **Done (URL captured)** |
 | 2 | C5 must emit **CBAM XML/Excel** (Greenly/CarbonChain both automate portal-ready XML) | C5 exit criteria already flagged in cleancarbonai analysis — promote to compliance-matrix target row | Confirm in L1 |
 | 3 | **Minespider price anchor:** battery DPP €11.9k–€34.5k/yr | P2 pricing benchmark for our metals DPP bridge | P2 input only |

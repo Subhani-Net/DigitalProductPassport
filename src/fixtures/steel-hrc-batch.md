@@ -33,4 +33,4 @@ off-EU mill. Chain-of-custody data the REO must collect:
 - Identifiers: UPI syntax (GS1 SGTIN vs urn), reoId (LEI/EORI), commodityCode (HS/TARIC).
 
 > Placeholder note — real machine-readable fixture lands with the C2 data contract.
-> See `compliance-matrix.md` and `../product-roadmap.md` (P1).
+> See `compliance-matrix.md` and `../business/product-roadmap.md` (P1).
