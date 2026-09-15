@@ -181,7 +181,7 @@ Months 10+: corporate accreditation  → apply to an EU National Accreditation B
   no conflict, sharpens validation intelligence), keep the platform track, and defer the
   corporate-accreditation decision to option B when volume justifies it. Do **not** silently
   revise locked decision #2 (partner-only stamp) — this is an explicit keep-open, now with a
-  concrete path.
+  concrete path. **Self-study syllabus + role framing: `../research/cbam-verifier-accreditation.md`.**
 
 ## 3. Targets (top-level goals)
 

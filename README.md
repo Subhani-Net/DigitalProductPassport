@@ -68,6 +68,7 @@ Every entry ends with a source line:
 | `research/regulations.md` | EU laws, deadlines, obligations |
 | `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/verifiers) + design implications |
 | `research/goto-market-sizing.md` | Business model, segments, sizing, pricing L/B/H |
+| `research/cbam-verifier-accreditation.md` | Verifier-agency Operations SME path + self-study syllabus |
 | `research/standards.md` | CEN/CENELEC, schemas, data models |
 | `research/architecture.md` | DPP technical architecture: learning path + 3-layer framework |
 | `research/learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
