@@ -151,6 +151,38 @@ Provider Delegated Act (Q2–Q3 2027)** may formalise portability duties for us.
   win EU business, will verifiers adopt a third-party tool. Not PMF search — the mandate
   removes that — just buyer + willingness-to-pay + routing.
 
+### Verification accreditation path (option under evaluation, Sep 2026)
+
+A staged route to becoming an **accredited CBAM verifier** (own capability, not just partner
+reliance) was raised Sep 2026:
+
+```
+Pre-verification consultancy (now)   → monetise data/IT skills: clean ERPs, data lineage, schemas
+Months 1–3: certifications           → ISO 14064-3 Lead Verifier + EU DG TAXUD verifier modules
+Months 4–9: build & partner          → 5–10 pre-verification gap analyses; onboard industrial/chemical expert
+Months 10+: corporate accreditation  → apply to an EU National Accreditation Body (NAB)
+```
+
+- **Credential correction:** the CBAM verifier credential is **ISO 17029 + ISO 14065 + CBAM
+  Delegated Act 2025/2551** (NAB-granted). ISO 14064-3 is the GHG-verification competence
+  base; DG TAXUD modules are registry/portal training. Corporate accreditation requires a
+  documented system, a competent **team matrix**, and **witnessed audits** → realistic
+  12–24 months, not 10.
+- **Independence conflict (must be resolved before blending):** ISO 17029/14065 impartiality
+  bars a verifier from assuring work done by its own affiliate (self-review threat). We cannot
+  be both the platform and the verifier for the same client in one entity.
+- **Options:**
+  - **A — Platform-only + partner verifiers (current lock).** Cleanest; no conflict.
+  - **B — Firewalled separate verification entity** (the keep-open option): platform and
+    verifier as distinct legal entities, independence documented. Gated on volume.
+  - **C — Verifier-first** (become the firm; platform becomes internal tooling): changes the
+    whole GTM and the moat framing.
+- **Recommended interim:** pursue the **pre-verification consultancy now** (immediate revenue,
+  no conflict, sharpens validation intelligence), keep the platform track, and defer the
+  corporate-accreditation decision to option B when volume justifies it. Do **not** silently
+  revise locked decision #2 (partner-only stamp) — this is an explicit keep-open, now with a
+  concrete path.
+
 ## 3. Targets (top-level goals)
 
 Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 2026);
