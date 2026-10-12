@@ -84,6 +84,19 @@ mock registry and retrieve it. **S1 PASSED** (evidence: compliance matrix `T1-RE
 | **T3** | Third-party CAB certification (on demand) |
 | **T4** | Vertical data-space alignment (Material-X, Tex-X) |
 
+## E0–E7 — Epics (feature areas, see `business/sprint-plan.md`)
+
+| Key | Epic |
+|-----|------|
+| **E0** | Foundation, Learning & Decisions (P0/M1) |
+| **E1** | Canonical Data Contract (C2) |
+| **E2** | Ingestion & Harmonization (C3, C4) |
+| **E3** | CBAM Emissions Engine (C5/M2) |
+| **E4** | Passport & Registry Integration (C6/T1) |
+| **E5** | Self-Assurance & Trust (C7, C8) |
+| **E6** | Sell-Twice Proof (C9/M3) |
+| **E7** | GTM Enablement (parallel) |
+
 ## Other recurring terms
 
 | Term | Meaning |

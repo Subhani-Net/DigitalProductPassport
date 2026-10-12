@@ -331,7 +331,7 @@ Dated slices of §5 from the status anchor **6 Sept 2026**. Rolled status on the
   C3 ingestion; C4 harmonization begin. Every chunk passes T1 (mock-registry-format payload)
   and the fixture regression suite.
 
-Full dated view: §5. Gantt view: `project-gantt.md`.
+Full dated view: §5. Gantt view: `project-gantt.md`. Sprint/epic/story backlog: `sprint-plan.md`.
 
 ## 8. Challenges
 

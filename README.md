@@ -54,6 +54,7 @@ Every entry ends with a source line:
 |------|----------|
 | `business/product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
 | `business/project-gantt.md` | Gantt project plan (derived from roadmap §5) |
+| `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, DoD |
 | `business/fundraise-plan.md` | Fundraise plan (SEIS/EIS), costing |
 | `business/README.md` | Org-setup + business-planning activity tracker |
 
