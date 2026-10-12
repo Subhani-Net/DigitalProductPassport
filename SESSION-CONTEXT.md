@@ -42,7 +42,7 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 ## File map
 
 ```
-root:  README.md · AGENTS.md · compliance-matrix.md · SESSION-CONTEXT.md (this file)
+root:  README.md · AGENTS.md · compliance-matrix.md · terminology.md · SESSION-CONTEXT.md (this file)
 business/: product-roadmap.md (§5 timeline = single source of truth) · project-gantt.md ·
        fundraise-plan.md · README.md (org-setup + business-planning activity tracker)
 research/ (definitive & high-value): regulations.md · cbam-registry-workflow.md ·

@@ -46,6 +46,7 @@ Every entry ends with a source line:
 | `README.md` | This index (Map of Content) |
 | `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
+| `terminology.md` | Shortcut legend: P/M/L/C/S/D/T keys, other recurring terms |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 
 ### `business/` — business track
