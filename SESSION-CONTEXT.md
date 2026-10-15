@@ -53,8 +53,8 @@ exploration/ (lower priority): DPP_Initial_Brainstorm · saas-opportunity ·
 competition/: landscape.md (+threat scorecards) · dossiers/ (carbonchain, sap, minespider,
        circularise, circlor, verifiers) · mapping-to-roadmap.md
 cleancarbonai/: CleanCarbon.ai dossier
-learning/ (taught courses): README (catalogue) · cbam-101/ (COMPLETE, 7 modules + assessment) ·
-       cbam-201/ (planned) · cbam-301/ (planned)
+learning/ (taught courses): README (catalogue) · cbam-101/ (COMPLETE) · cbam-201/ (COMPLETE) ·
+       cbam-301/ (planned) · cbambok.md · glossary.md
 src/: fixtures/steel-hrc-batch.md (placeholder) — code goes here from C2 onward
 reference/ (gitignored): mock-eu-registry · deploy-resources · tracepass-dpp-schemas · freeDPP
 scratch/ (gitignored): spike-host (python static DPP host, port 9090)

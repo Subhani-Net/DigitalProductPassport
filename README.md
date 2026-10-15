@@ -71,7 +71,7 @@ Every entry ends with a source line:
 | `learning/cbambok.md` | **CBAM Body of Knowledge** — article-anchored terms, processes, units |
 | `learning/glossary.md` | Learning glossary: terms + course mapping + inbox |
 | `learning/cbam-101/` | **Complete** — Foundations (7 modules + self-assessment) |
-| `learning/cbam-201/` | Planned — Practitioner (stub) |
+| `learning/cbam-201/` | **Complete** — Practitioner (9 modules + self-assessment) |
 | `learning/cbam-301/` | Planned — Expert / SME (stub) |
 
 ### `research/` — definitive & high-value reference

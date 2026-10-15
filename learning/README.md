@@ -9,7 +9,7 @@ Current courses:
 | Course | Level | Status |
 |--------|-------|--------|
 | **CBAM 101 — Foundations** | Beginner | **Complete** → `cbam-101/` |
-| **CBAM 201 — Practitioner** | Intermediate | Planned (outline below) |
+| **CBAM 201 — Practitioner** | Intermediate | **Complete** → `cbam-201/` |
 | **CBAM 301 — Expert / SME** | Advanced | Planned (outline below) |
 | *(DPP 101 companion)* | Beginner | Backlog (after CBAM 301) |
 
@@ -41,14 +41,11 @@ Goal: full conceptual command of the regime; can speak the language and navigate
 Modules: context & legal framework · scope & thresholds · actors & registry workflow ·
 embedded emissions & calculation · obligations, timeline & costs · cheatsheet · self-assessment.
 
-## CBAM 201 — Practitioner (outline)
-Goal: perform and review real CBAM data work.
-- Annex III/IV methodology in depth; mass-balance vs calc-based vs CEMS.
-- Monitoring plans; system boundaries; data sources (ERP/MES/LIMS/utility/devices).
-- Actual-vs-default decisioning; default-value catalogue (IR 2025/2621).
-- Precursor chains and complex goods; sector worked examples (steel, aluminium).
-- Registry operations hands-on; declaration assembly; quarterly/annual mechanics.
-- Verification: ISO 14064-3 concepts, materiality, sampling; verifier-ready dossiers.
+## CBAM 201 — Practitioner  (COMPLETE → `cbam-201/`)
+Goal: perform and review real CBAM data work. Modules: calculation methodology in depth ·
+monitoring plans & data quality · data sources & systems · actual vs default · precursors &
+complex goods (worked steel/aluminium) · registry operations & declaration · verification &
+verifier-ready evidence · cheatsheet · self-assessment.
 
 ## CBAM 301 — Expert / SME (outline)
 Goal: operate at verifier-grade judgment and advise at policy level.
