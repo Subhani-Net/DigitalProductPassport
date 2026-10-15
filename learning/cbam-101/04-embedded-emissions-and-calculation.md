@@ -12,6 +12,11 @@
 - For **complex goods**, SEE also includes the embedded emissions of **precursors** (covered
   inputs carried into the product). **Fact**.
 
+> **Nuance [verify]:** the *definition* of embedded emissions includes both direct and indirect
+> (Art 3(22)). But the treatment of **indirect** emissions differs by sector/phase-in — widely
+> stated as counted for cement & fertilisers, and largely direct-only for steel & aluminium
+> during the phase-in. Confirm per-sector against Annex IV / IR 2025/2547.
+
 ## 4.2 How direct emissions are measured (three ways)
 
 | Method | What it is | When used |

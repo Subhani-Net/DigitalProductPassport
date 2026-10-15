@@ -51,10 +51,16 @@ attend seminars, or watch webcasts.
 | European Commission (TAXUD) | CBAM Quarterly Report structure XSD (+stypes.xsd) & XLS; Communication Template V2.1 | gov | 7 Sep 2026 | EC CBAM file share / transitional registry docs |
 | EUR-Lex | Reg (EU) 2023/956 Annex IV + IR (EU) 2023/1773 (CBAM methodology/reporting) | law | 2023 | https://eur-lex.europa.eu/eli/reg/2023/956/oj ; …/reg_impl/2023/1773/oj |
 | European Commission (TAXUD) | Definitive-phase acts: IR 2025/2547 (calc), IR 2025/2546 (verification), Del 2025/2551 (accreditation), IR 2024/3210 (registry), IR 2025/2621 (defaults) | law | 2024–25 | EC CBAM legislation & guidance page |
+| EUR-Lex | Reg (EU) 2025/2083 (the "Omnibus" — amends CBAM: 50 t de-minimis, 30 Sep deadline, certificate sales Feb 2027, 50% quarterly holding) | law | 17 Oct 2025 | https://eur-lex.europa.eu |
+| EUR-Lex | IR (EU) 2025/2620 (definitive benchmarks) | law | 2025 | https://eur-lex.europa.eu |
 | EEA / worldsteel / IAI | Grid emission factors; steel intensity indicators; aluminium LCI + PFC stats | dataset | 2026 | eea.europa.eu ; worldsteel.org ; international-aluminium.org |
 | Eclipse Tractus-X | Digital Product Pass Verification add-on (mock wallet engine) | github | 2025 | [to verify] |
 | Catena-X | Data space certification (CABs e.g. TÜV Rheinland; SAMM/BAM, EDC, TISAX) | web | [to verify] | [to verify] |
 | Manufacturing-X / Material-X / Tex-X | Sector verticals for steel, aluminium, textiles | web | [to verify] | [to verify] |
+| CORA (Ventum Consulting) | CBAM glossary — official definitions with article refs | article | 2026 | https://importer.cora-online.com/cbam-knowledge/glossary |
+| CBAM Tools | CBAM glossary (37 terms, plain + legal) | article | 8 Jun 2026 | https://cbam-tools.com/glossary |
+| TrueSourceMetals | Steel value chain (BF-BOF, EAF, DRI/H₂-DRI) | article | 2026 | https://hub.truesourcemetals.com/chain/steel/ |
+| steelonthenet | Steel industry abbreviations reference | article | 2026 | https://www.steelonthenet.com/resources/kb/steel-industry-abbreviations.html |
 
 ## Seminars & webcasts
 

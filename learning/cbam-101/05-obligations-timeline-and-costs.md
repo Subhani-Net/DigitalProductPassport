@@ -20,17 +20,31 @@
 
 ## 5.3 Certificates
 - Importers buy **CBAM certificates** to cover the embedded emissions declared. **Fact**.
-- Certificate **price tracks the ETS** (weekly average of auction prices). Reference: **Q1 2026
-  €75.36/t; Q2 2026 €75.28/t** (EC quarterly publication). **Fact** (`research/goto-market-sizing.md`).
+- Certificate **price tracks the ETS** (weighted average of auction prices). Reference: **Q1 2026
+  €75.36/t; Q2 2026 €75.28/t** (EC quarterly publication). **Fact**.
+- **Certificate sales begin 1 February 2027** on the **common central platform** (buy from /
+  sell back to the authority — certificates are not traded between companies). **Fact**.
 - **First certificate surrender deadline: 30 September 2027** (for calendar year 2026). **Fact**.
+- **Quarterly minimum holding (from 2027):** hold certificates covering **≥50%** of emissions
+  accrued year-to-date, checked each quarter-end. **Fact** (reduced from 80% by the Omnibus).
+
+## 5.3b The CBAM factor (phase-in factor)
+- The **share of embedded emissions actually paid for** rises from **2.5% in 2026 to 100% by
+  2034**, mirroring the EU ETS free-allowance phase-out. So 2026 is "definitive" but the real
+  cost is small at first. **Fact**.
 
 ## 5.4 Carbon-price deduction
 - If the carbon was already priced in the **country of origin** (e.g. a domestic carbon tax or
   ETS), that amount can be **deducted**, subject to conditions and evidence. **Fact**.
 
 ## 5.5 Penalties
-- Non-compliance penalties in the range of **€10–50 per tonne** (plus other sanctions).
-  **Claim** (`research/goto-market-sizing.md`; verify final figures against the Regulation).
+- **Excess-emissions penalty: €100 per tonne CO₂e** (indexed), for each certificate not
+  surrendered — and paying it does **not** cancel the obligation. **Fact/Claim** (mirrors the
+  ETS excess-emissions penalty).
+- **Unauthorised import:** enhanced penalty of **3×–5×** the standard rate (reduced if the
+  exceedance is ≤10%). **Claim**.
+- Transitional-period *reporting* penalties were lower (**€10–50/t**) — a legacy figure, do not
+  confuse it with the definitive penalty. **Fact**.
 
 ## 5.6 Timeline at a glance
 

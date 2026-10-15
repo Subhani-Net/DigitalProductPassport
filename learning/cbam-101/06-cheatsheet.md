@@ -9,9 +9,14 @@ stop carbon leakage. Legal duty sits with the **EU importer**.
 - **Transitional:** 1 Oct 2023 – 31 Dec 2025 (reporting only).
 - **Definitive (financial):** from **1 Jan 2026**.
 - **First certificate surrender:** **30 Sep 2027** (for CY2026).
-- **Certificate price:** tracks ETS weekly average — Q1 2026 **€75.36/t**, Q2 2026 **€75.28/t**.
-- **Penalties:** **€10–50/t** (Claim — verify).
-- **De minimis:** **≤ 50 t/yr** importer exemption (Omnibus, Oct 2025).
+- **Certificate price:** tracks ETS — Q1 2026 **€75.36/t**, Q2 2026 **€75.28/t**.
+- **Certificate sales begin:** 1 Feb 2027 (first surrender 30 Sep 2027).
+- **CBAM factor (phase-in):** 2.5% (2026) → 100% (2034).
+- **Excess-emissions penalty:** **€100/tCO₂e** (indexed); unauthorised import 3×–5×. (Legacy
+  transitional reporting fine was €10–50/t.)
+- **De minimis:** **≤ 50 t/yr** cumulative (cement/steel/aluminium/fertilisers; not electricity/H₂).
+- **Omnibus:** Regulation (EU) 2025/2083 (in force 20 Oct 2025) — 50 t rule, 30 Sep deadline,
+  certificate sales Feb 2027, quarterly holding 50%.
 - **Authorised importers (mid-2026):** >12,000 applied, >4,100 authorised (Claim).
 
 ## Covered sectors

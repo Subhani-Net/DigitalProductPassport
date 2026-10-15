@@ -13,6 +13,9 @@ Current courses:
 | **CBAM 301 — Expert / SME** | Advanced | Planned (outline below) |
 | *(DPP 101 companion)* | Beginner | Backlog (after CBAM 301) |
 
+**Reference body of knowledge:** `cbambok.md` — article-anchored terms across legislation,
+industrial processes, workflows, technical terms and units. **Learning glossary:** `glossary.md`.
+
 > **Progression rule:** finish 101 completely (including self-assessment) before starting 201;
 > finish 201 before 301. Each course builds on the previous.
 

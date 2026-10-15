@@ -1,8 +1,8 @@
 # Learning Glossary — Terms to Cover in Courses
 
 Living collection of terms encountered while studying CBAM. Each term is mapped to the course
-level where it will be taught. Deep DPP/CBAM reference definitions live in
-`../research/glossary.md`; this file is the *learning queue* + quick definitions.
+level where it will be taught. **Deep, article-anchored definitions live in `cbambok.md`**
+(CBAM Body of Knowledge); this file is the *learning queue* + quick definitions.
 
 Status: ✅ defined here · 🔗 in `research/glossary.md` · 📥 in inbox (not yet defined)
 
