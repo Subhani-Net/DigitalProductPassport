@@ -60,6 +60,7 @@ Goal: operate at verifier-grade judgment and advise at policy level.
   `../research/cbam-registry-workflow.md`, `../research/cbam-data-catalogue.md`,
   `../research/cbam-input-sources.md`, `../research/glossary.md`.
 - Accreditation path & role framing: `../research/cbam-verifier-accreditation.md`.
+- **Learning glossary (terms collected + course mapping, incl. inbox):** `glossary.md`.
 
 ## Tagging convention (applies to all course content)
 - **Fact** = from a cited EU/instrument source · **Claim** = secondary/vendor statement ·

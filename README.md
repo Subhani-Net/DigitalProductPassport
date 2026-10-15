@@ -68,6 +68,7 @@ Every entry ends with a source line:
 | Path | Contents |
 |------|----------|
 | `learning/README.md` | Course catalogue + SME competency map |
+| `learning/glossary.md` | Learning glossary: terms + course mapping + inbox |
 | `learning/cbam-101/` | **Complete** — Foundations (7 modules + self-assessment) |
 | `learning/cbam-201/` | Planned — Practitioner (stub) |
 | `learning/cbam-301/` | Planned — Expert / SME (stub) |
