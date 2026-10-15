@@ -64,6 +64,14 @@ Every entry ends with a source line:
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
 | `competition/` | Competitive landscape: matrix, threat scorecards, dossiers |
 
+### `learning/` — taught CBAM courses (101 → 201 → 301)
+| Path | Contents |
+|------|----------|
+| `learning/README.md` | Course catalogue + SME competency map |
+| `learning/cbam-101/` | **Complete** — Foundations (7 modules + self-assessment) |
+| `learning/cbam-201/` | Planned — Practitioner (stub) |
+| `learning/cbam-301/` | Planned — Expert / SME (stub) |
+
 ### `research/` — definitive & high-value reference
 | File | Contents |
 |------|----------|
