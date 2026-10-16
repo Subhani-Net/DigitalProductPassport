@@ -13,6 +13,9 @@ reference/
 # Scratch / spike artifacts (not part of our source)
 scratch/
 
+# Sensitive / local-only documents (kept on disk, never committed)
+business/fundraise-plan.md
+
 # Local runtime
 *.log
 .env
