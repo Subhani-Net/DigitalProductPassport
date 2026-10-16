@@ -89,8 +89,25 @@ mid-2027 (wedge), ~50–150 by 2028, then the DPP obligation converts the same b
 
 ## Revenue envelope (Estimate)
 
-- 30 Base clients by 2028 ≈ €300–450k ARR; 100 (Base+High mix) ≈ €1.2–1.8M ARR — the
-  realistic P2/P3 scale-out before the textiles wave.
+- **Base case** (capital-efficient seed-scale SaaS): 30 Base clients by 2028 ≈ €300–450k ARR;
+  100 (Base+High mix) ≈ €1.2–1.8M ARR — the realistic P2/P3 scale-out before the textiles wave.
+
+### Blue-sky expansion (optionality, not base case)
+
+Preserved venture-scale intelligence. This does **not** change the base case or the base raise
+(`../business/fundraise-plan.md` §2/§9); it is pursued only on traction.
+
+- **Target:** a path to **~£10M+ ARR** (venture scale), resting on four levers:
+  1. **ACV mix → enterprise/High tier** (€30–60k: multi-site + supplier network + DPP module +
+     managed verifier hand-off): ~150–300 accounts ≈ £10M ARR (vs 700–1,000 Base accounts).
+  2. **Textiles DPP wave (P3)** — 10,000+ economic operators from ~2029; same engine, new
+     module — the true scale unlock.
+  3. **Xero-style channel** — verifiers/consultants/customs agents selling on the platform
+     (distribution multiplier beyond direct sales).
+  4. **Geography + adjacent verticals** — non-EU exporters (India/UK) → global; extend the same
+     verified-data engine to construction/materials, fertilisers, hydrogen.
+- **Activation gate:** ≥ £1M ARR, >100 paying customers, <10% churn, textiles wedge engaged,
+  channel producing pipeline. Only then raise a deferred Series A to fund the scale-out.
 
 ## Assumptions to validate (before betting)
 

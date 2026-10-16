@@ -37,8 +37,8 @@ Status legend: ⬜ not started · 🔶 in progress · ✅ done. Target dates def
 | B4 | SEIS close (£250k) | ⬜ | Founder | Dec 2026 |
 | B5 | Design-partner LOIs (3–5) | ⬜ | Founder | Pre-M2, Jan 2027 |
 | B6 | Seed prep: re-price on pilot revenue, data room | ⬜ | Founder | Q2 2027 |
-| B7 | EIS seed close (£1.0M) | ⬜ | Founder | Q2–Q3 2027 |
-| B8 | Series A materials (high-level; gate on €300k+ ARR) | ⬜ | Founder | H2 2028 |
+| B7 | EIS seed close (£0.75–1.0M) | ⬜ | Founder | Q2–Q3 2027 |
+| B8 | Series A materials — DEFERRED (blue-sky; gate on traction: ≥£1M ARR, >100 customers, <10% churn, textiles engaged) | ⬜ | Founder | not before 2029 |
 
 ## Rules of engagement
 
