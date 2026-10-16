@@ -3,3 +3,6 @@
 *.sh text eol=lf
 *.json text eol=lf
 *.cs text eol=lf
+
+# Encrypted local-only docs: treat as binary, never diff/normalize
+*.enc binary -text -diff
