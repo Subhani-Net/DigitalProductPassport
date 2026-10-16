@@ -56,6 +56,8 @@ Goal: operate at verifier-grade judgment and advise at policy level.
 - CBAM ↔ ETS ↔ DPP interplay; importer/operator liability edge cases; policy horizon.
 
 ## How to use with the rest of the KB
+- **Parallel technical track:** each learning block is paired with a small technical
+  micro-output (see `../business/sprint-plan.md` §3) — learn just ahead, build just behind.
 - Primary sources and deeper reference: `../research/regulations.md`,
   `../research/cbam-registry-workflow.md`, `../research/cbam-data-catalogue.md`,
   `../research/cbam-input-sources.md`, `../research/glossary.md`.

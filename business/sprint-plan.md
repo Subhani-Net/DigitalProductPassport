@@ -47,24 +47,42 @@ Anchor: **Sept 2026**. Sprints 0–2 = P0 (foundation/learning); Sprints 3+ = P1
 
 ---
 
-## 3. Story backlog
+## 3. Parallel tracks — learning ∥ technical (decided Sept 2026)
+
+Learning and technical progress run **simultaneously, in the same sprint** — each learning
+story is paired with a small **technical micro-output** produced from it. This keeps momentum
+and converts study into working artefacts immediately.
+
+**Guardrail (the only rule):** *build trails learning by one step.* Never freeze a schema,
+encode a calculation, or testify conformance on an **unvalidated spec**. If the learning for a
+decision isn't done, the technical task stays a throwaway prototype (fixtures only), not a
+frozen interface. Enforced by the `AGENTS.md` checklist + schema-as-data + fixture regression.
+
+**Why it's sound:** most technical tasks *are* documentation-driven, so learning and building
+feed each other; the risk (rework from unvalidated specs) is neutralised by keeping the trail
+one step behind and everything reversible via git.
+
+## 4. Story backlog
 
 Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d (solo focus-days).
 
 ### E0 — Foundation, Learning & Decisions
 
-| ID | Story | Acceptance | Effort | Depends |
-|----|-------|-----------|--------|---------|
-| E0-HARNESS | Stand up conformance harness baseline + request EU DPP Registry **test-env** access | mock registry + spike host restart script; test-env account requested | S | — |
-| E0-L1 | Study CBAM calculation rules (IR 2023/1773, 2025/2547/2546) → wedge spec | notes + takeaway in `research/regulations.md`; calc inputs listed | M | — |
-| E0-L2 | Study EC Registry User Guide (Economic Operators) + test-env walkthrough | notes in `research/tools.md`/`regulations.md`; T1 target clarified | M | E0-HARNESS |
-| E0-L4 | Study TracePass iron & steel field set | field inventory (in-force vs anticipated) → feeds C2 | M | — |
-| E0-L5 | Study GS1 Digital Link | carrier notes → feeds C6 | S | — |
-| E0-L6 | Study CEN/CENELEC DPP standards (acquire docs) | standard IDs + data-model implications; purchase recorded as budget item | M | — |
-| E0-L7 | Study Tractus-X DPP Verification add-on | T2 harness run plan | M | — |
-| E0-DG | **Discovery gate** — 8–12 interviews | findings doc + payer/anchor decision | M–L | — |
-| E0-M1 | Build **CBAM ∩ steel-DPP overlap map** | field-to-field map approved | M | E0-L1, E0-L4, E0-L6 |
-| E0-DEC | Close decision gates **D1–D7** | each recorded with inputs→choice→rationale→rollback | S | E0-M1, E0-DG |
+| ID | Learning story | Acceptance | Parallel technical micro-output | Effort | Depends |
+|----|----------------|-----------|----------------------------------|--------|---------|
+| E0-HARNESS | Stand up conformance harness baseline + request EU DPP Registry **test-env** access | mock registry + spike host restart script; test-env account requested | runnable rig (mock registry + validator + TracePass) — **done-ish** | S | — |
+| E0-L1 | Study CBAM calculation rules (IR 2023/1773, 2025/2547/2546) → wedge spec | notes + takeaway in `research/regulations.md`; calc inputs listed | **calc input list** coded as a stub schema/F#/C# model (fixtures only) | M | — |
+| E0-L2 | Study EC Registry User Guide (Economic Operators) + test-env walkthrough | notes in `research/tools.md`/`regulations.md`; T1 target clarified | registry-client skeleton (OIDC + register call to **test env**) | M | E0-HARNESS |
+| E0-L4 | Study TracePass iron & steel field set | field inventory (in-force vs anticipated) → feeds C2 | TracePass steel schema **loaded and validated** against the fixture | M | — |
+| E0-L5 | Study GS1 Digital Link | carrier notes → feeds C6 | QR/URI resolver spike against GS1 Resolver | S | — |
+| E0-L6 | Study CEN/CENELEC DPP standards (acquire docs) | standard IDs + data-model implications; purchase recorded | JSON-LD passport **skeleton** (throwaway until CEN confirmed) | M | — |
+| E0-L7 | Study Tractus-X DPP Verification add-on | T2 harness run plan | harness wired into CI (dry run) | M | E0-HARNESS |
+| E0-DG | **Discovery gate** — 8–12 interviews | findings doc + payer/anchor decision | — (commercial) | M–L | — |
+| E0-M1 | Build **CBAM ∩ steel-DPP overlap map** | field-to-field map approved | mapping expressed as a **machine-readable table** (C2 seed) | M | E0-L1, E0-L4, E0-L6 |
+| E0-DEC | Close decision gates **D1–D7** | each recorded with inputs→choice→rationale→rollback | stack/library choice recorded (technical-landscape decisions) | S | E0-M1, E0-DG |
+
+> The technical-landscape decisions (stack, libraries, DB, CI) are **not a separate spike** —
+> they are the accumulated micro-outputs of L1–L7 + E0-HARNESS, closed at E0-DEC.
 
 ### E1 — Canonical Data Contract (C2)
 
@@ -121,13 +139,16 @@ Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d
 
 ---
 
-## 4. Sprint schedule
+## 5. Sprint schedule
+
+Each sprint carries **both tracks** (learning ∥ technical). Technical micro-outputs trail the
+learning by one step (§3 guardrail).
 
 | Sprint | Dates (2026–27) | Goal | Stories | Exit |
 |--------|-----------------|------|---------|------|
-| **S0** | 15–26 Sep 2026 | Learning opens + harness baseline | E0-HARNESS, E0-L1, E0-L4 (start) | CBAM spec notes; harness restart scripted |
-| **S1** | 29 Sep–10 Oct 2026 | Learning core + discovery | E0-L2, E0-L4 (finish), E0-L5, E0-DG (interviews start) | Field inventory; interviews underway |
-| **S2** | 13–24 Oct 2026 | **M1 gate** | E0-L6, E0-L7, E0-DG (finish), E0-M1, E0-DEC | **M1: overlap map approved; D1–D7 closed** |
+| **S0** | 15–26 Sep 2026 | Learning opens + harness baseline | E0-HARNESS, E0-L1 + **calc-input stub**, E0-L4 (start) | CBAM spec notes; rig runnable |
+| **S1** | 29 Sep–10 Oct 2026 | Learning core + discovery | E0-L2 + **registry-client skeleton (test env)**, E0-L4 (finish → **TracePass steel schema loaded**), E0-L5, E0-DG (start) | Field inventory; interviews underway |
+| **S2** | 13–24 Oct 2026 | **M1 gate** | E0-L6 + **JSON-LD skeleton**, E0-L7 + **CI harness**, E0-DG (finish), E0-M1 → **machine-readable overlap table**, E0-DEC | **M1: overlap map approved; D1–D7 closed** |
 | **S3** | 27 Oct–7 Nov 2026 | Data contract | E1-C2a, E1-C2b (start) | Canonical model v0.1 |
 | **S4** | 10–21 Nov 2026 | Data contract + ingestion | E1-C2b, E1-C2c, E2-C3 (start) | Overlap encoded; ingestion v0 |
 | **S5** | 24 Nov–5 Dec 2026 | Ingestion + harmonization | E2-C3 (finish), E2-C4, E2-VAL | Scaffolding validated; consultant briefed |
@@ -144,7 +165,7 @@ Parallel: E7-G1/G2/G3 run alongside S3–S10 (opportunistic, non-blocking).
 
 ---
 
-## 5. Traceability
+## 6. Traceability
 
 | Roadmap milestone | Epics | Sprints |
 |---|---|---|
@@ -155,7 +176,7 @@ Parallel: E7-G1/G2/G3 run alongside S3–S10 (opportunistic, non-blocking).
 
 ---
 
-## 6. Lean ceremonies
+## 7. Lean ceremonies
 
 - **Sprint planning** (15 min): pick stories, confirm sprint goal.
 - **Daily discipline:** one commit = one working increment; update compliance matrix + §5 status.
