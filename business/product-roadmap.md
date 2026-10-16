@@ -23,6 +23,10 @@ computation, lineage, harmonization, verification) that are defensible IP. **Mon
 day one through the in-force wedge legislation (CBAM for metals; unsold-textiles disclosure
 for textiles) whose data pipelines the DPP reuses — "sell the compliance need now, DPP later".**
 
+> **Funding posture (right-sized Sept 2026):** base plan ≈ **£1.0–1.25M** (SEIS pre-seed + EIS
+> seed); a Series A is **deferred/optional** (blue-sky, gated on traction) — see
+> `fundraise-plan.md` §2/§9. This roadmap is £-neutral; the phases below map onto that funding plan.
+
 ## 2. Top-level product map
 
 One core engine, multiple vertical modules ("build once, swap schemas").
@@ -205,13 +209,16 @@ Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 
 ## 4. Phases & milestones
 
 Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
+**Funding map** (right-sized, `fundraise-plan.md` §2): **SEIS £250k** funds P0–P1; **EIS seed
+£0.75–1.0M** funds P2 (and P3 start); P3 scale-out/P4 are **blue-sky** (deferred Series A).
 
-- **P0 — Foundation (Sep → late Oct 2026).** Complete `research/learning-roadmap.md` Phase
+- **P0 — Foundation (Sep → late Oct 2026).** *(pre-incorporation / sweat)* Complete
+  `research/learning-roadmap.md` Phase
   0–1
   (guided blocks L1–L7); verify Catena-X specifics; sandbox stood up (done Sept: CIRPASS-2
   env + S1 registry spike passed). *Exit = **M1** (late Oct):* wedge overlap map
   (CBAM ∩ steel DPP fields) approved; decision gates D1–D7 closed and recorded.
-- **P1 — Core engine MVP (CBAM-first) (Nov 2026 → Mar 2027).** Ingestion + harmonization
+- **P1 — Core engine MVP (CBAM-first) (Nov 2026 → Mar 2027).** *(SEIS-funded)* Ingestion + harmonization
   pipeline; **PCF / embedded-emissions engine built to serve CBAM (verified embedded
   emissions) first**, then extended to the steel/aluminium DPP fields; EDC + credential/
   verification core; passport generator + lineage store. **Cert Tier 1 (legal-function
@@ -222,7 +229,7 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
   proving the sell-twice engine. Includes the EO-owned URL namespace capability (stable
   redirect layer / customer domains) per the platform design principle. **M2 (~Jan 2027)**
   marks the CBAM engine sellable (first revenue point).
-- **P2 — Vertical 1 GTM (Steel & Aluminium) (Q2 2027 → 2028).** **Cert Tier 2 self-assurance**
+- **P2 — Vertical 1 GTM (Steel & Aluminium) (Q2 2027 → 2028).** *(EIS seed-funded)* **Cert Tier 2 self-assurance**
   completed and recorded in the compliance matrix; security baseline (TISAX/ISO 27001
   readiness); pilot customer. Two revenue streams: (a) **CBAM/emissions data service (from
   M2)**; (b) **EU Registry submission flow** live by the ~2028 obligation. **Cert Tier 3
@@ -231,12 +238,12 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
   without revealing the underlying recipe/energy mix, tested against one pilot-customer
   conversation → decision gate: adopt into P2.5 on pull, else defer to P4.
   *Exit:* paying pilot on the CBAM wedge with a DPP-ready path.
-- **P3 — Vertical 2 (Textiles) (2027 → 2029).** Textile module (fiber composition,
+- **P3 — Vertical 2 (Textiles) (2027 → 2029).** *(EIS seed-funded; scale-out = blue-sky)* Textile module (fiber composition,
   sustainability certs); multi-tenant; scale the harmonization layer. Wedge-in-first: extend
   to the textiles customer base via the **unsold-products disclosure duty (in force)** before
   the textiles DA (Q3–Q4 2027) and obligation ~2029. Footwear excluded from DPP (separate
   study) — watch item only (in scope for the disclosure duty now).
-- **P4 — Moat & scale (2029+).** Lifecycle services (repair/reuse/secondary-market),
+- **P4 — Moat & scale (2029+).** *(blue-sky / deferred Series A)* Lifecycle services (repair/reuse/secondary-market),
   self-serve vertical builder. **ZK here only as the amplifier it is** — adopted on the
   evidence of the P2 spike, never treated as the moat itself (the moat is the
   mass-balance/PCF + verification engine, live since M2/P2).
