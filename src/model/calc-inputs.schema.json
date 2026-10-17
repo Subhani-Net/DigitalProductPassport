@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dpp.local/schemas/calc-inputs.schema.json",
+  "title": "CBAM calculation inputs — throwaway stub (L1 micro-output)",
+  "description": "Minimal canonical shape for CBAM embedded-emissions inputs. NOT final — replaced by the C2 canonical model.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["installation", "reportingPeriod", "production", "sourceStreams", "electricity"],
+  "properties": {
+    "installation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "country", "productionRoute"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string" },
+        "country": { "type": "string", "pattern": "^[A-Z]{2}$" },
+        "unLocode": { "type": "string" },
+        "productionRoute": { "type": "string", "enum": ["BF-BOF", "EAF", "DRI"] },
+        "routeParameters": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "reportingPeriod": { "type": "integer", "minimum": 2026 },
+    "production": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["cnCode", "activityLevelTonnes"],
+      "properties": {
+        "cnCode": { "type": "string", "pattern": "^[0-9]{4,10}$" },
+        "activityLevelTonnes": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    },
+    "sourceStreams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "activityData", "unit"],
+        "properties": {
+          "name": { "type": "string" },
+          "activityData": { "type": "number", "minimum": 0 },
+          "unit": { "type": "string", "enum": ["t", "TJ", "Nm3", "MWh"] },
+          "ncvTJPerUnit": { "type": "number", "minimum": 0 },
+          "emissionFactorTCO2PerTJ": { "type": "number", "minimum": 0 },
+          "oxidationFactor": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "electricity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mwh", "emissionFactorTCO2PerMWh"],
+      "properties": {
+        "mwh": { "type": "number", "minimum": 0 },
+        "emissionFactorTCO2PerMWh": { "type": "number", "minimum": 0 },
+        "contractualFactor": { "type": "boolean" }
+      }
+    },
+    "precursors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "massTonnes", "seeTCO2PerTonne"],
+        "properties": {
+          "name": { "type": "string" },
+          "massTonnes": { "type": "number", "minimum": 0 },
+          "seeTCO2PerTonne": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "directTCO2": { "type": "number" },
+        "indirectTCO2": { "type": "number" },
+        "seeTCO2PerTonne": { "type": "number" },
+        "determination": { "type": "string", "enum": ["actual", "default"] }
+      }
+    }
+  }
+}

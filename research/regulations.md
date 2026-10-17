@@ -127,3 +127,26 @@ relevant to the EO-owned-URL-namespace design principle (`architecture.md`).
 > Source: terrnix.com / cbam-tools.com — CBAM definitive phase 2026 — article — Jun 2026
 > Source: European Commission (environment) — New EU rules to stop destruction of unsold clothes and shoes — gov — 9 Feb 2026
 > Source: EY Law BE — ESPR disclosure of unsold products — article — 7 Apr 2026
+
+## L1 — CBAM calculation rules (learning sign-off, Oct 2026)
+
+**Status:** signed off from CBAM 101 + 201 course material (conceptual + method), pending the
+definitive textual read in L1's primary acts. **Fact** (act structure).
+
+**Primary acts:** IR (EU) 2023/1773 Annex III/IV (transitional methodology) · IR (EU) 2025/2547
+(definitive calculation) · IR (EU) 2025/2546 (verification) · IR (EU) 2025/2621 (default values)
+· IR (EU) 2025/2620 (benchmarks).
+
+**Calc-input list (canonical, feeds C2):**
+- Installation identity: country, UN/LOCODE, production route + route-qualifying parameters.
+- Reporting period + production activity level (tonnes) + CN code.
+- Source streams: quantity, unit (t/TJ/Nm³/MWh), NCV, emission factor (tCO₂/TJ), oxidation factor.
+- Electricity: MWh + emission factor (grid or contractual PPA/GO), plus own-generation/heat.
+- Precursors: mass × SEE per covered input.
+- Result: direct tCO₂, indirect tCO₂, SEE tCO₂e/t, determination (actual vs default).
+
+**Micro-output:** `../src/model/calc-inputs.schema.json` (throwaway stub; real schema in C2).
+Deep method: `../learning/cbam-201/01-calculation-methodology.md`.
+
+> Source: EUR-Lex — Reg (EU) 2023/956 Annex IV; IR 2023/1773; IR 2025/2547/2546/2620/2621 — law
+> Source: learning/cbam-101 + cbam-201 (course synthesis) — internal
