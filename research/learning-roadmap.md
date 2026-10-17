@@ -64,7 +64,7 @@ composition) for textiles. Remember: data-space certification ≠ legal EU DPP c
 - **AAS (Asset Administration Shell):** how the open-dpp platform models a passport with AAS
   submodels vs a pure JSON-LD route (`tools.md`, `architecture.md`). Pick a mental model for
   each and note trade-offs.
-- **TracePass DPP Schemas:** explore all 12 categories; study the **343 fields in force vs 187
+- **TracePass DPP Schemas:** explore all 13 categories; study the **190 fields in force vs 214
   anticipated**; understand field provenance via CELEX citations and the unit registry
   (`tools.md`). This is your field-level compliance map.
 - **CEN/CENELEC DPP standard suite:** what the standards actually specify (data quality,

@@ -34,12 +34,13 @@ Details and intelligence:
 - **Transpareo Time Machine** — embeddable SPA that renders a passport as an interactive card
   with a **scrubbable timeline replaying every version of the passport** (data lineage UX)
   plus **client-side cryptographic authenticity verification**.
-- **TracePass DPP Schemas** — the concrete compliance map: **913 fields across 12 categories**
-  (battery, textile, electronics, construction, iron & steel, chemicals, packaging,
-  furniture, tyres, jewellery, toys, FMCG). Each field: data type, validation rules,
-  24 EU-language labels, and a citation to the governing instrument (34-entry CELEX registry
-  + unit registry). **343 fields required by instruments in force; 187 anticipated under a
-  named future instrument.** Also on npm as `@tracepass/dpp-schemas` (SLSA provenance).
+- **TracePass DPP Schemas** — the concrete compliance map: **1,004 fields across 13 categories**
+  (battery, textile, electronics, construction, steel incl. aluminium, detergents, packaging,
+  paints-coatings, furniture, tyres, jewellery, toys, FMCG). Each field: data type, validation
+  rules, 24 EU-language labels, and a citation to the governing instrument (CELEX registry +
+  unit registry). **190 fields required by instruments in force; 214 anticipated** under named
+  future instruments. Steel/aluminium template = **84 fields, 29 required** (v2). Also on npm as
+  `@tracepass/dpp-schemas` (SLSA provenance). Field inventory: `tracepass-steel-inventory.md`.
 - **THREAD** — open standard for textile supply-chain data exchange toward the DPP mandate;
   sector-specific readiness signal for textiles.
 - **OpenDPP Knowledge Bundle (OKF)** — the entire OpenDPP Integration API projected into
@@ -163,7 +164,7 @@ build our platform; we do NOT re-invent the given schemas/patterns.**
     renderer) — our T1 conformance harness (cloned).
   - `dpp-validator` — JSON Schema/SHACL DPP validation service.
 - **Schemas:** CEN/CENELEC DPP standards (six Jul 2026 + two Sept 2026 — normative, buy);
-  TracePass 913-field JSON schemas (open); registry metadata schema per implementing act.
+  TracePass 1,004-field field schemas (open, 13 categories); registry metadata schema per implementing act.
 - **Security patterns to copy (from mock registry):** OIDC role mapping (admin/eo/eu),
   JWKS-based proof verification, detached JWS integrity, eIDAS sealing as the future
   signature layer; EU Login (OIDC) for the real registry.
