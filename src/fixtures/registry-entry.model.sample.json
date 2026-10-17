@@ -1,0 +1,8 @@
+{
+  "upi": "urn:epc:id:sgtin:0614141.200001.000001",
+  "liveURL": "http://host.docker.internal:9090/dpp/hrc/000001.json",
+  "backupURL": "http://host.docker.internal:9090/dpp/hrc/000001.json",
+  "commodityCode": "72083900",
+  "facilitiesId": ["GLN-5412345000013"],
+  "granularityLevel": "MODEL"
+}
