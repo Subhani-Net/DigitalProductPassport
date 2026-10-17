@@ -87,10 +87,38 @@ mid-2027 (wedge), ~50–150 by 2028, then the DPP obligation converts the same b
 | High (enterprise) | multi-site + supplier network + zero-exposure attestation + DPP module + Registry submission + managed verifier hand-off | €30,000–60,000 | Minespider €34.5k; SAP higher |
 | Managed/service line (optional) | CleanCarbon-style hand-holding for exporters without capability | €2,000–5,000/client, €10k+ groups | CleanCarbon service model |
 
-## Revenue envelope (Estimate)
+## Revenue model — low / base / high (Estimate)
 
-- **Base case** (capital-efficient seed-scale SaaS): 30 Base clients by 2028 ≈ €300–450k ARR;
-  100 (Base+High mix) ≈ €1.2–1.8M ARR — the realistic P2/P3 scale-out before the textiles wave.
+**Consolidated single source of truth.** Core formula: `ARR = Σ (customers × ACV)` per tier.
+ACV comes from the Pricing table above; customer counts are bounded by the served-market estimate
+("tens → low hundreds" in years 1–3). All figures are **Estimates — validate at pilots**.
+
+### Scenario table
+
+| Scenario | ACV mix | Customers (steady state) | Resulting ARR | Credible by |
+|---|---|---|---|---|
+| **Low** — self-serve-dominant | ~€2k (€1–3k) | 50–150 | **€100–450k** | 2028 |
+| **Base** — wedge (our plan) | ~€11.5k (€8–15k) | 30 → 100 | **€0.30–0.45M (2028) → €1.2–1.8M** | 2028 |
+| **High** — enterprise-dominant | ~€45k (€30–60k) | 50–100 | **€1.5–6M** | 2029+ |
+| **Blue-sky** — venture | mixed + channel + textiles | 150–300 High-equivalent | **£10M+** | 2030+ |
+
+**Worked checks (arithmetic):**
+- Base: `30 × €11.5k ≈ €345k`; `100 × €12k ≈ €1.2M` (+ High mix → up to €1.8M).
+- High: `50 × €45k = €2.25M`; `100 × €45k = €4.5M` (→ €6M at €60k).
+- Low: `100 × €2k = €200k` (range €100–450k).
+
+### Trajectory on the base case
+
+| Period | Customers | Dominant tier | ARR |
+|---|---|---|---|
+| Mid-2027 (wedge) | 10–25 | Base | €80–375k |
+| End-2027 | 30+ | Base | €300–450k |
+| 2028 | up to 100 | Base + some High | €1.2–1.8M |
+| 2029+ (textiles) | scale | mixed | toward blue-sky |
+
+**Read:** **Low/Base** = the right-sized, capital-efficient seed-scale business (matches the
+~£1.0–1.25M raise in `../business/fundraise-plan.md` §2). **High** needs an enterprise/DPP mix.
+**Blue-sky** needs the textiles wave + channel and justifies the *deferred* Series A.
 
 ### Blue-sky expansion (optionality, not base case)
 
