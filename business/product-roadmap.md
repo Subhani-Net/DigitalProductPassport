@@ -87,6 +87,32 @@ Customer targets:
   C2–C4 scaffolding is validated, to detail schema, data capture, and calculation models for
   C5. We buy the knowledge, never the stamp (stamp = partner verifiers, locked).
 
+### Audit-readiness is core (confirmed Oct 2026)
+
+The "one-click audit room" thesis is **already our strategy**, not a new direction:
+- **Cryptographic provenance** → **C8** (dppHash chain, detached JWS; eIDAS seal later) + the
+  evidence pack (data-catalogue §G).
+- **Methodology validation** → **Layer-3 validation intelligence** (plausibility, actual-vs-default,
+  boundary checks) + **C7** self-assurance.
+- **Auditor read-only dashboard** → the **verifier as 3rd user class** (C7/C8) + the Present
+  dimension targeting verifiers (pain: audit speed/quality).
+- **Boundary:** we build the *audit room*, not the *verdict*. The verification stamp stays with
+  an accredited **partner verifier** (independence rule, locked).
+
+### Downstream-expansion engine (P3/P4 backlog — NOT MVP)
+
+Gemini's "downstream expansion" feature is a real, defensible differentiator — correctly
+sequenced **after** the intermediate metals wedge:
+- **Dynamic BOM carbon mapping** — multi-tier traversal (Tier-1 maps its Tier-2 inputs; roll-up).
+- **Process-step emission-factor engine** — stamping/milling/welding/coating + country grid mix.
+- **Scrap & yield tracking** — 30–50% machining scrap; embedded carbon of scrap; recycled
+  locally vs disposed.
+- **Why later:** near-term revenue is **intermediate** products (mill-level; steel DA Q4 2026,
+  first surrender Sep 2027). Downstream fabricated goods (fasteners, machined components) is
+  later, fragmented, and harder data. Win intermediates + audit-readiness first.
+- **Already present:** precursor pass-through (data-catalogue §D), mass-balance/by-products
+  (§B7/E4). **Gaps to add later:** BOM traversal, process-step EF DB, yield/recycling engine.
+
 ### Focus decision (verified against ESPR Working Plan, Sept 2026)
 
 - **Steel & Aluminium — validated as the first engine.** Iron & steel is the *first* ESPR
@@ -244,7 +270,8 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
   the textiles DA (Q3–Q4 2027) and obligation ~2029. Footwear excluded from DPP (separate
   study) — watch item only (in scope for the disclosure duty now).
 - **P4 — Moat & scale (2029+).** *(blue-sky / deferred Series A)* Lifecycle services (repair/reuse/secondary-market),
-  self-serve vertical builder. **ZK here only as the amplifier it is** — adopted on the
+  self-serve vertical builder, and the **downstream-expansion engine** (BOM traversal +
+  process-step emission factors + scrap/yield — §2 backlog). **ZK here only as the amplifier it is** — adopted on the
   evidence of the P2 spike, never treated as the moat itself (the moat is the
   mass-balance/PCF + verification engine, live since M2/P2).
 

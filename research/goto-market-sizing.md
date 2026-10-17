@@ -36,6 +36,11 @@ Market read for the CBAM → DPP platform (recorded Sep 2026). Tagging disciplin
   (engaged after the C2–C4 scaffolding is validated, to detail schema, data capture and
   calculation models). This is our differentiation vs plain-software competitors who have
   only layers 1–2.
+- **Interfaces & sides (decided Oct 2026).** Data collection = **both** — a supplier-facing
+  self-serve portal (long tail, stages S0/S1) **and** API/connectors into ERP/PLM/MES
+  (enterprise, S2/S3). Do not choose one. Target = **both sides + verifier**: EU importers
+  (declarants), non-EU suppliers/exporters (data origin), and accredited verifiers
+  (3rd user class). All three segments targeted until each has a presentable MVP.
 
 ## Market shaping (facts, Sep 2026)
 
