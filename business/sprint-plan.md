@@ -44,6 +44,7 @@ Anchor: **Sept 2026**. Sprints 0–2 = P0 (foundation/learning); Sprints 3+ = P1
 | **E5** | Self-Assurance & Trust | C7, C8 | T2 harness run recorded; versioned lineage + integrity |
 | **E6** | Sell-Twice Proof | C9 / M3 | One dataset → CBAM output + steel passport end-to-end |
 | **E7** | GTM Enablement (parallel) | P2 prep | Consultancy offer, pricing validated, partner-verifier MOU |
+| **E8** | **Present & Customer Conversations** (3rd dimension) | all milestones | Explainer ×3 segments, demo scripts, target list, signal log, pilot offer — **no milestone done without a Present artifact** |
 
 ---
 
@@ -61,6 +62,32 @@ frozen interface. Enforced by the `AGENTS.md` checklist + schema-as-data + fixtu
 **Why it's sound:** most technical tasks *are* documentation-driven, so learning and building
 feed each other; the risk (rework from unvalidated specs) is neutralised by keeping the trail
 one step behind and everything reversible via git.
+
+### 3.1 Milestone view — Learn ∥ Implement ∥ Present (appended Oct 2026)
+
+Purpose: eliminate **build-to-avoid** by making every milestone ship a customer-facing artifact.
+**No dates change** — these map onto the existing sprint windows.
+
+| Milestone | Learn | Implement | Present (per segment) | By (existing sprint) |
+|---|---|---|---|---|
+| **M-A — Conversation-ready** | 7-question checklist signed off (from 101/201) | harness + calc-stub + registry client *(done)* | **explainer ×3** (exporter/importer/verifier) + **15-name target list** (5/5/5) | S2 (24 Oct) |
+| **M-B — Demo v0** | actual-vs-default economics, verification | sample steel → **SEE calc** → actual-vs-default saving + evidence summary | **10-min demo script ×3** + one-pager | S3 (7 Nov) |
+| **M-C — Signal** | objections → FAQ | refine output from feedback | **5 conversations** (≥1 per segment) + signal log | S4 (21 Nov) |
+| **M-D — Demo v1 (sell-twice)** | DPP fields + registry | + JSON-LD passport, host, registry metadata/proof | demo v1 → **pilot offer** | S5–S6 (19 Dec) |
+| **M-E — Pilot** | real-data quirks | harden ingestion | **paid pilot / LOI / case study** | S7+ (aligns M2) |
+
+### 3.2 Present gate rule + operating rules
+
+- **Gate:** a milestone is *not done* without its Present artifact; from **M-C**, the planned
+  conversations must actually have happened.
+- **Signal rubric:** **Strong** = asks price / trial / introduces a colleague / shares real data ·
+  **Medium** = detailed questions, compares to current tool · **Weak** = polite interest, no follow-up.
+- **Solution-led, not probing** — three pain hypotheses:
+  - **Exporter:** "so EU importers use your verified actuals instead of penalising defaults — win/retain buyers."
+  - **Importer:** "declaration-ready, verifier-ready data → lower certificate cost + audit risk."
+  - **Verifier:** "evidence dossiers + recalculation → faster, more reliable audits."
+- **All three segments** are targeted until there is a presentable MVP for each.
+- **Detail + scripts:** `presentation-plan.md`. **File map:** `../INDEX.md`.
 
 ## 4. Story backlog
 
@@ -137,6 +164,20 @@ Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d
 | E7-G2 | Pricing validation (L/B/H against 3–5 prospects) | pricing confirmed/adjusted | S | E0-DG |
 | E7-G3 | Partner accredited verifier MOU (TÜV-SÜD-type / India-reach) | signed MOU or letter of intent | M | E0-DG |
 
+### E8 — Present & Customer Conversations (3rd dimension, mandatory)
+
+| ID | Story | Acceptance | Effort | Depends |
+|----|-------|-----------|--------|---------|
+| E8-P1 | **Exporter explainer** (1 page) | verified actuals → avoid defaults, win/retain EU buyers; no jargon | S | E0-L1 |
+| E8-P2 | **Importer explainer** (1 page) | declaration-ready + verifier-ready → lower certificates + audit risk | S | E0-L1 |
+| E8-P3 | **Verifier explainer** (1 page) | evidence dossiers + recalculation → faster, reliable audits | S | E0-L1 |
+| E8-P4 | **Target list** — 15 names (5 exporter / 5 importer / 5 verifier) | name + contact route + why-fit | S | — |
+| E8-P5 | **Demo v0 script ×3 + one-pager** (10 min) | script per segment + one-pager; runs on sample data | M | E8-P1..P3, E3-C5 |
+| E8-P6 | **Signal-log template** | segment, ask, signal strength, next step, date | S | — |
+| E8-P7 | **Objection FAQ** | top 10 objections + answers | S | E8-P5 |
+| E8-P8 | **Demo v1 (sell-twice) script + pilot-offer one-pager** | script + offer (€8–15k pilot) | M | E4-C6 |
+| E8-P9 | **Case-study template** | one-page template for the first pilot | S | E8-P8 |
+
 ---
 
 ## 5. Sprint schedule
@@ -144,24 +185,25 @@ Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d
 Each sprint carries **both tracks** (learning ∥ technical). Technical micro-outputs trail the
 learning by one step (§3 guardrail).
 
-| Sprint | Dates (2026–27) | Goal | Stories | Exit |
-|--------|-----------------|------|---------|------|
-| **S0** | 15–26 Sep 2026 | Learning opens + harness baseline | E0-HARNESS, E0-L1 + **calc-input stub**, E0-L4 (start) | CBAM spec notes; rig runnable |
-| **S1** | 29 Sep–10 Oct 2026 | Learning core + discovery | E0-L2 + **registry-client skeleton (test env)**, E0-L4 (finish → **TracePass steel schema loaded**), E0-L5, E0-DG (start) | Field inventory; interviews underway |
-| **S2** | 13–24 Oct 2026 | **M1 gate** | E0-L6 + **JSON-LD skeleton**, E0-L7 + **CI harness**, E0-DG (finish), E0-M1 → **machine-readable overlap table**, E0-DEC | **M1: overlap map approved; D1–D7 closed** |
-| **S3** | 27 Oct–7 Nov 2026 | Data contract | E1-C2a, E1-C2b (start) | Canonical model v0.1 |
-| **S4** | 10–21 Nov 2026 | Data contract + ingestion | E1-C2b, E1-C2c, E2-C3 (start) | Overlap encoded; ingestion v0 |
-| **S5** | 24 Nov–5 Dec 2026 | Ingestion + harmonization | E2-C3 (finish), E2-C4, E2-VAL | Scaffolding validated; consultant briefed |
-| **S6** | 8–19 Dec 2026 | Engage consultant + engine design | consultant engaged; E3-C5a (start) | Calc model drafted |
-| **—** | 20 Dec–4 Jan | Holiday buffer | — | — |
-| **S7** | 5–16 Jan 2027 | CBAM engine core | E3-C5a (finish) | Test vectors pass |
-| **S8** | 19–30 Jan 2027 | **M2** (first sellable) | E3-C5b, E3-C5c | **M2: CBAM engine sellable** |
-| **S9** | 2–13 Feb 2027 | Passport + host | E4-C6a, E4-C6b | Passport JSON-LD; host live |
-| **S10** | 16–27 Feb 2027 | Registry integration | E4-C6c, E5-C7 (start) | T1 round-trip passed |
-| **S11** | 2–13 Mar 2027 | Trust + assurance | E5-C7 (finish), E5-C8 | T2 run recorded; lineage works |
-| **S12** | 16–27 Mar 2027 | **M3** (P1 exit) | E6-C9 | **M3: sell-twice proof** |
+| Sprint | Dates (2026–27) | Goal (Learn/Implement) | Stories | Present (gate) | Exit |
+|--------|-----------------|------------------------|---------|----------------|------|
+| **S0** | 15–26 Sep 2026 | Learning opens + harness baseline | E0-HARNESS, E0-L1 + calc-input stub, E0-L4 (start) | — | CBAM spec notes; rig runnable |
+| **S1** | 29 Sep–10 Oct 2026 | Learning core | E0-L2 + registry-client skeleton, E0-L4 (finish), E0-L5 | — | Field inventory |
+| **S2** | 13–24 Oct 2026 | **M1 gate** | E0-L6 + JSON-LD skeleton, E0-L7 + CI harness, E0-M1, E0-DEC *(E0-DG discovery deferred)* | **M-A: explainers ×3 + 15-name target list** | **M1: overlap map; D1–D7 closed** |
+| **S3** | 27 Oct–7 Nov 2026 | Data contract | E1-C2a, E1-C2b (start) | **M-B: demo-v0 script ×3 + one-pager** | Canonical model v0.1 |
+| **S4** | 10–21 Nov 2026 | Data contract + ingestion | E1-C2b, E1-C2c, E2-C3 (start) | **M-C: 5 conversations (mixed) + signal log** | Overlap encoded; ingestion v0 |
+| **S5** | 24 Nov–5 Dec 2026 | Ingestion + harmonization | E2-C3 (finish), E2-C4, E2-VAL | objection FAQ | Scaffolding validated |
+| **S6** | 8–19 Dec 2026 | Consultant + engine design | consultant engaged; E3-C5a (start) | **M-D: demo v1 + pilot offer** | Calc model drafted |
+| **—** | 20 Dec–4 Jan | Holiday buffer | — | — | — |
+| **S7** | 5–16 Jan 2027 | CBAM engine core | E3-C5a (finish) | **M-E: pilot conversations begin** | Test vectors pass |
+| **S8** | 19–30 Jan 2027 | **M2** (first sellable) | E3-C5b, E3-C5c | pilot feedback loop | **M2: CBAM engine sellable** |
+| **S9** | 2–13 Feb 2027 | Passport + host | E4-C6a, E4-C6b | demo-v1 walkthroughs | Passport JSON-LD; host live |
+| **S10** | 16–27 Feb 2027 | Registry integration | E4-C6c, E5-C7 (start) | pilot-candidate shortlist | T1 round-trip passed |
+| **S11** | 2–13 Mar 2027 | Trust + assurance | E5-C7 (finish), E5-C8 | pilot offer issued | T2 run recorded; lineage works |
+| **S12** | 16–27 Mar 2027 | **M3** (P1 exit) | E6-C9 | sell-twice demo to pilot | **M3: sell-twice proof** |
 
-Parallel: E7-G1/G2/G3 run alongside S3–S10 (opportunistic, non-blocking).
+Parallel: E7-G1/G2/G3 (GTM) and E8 (Present) run alongside S2–S12. **All three segments**
+(exporter/importer/verifier) are targeted until each has a presentable MVP.
 
 ---
 

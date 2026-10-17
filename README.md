@@ -44,9 +44,10 @@ Every entry ends with a source line:
 | File | Contents |
 |------|----------|
 | `README.md` | This index (Map of Content) |
+| `INDEX.md` | **Artifacts by dimension** (Learn · Implement/Product · Present) — product boundary |
 | `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
-| `terminology.md` | Shortcut legend: P/M/L/C/S/D/T keys, other recurring terms |
+| `terminology.md` | Shortcut legend: P/M/L/C/S/D/T/E keys, other recurring terms |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 
 ### `business/` — business track
@@ -54,9 +55,10 @@ Every entry ends with a source line:
 |------|----------|
 | `business/product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
 | `business/project-gantt.md` | Gantt project plan (derived from roadmap §5) |
-| `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, DoD |
+| `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, 3-dimension milestone view |
+| `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
-| `business/fundraise-plan.md` | Fundraise plan (SEIS/EIS), costing |
+| `business/fundraise-plan.md.enc` | Encrypted fundraise plan (plaintext kept local-only) |
 | `business/README.md` | Org-setup + business-planning activity tracker |
 
 ### Competitive research

@@ -25,6 +25,12 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
   classes (supplier, importer, verifier); SNARK/zero-exposure = target trust layer gated
   by the P2 ZK spike; verification stamp = **partner verifiers only** (arm's-length own
   entity = keep-open option gated on volume).
+- **S0 progress (Oct 2026):** E0-HARNESS up (8 services healthy + spike host); **L1 signed
+  off** + calc-input stub; **C#/.NET registry client** round-trip (T1-REG-002); **TracePass
+  steel inventory** (84 fields / 29 required).
+- **Operating model (Oct 2026):** 3 dimensions — **Learn ∥ Implement ∥ Present**. A present
+  gate is mandatory at every milestone; **all three segments** (exporter/importer/verifier)
+  are targeted. Artifact map: `INDEX.md`. Present detail: `business/presentation-plan.md`.
 
 ## Decisions locked (don't re-litigate without new evidence)
 
@@ -75,24 +81,19 @@ scratch/ (gitignored): spike-host (python static DPP host, port 9090)
   `b4e2bb1` (catalogue), `66d397a` (input sources), `bba4992` (EC-provided vs build)…
 - S1 spike evidence: compliance-matrix row `T1-REG-001` (registryId `e3eb36a2-…`).
 
-## Work queue (next session, in order)
+## Work queue (next session, in order) — 3-dimension milestone view
 
-1. **L1** — CBAM calculation rules walkthrough: IR (EU) 2023/1773 Annex III/IV +
-   IR 2025/2547 (definitive calc) + IR 2025/2546 verification (reading list in
-   `research/sources.md`). Record notes → `research/regulations.md`/compliance targets.
-2. **L2** — EC DPP Registry User Guide for Economic Operators + **register for the EU DPP
-   Registry TESTING environment** (`https://registry.acc.product-passport.ec.europa.eu`,
-   separate EU Login; helpdesk EC-HELPDESK-DPP@ec.europa.eu).
-3. **L4** — TracePass iron & steel fields (cloned: `reference/tracepass-dpp-schemas`).
-4. **L5** GS1 Digital Link · **L6** CEN/CENELEC DPP standards (buy docs) · **L7** Tractus-X
-   DPP Verification add-on.
-5. **M1 gate (late Oct):** wedge overlap map (CBAM ∩ steel DPP fields); close D1–D7 with
-   recorded notes; update roadmap §5 + gantt statuses.
-6. **P1 (Nov 2026 → Mar 2027):** C2 data contract (keystone, schemas-as-data) → C3
-   ingestion + C4 harmonization → **validate scaffolding → engage domain consultant** →
-   C5 CBAM engine (**M2 ~Jan 2027**, first sellable) → C6 passport + DPP host + registry
-   submit (T1) → C7 T2 run → C8 lineage/integrity → C9 sell-twice proof (**M3 ~Mar 2027**).
-   Each chunk: T1 conformance + fixture regression, compliance-matrix row.
+1. **M-A — Conversation-ready (by S2, 24 Oct):** draft **explainers ×3**
+   (exporter/importer/verifier) + **15-name target list** (`business/presentation-plan.md`);
+   close **M1** (overlap map + D1–D7). *Discovery interviews deferred/superseded by the
+   solution-led M-C conversations.*
+2. **M-B — Demo v0 (by S3, 7 Nov):** C2 thin data contract → sample steel → **C5 SEE calc** →
+   actual-vs-default saving + evidence summary; demo script ×3 + one-pager.
+3. **M-C — Signal (by S4, 21 Nov):** **5 mixed conversations** + signal log; objection FAQ.
+4. **M-D — Demo v1 (S5–S6):** + JSON-LD passport/host/registry; demo-v1 script + pilot offer.
+5. **M-E — Pilot (S7+, aligns M2):** pilot conversations; harden ingestion; LOI/case study.
+6. **Ongoing:** L2 (EC DPP Registry **test-env access** — user action), L5, L7; each chunk
+   T1 conformance + fixture regression + compliance-matrix row.
 
 ## Rules of engagement (from AGENTS.md)
 
