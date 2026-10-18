@@ -18,8 +18,8 @@ Executable mirror: `../tests/DppCore.Tests/Features/roles/*.feature` (Gherkin, m
 |---|---|---|---|
 | 1.1 | Authorisation | apply with EORI → NCA decision ≤120 days · rejected application | stub |
 | 1.2 | Retrieve supplier data | link supplier via EORI · retrieve verified embedded emissions · **fall back to defaults when no verified data** | stub |
-| 1.3 | Assemble annual declaration | assemble from verified actuals · assemble from defaults · flag missing/incomplete data | stub |
-| 1.4 | Settle certificates | surrender certificates · deduct foreign carbon price · quarterly minimum holding | stub |
+| 1.3 | Assemble annual declaration | assemble from verified actuals · assemble from defaults · flag missing/incomplete data | **runnable** (core) |
+| 1.4 | Settle certificates | surrender certificates · deduct foreign carbon price · quarterly minimum holding | **runnable** (core) |
 | 1.5 | Audit room | share a read-only evidence room (drill-down to source docs) with the verifier | stub |
 
 **Questions (→ later):** exact NCA status workflow; default-value catalogue integration (IR 2025/2621).
@@ -87,7 +87,8 @@ Executable mirror: `../tests/DppCore.Tests/Features/roles/*.feature` (Gherkin, m
 ## What is already runnable vs stubbed
 
 - **Runnable (green):** CBAM calculation (`cbam-calculation.feature`), DPP registry
-  connectivity/authorization/registration (`registry-*.feature`).
+  connectivity/authorization/registration (`registry-*.feature`), **importer declaration &
+  settlement** (`cbam-importer-declaration.feature` → `DppCore/CbamDeclaration.cs`).
 - **Stubbed (`@ignore`):** all role outcomes above (`roles/*.feature`) — promoted sprint by sprint.
 
 ## How this maps to the build
