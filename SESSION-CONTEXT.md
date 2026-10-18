@@ -32,6 +32,17 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
   gate is mandatory at every milestone; **all three segments** (exporter/importer/verifier)
   are targeted. Artifact map: `INDEX.md`. Present detail: `business/presentation-plan.md`.
 
+## Current focus (Oct 2026) — OUTREACH & INVESTORS (spec frozen, build in parallel)
+
+- **Primary:** search + contact **small/medium Indian exporter SMEs** (via EEPC India, FIEO,
+  IndiaMART, DGFT duty-drawback, CBAM-webinar lists) using `business/outreach/`.
+- **Parallel:** court **investors** (deck/pitch in `business/investor/`).
+- **On signal:** run a **concierge pilot** (manual SEE + evidence + saving in ~2 weeks) —
+  `business/outreach/trial-playbook.md`.
+- **In the background (1 day/week):** build the **M2 slice** (capture + SEE calc) so the demo
+  is real; spec is **frozen** (deep enough) — add only when a conversation reveals a gap.
+- **Consultant:** engage post C2–C4 (after demand is validated), NOT before.
+
 ## Decisions locked (don't re-litigate without new evidence)
 
 1. CBAM wedge first; steel & aluminium engine (~80% shared); textiles = scale play; footwear out.
