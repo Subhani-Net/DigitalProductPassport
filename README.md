@@ -48,6 +48,7 @@ Every entry ends with a source line:
 | `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
 | `AGENTS.md` | Working principles & constraints (assessed for every action) |
 | `terminology.md` | Shortcut legend: P/M/L/C/S/D/T/E keys, other recurring terms |
+| `workitems/README.md` | **Jira-style work-item register** (status, what was done, commit links) |
 | `compliance-matrix.md` | Self-certification evidence (Tier 2) |
 
 ### `business/` — business track
@@ -56,6 +57,8 @@ Every entry ends with a source line:
 | `business/product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
 | `business/project-gantt.md` | Gantt project plan (derived from roadmap §5) |
 | `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, 3-dimension milestone view |
+| `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
+| `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
 | `business/fundraise-plan.md.enc` | Encrypted fundraise plan (plaintext kept local-only) |
@@ -82,6 +85,11 @@ Every entry ends with a source line:
 |------|----------|
 | `research/regulations.md` | EU laws, deadlines, obligations |
 | `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/verifiers) + design implications |
+| `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
+| `research/data-inputs-reference.md` | **Field-level: what gets submitted to the authority** (CBAM O3CI/AMM + DPP) |
+| `research/cbam-input-sources.md` | Static/dynamic/real-time CBAM data sources |
+| `research/tracepass-steel-fields-table.md` | **Full TracePass steel/aluminium field table** (84 fields, English) |
+| `research/tracepass-steel-inventory.md` | Required fields + CBAM ∩ DPP overlap seed |
 | `research/goto-market-sizing.md` | Business model, segments, sizing, pricing L/B/H |
 | `research/cbam-verifier-accreditation.md` | Verifier-agency Operations SME path + self-study syllabus |
 | `research/standards.md` | CEN/CENELEC, schemas, data models |

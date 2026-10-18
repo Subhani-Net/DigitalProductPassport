@@ -1,6 +1,5 @@
-﻿using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
+﻿using System.Text.Json;
+using DppCore;
 
 const string DefaultRegistry = "http://localhost:8082";
 const string DefaultToken = "http://localhost:8180/realms/cirpass-2/protocol/openid-connect/token";
@@ -23,34 +22,24 @@ if (!File.Exists(entryFile))
 }
 
 using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(30) };
+var client = new RegistryClient(http);
 
-// 1) OIDC client-credentials token
-var form = new Dictionary<string, string>
+string token;
+try
 {
-    ["client_id"] = clientId!,
-    ["client_secret"] = clientSecret!,
-    ["grant_type"] = "client_credentials"
-};
-using var tokenResp = await http.PostAsync(tokenUrl, new FormUrlEncodedContent(form));
-var tokenBody = await tokenResp.Content.ReadAsStringAsync();
-if (!tokenResp.IsSuccessStatusCode)
+    token = await client.GetTokenAsync(tokenUrl, clientId!, clientSecret!);
+}
+catch (Exception ex)
 {
-    Console.Error.WriteLine($"Token failed: {(int)tokenResp.StatusCode} {tokenResp.StatusCode}\n{tokenBody}");
+    Console.Error.WriteLine($"Token failed: {ex.Message}");
     return 1;
 }
-using var tokenDoc = JsonDocument.Parse(tokenBody);
-var token = tokenDoc.RootElement.GetProperty("access_token").GetString()!;
 Console.WriteLine("Token obtained.");
-http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-// 2) Register DPP metadata
 var payload = await File.ReadAllTextAsync(entryFile);
-using var content = new StringContent(payload, Encoding.UTF8, "application/json");
-var regUrl = $"{registryUrl.TrimEnd('/')}/metadata/v1/registerDPP";
-using var regResp = await http.PostAsync(regUrl, content);
-var regBody = await regResp.Content.ReadAsStringAsync();
-Console.WriteLine($"Register: {(int)regResp.StatusCode} {regResp.StatusCode}");
-if (!regResp.IsSuccessStatusCode)
+var (regStatus, regBody) = await client.RegisterAsync(registryUrl, payload, token);
+Console.WriteLine($"Register: {regStatus}");
+if (regStatus is < 200 or >= 300)
 {
     Console.Error.WriteLine(regBody);
     return 1;
@@ -62,10 +51,7 @@ Console.WriteLine($"registryId: {registryId}");
 if (regDoc.RootElement.TryGetProperty("dppHash", out var dppHash)) Console.WriteLine($"dppHash: {dppHash}");
 if (regDoc.RootElement.TryGetProperty("contentType", out var ctype)) Console.WriteLine($"contentType: {ctype}");
 
-// 3) Proof of registration
-var proofUrl = $"{registryUrl.TrimEnd('/')}/metadata/v1/{registryId}/proof";
-using var proofResp = await http.GetAsync(proofUrl);
-var proof = await proofResp.Content.ReadAsStringAsync();
-Console.WriteLine($"Proof: {(int)proofResp.StatusCode} {proofResp.StatusCode}");
+var (proofStatus, proof) = await client.GetProofAsync(registryUrl, registryId, token);
+Console.WriteLine($"Proof: {proofStatus}");
 Console.WriteLine(proof);
 return 0;

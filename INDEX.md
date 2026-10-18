@@ -46,8 +46,10 @@ separate the product from the work around it.
 | `research/regulations.md` | EU laws, CBAM/ESPR timeline, L1 sign-off |
 | `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/DRMC) |
 | `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
+| `research/data-inputs-reference.md` | **What gets submitted to the authority** — field-level (CBAM O3CI/AMM + DPP metadata) |
 | `research/cbam-input-sources.md` | Static/dynamic/real-time data sources |
-| `research/tracepass-steel-inventory.md` | TracePass steel: 84 fields / 29 required |
+| `research/tracepass-steel-inventory.md` | TracePass steel: 84 fields / 29 required (required subset + CBAM overlap) |
+| `research/tracepass-steel-fields-table.md` | **Full 84-field steel/aluminium table** (English descriptions) |
 | `research/standards.md` | CEN/CENELEC, schemas, certification |
 | `research/architecture.md` | DPP technical architecture (3-layer) |
 | `research/learning-roadmap.md` | Learning plan |
@@ -70,6 +72,8 @@ separate the product from the work around it.
 |---|---|
 | `business/product-roadmap.md` | Product map, phases, funding pointer, risks |
 | `business/sprint-plan.md` | Epics, stories, sprints, **3-dimension milestone view** |
+| `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
+| `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
 | `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
 | `business/project-gantt.md` | Dated task view (roadmap §5) |
 | `business/fundraise-plan.md.enc` | Encrypted funding plan (plaintext local-only) |
@@ -92,6 +96,7 @@ separate the product from the work around it.
 | `README.md` | Project index / map of content |
 | `INDEX.md` | This file — 3-dimension artifact index |
 | `compliance-matrix.md` | T1/T2 conformance evidence (product evidence) |
+| `workitems/README.md` | **Jira-style work-item register** — status, notes, artifacts, commit links |
 | `.gitignore` / `.gitattributes` | Repo hygiene |
 
 ## 5. EXTERNAL (gitignored, not ours)
