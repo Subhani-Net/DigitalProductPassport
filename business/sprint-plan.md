@@ -96,7 +96,7 @@ items `G01–G10` in `../workitems/README.md`.
 
 | Gap | Action | Sprint |
 |---|---|---|
-| G09 non-goals | lock batteries/fertilisers/cement/hydrogen/downstream as non-goals | S2 (now) |
+| G09 non-goals | ✅ done — trivial (already implicit: metals-first) | — |
 | G02 cold-start | decide **exporter-first** onboarding order + invite mechanics | S2 (M1/D-gate) |
 | G01 activation | spec the first-value path (sign-up → upload → auto-map → SEE → saving) | S3–S4 |
 | G03 platform ops | spec tenancy + billing tiers + deadline reminders (minimal) | S4–S5 |

@@ -114,10 +114,10 @@ Master index of every work item, grouped by sprint, with **status**, **what was 
 | G06 | Security/compliance posture (TISAX/ISO 27001 as features) | Medium | Spec | ⬜ | Phase 1 posture → P2 cert |
 | G07 | Data lifecycle (retention, deletion, schema migration) | Medium | Spec | ⬜ | Phase 2 |
 | G08 | Production readiness (async jobs, retries, deployment, residency) | Medium | Spec + build | ⬜ | Phase 1–2 |
-| G09 | Explicit non-goals (batteries, fertilisers, cement, hydrogen, downstream) | High | Decision (lock) | ⬜ | now |
+| G09 | Explicit non-goals (batteries, fertilisers, cement, hydrogen, downstream) | High | Decision (lock) | ✅ (trivial — already implicit: metals-first) | done |
 | G10 | Market validation (willingness-to-pay / payer / verifier) | **Critical** | Validate | ⬜ | solution-led demo path |
 
-**Order to close:** G09 (lock non-goals, free) → G02 (cold-start decision) → G01 (activation spec) →
+**Order to close:** G09 (done) → G02 (cold-start decision) → G01 (activation spec) →
 G03 (ops minimal) → G04 (compliance watch) → G05–G08 (phase 2–3) → G10 (continuous via demos).
 
 ---
