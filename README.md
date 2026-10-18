@@ -63,6 +63,7 @@ Every entry ends with a source line:
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
 | `business/product-gaps.md` | **Gaps & uncovered scope** (activation, cold-start, ops, compliance, engine long tail) |
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
+| `business/outreach/` | **Outreach pack**: target list, exporter one-pager, cold scripts, trial playbook |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
 | `business/investor/` | **Investor pack**: `investor-deck.md` · `pitch.md` · `business-plan.md` · `investment-plan.md.enc` |
 | `business/README.md` | Org-setup + business-planning activity tracker |

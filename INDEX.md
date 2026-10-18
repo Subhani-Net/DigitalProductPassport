@@ -79,6 +79,7 @@ separate the product from the work around it.
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
 | `business/product-gaps.md` | **Gaps & uncovered scope** — activation, cold-start, ops, our own compliance, engine long tail, non-goals |
 | `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
+| `business/outreach/` | **Outreach pack**: target list, exporter one-pager, scripts, trial playbook |
 | `business/project-gantt.md` | Dated task view (roadmap §5) |
 | `business/investor/` | **Investor pack**: deck · pitch · business plan · investment plan (encrypted) |
 | `business/README.md` | Business-track activity tracker |

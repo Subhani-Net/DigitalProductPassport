@@ -75,3 +75,5 @@ next step · notes.
 - All three segments targeted; the first round is **5 conversations (mixed)** (M-C).
 - Present gate: no milestone "done" without the artifact.
 - Artifacts live here; progress tracked in this file + the sprint plan.
+- **Outreach materials now live in `outreach/`** (target list, exporter one-pager, cold scripts,
+  trial playbook) — see `outreach/README.md`.
