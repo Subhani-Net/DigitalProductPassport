@@ -7,6 +7,7 @@ tagged by phase (`@p1`/`@p2`/`@p3`) and `@ignore @stub` until built.
 | Pillar | Feature | Scenarios | Phase coverage |
 |---|---|---|---|
 | 1. Capture | `pillar-1-capture.feature` | 8 | p1×4 · p2×2 · p3×2 |
+| 1b. Adapter seam | `connector-abstraction.feature` | 5 | p1×3 · p2×1 · p3×1 |
 | 2. Validation intelligence | `pillar-2-validation.feature` | 12 | p1×5 · p2×3 · p3×3 |
 | 3. Audit room | `pillar-3-audit-room.feature` | 6 | p1×2 · p2×2 · p3×2 |
 | 4. Trust & hand-off | `pillar-4-trust.feature` | 7 | p1×3 · p2×1 · p3×2 |

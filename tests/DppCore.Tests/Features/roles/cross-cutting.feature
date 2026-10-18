@@ -26,3 +26,21 @@ Feature: CBAM cross-cutting data rules
     Given the same installation data is calculated twice
     When the calculation is repeated
     Then the embedded emissions result is identical
+
+  @ignore @stub
+  Scenario: A payload is read by its schema version
+    Given a payload produced against an older schema version
+    When the platform ingests it
+    Then it is read using its schema version and validated accordingly
+
+  @ignore @stub
+  Scenario: Ingestion is idempotent
+    Given the same installation data is ingested twice
+    When the second ingest runs
+    Then no duplicate record is created
+
+  @ignore @stub
+  Scenario: Data is bound to its identifiers
+    Given an installation with UN/LOCODE, LEI, EORI and mill ID
+    When the data is stored
+    Then it is bound to those identifiers

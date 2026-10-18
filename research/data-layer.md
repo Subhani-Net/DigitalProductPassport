@@ -145,6 +145,21 @@ one transform, two consumers.
 - Whether to store raw + derived (audit trail) or derived only.
 - Column auto-mapping + unit auto-detection as the "streamlined capture" differentiator.
 
+---
+
+## 6. The JSON seam & control guarantees (locked Oct 2026)
+
+- **JSON is the canonical seam.** Every external source is converted by an **adapter/plugin →
+  JSON** at the boundary; the core works only on JSON. New formats = new adapters.
+- **At JSON-in we control everything downstream** — but "control" requires these guarantees,
+  not just a shape (full detail: `../business/system-intricacies.md` §1):
+  1. **Schema versioning** — every payload carries `schemaVersion`; schemas-as-data.
+  2. **Provenance** — raw + derived stored; derived hashes link back to source.
+  3. **Determinism / idempotency** — pure functions; idempotency key = installation + period + schemaVersion.
+  4. **Identity binding** — UN/LOCODE + LEI/EORI + mill ID + CN code.
+  5. **Role & confidentiality** — supplier/importer/verifier scopes; zero-exposure hand-off.
+  6. **Security** — TLS, secrets out of repo, detached-JWS/eIDAS on submission.
+
 > Sources: `cbam-data-catalogue.md`, `cbam-input-sources.md`, `data-inputs-reference.md`,
 > `tools.md` (mock registry schema). All anchored to EUR-Lex / DG TAXUD; numbers tagged
 > [verify] where secondary.

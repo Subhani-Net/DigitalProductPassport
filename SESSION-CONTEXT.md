@@ -44,6 +44,15 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 5. GTM anchored on in-force wedges (CBAM definitive; textiles disclosure duty), not on DPP
    indicative dates; schemas-as-data everywhere.
 6. C#/.NET default for the core (no blockers found); reference-only use of AGPL open-dpp.
+7. **JSON = canonical seam (locked Oct 2026).** Adapters/plugins convert every external source
+   → JSON; the core works only on JSON. Six guarantees: schema-versioning, provenance,
+   determinism/idempotency, identity binding, role/confidentiality, security — see
+   `business/system-intricacies.md`.
+8. **Product = 4 friction pillars** (Capture, Validation intelligence, Audit room, Trust) built
+   in phases on a commodity calc/canonical substrate; competitors' offerings are building blocks
+   (adopt, not rebuild) — see `business/product-spec.md` §0 + `competition/friction-gap-analysis.md`.
+9. **Spec-first development:** Gherkin scenarios are the executable product spec; `@ignore @stub`
+   until implemented. Runnable so far: calc, registry, importer-declaration.
 
 ## File map
 
