@@ -5,8 +5,9 @@ Specification by Example. Companion to `specification-by-example.md` (the method
 `sprint-plan.md` (the schedule). This is the document to *understand the product* before
 implementation detail.
 
-Executable mirror: `../tests/DppCore.Tests/Features/roles/*.feature` (Gherkin, mostly
-`@ignore @stub` until built).
+Executable mirror: `../tests/DppCore.Tests/Features/pillars/*.feature` (the 4 pillars,
+capability lens) and `../tests/DppCore.Tests/Features/roles/*.feature` (customer-outcome lens),
+mostly `@ignore @stub` until built.
 
 ---
 

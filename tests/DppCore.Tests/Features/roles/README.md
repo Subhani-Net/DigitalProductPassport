@@ -2,6 +2,7 @@
 
 > The full **product specification** (outcomes → rules → scenarios) is in
 > `../../../business/product-spec.md`. These feature files are its executable mirror.
+> **Capability (pillar) view:** `../pillars/README.md`.
 
 Two different role models are at play; do not conflate them.
 
