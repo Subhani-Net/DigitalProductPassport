@@ -53,6 +53,11 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
    (adopt, not rebuild) — see `business/product-spec.md` §0 + `competition/friction-gap-analysis.md`.
 9. **Spec-first development:** Gherkin scenarios are the executable product spec; `@ignore @stub`
    until implemented. Runnable so far: calc, registry, importer-declaration.
+10. **Cold-start (G02, locked Oct 2026): exporter-first wedge.** Primary onboarding = non-EU
+    exporters (India/UK beachhead; supplier-side is under-served, SAP is declarant-only).
+    **Importers are opportunistic/secondary** — reachable from the London base (UK/EU), not
+    excluded. Invite mechanics: exporter invites importer via EORI link (importer may also
+    invite suppliers), but the *led* side is the exporter.
 
 ## File map
 

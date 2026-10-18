@@ -107,7 +107,7 @@ Master index of every work item, grouped by sprint, with **status**, **what was 
 | ID | Gap | Priority | Type | Status | Target |
 |---|---|---|---|---|---|
 | G01 | Customer journey / activation (first-value in 15 min) | **High** | Spec + build | ⬜ | S3–S4 (Pillar 1 capture) |
-| G02 | Two-sided cold-start decision (exporter-first) | **High** | Decision | ⬜ | S2 (M1 / D-gate) |
+| G02 | Two-sided cold-start decision (exporter-first) | **High** | Decision | ✅ (exporter-first; importers opportunistic via London/EU) | done |
 | G03 | Platform operations minimal (tenancy + billing + reminders) | High | Spec | ⬜ | S4–S5 |
 | G04 | Our regulatory obligations (DPP Service Provider DA, GDPR, liability) | High | Watch/plan | ⬜ | ongoing (act on DA) |
 | G05 | Engine long tail (CEMS, mass-balance, PFC, heat/CHP, by-products) | Medium | Spec + build | ⬜ | Phase 2–3 (consultant) |

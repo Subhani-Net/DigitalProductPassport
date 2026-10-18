@@ -97,7 +97,7 @@ items `G01–G10` in `../workitems/README.md`.
 | Gap | Action | Sprint |
 |---|---|---|
 | G09 non-goals | ✅ done — trivial (already implicit: metals-first) | — |
-| G02 cold-start | decide **exporter-first** onboarding order + invite mechanics | S2 (M1/D-gate) |
+| G02 cold-start | ✅ decided — **exporter-first**; importers opportunistic via London/EU; invite via EORI | — |
 | G01 activation | spec the first-value path (sign-up → upload → auto-map → SEE → saving) | S3–S4 |
 | G03 platform ops | spec tenancy + billing tiers + deadline reminders (minimal) | S4–S5 |
 | G04 our compliance | watch DPP Service Provider DA; draft GDPR/liability position | ongoing (act on DA) |
