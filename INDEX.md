@@ -47,6 +47,7 @@ separate the product from the work around it.
 | `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/DRMC) |
 | `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
 | `research/data-inputs-reference.md` | **What gets submitted to the authority** — field-level (CBAM O3CI/AMM + DPP metadata) |
+| `research/data-layer.md` | **Data capture / transfer / transform** — the exporter→importer pipeline nitty-gritty |
 | `research/cbam-input-sources.md` | Static/dynamic/real-time data sources |
 | `research/tracepass-steel-inventory.md` | TracePass steel: 84 fields / 29 required (required subset + CBAM overlap) |
 | `research/tracepass-steel-fields-table.md` | **Full 84-field steel/aluminium table** (English descriptions) |

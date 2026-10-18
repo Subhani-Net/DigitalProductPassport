@@ -87,6 +87,7 @@ Every entry ends with a source line:
 | `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/verifiers) + design implications |
 | `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
 | `research/data-inputs-reference.md` | **Field-level: what gets submitted to the authority** (CBAM O3CI/AMM + DPP) |
+| `research/data-layer.md` | **Data capture / transfer / transform** (exporter→importer pipeline) |
 | `research/cbam-input-sources.md` | Static/dynamic/real-time CBAM data sources |
 | `research/tracepass-steel-fields-table.md` | **Full TracePass steel/aluminium field table** (84 fields, English) |
 | `research/tracepass-steel-inventory.md` | Required fields + CBAM ∩ DPP overlap seed |
