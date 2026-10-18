@@ -7,6 +7,9 @@ dist/
 .vs/
 .idea/
 
+# Reqnroll/SpecFlow generated step bindings (build artifacts)
+*.feature.cs
+
 # Reference clones live here (external repos, not part of our source)
 reference/
 
