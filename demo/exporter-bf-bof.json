@@ -1,0 +1,19 @@
+{
+  "installation": {
+    "id": "DEMO-STEEL-BFBOF-01",
+    "name": "Demo Integrated Steel Mill (illustrative)",
+    "country": "IN",
+    "unLocode": "INMAA",
+    "productionRoute": "BF-BOF",
+    "routeParameters": { "bfCokeRate": 0.42, "hotMetalRatio": 0.9, "scrapRatio": 0.1, "driShare": 0.0 }
+  },
+  "reportingPeriod": 2026,
+  "production": { "cnCode": "72083900", "activityLevelTonnes": 1000000 },
+  "sourceStreams": [
+    { "name": "Metallurgical coal", "activityData": 600000, "unit": "t", "ncvTJPerUnit": 0.028, "emissionFactorTCO2PerTJ": 95, "oxidationFactor": 0.99 },
+    { "name": "Natural gas", "activityData": 5000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56, "oxidationFactor": 1.0 }
+  ],
+  "electricity": { "mwh": 250000, "emissionFactorTCO2PerMWh": 0.71, "contractualFactor": false },
+  "precursors": [],
+  "result": { "directTCO2": 1860040, "indirectTCO2": 177500, "seeTCO2PerTonne": 2.03754, "determination": "actual" }
+}

@@ -70,6 +70,12 @@ Every entry ends with a source line:
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
 | `competition/` | Competitive landscape: matrix, threat scorecards, dossiers, **friction-gap analysis** |
 
+### `demo/` — seedable end-to-end demo data
+| Path | Contents |
+|------|----------|
+| `demo/README.md` | The end-to-end journey + anchors |
+| `demo/*.json` | Seed fixtures (routes, precursor chain, importer, edge cases, expected outputs) |
+
 ### `learning/` — taught CBAM courses (101 → 201 → 301)
 | Path | Contents |
 |------|----------|

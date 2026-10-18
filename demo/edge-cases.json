@@ -1,0 +1,27 @@
+{
+  "cases": [
+    {
+      "name": "missing oxidation factor",
+      "sourceStream": { "name": "natural gas", "activityData": 2000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56 },
+      "expectation": "oxidation factor defaults to 1.0"
+    },
+    {
+      "name": "missing electricity",
+      "note": "electricity is required for the schema; the row is flagged to the exporter"
+    },
+    {
+      "name": "implausible emission factor",
+      "sourceStream": { "name": "natural gas", "activityData": 2000, "unit": "TJ", "emissionFactorTCO2PerTJ": 9999, "oxidationFactor": 1.0 },
+      "expectation": "flagged for plausibility review (Pillar 2 p2)"
+    },
+    {
+      "name": "default fallback",
+      "route": "BF-BOF",
+      "actualSeeTCO2PerTonne": 2.04,
+      "defaultSeeTCO2PerTonne": 2.10,
+      "activityTonnes": 1000,
+      "certificatePriceEuroPerTonne": 75.36,
+      "expectedSavingEuro": 4521.60
+    }
+  ]
+}

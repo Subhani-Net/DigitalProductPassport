@@ -1,0 +1,18 @@
+{
+  "installation": {
+    "id": "DEMO-STEEL-DRI-01",
+    "name": "Demo Direct Reduced Iron Plant (illustrative)",
+    "country": "IN",
+    "unLocode": "INHZR",
+    "productionRoute": "DRI",
+    "routeParameters": { "reductant": "natural gas", "productFePct": 92 }
+  },
+  "reportingPeriod": 2026,
+  "production": { "cnCode": "72031000", "activityLevelTonnes": 200000 },
+  "sourceStreams": [
+    { "name": "Natural gas (reformer)", "activityData": 4000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56, "oxidationFactor": 1.0 }
+  ],
+  "electricity": { "mwh": 50000, "emissionFactorTCO2PerMWh": 0.40, "contractualFactor": false },
+  "precursors": [],
+  "result": { "directTCO2": 224000, "indirectTCO2": 20000, "seeTCO2PerTonne": 1.22, "determination": "actual" }
+}

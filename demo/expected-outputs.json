@@ -1,0 +1,21 @@
+{
+  "installations": [
+    { "fixture": "exporter-bf-bof.json", "route": "BF-BOF", "seeTCO2PerTonne": 2.03754, "determination": "actual" },
+    { "fixture": "exporter-eaf.json", "route": "EAF", "seeTCO2PerTonne": 0.471345, "determination": "actual" },
+    { "fixture": "exporter-dri.json", "route": "DRI", "seeTCO2PerTonne": 1.22, "determination": "actual" },
+    { "fixture": "exporter-aluminium-primary.json", "route": "PrimaryAluminium", "seeTCO2PerTonne": 14.98, "determination": "actual", "note": "PFC deferred to p3" },
+    { "fixture": "precursor-chain.json", "route": "EAF (downstream)", "seeTCO2PerTonne": 3.2816, "determination": "actual", "note": "complex good, precursor-dominated" }
+  ],
+  "declaration": {
+    "year2034": { "factor": 1.0, "totalEmbeddedTCO2e": 2228.538, "obligationTCO2e": 2228.538, "certificatesToSurrender": 2028.538 },
+    "year2026": { "factor": 0.025, "totalEmbeddedTCO2e": 2228.538, "obligationTCO2e": 55.71345 }
+  },
+  "defaultFallbackSaving": {
+    "route": "BF-BOF",
+    "actualSeeTCO2PerTonne": 2.04,
+    "defaultSeeTCO2PerTonne": 2.10,
+    "activityTonnes": 1000,
+    "certificatePriceEuroPerTonne": 75.36,
+    "savingEuro": 4521.60
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "installation": {
+    "id": "DEMO-ALU-PRIMARY-01",
+    "name": "Demo Primary Aluminium Smelter (illustrative)",
+    "country": "IN",
+    "unLocode": "INODS",
+    "productionRoute": "PrimaryAluminium",
+    "routeParameters": { "cellTechnology": "CWPB", "mwhPerTonneAl": 15 }
+  },
+  "reportingPeriod": 2026,
+  "production": { "cnCode": "76011000", "activityLevelTonnes": 100000 },
+  "sourceStreams": [
+    { "name": "Natural gas (anode baking & furnaces)", "activityData": 8000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56, "oxidationFactor": 1.0 }
+  ],
+  "electricity": { "mwh": 1500000, "emissionFactorTCO2PerMWh": 0.70, "contractualFactor": false },
+  "precursors": [],
+  "result": { "directTCO2": 448000, "indirectTCO2": 1050000, "seeTCO2PerTonne": 14.98, "determination": "actual", "note": "PFC (anode-effect CF4/C2F6) deferred to Pillar 2 p3" }
+}

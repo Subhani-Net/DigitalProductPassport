@@ -1,0 +1,19 @@
+{
+  "installation": {
+    "id": "DEMO-STEEL-EAF-01",
+    "name": "Demo Electric Arc Furnace Mill (illustrative)",
+    "country": "IN",
+    "unLocode": "INVTZ",
+    "productionRoute": "EAF",
+    "routeParameters": { "scrapRatio": 0.98, "electricityKwhPerTonne": 440 }
+  },
+  "reportingPeriod": 2026,
+  "production": { "cnCode": "72083900", "activityLevelTonnes": 400000 },
+  "sourceStreams": [
+    { "name": "Graphite electrodes", "activityData": 2000, "unit": "t", "ncvTJPerUnit": 0.033, "emissionFactorTCO2PerTJ": 93, "oxidationFactor": 1.0 },
+    { "name": "Natural gas", "activityData": 2000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56, "oxidationFactor": 1.0 }
+  ],
+  "electricity": { "mwh": 176000, "emissionFactorTCO2PerMWh": 0.40, "contractualFactor": false },
+  "precursors": [],
+  "result": { "directTCO2": 118138, "indirectTCO2": 70400, "seeTCO2PerTonne": 0.471345, "determination": "actual" }
+}

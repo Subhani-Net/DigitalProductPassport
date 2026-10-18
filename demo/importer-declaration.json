@@ -1,0 +1,19 @@
+{
+  "declarant": {
+    "eori": "DE123456789012345",
+    "name": "Demo Importer GmbH (illustrative)",
+    "role": "importer"
+  },
+  "year": 2034,
+  "certificatePriceEuroPerTonne": 75.36,
+  "imports": [
+    { "cnCode": "72083900", "netMassTonnes": 1000, "origin": "IN", "seeTCO2PerTonne": 2.04, "determination": "actual" },
+    { "cnCode": "72083900", "netMassTonnes": 400, "origin": "IN", "seeTCO2PerTonne": 0.471345, "determination": "actual" }
+  ],
+  "foreignCarbonPricePaidTCO2e": 200,
+  "expected": {
+    "totalEmbeddedTCO2e": 2228.538,
+    "obligationTCO2e": 2228.538,
+    "certificatesToSurrender": 2028.538
+  }
+}

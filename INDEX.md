@@ -89,6 +89,12 @@ separate the product from the work around it.
 | `competition/dossiers/` | Per-player dossiers (CarbonChain, SAP, Minespider…) |
 | `cleancarbonai/` | CleanCarbon.ai competitive KD |
 
+### 3.3 Demo (seedable end-to-end data)
+| Path | Purpose |
+|---|---|
+| `demo/README.md` | Demo journey (capture → validate → transfer → consume → assure → sell-twice → wedge) |
+| `demo/*.json` | Seed fixtures (BF-BOF, EAF, DRI, primary Al, precursor chain, importer, edge cases, expected outputs) |
+
 ## 4. GOVERNANCE
 
 | Path | Purpose |

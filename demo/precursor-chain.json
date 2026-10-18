@@ -1,0 +1,20 @@
+{
+  "installation": {
+    "id": "DEMO-STEEL-COATING-01",
+    "name": "Demo Galvanising Line (illustrative)",
+    "country": "IN",
+    "unLocode": "INMAA",
+    "productionRoute": "EAF",
+    "routeParameters": { "downstream": "hot-dip galvanising" }
+  },
+  "reportingPeriod": 2026,
+  "production": { "cnCode": "72104900", "activityLevelTonnes": 50000 },
+  "sourceStreams": [
+    { "name": "Natural gas (reheat & coating)", "activityData": 1000, "unit": "TJ", "emissionFactorTCO2PerTJ": 56, "oxidationFactor": 1.0 }
+  ],
+  "electricity": { "mwh": 5000, "emissionFactorTCO2PerMWh": 0.40, "contractualFactor": false },
+  "precursors": [
+    { "name": "Crude steel (HRC)", "massTonnes": 52000, "seeTCO2PerTonne": 2.04 }
+  ],
+  "result": { "directTCO2": 56000, "indirectTCO2": 2000, "precursorTCO2": 106080, "seeTCO2PerTonne": 3.2816, "determination": "actual" }
+}
