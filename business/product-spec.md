@@ -16,6 +16,8 @@ mostly `@ignore @stub` until built.
 The **strength is not the calculator** (that is commodity — CarbonChain/SAP/cbam-tools own it).
 The product is four **friction-reduction pillars**, built in phases, on top of a commodity
 canonical model + engine. Competitor gap map: `../competition/friction-gap-analysis.md`.
+**Beyond processing (the six jobs that are the product): `jobs-to-be-done.md`** — Extract,
+Judge, Prove, Coordinate, Advise, Complete.
 
 | Pillar | What it kills (friction) | Phase 1 (MVP) | Phase 2 | Phase 3 |
 |---|---|---|---|---|

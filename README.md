@@ -59,6 +59,7 @@ Every entry ends with a source line:
 | `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, 3-dimension milestone view |
 | `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
 | `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
+| `business/jobs-to-be-done.md` | **The beyond-processing core** (Extract/Judge/Prove/Coordinate/Advise/Complete) |
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |

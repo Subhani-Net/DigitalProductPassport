@@ -75,6 +75,7 @@ separate the product from the work around it.
 | `business/sprint-plan.md` | Epics, stories, sprints, **3-dimension milestone view** |
 | `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
 | `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
+| `business/jobs-to-be-done.md` | **The beyond-processing core** — Extract/Judge/Prove/Coordinate/Advise/Complete + improvement loop |
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
 | `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
 | `business/project-gantt.md` | Dated task view (roadmap §5) |
