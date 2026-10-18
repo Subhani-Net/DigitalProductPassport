@@ -45,3 +45,38 @@ trial with no commitment is how you lose weeks and learn nothing.
 - **Time-box hard** (2 weeks). A pilot that drags becomes free consulting.
 - **S0/S1 data only at first** — don't promise ERP/OT integration in a trial.
 - **Log every signal** in the target list (`target-list.md` status) — it feeds the investor story.
+
+---
+
+## Concierge pilot — what you can honestly deliver *before* the app exists
+
+You do not yet have the full application, nor the verifier-grade consultant. That is fine — the
+first pilots are run **manually ("concierge")**, and you must be honest about stage.
+
+**What you already have enough of:**
+- The **CBAM methodology** (documented in `learning/cbam-101/201`, `research/cbam-data-catalogue.md`,
+  `research/data-inputs-reference.md`) — enough to compute a *draft* SEE for a simple BF-BOF/EAF case.
+- The **calculator** (`src/DppCore/CbamCalculator.cs` + `CbamDeclaration.cs`) + the **demo data pack**.
+- The **demo** as proof of the method.
+
+**What you honestly deliver in a pilot (manual, 2 weeks):**
+1. Draft **SEE** (direct + indirect + precursors) from their S0/S1 data.
+2. An **evidence trail** (which inputs → which factor → which figure).
+3. The **actual-vs-default saving** on their numbers.
+4. A **"verifier-ready, not verified"** note — the accredited **stamp comes from a partner
+   verifier**, not us.
+
+**What you do NOT claim:** "verified" · "the app does it automatically" · "accredited in-house".
+
+**The honest customer line when they ask "where's the software?":**
+> "We're running a pilot programme — I process your data using the CBAM methodology and deliver
+> your draft SEE, evidence trail and saving in ~2 weeks. Final verification is with an accredited
+> partner verifier. If the numbers are useful, we move to the product and a paid plan."
+
+**The consultant gap:** the consultant is for *encoding the moat at scale* (route-specific
+validation intelligence), **not** for running the first few pilots. You already know enough to
+produce a verifier-ready draft for a simple case; engage the consultant (post C2–C4) once you've
+validated demand, not before.
+
+**Rule: one pilot at a time.** Each manual pilot also *generates* the app's requirements — it is
+the spec, not a distraction. But do not take more pilots than you can deliver by hand.

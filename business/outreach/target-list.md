@@ -1,36 +1,53 @@
-# Target List (15 candidates)
+# Target List — Small & Medium Indian Exporters
 
-**Candidates are real companies from public knowledge — not verified contacts.** Fill the
-contact/status columns as you find real people. Order within each segment = strongest fit first.
+**Focus: small/medium SMEs** (not JSW/Tata/Hindalco/mid-scale). They are more reachable, more
+cooperative, and have the most to gain — but they are **not listed by name anywhere public**, so
+specific names must be sourced from the directories below. This file is the *how to find them* +
+a fill-in table.
 
-## Exporters (primary — India/UK beachhead, supplier-side wedge)
+## Target personas (CBAM-covered, EU-exporting, SME)
 
-| # | Company | Why-fit | Contact / route | Status |
-|---|---|---|---|---|
-| 1 | JSW Steel (India) | large steel exporter to EU; needs verified actuals to stay competitive | | |
-| 2 | Tata Steel (India) | major exporter; CBAM cost exposure on EU volumes | | |
-| 3 | Hindalco (India) | primary/secondary aluminium exporter to EU | | |
-| 4 | Vedanta Aluminium (India) | aluminium exporter; electricity/PFC-heavy data | | |
-| 5 | Emirates Global Aluminium (UAE) | large non-EU aluminium exporter | | |
+| Persona | Typical product | Why they're a good pilot |
+|---|---|---|
+| Steel re-roller / bar mill | TMT bars, flats | CBAM applies; defaults bite; minimal data literacy |
+| Pipe & tube exporter | ERW/seamless pipes, tubes | complex CN codes; needs verified actuals |
+| Wire / bright-bar maker | drawn wire, bright bars | |
+| Fastener / flange / forging exporter | bolts, flanges, forgings | downstream CN codes — downstream expansion |
+| Engineering goods exporter | machined castings, components | |
+| Secondary aluminium remelter | recycled ingots/billets | low-carbon story; wants to prove it |
+| Aluminium extrusion exporter | profiles, sections | electricity + process data |
 
-## Importers (secondary — reachable from London/EU)
+**Cities / clusters to target:** Ludhiana, Raipur, Faridabad, Ahmedabad, Rajkot (castings/forgings),
+Coimbatore, Chennai, Jalandhar (hand tools), Mumbai/Pune.
 
-| # | Company | Why-fit | Contact / route | Status |
-|---|---|---|---|---|
-| 6 | Klöckner & Co (DE) | steel distributor/importer; liable for declarations | | |
-| 7 | thyssenkrupp Materials (DE) | steel trading/import; declaration burden | | |
-| 8 | voestalpine (AT) | steel importer/producer; EU declarant side | | |
-| 9 | UK steel distributor (mid-tier) | London reachable; CBAM on imports | | |
-| 10 | EU fastener importer (mid-tier) | downstream CN codes; defaults bite hard | | |
+## Where to find them (real names)
 
-## Verifiers (channel + validation)
+| Channel | What it gives |
+|---|---|
+| **EEPC India** (Engineering Export Promotion Council) | member directory of engineering exporters; runs CBAM awareness programs |
+| **FIEO** (Federation of Indian Export Organisations) | exporter directory |
+| **Aluminium Association of India / Steel Users Federation of India** | member lists |
+| **IndiaMART / TradeIndia** | supplier directories by product + city |
+| **DGFT / duty-drawback data** | who actually exports steel/aluminium to the EU |
+| **CBAM webinars / trade-body CBAM lists** | already-CBAM-aware SMEs (warmest) |
 
-| # | Company | Why-fit | Contact / route | Status |
-|---|---|---|---|---|
-| 11 | TÜV SÜD (DE/India) | accredited; India reach (NABCB); partner for stamp | | |
-| 12 | SGS | ETS verifier, CBAM applicant; wants efficient evidence | | |
-| 13 | Bureau Veritas | CBAM applicant; battery-DPP work with Circulor | | |
-| 14 | DNV | DPP + data-integrity validation; advisory | | |
-| 15 | Intertek | end-to-end CBAM support; textile/DPP advisory | | |
+## Fill-in table
 
-**Use:** start with #1–#5 (exporter-first). After 3 conversations, revisit fit and sequencing.
+| # | Segment | Company | Product | City | Why-fit | Contact | Status |
+|---|---|---|---|---|---|---|---|
+| 1 | exporter | | | | | | |
+| 2 | exporter | | | | | | |
+| 3 | exporter | | | | | | |
+| 4 | exporter | | | | | | |
+| 5 | exporter | | | | | | |
+| 6 | importer (EU, mid-tier) | | | | | | |
+| 7 | importer (EU, mid-tier) | | | | | | |
+| 8 | importer (EU, mid-tier) | | | | | | |
+| 9 | verifier | | | | | | |
+| 10 | verifier | | | | | | |
+
+**Verifiers (channel + validation):** TÜV SÜD (India reach via NABCB), SGS, Bureau Veritas, DNV,
+Intertek — approach them as *partners*, not prospects.
+
+**Use:** start with **3 exporter SMEs** (personas above). One pilot at a time (see
+`trial-playbook.md` — concierge model).
