@@ -8,13 +8,13 @@ cross-referenced to it. Dated milestones follow `product-roadmap.md` §5.
 
 | File | Contents |
 |------|----------|
-| `fundraise-plan.md` | The master business plan: activities, costing, investment requirement, SEIS/EIS phased plan, MVP iterations |
+| `investor/investment-plan.md` | The master business plan: activities, costing, investment requirement, SEIS/EIS phased plan, MVP iterations |
 | `README.md` | This index + activity tracker |
 
 ## Activity tracker
 
 Status legend: ⬜ not started · 🔶 in progress · ✅ done. Target dates defer to
-`fundraise-plan.md` §4 and roadmap §5.
+`investor/investment-plan.md` §4 and roadmap §5.
 
 ### Track 1 — Organizational setup (W1)
 
@@ -31,7 +31,7 @@ Status legend: ⬜ not started · 🔶 in progress · ✅ done. Target dates def
 
 | ID | Task | Status | Owner | Target |
 |----|------|--------|-------|--------|
-| B1 | Master business plan v1 (fundraise-plan.md) | ✅ | Founder | Sept 2026 |
+| B1 | Master business plan v1 (investor/investment-plan.md) | ✅ | Founder | Sept 2026 |
 | B2 | Pre-seed costing + runway model | ✅ | Founder | Sept 2026 |
 | B3 | Investor materials (deck, one-pager, use-of-funds) | ⬜ | Founder | Pre-SEIS outreach |
 | B4 | SEIS close (£250k) | ⬜ | Founder | Dec 2026 |
@@ -42,5 +42,5 @@ Status legend: ⬜ not started · 🔶 in progress · ✅ done. Target dates def
 
 ## Rules of engagement
 
-- Update `fundraise-plan.md` for plan changes; this tracker records status only.
-- Any milestone/date change: roadmap §5 first, then `fundraise-plan.md` §4–§6, then this table.
+- Update `investor/investment-plan.md` for plan changes; this tracker records status only.
+- Any milestone/date change: roadmap §5 first, then `investor/investment-plan.md` §4–§6, then this table.

@@ -17,7 +17,7 @@ reference/
 scratch/
 
 # Sensitive / local-only documents (kept on disk, never committed)
-business/fundraise-plan.md
+business/investor/investment-plan.md
 
 # Encryption key for local-only docs (NEVER commit; back it up in a password manager)
 .dpp-key

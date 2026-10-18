@@ -25,7 +25,7 @@ for textiles) whose data pipelines the DPP reuses — "sell the compliance need 
 
 > **Funding posture (right-sized Sept 2026):** base plan ≈ **£1.0–1.25M** (SEIS pre-seed + EIS
 > seed); a Series A is **deferred/optional** (blue-sky, gated on traction) — see
-> `fundraise-plan.md` §2/§9. This roadmap is £-neutral; the phases below map onto that funding plan.
+> `investor/investment-plan.md` §2/§9. This roadmap is £-neutral; the phases below map onto that funding plan.
 
 ## 2. Top-level product map
 
@@ -235,7 +235,7 @@ Milestone keys used here and in §5: **M1** = overlap map + decisions (late Oct 
 ## 4. Phases & milestones
 
 Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
-**Funding map** (right-sized, `fundraise-plan.md` §2): **SEIS £250k** funds P0–P1; **EIS seed
+**Funding map** (right-sized, `investor/investment-plan.md` §2): **SEIS £250k** funds P0–P1; **EIS seed
 £0.75–1.0M** funds P2 (and P3 start); P3 scale-out/P4 are **blue-sky** (deferred Series A).
 
 - **P0 — Foundation (Sep → late Oct 2026).** *(pre-incorporation / sweat)* Complete

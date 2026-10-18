@@ -11,12 +11,12 @@
     powershell -File tools/crypt-docs.ps1 -Lock      # plaintext -> .enc  (do this after edits, then commit the .enc)
     powershell -File tools/crypt-docs.ps1 -Unlock    # .enc -> plaintext
 
-  Default file: business/fundraise-plan.md  (override with -File)
+  Default file: business/investor/investment-plan.md  (override with -File)
 #>
 param(
   [switch]$Lock,
   [switch]$Unlock,
-  [string]$File = "business/fundraise-plan.md"
+  [string]$File = "business/investor/investment-plan.md"
 )
 
 $repoRoot = Split-Path $PSScriptRoot -Parent

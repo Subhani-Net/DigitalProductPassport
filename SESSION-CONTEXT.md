@@ -63,9 +63,10 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 
 ```
 root:  README.md · AGENTS.md · compliance-matrix.md · terminology.md · SESSION-CONTEXT.md (this file)
-business/: product-roadmap.md (§5 timeline = single source of truth) · project-gantt.md ·
-       sprint-plan.md (epics/stories/sprints) · execution-modes.md (desktop/expert/field map) ·
-       fundraise-plan.md · README.md (org-setup + business-planning activity tracker)
+business/: product-roadmap.md (§5 = single source of truth) · project-gantt.md · sprint-plan.md ·
+       product-spec.md · jobs-to-be-done.md · system-intricacies.md · product-gaps.md ·
+       specification-by-example.md · presentation-plan.md · execution-modes.md · README.md
+business/investor/: investor-deck.md · pitch.md · business-plan.md · investment-plan.md(.enc)
 research/ (definitive & high-value): regulations.md · cbam-registry-workflow.md ·
        cbam-data-catalogue.md (r2) · cbam-input-sources.md · goto-market-sizing.md ·
        standards.md · architecture.md · learning-roadmap.md · tools.md · sources.md · glossary.md

@@ -80,7 +80,7 @@ separate the product from the work around it.
 | `business/product-gaps.md` | **Gaps & uncovered scope** — activation, cold-start, ops, our own compliance, engine long tail, non-goals |
 | `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
 | `business/project-gantt.md` | Dated task view (roadmap §5) |
-| `business/fundraise-plan.md.enc` | Encrypted funding plan (plaintext local-only) |
+| `business/investor/` | **Investor pack**: deck · pitch · business plan · investment plan (encrypted) |
 | `business/README.md` | Business-track activity tracker |
 
 ### 3.2 Competitive & GTM

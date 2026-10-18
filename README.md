@@ -64,7 +64,7 @@ Every entry ends with a source line:
 | `business/product-gaps.md` | **Gaps & uncovered scope** (activation, cold-start, ops, compliance, engine long tail) |
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
-| `business/fundraise-plan.md.enc` | Encrypted fundraise plan (plaintext kept local-only) |
+| `business/investor/` | **Investor pack**: `investor-deck.md` · `pitch.md` · `business-plan.md` · `investment-plan.md.enc` |
 | `business/README.md` | Org-setup + business-planning activity tracker |
 
 ### Competitive research

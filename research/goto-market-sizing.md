@@ -122,13 +122,13 @@ ACV comes from the Pricing table above; customer counts are bounded by the serve
 | 2029+ (textiles) | scale | mixed | toward blue-sky |
 
 **Read:** **Low/Base** = the right-sized, capital-efficient seed-scale business (matches the
-~£1.0–1.25M raise in `../business/fundraise-plan.md` §2). **High** needs an enterprise/DPP mix.
+~£1.0–1.25M raise in `../business/investor/investment-plan.md` §2). **High** needs an enterprise/DPP mix.
 **Blue-sky** needs the textiles wave + channel and justifies the *deferred* Series A.
 
 ### Blue-sky expansion (optionality, not base case)
 
 Preserved venture-scale intelligence. This does **not** change the base case or the base raise
-(`../business/fundraise-plan.md` §2/§9); it is pursued only on traction.
+(`../business/investor/investment-plan.md` §2/§9); it is pursued only on traction.
 
 - **Target:** a path to **~£10M+ ARR** (venture scale), resting on four levers:
   1. **ACV mix → enterprise/High tier** (€30–60k: multi-site + supplier network + DPP module +
