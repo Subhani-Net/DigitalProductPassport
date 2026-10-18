@@ -89,6 +89,21 @@ Purpose: eliminate **build-to-avoid** by making every milestone ship a customer-
 - **All three segments** are targeted until there is a presentable MVP for each.
 - **Detail + scripts:** `presentation-plan.md`. **File map:** `../INDEX.md`.
 
+### 3.3 Gap accommodation (from `product-gaps.md`, priority-ordered)
+
+Folded into the existing frozen-date sprints as spec/decision items. Gaps are tracked as work
+items `G01–G10` in `../workitems/README.md`.
+
+| Gap | Action | Sprint |
+|---|---|---|
+| G09 non-goals | lock batteries/fertilisers/cement/hydrogen/downstream as non-goals | S2 (now) |
+| G02 cold-start | decide **exporter-first** onboarding order + invite mechanics | S2 (M1/D-gate) |
+| G01 activation | spec the first-value path (sign-up → upload → auto-map → SEE → saving) | S3–S4 |
+| G03 platform ops | spec tenancy + billing tiers + deadline reminders (minimal) | S4–S5 |
+| G04 our compliance | watch DPP Service Provider DA; draft GDPR/liability position | ongoing (act on DA) |
+| G05–G08 | engine long tail / security / lifecycle / production-readiness spec | Phase 2–3 (consultant) |
+| G10 validation | run the solution-led demo path (presentation-plan) — continuous | S3+ |
+
 ## 4. Story backlog
 
 Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d (solo focus-days).

@@ -102,6 +102,26 @@ Master index of every work item, grouped by sprint, with **status**, **what was 
 
 ---
 
+## Gaps backlog (from `business/product-gaps.md`)
+
+| ID | Gap | Priority | Type | Status | Target |
+|---|---|---|---|---|---|
+| G01 | Customer journey / activation (first-value in 15 min) | **High** | Spec + build | ⬜ | S3–S4 (Pillar 1 capture) |
+| G02 | Two-sided cold-start decision (exporter-first) | **High** | Decision | ⬜ | S2 (M1 / D-gate) |
+| G03 | Platform operations minimal (tenancy + billing + reminders) | High | Spec | ⬜ | S4–S5 |
+| G04 | Our regulatory obligations (DPP Service Provider DA, GDPR, liability) | High | Watch/plan | ⬜ | ongoing (act on DA) |
+| G05 | Engine long tail (CEMS, mass-balance, PFC, heat/CHP, by-products) | Medium | Spec + build | ⬜ | Phase 2–3 (consultant) |
+| G06 | Security/compliance posture (TISAX/ISO 27001 as features) | Medium | Spec | ⬜ | Phase 1 posture → P2 cert |
+| G07 | Data lifecycle (retention, deletion, schema migration) | Medium | Spec | ⬜ | Phase 2 |
+| G08 | Production readiness (async jobs, retries, deployment, residency) | Medium | Spec + build | ⬜ | Phase 1–2 |
+| G09 | Explicit non-goals (batteries, fertilisers, cement, hydrogen, downstream) | High | Decision (lock) | ⬜ | now |
+| G10 | Market validation (willingness-to-pay / payer / verifier) | **Critical** | Validate | ⬜ | solution-led demo path |
+
+**Order to close:** G09 (lock non-goals, free) → G02 (cold-start decision) → G01 (activation spec) →
+G03 (ops minimal) → G04 (compliance watch) → G05–G08 (phase 2–3) → G10 (continuous via demos).
+
+---
+
 ## How to add a work item
 
 ```
