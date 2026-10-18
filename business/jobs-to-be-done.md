@@ -101,3 +101,20 @@ new routes / sectors / acts ──┘        (validation / evidence library)
 A customer hands us **messy inputs** and receives a **verifiable, registrable, defensible
 declaration** — with **advice** on what saved them money and **trust** that nothing sensitive
 leaked. The number in the middle is the easy part; these six jobs are the product.
+
+---
+
+## How "verifiable & defensible" is achieved (3 layers + the stamp)
+
+"Verifiable" has two senses — we have one, we earn the other:
+
+1. **Cryptographically verifiable** (authentic, unchanged) → **we have this**: raw+derived hash
+   chain, determination flags, the registry Proof-of-Registration JWT (working), detached JWS /
+   eIDAS seal later. Buildable now, no external input needed.
+2. **Assurance-verifiable** (survives an accredited verifier's judgment) → **earned in three layers**:
+   - **Public rules (now):** IR 2025/2546 + ISO 14064-3/17029/14065 + CBAM methodology tell us
+     *what a verifier checks* → we build provenance/evidence/dossier/methodology-conformance.
+   - **Consultant (post C2–C4, locked):** encodes route/metallurgy judgment into the models (the moat).
+   - **Customers + verifiers (pilot):** the real test — findings feed the improvement loop.
+3. **The stamp** is always an **accredited partner verifier** (independence rule). We build the
+   *audit room*, never the *verdict*.
