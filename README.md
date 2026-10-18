@@ -61,6 +61,7 @@ Every entry ends with a source line:
 | `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
 | `business/jobs-to-be-done.md` | **The beyond-processing core** (Extract/Judge/Prove/Coordinate/Advise/Complete) |
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
+| `business/product-gaps.md` | **Gaps & uncovered scope** (activation, cold-start, ops, compliance, engine long tail) |
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
 | `business/fundraise-plan.md.enc` | Encrypted fundraise plan (plaintext kept local-only) |

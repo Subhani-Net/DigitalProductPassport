@@ -77,6 +77,7 @@ separate the product from the work around it.
 | `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
 | `business/jobs-to-be-done.md` | **The beyond-processing core** — Extract/Judge/Prove/Coordinate/Advise/Complete + improvement loop |
 | `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
+| `business/product-gaps.md` | **Gaps & uncovered scope** — activation, cold-start, ops, our own compliance, engine long tail, non-goals |
 | `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
 | `business/project-gantt.md` | Dated task view (roadmap §5) |
 | `business/fundraise-plan.md.enc` | Encrypted funding plan (plaintext local-only) |
