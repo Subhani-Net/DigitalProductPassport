@@ -22,6 +22,12 @@ Feature: CBAM exporter / installation operator
     Then I get an evidence dossier with source records, factors and an audit trail
 
   @ignore @stub
+  Scenario: Meet data-quality tiers for a large installation
+    Given my installation emits more than 500000 tCO2e per year
+    When I prepare my monitoring data
+    Then my metering data meets the required uncertainty tier
+
+  @ignore @stub
   Scenario: Share data with an importer via EORI link
     Given an EU importer shares its EORI number with me
     When I link the importer to my installation

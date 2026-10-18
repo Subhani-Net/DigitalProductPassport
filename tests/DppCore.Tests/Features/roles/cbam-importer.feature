@@ -11,6 +11,13 @@ Feature: CBAM importer / authorised declarant
     And I receive a decision within 120 days
 
   @ignore @stub
+  Scenario: Authorisation application is rejected
+    Given I am an EU importer with an EORI number
+    When my authorised CBAM declarant application is rejected
+    Then I am informed of the rejection
+    And I may not import CBAM goods as a declarant
+
+  @ignore @stub
   Scenario: Retrieve verified supplier emissions via EORI link
     Given my supplier has shared its EORI-linked installation data
     When I search the third-country installations registry

@@ -35,6 +35,7 @@ Two different role models are at play; do not conflate them.
 | Verifier | 🟡 spec stub (`@ignore`) | `roles/cbam-verifier.feature` |
 | admin (public authority) | 🟡 spec stub (`@ignore`) | `roles/platform-admin.feature` |
 | `eu` (end user) | 🟡 spec stub (`@ignore`) | `roles/end-user.feature` |
+| Cross-cutting (data integrity) | 🟡 spec stub (`@ignore`) | `roles/cross-cutting.feature` |
 
 Stubs are tagged `@ignore` so they don't fail the suite; they are the **living specification**
 to implement against.
