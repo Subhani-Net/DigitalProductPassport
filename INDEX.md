@@ -84,6 +84,7 @@ separate the product from the work around it.
 | Path | Purpose |
 |---|---|
 | `competition/landscape.md` | Competitor matrix + threat scorecards |
+| `competition/friction-gap-analysis.md` | **4-pillar friction map** — where incumbents are weak + what we adopt |
 | `competition/mapping-to-roadmap.md` | Competitors vs our roadmap |
 | `competition/dossiers/` | Per-player dossiers (CarbonChain, SAP, Minespider…) |
 | `cleancarbonai/` | CleanCarbon.ai competitive KD |

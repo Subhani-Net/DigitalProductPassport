@@ -10,6 +10,27 @@ Executable mirror: `../tests/DppCore.Tests/Features/roles/*.feature` (Gherkin, m
 
 ---
 
+## 0. The holistic solution — 4 pillars, phased
+
+The **strength is not the calculator** (that is commodity — CarbonChain/SAP/cbam-tools own it).
+The product is four **friction-reduction pillars**, built in phases, on top of a commodity
+canonical model + engine. Competitor gap map: `../competition/friction-gap-analysis.md`.
+
+| Pillar | What it kills (friction) | Phase 1 (MVP) | Phase 2 | Phase 3 |
+|---|---|---|---|---|
+| **1. Capture** | messy, paper-based, non-technical suppliers | S0/S1 file upload + column auto-map + unit auto-detect + validation feedback | S2 ERP/MES/LIMS connectors + multi-tenant supplier portal | S3 real-time (OPC UA/historian/CEMS) + AI extraction (MTC/CoA) |
+| **2. Validation intelligence** | wrong number that fails verification | route-specific calc (BOF/EAF/DRI, PFC) + unit/NCV + oxidation default + precursor pass-through + actual-vs-default | plausibility + boundary/completeness + methodology-conformance flags | verifier-grade recalculation + mass-balance consistency + sector depth |
+| **3. Audit room** | hundreds of hours proving data | immutable audit trail + determination flag per line | read-only verifier login + drill-down SEE→source doc | evidence-dossier auto-assembly + partner-verifier hand-off |
+| **4. Trust & hand-off** | importer liable / exporter holds data / secrets | upload-once-reuse-many + EORI link + role-based access | zero-exposure hand-off (supplier data never shown to importer) | SNARK zero-knowledge attestation (P2 spike) + DPP bridge (sell-twice) |
+
+**Phasing vs roadmap:** Phase 1 → P1 (M2/M3) · Phase 2 → P2 · Phase 3 → P3+.
+
+**Building blocks we adopt, not rebuild:** Circularise n-tier + GS1 Digital Link · Minespider
+registry-submission pattern · SAP Green Ledger as an API integration target · CleanCarbon
+services-reach as the Xero-partner line.
+
+---
+
 ## Segment 1 — Importer (Authorised CBAM Declarant)
 
 **Outcome:** *"I get declaration-ready, verifier-ready data and lower my certificate cost."*

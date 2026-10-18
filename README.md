@@ -68,7 +68,7 @@ Every entry ends with a source line:
 | Folder | Contents |
 |------|----------|
 | `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
-| `competition/` | Competitive landscape: matrix, threat scorecards, dossiers |
+| `competition/` | Competitive landscape: matrix, threat scorecards, dossiers, **friction-gap analysis** |
 
 ### `learning/` — taught CBAM courses (101 → 201 → 301)
 | Path | Contents |
