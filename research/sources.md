@@ -10,6 +10,7 @@ attend seminars, or watch webcasts.
 | Renoon | Digital Product Passport data requirements | article | 30 Jul 2026 | https://renoon.com |
 | MoveTheNeedle.news | EU DPP Registry is live — what manufacturers must do | article | 21 Aug 2026 | https://movetheneedle.news |
 | GOV.UK | EU Battery Passport requirements survey | gov | 15 Jun 2026 | https://www.gov.uk |
+| Leafr | CBAM Consultant — role, projects, how to hire (consultant marketplace) | article / hiring | 2026 | https://www.leafr.com/job-roles/cbam-consultant |
 
 ## Official EU
 

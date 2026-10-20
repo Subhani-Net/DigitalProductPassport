@@ -9,6 +9,7 @@ Ties to `../presentation-plan.md` (the Present dimension) and the demo data pack
 | `exporter-one-pager.md` | The customer-facing one-pager (send after a warm reply) |
 | `outreach-scripts.md` | Cold email + LinkedIn scripts (exporter primary, verifier, importer) |
 | `trial-playbook.md` | **What to do when someone says "good for a trial"** |
+| `consultant-channel.md` | **Consultant sourcing (Leafr) + engagement (co-development, not paid)** |
 
 **Golden rule (from `presentation-plan.md`):** solution-led, not probing. Show, don't interview.
 Lead with a working demo, ask for a pilot — never "can I ask you about your pain."
