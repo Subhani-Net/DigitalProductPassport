@@ -65,7 +65,7 @@ Every entry ends with a source line:
 | `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
 | `business/outreach/` | **Outreach pack**: target list, exporter one-pager, cold scripts, trial playbook |
 | `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
-| `business/investor/` | **Investor pack**: `investor-deck.md` · `pitch.md` · `business-plan.md` · `investment-plan.md.enc` |
+| `business/investor/` | **Investor pack**: deck · pitch · business plan · investment plan (encrypted) · `website/` (deck + marketing site + investor page) · `brand/` (identity) |
 | `business/README.md` | Org-setup + business-planning activity tracker |
 
 ### Competitive research
@@ -79,14 +79,6 @@ Every entry ends with a source line:
 |------|----------|
 | `demo/README.md` | The end-to-end journey + anchors |
 | `demo/*.json` | Seed fixtures (routes, precursor chain, importer, edge cases, expected outputs) |
-
-### `website/` — designed presentation (deck, marketing site, investor page)
-| Path | Contents |
-|------|----------|
-| `website/index.html` | Public marketing site |
-| `website/deck.html` | 16-slide investor deck |
-| `website/investor.html` | Investor page (unlisted) |
-| `brand/identity.md` | Working brand identity |
 
 ### `learning/` — taught CBAM courses (101 → 201 → 301)
 | Path | Contents |

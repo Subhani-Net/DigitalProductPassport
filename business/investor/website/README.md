@@ -13,14 +13,14 @@ site, and the investor page. Working brand; see `../brand/identity.md`.
 ## Preview locally
 
 ```
-python -m http.server 8080 --directory website
+python -m http.server 8080 --directory business/investor/website
 # open http://localhost:8080/deck.html
 ```
 
 ## Deploy (free — GitHub Pages)
 
 1. GitHub → repo **Settings → Pages**.
-2. Source: **Deploy from a branch** → branch `main`, folder `/website`.
+2. Source: **Deploy from a branch** → branch `main`, folder `/business/investor/website`.
 3. Site lives at `https://<user>.github.io/DigitalProductPassport/`.
 
 ## Content guard

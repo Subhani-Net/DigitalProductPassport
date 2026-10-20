@@ -4,10 +4,12 @@ One folder for everything an investor or prospect needs.
 
 | File | What it is |
 |---|---|
-| `investor-deck.md` | The 13-slide deck (numbers pulled from the deep docs) |
+| `investor-deck.md` | The 16-slide deck (numbers pulled from the deep docs) |
 | `pitch.md` | The story at 30s / 3min / per-audience lengths |
 | `business-plan.md` | Consolidated single-page business plan |
 | `investment-plan.md` | The funding ladder, costing, use-of-funds, MVP iterations *(encrypted)* |
+| `website/` | Designed presentation: `index.html` (marketing), `deck.html` (deck), `investor.html` (unlisted) |
+| `brand/` | Working brand identity (`identity.md`) |
 
 Deep reference (outside this folder): `../product-spec.md` (the product), `../jobs-to-be-done.md`
 (the beyond-processing core), `../system-intricacies.md` (the how), `../product-gaps.md`,
