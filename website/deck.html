@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veriflow — Investor Deck</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="deck-body">
+
+<!-- 1 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Veriflow · CBAM data platform</p>
+    <h2>The compliance infrastructure for Europe's carbon border tax.</h2>
+    <p class="lead">An enterprise data + workflow platform for non-EU steel &amp; aluminium suppliers to shield EU importers from punitive defaults — and keep their export orders.</p>
+    <div class="tags"><span class="tag">Exporter-first</span><span class="tag">In-force wedge now</span><span class="tag">DPP later</span></div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">What is CBAM</p>
+    <h2>A border tax on the carbon embedded in imports.</h2>
+    <p class="lead">CBAM (Regulation (EU) 2023/956) prices the carbon in goods imported into the EU, matching the cost EU producers pay under the ETS — to stop "carbon leakage". Covers cement, <strong>iron &amp; steel, aluminium</strong>, fertilisers, electricity, hydrogen — by customs (CN) code, including the <strong>precursors</strong> used to make them.</p>
+    <div class="callout">The reporting phase is over — the <strong>financial phase went live 1 Jan 2026</strong>.</div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The penalty</p>
+    <h2>Default values are punitive — and the liability sits with the importer.</h2>
+    <table>
+      <tr><th>Lever</th><th>Number</th></tr>
+      <tr><td>Certificate price</td><td class="pos"><strong>€75.36/t</strong> (Q1 2026)</td></tr>
+      <tr><td>Default-value mark-up</td><td class="neg">~10% (2026) → ~30% (2028)</td></tr>
+      <tr><td>Excess-emissions penalty</td><td class="neg">€100/tCO₂e (indexed)</td></tr>
+      <tr><td>Unauthorised import</td><td class="neg">3–5× the standard penalty</td></tr>
+      <tr><td>CBAM factor (share payable)</td><td>2.5% (2026) → 100% (2034)</td></tr>
+    </table>
+    <div class="callout">BF-BOF actual <strong>2.04</strong> vs default <strong>2.10</strong> tCO₂e/t → <strong>~€4,500 per 1,000 t</strong>, <strong>~€45,000 per 10,000 t</strong>.</div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The market</p>
+    <h2>A two-sided network, legally compelled.</h2>
+    <div class="grid cols-3">
+      <div class="stat"><span class="num">6–12k</span><div class="lbl">EU importers liable (the liable side)</div></div>
+      <div class="stat"><span class="num">20–50k</span><div class="lbl">non-EU suppliers (the data side — the TAM)</div></div>
+      <div class="stat"><span class="num">12k+</span><div class="lbl">importers who applied for authorisation (Jun 2026)</div></div>
+    </div>
+    <p class="lead" style="margin-top:32px;">Every verified supplier serves many importers; every importer pulls many suppliers.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The data problem</p>
+    <h2>Who pays ≠ who has the data.</h2>
+    <p class="lead">Importers face the fines; the <strong>non-EU factory</strong> holds the emissions data — in <strong>fragmented, unstructured form</strong>: mill certificates, coal/utility invoices, hand-kept weighbridge logs.</p>
+    <div class="callout">SAP and legacy platforms build for the <strong>declarant (EU buyer)</strong>. The <strong>supplier-side data-extraction layer is unserved.</strong></div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The calculation problem</p>
+    <h2>Why generic calculators fail.</h2>
+    <div class="grid cols-3">
+      <div class="card"><h3>Route specificity</h3><p>Blast furnace ≈ 2.1, electric arc ≈ 0.45, DRI, aluminium ≈ 16.5 tCO₂/t.</p></div>
+      <div class="card"><h3>Precursor roll-ups</h3><p>Embedded carbon of upstream covered inputs.</p></div>
+      <div class="card"><h3>Methodology rigour</h3><p>Mass-balance vs CEMS vs calculation-based — CBAM allocation, not the GHG Protocol.</p></div>
+    </div>
+    <div class="callout">If the numbers fail an accredited verifier's audit, the value is <strong>zero</strong>. A calculator calculates; a workflow system <strong>proves</strong>.</div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The product</p>
+    <h2>The calculator is the commodity. The friction is the product.</h2>
+    <div class="grid cols-4">
+      <div class="card"><span class="n">1</span><h3>Capture</h3><p>Unstructured factory data → normalised.</p></div>
+      <div class="card"><span class="n">2</span><h3>Validation</h3><p>Rules engine flags anomalies pre-audit.</p></div>
+      <div class="card"><span class="n">3</span><h3>Audit room</h3><p>Read-only workspace for accredited verifiers.</p></div>
+      <div class="card"><span class="n">4</span><h3>Trust</h3><p>One-click registry upload; EORI-linked data shield.</p></div>
+    </div>
+    <p class="lead" style="margin-top:28px;">Extract · Judge · Prove · Coordinate · Advise · Complete.</p>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">How it works</p>
+    <h2>Upload once, reused by every buyer.</h2>
+    <div class="lead" style="margin-top:24px;">
+      <p>1. Supplier uploads plant data <strong>once</strong> → normalise, calculate, evidence-pack.</p>
+      <p>2. Verified SEE maps via <strong>EORI link</strong> to the EU CBAM Registry.</p>
+      <p>3. Verifier audits in a <strong>read-only room</strong> — zero exposure of recipe or energy pricing.</p>
+      <p>4. The same data pack becomes the <strong>Digital Product Passport (2028–29)</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Why us</p>
+    <h2>A moat that compounds.</h2>
+    <div class="grid cols-3">
+      <div class="card"><span class="n">1</span><h3>Compounding validation</h3><p>Every verifier finding builds a proprietary rule library.</p></div>
+      <div class="card"><span class="n">2</span><h3>Network lock</h3><p>Once a factory maps its plant, switching cost grows with reuse.</p></div>
+      <div class="card"><span class="n">3</span><h3>Privacy as architecture</h3><p>Zero-exposure proof — compliance without exposing unit economics.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Competition</p>
+    <h2>Where the incumbents are weak.</h2>
+    <table>
+      <tr><th>Competitor</th><th>Fatal flaw for metals CBAM</th><th>Our advantage</th></tr>
+      <tr><td>SAP / ERPs</td><td class="neg">blind to non-EU factory floors</td><td class="pos">built from the factory floor up</td></tr>
+      <tr><td>CarbonChain</td><td class="neg">closed evidence; no DPP</td><td class="pos">open verifier rooms + DPP continuity</td></tr>
+      <tr><td>Minespider / Circularise</td><td class="neg">no CBAM registry engine</td><td class="pos">metallurgical-route engine</td></tr>
+      <tr><td>CleanCarbon</td><td class="neg">manual, un-scalable</td><td class="pos">programmatic, audit-ready</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The demo</p>
+    <h2>From punitive default to verified actuals.</h2>
+    <p class="lead">A seedable data pack runs the full journey — capture → validate → upload-once → importer declaration → verifier drill-down → the € saving — anchored to EC defaults + worldsteel/IAI.</p>
+    <div class="callout">The punchline: <strong>~€4,500 / 1,000 t</strong> saved (~€45,000 on a 10,000 t shipment).</div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Business model</p>
+    <h2>Exporters pay to keep orders; importers subsidise to de-risk.</h2>
+    <table>
+      <tr><th>Tier</th><th>Price</th></tr>
+      <tr><td>Low</td><td>€1k–3k / yr</td></tr>
+      <tr><td>Base</td><td class="pos"><strong>€8k–15k / yr</strong></td></tr>
+      <tr><td>Enterprise</td><td>€30k–60k / yr</td></tr>
+    </table>
+    <p class="lead" style="margin-top:24px;">The Xero flywheel: verifiers + customs brokers onboard free, and bring their client ecosystems through our software.</p>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Revenue</p>
+    <h2>Capital-efficient seed-scale SaaS.</h2>
+    <div class="grid cols-3">
+      <div class="stat"><span class="num">€0.3–0.45M</span><div class="lbl">conservative ARR (2028)</div></div>
+      <div class="stat"><span class="num">€1.2–1.8M</span><div class="lbl">base expansion</div></div>
+      <div class="stat"><span class="num">€1.5–6M</span><div class="lbl">enterprise capture</div></div>
+    </div>
+    <p class="lead" style="margin-top:28px;">Blue-sky (textiles + channel): £10M+. Revenue in €; the raise is £.</p>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The ask</p>
+    <h2>£1.0–1.25M, right-sized.</h2>
+    <table>
+      <tr><th>Round</th><th>Amount</th><th>Buys</th></tr>
+      <tr><td>SEIS (pre-seed)</td><td class="pos">£250k</td><td>core product hardening to sellable</td></tr>
+      <tr><td>EIS (seed)</td><td class="pos">£0.75–1.0M</td><td>30+ customers, steel DPP, security</td></tr>
+      <tr><td>Series A</td><td>deferred</td><td>re-priced on traction (≥£1M ARR, &gt;100 customers)</td></tr>
+    </table>
+    <div class="grid cols-4" style="margin-top:28px;">
+      <div class="card"><h4>Q4 2026</h4><p>M1 done</p></div>
+      <div class="card"><h4>H1 2027</h4><p>CBAM engine · first revenue</p></div>
+      <div class="card"><h4>2027–28</h4><p>metals GTM · registry-live</p></div>
+      <div class="card"><h4>2028–29</h4><p>textiles · DPP</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">Roadmap</p>
+    <h2>The path.</h2>
+    <p class="lead">
+      <strong>M1</strong> (done) → <strong>M2</strong> CBAM engine sellable, first revenue →
+      <strong>M3</strong> sell-twice proof (CBAM → DPP) → <strong>P2</strong> metals GTM →
+      <strong>P3</strong> textiles → <strong>P4</strong> scale + downstream.
+    </p>
+  </div>
+</section>
+
+<!-- 16 -->
+<section class="slide">
+  <div class="wrap">
+    <p class="kicker">The ask</p>
+    <h2>Invest in the supplier-side wedge.</h2>
+    <p class="lead" style="font-size:1.6rem;">The friction is the product, the verification bottleneck is the window — and the regulatory clock is already running.</p>
+  </div>
+</section>
+
+<div class="deck-nav">
+  <button id="prev" aria-label="Previous">←</button>
+  <button id="next" aria-label="Next">→</button>
+</div>
+<div class="deck-count" id="count">1 / 16</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let i = 0;
+  const count = document.getElementById('count');
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.style.display = k === i ? 'flex' : 'none');
+    count.textContent = (i + 1) + ' / ' + slides.length;
+    window.scrollTo(0, 0);
+  }
+  document.getElementById('next').addEventListener('click', () => show(i + 1));
+  document.getElementById('prev').addEventListener('click', () => show(i - 1));
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') show(i + 1);
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') show(i - 1);
+  });
+  show(0);
+</script>
+
+</body>
+</html>

@@ -80,6 +80,14 @@ Every entry ends with a source line:
 | `demo/README.md` | The end-to-end journey + anchors |
 | `demo/*.json` | Seed fixtures (routes, precursor chain, importer, edge cases, expected outputs) |
 
+### `website/` — designed presentation (deck, marketing site, investor page)
+| Path | Contents |
+|------|----------|
+| `website/index.html` | Public marketing site |
+| `website/deck.html` | 16-slide investor deck |
+| `website/investor.html` | Investor page (unlisted) |
+| `brand/identity.md` | Working brand identity |
+
 ### `learning/` — taught CBAM courses (101 → 201 → 301)
 | Path | Contents |
 |------|----------|

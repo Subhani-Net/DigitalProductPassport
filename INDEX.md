@@ -99,6 +99,15 @@ separate the product from the work around it.
 | `demo/README.md` | Demo journey (capture → validate → transfer → consume → assure → sell-twice → wedge) |
 | `demo/*.json` | Seed fixtures (BF-BOF, EAF, DRI, primary Al, precursor chain, importer, edge cases, expected outputs) |
 
+### 3.4 Website & brand
+| Path | Purpose |
+|---|---|
+| `brand/identity.md` | Working brand (name, colour, type, voice) |
+| `website/index.html` | Public marketing site |
+| `website/deck.html` | 16-slide investor deck (navigable) |
+| `website/investor.html` | Investor page (unlisted) |
+| `website/assets/styles.css` | The shared design system |
+
 ## 4. GOVERNANCE
 
 | Path | Purpose |
