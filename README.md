@@ -1,26 +1,25 @@
-# Digital Product Passport — Knowledge Base
+# Digital Product Passport — Knowledge Base & Product
 
-Living reference on the EU Digital Product Passport (DPP): regulations, standards,
-companies in scope, key people, consultancies, tools/repositories, and every source
-gathered from browsing, seminars, and webcasts.
+Living working repository for a CBAM/DPP product: the knowledge base, the product spec, the
+working code, the business/investor material, and everything gathered from browsing, seminars,
+and webcasts.
 
-## How to add information (capture flow)
+**Clean tree — 4 tracked top-level folders:** `product/` · `knowledge/` · `business/` · `tools/`.
+See `INDEX.md` for the full artifact map.
 
-1. Paste raw notes, links, seminar/webcast takeaways into a message and ask the assistant
-   to file them.
-2. The item gets sorted into the right topic file (under `research/`), tagged with a
-   citation (`Source: name — URL — type — date`).
-3. Unverified material is marked `[Unverified]` until you confirm it.
+## How to add information
+
+1. Paste raw notes/links/takeaways into a message and ask the assistant to file them.
+2. The item is sorted into the right file (under `knowledge/`), cited
+   (`Source: name — URL — type — date`), and marked `[Unverified]` until confirmed.
 
 ## How to ask questions
 
-Ask anything in natural language, e.g. "Which companies must submit by Feb 2027?",
-"What is the Battery Pass consortium?", "Who are the key people in DPP?".
-The assistant searches these files and answers with references.
+Ask in natural language, e.g. "Which companies must submit by Feb 2027?", "What is the Battery
+Pass consortium?", "Who are the key people in DPP?". The assistant searches these files and
+answers with references.
 
 ## Citation convention
-
-Every entry ends with a source line:
 
 ```
 > Source: <Name> — <URL> — <type: article | gov | press | seminar | webcast | meeting | github> — <date>
@@ -31,7 +30,7 @@ Every entry ends with a source line:
 ```
 ## <Name>
 - **Type:** Regulation | Standard | Company | Person | Consultancy | Tool | Project | Consortium
-- **Category:** <sector bucket, e.g. EV OEM / Battery maker / LMT / ESS / Second-life / Standards body>
+- **Category:** <sector bucket>
 - **Summary:** what it is
 - **Relevance to DPP:** why it matters
 - **Notes:** details, open questions
@@ -43,79 +42,51 @@ Every entry ends with a source line:
 ### Root — operational docs
 | File | Contents |
 |------|----------|
-| `README.md` | This index (Map of Content) |
-| `INDEX.md` | **Artifacts by dimension** (Learn · Implement/Product · Present) — product boundary |
-| `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue, environment |
-| `AGENTS.md` | Working principles & constraints (assessed for every action) |
-| `terminology.md` | Shortcut legend: P/M/L/C/S/D/T/E keys, other recurring terms |
-| `workitems/README.md` | **Jira-style work-item register** (status, what was done, commit links) |
-| `compliance-matrix.md` | Self-certification evidence (Tier 2) |
+| `README.md` | This map of content |
+| `INDEX.md` | **Artifact map** (Product · Knowledge · Business) |
+| `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue |
+| `AGENTS.md` | Working principles & constraints |
+| `terminology.md` | Shortcut legend (P/M/L/C/S/D/T/E keys) |
+| `compliance-matrix.md` | T1/T2 conformance evidence |
 
-### `business/` — business track
-| File | Contents |
-|------|----------|
-| `business/product-roadmap.md` | Top-level product map: vision, targets, phases, milestones, risks |
-| `business/project-gantt.md` | Gantt project plan (derived from roadmap §5) |
-| `business/sprint-plan.md` | Epics, stories (incl. learning), sprint schedule, 3-dimension milestone view |
-| `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
-| `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
-| `business/jobs-to-be-done.md` | **The beyond-processing core** (Extract/Judge/Prove/Coordinate/Advise/Complete) |
-| `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
-| `business/product-gaps.md` | **Gaps & uncovered scope** (activation, cold-start, ops, compliance, engine long tail) |
-| `business/presentation-plan.md` | **Present dimension**: explainers, demo scripts, signal rubric, target list |
-| `business/outreach/` | **Outreach pack**: target list, exporter one-pager, cold scripts, trial playbook |
-| `business/execution-modes.md` | Desktop/Expert/Field mapping of each chunk (additive view) |
-| `business/investor/` | **Investor pack**: deck · pitch · business plan · investment plan (encrypted) · `website/` (deck + marketing site + investor page) · `brand/` (identity) |
-| `business/README.md` | Org-setup + business-planning activity tracker |
-
-### Competitive research
-| Folder | Contents |
-|------|----------|
-| `cleancarbonai/` | Competitive research KB on CleanCarbon.ai (CBAM pipeline) |
-| `competition/` | Competitive landscape: matrix, threat scorecards, dossiers, **friction-gap analysis** |
-
-### `demo/` — seedable end-to-end demo data
+### `product/` — the software (IS the product)
 | Path | Contents |
 |------|----------|
-| `demo/README.md` | The end-to-end journey + anchors |
-| `demo/*.json` | Seed fixtures (routes, precursor chain, importer, edge cases, expected outputs) |
+| `product/src/` | `DppCore` (calculator, declaration, economics, registry client), `DppRegistryClient`, schemas, fixtures |
+| `product/tests/` | xUnit + Reqnroll BDD suite (44 green, 86 spec stubs) |
+| `product/demo/` | Seedable end-to-end demo data pack |
 
-### `learning/` — taught CBAM courses (101 → 201 → 301)
+### `knowledge/` — what we've learned
 | Path | Contents |
 |------|----------|
-| `learning/README.md` | Course catalogue + SME competency map |
-| `learning/cbambok.md` | **CBAM Body of Knowledge** — article-anchored terms, processes, units |
-| `learning/glossary.md` | Learning glossary: terms + course mapping + inbox |
-| `learning/cbam-101/` | **Complete** — Foundations (7 modules + self-assessment) |
-| `learning/cbam-201/` | **Complete** — Practitioner (9 modules + self-assessment) |
-| `learning/cbam-301/` | Planned — Expert / SME (stub) |
+| `knowledge/learning/` | CBAM 101 / 201 (complete), 301 (planned), CBAMBOK, glossary |
+| `knowledge/research/` | Regulations, CBAM workflow, data catalogue, data-inputs reference, data layer, TracePass, standards, architecture, market sizing, verifier path, sources |
+| `knowledge/exploration/` | Initial/exploratory notes |
 
-### `research/` — definitive & high-value reference
-| File | Contents |
+### `business/` — strategy, GTM, investor
+| Path | Contents |
 |------|----------|
-| `research/regulations.md` | EU laws, deadlines, obligations |
-| `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/verifiers) + design implications |
-| `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
-| `research/data-inputs-reference.md` | **Field-level: what gets submitted to the authority** (CBAM O3CI/AMM + DPP) |
-| `research/data-layer.md` | **Data capture / transfer / transform** (exporter→importer pipeline) |
-| `research/cbam-input-sources.md` | Static/dynamic/real-time CBAM data sources |
-| `research/tracepass-steel-fields-table.md` | **Full TracePass steel/aluminium field table** (84 fields, English) |
-| `research/tracepass-steel-inventory.md` | Required fields + CBAM ∩ DPP overlap seed |
-| `research/goto-market-sizing.md` | Business model, segments, sizing, pricing L/B/H |
-| `research/cbam-verifier-accreditation.md` | Verifier-agency Operations SME path + self-study syllabus |
-| `research/standards.md` | CEN/CENELEC, schemas, data models |
-| `research/architecture.md` | DPP technical architecture: learning path + 3-layer framework |
-| `research/learning-roadmap.md` | Structured curriculum: commodity layers → complex logic → your system |
-| `research/tools.md` | Open-source repos, platforms, registries |
-| `research/sources.md` | Full bibliography of all sources collected |
-| `research/glossary.md` | DPP terminology |
+| `business/product-roadmap.md` | Product map, phases, milestones, risks |
+| `business/sprint-plan.md` | Epics/stories/sprints + milestone view |
+| `business/product-spec.md` | Specification — outcomes → rules → scenarios |
+| `business/jobs-to-be-done.md` | Beyond-processing core (6 jobs) |
+| `business/system-intricacies.md` | JSON seam, guarantees, challenges→fixes |
+| `business/product-gaps.md` | Gaps & uncovered scope |
+| `business/specification-by-example.md` | BDD playbook |
+| `business/presentation-plan.md` | Present dimension |
+| `business/project-gantt.md` | Dated task view |
+| `business/execution-modes.md` | Desktop/Expert/Field chunk map |
+| `business/investor/` | Deck · pitch · business plan · investment plan (encrypted) · `website/` · `brand/` |
+| `business/outreach/` | Target list · one-pager · scripts · trial playbook · consultant channel |
+| `business/competition/` | Landscape, friction-gap analysis, dossiers |
+| `business/cleancarbonai/` | CleanCarbon.ai competitive KD |
+| `business/workitems/` | Jira-style work-item register + gaps backlog |
+| `business/README.md` | Business activity tracker |
 
-### `exploration/` — initial/exploratory notes (lower priority, still searchable)
-| File | Contents |
+### `tools/`
+| Path | Contents |
 |------|----------|
-| `exploration/DPP_Initial_Brainstorm.md` | Original raw brainstorm material |
-| `exploration/saas-opportunity.md` | Early market analysis of DPP enabling-SaaS opportunity |
-| `exploration/adjacent-opportunities.md` | Other business ideas (fly ash / construction materials), CAMBEX |
-| `exploration/companies.md` | Early company lists (many entries [Unverified]) |
-| `exploration/people.md` | Early people notes |
-| `exploration/consultancies.md` | Early consultancies/consortia notes |
+| `tools/crypt-docs.ps1` | Lock/unlock local-only docs (AES-256) |
+
+### Gitignored
+`reference/` (cloned tools), `scratch/` (spike host).

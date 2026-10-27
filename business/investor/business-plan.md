@@ -28,7 +28,7 @@ Pricing L €1–3k / B €8–15k / H €30–60k.
 
 ## 6. Financials
 Base ARR €0.3–0.45M (2028) → €1.2–1.8M; blue-sky £10M+. Raise ~£1.0–1.25M (SEIS + EIS),
-Series A deferred on traction. (`investment-plan.md`, `../research/goto-market-sizing.md`)
+Series A deferred on traction. (`investment-plan.md`, `../../knowledge/research/goto-market-sizing.md`)
 
 ## 7. Roadmap
 M1 done → M2 (CBAM engine, first revenue) → M3 (sell-twice) → steel GTM (2027–28) →

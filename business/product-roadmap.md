@@ -1,9 +1,9 @@
 # Product Roadmap — DPP Enabling-Software Platform
 
-Top-level product map and the path we take. Strategy references: `exploration/saas-opportunity.md`
-(commodity vs complex layers), `research/architecture.md` (3-layer stack), `research/standards.md`
-(certification blueprints), `research/learning-roadmap.md` (how we learn the landscape),
-`research/regulations.md` (the legal driver).
+Top-level product map and the path we take. Strategy references: `../knowledge/exploration/saas-opportunity.md`
+(commodity vs complex layers), `../knowledge/research/architecture.md` (3-layer stack), `../knowledge/research/standards.md`
+(certification blueprints), `../knowledge/research/learning-roadmap.md` (how we learn the landscape),
+`../knowledge/research/regulations.md` (the legal driver).
 
 > **Single source of truth:** the dated, milestone-based master is **§5 Implementation
 > timeline**. Every dated statement in §3 (Targets), §4 (Phases) and §7 (Action plan), and the
@@ -71,7 +71,7 @@ Customer targets:
 - **Trust direction: aiming at SNARK / zero-exposed data.** Suppliers' proprietary detail is
   never exposed to consumer/importer counterparties — proof by zero-knowledge attestation,
   not data sharing. Feasibility/timing still gated by the P2 ZK spike (§4).
-- Full sizing + pricing model: `research/goto-market-sizing.md`.
+- Full sizing + pricing model: `../knowledge/research/goto-market-sizing.md`.
 
 ### Moat = encoded validation intelligence (3-layer view, decided Sep 2026)
 
@@ -154,7 +154,7 @@ behind that domain (DNS/CNAME). Consequence for customers: joining/leaving us is
 never a mass re-registration of historical DPPs; printed QRs/registry URIs never break. This
 is a required engineering capability (C6: stable redirect layer / customer domains + optional
 bulk re-registration client for migrations) and a sales argument. See
-`research/architecture.md` "Registry portability & provider migration". Watch: **DPP Service
+`../knowledge/research/architecture.md` "Registry portability & provider migration". Watch: **DPP Service
 Provider Delegated Act (Q2–Q3 2027)** may formalise portability duties for us.
 
 ### Product capability hierarchy (3 tiers, decided Sept 2026)
@@ -165,7 +165,7 @@ Provider Delegated Act (Q2–Q3 2027)** may formalise portability duties for us.
 - **Tier 2 — Mandatory peripheral:** EU repository/registry connectivity, CBAM XML/Excel
   formatting, audit trails, DPP bridge. Non-negotiable plumbing, not the moat.
 - **Tier 3 — Next-tier surface (not the moat):** **data-collection interfaces** — ERP, PLM(S),
-  PIMS, devices/telemetry (`research/cbam-input-sources.md`). High adoption value; build on
+  PIMS, devices/telemetry (`../knowledge/research/cbam-input-sources.md`). High adoption value; build on
   demand, gated behind a validated core, never speculatively.
 
 ### Role model & payer (open decision — discovery gate)
@@ -211,7 +211,7 @@ Months 10+: corporate accreditation  → apply to an EU National Accreditation B
   no conflict, sharpens validation intelligence), keep the platform track, and defer the
   corporate-accreditation decision to option B when volume justifies it. Do **not** silently
   revise locked decision #2 (partner-only stamp) — this is an explicit keep-open, now with a
-  concrete path. **Self-study syllabus + role framing: `../research/cbam-verifier-accreditation.md`.**
+  concrete path. **Self-study syllabus + role framing: `../knowledge/research/cbam-verifier-accreditation.md`.**
 
 ## 3. Targets (top-level goals)
 
@@ -239,7 +239,7 @@ Windows and exits are the master in §5. Status: P0 in progress (Sept 2026).
 £0.75–1.0M** funds P2 (and P3 start); P3 scale-out/P4 are **blue-sky** (deferred Series A).
 
 - **P0 — Foundation (Sep → late Oct 2026).** *(pre-incorporation / sweat)* Complete
-  `research/learning-roadmap.md` Phase
+  `../knowledge/research/learning-roadmap.md` Phase
   0–1
   (guided blocks L1–L7); verify Catena-X specifics; sandbox stood up (done Sept: CIRPASS-2
   env + S1 registry spike passed). *Exit = **M1** (late Oct):* wedge overlap map
@@ -396,7 +396,7 @@ Full dated view: §5. Gantt view: `project-gantt.md`. Sprint/epic/story backlog:
 
 ## 10. Working cadence (how we build)
 
-Per `AGENTS.md`: iterate before acting → small chunks of working functionality → verify each
+Per `../AGENTS.md`: iterate before acting → small chunks of working functionality → verify each
 chunk against dependent scenarios → keep EU Registry as the compliance target → build only
 defensible IP on top of adopted commodity layers.
 

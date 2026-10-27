@@ -21,7 +21,7 @@ Per `AGENTS.md`, every build chunk must update it.
 | ID | Guideline / standard | Source | Our implementation | Test harness | Evidence | Status |
 |----|----------------------|--------|--------------------|--------------|----------|--------|
 | T1-REG-001 | Mock EU registry registration: metadata entry + reachable DPP at liveURL (decentralized hosting), reoId from JWT claim, Proof-of-Registration JWT | CIRPASS-2 mock-eu-registry (v1.1.1) | S1 spike: REST POST via client-credentials token; static DPP host on :9090 | mock-eu-registry :8082 + Keycloak :8180 (realm cirpass-2), client `eo-EO-529900T8BM49AURSDO10` | 201 → registryId `e3eb36a2-a965-11f1-b830-05558a99e842`; dppHash `sha256:caecf7ef…`; proof JWT retrieved (reoId `EO-529900T8BM49AURSDO10`, reoName `EO-Company123`) — 2026-09-05 | Passing |
-| T1-REG-002 | **Automated** registry client round-trip (OIDC token → register metadata → fetch proof) | CIRPASS-2 mock-eu-registry | `src/DppRegistryClient` (C#/.NET 10) + `src/fixtures/registry-entry.model.sample.json` | mock-eu-registry :8082 + Keycloak :8180 | Register **201** (registryId `e3eb36a2-…`, dppHash `sha256:caecf7ef…`), Proof **200** — 2026-10-17 | Passing |
+| T1-REG-002 | **Automated** registry client round-trip (OIDC token → register metadata → fetch proof) | CIRPASS-2 mock-eu-registry | `product/src/DppRegistryClient` (C#/.NET 10) + `product/src/fixtures/registry-entry.model.sample.json` | mock-eu-registry :8082 + Keycloak :8180 | Register **201** (registryId `e3eb36a2-…`, dppHash `sha256:caecf7ef…`), Proof **200** — 2026-10-17 | Passing |
 
 ## Pending harness set-up
 

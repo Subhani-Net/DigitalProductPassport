@@ -1,8 +1,8 @@
 # Investor Deck
 
 Self-contained: a reader with **zero prior knowledge of CBAM** should understand every slide.
-Numbers sourced from `../research/goto-market-sizing.md`, `../research/regulations.md`,
-`../research/cbam-registry-workflow.md`, `../product-spec.md`, `investment-plan.md`. Figures
+Numbers sourced from `../../knowledge/research/goto-market-sizing.md`, `../../knowledge/research/regulations.md`,
+`../../knowledge/research/cbam-registry-workflow.md`, `../product-spec.md`, `investment-plan.md`. Figures
 tagged `[verify]` where secondary. **Currency discipline: € = revenue/market · £ = the UK raise.**
 
 ---

@@ -1,7 +1,7 @@
 # System Intricacies — Challenges, Fixes, Mandatory vs Good-to-Have
 
 Deep spec of *how the system works* once data is JSON-in. Companion to `product-spec.md`
-(the what/why) and `../research/data-layer.md` (the data pipeline). This is the "how and the
+(the what/why) and `../knowledge/research/data-layer.md` (the data pipeline). This is the "how and the
 gotchas" document.
 
 ## 0. Locked architecture — JSON is the canonical seam

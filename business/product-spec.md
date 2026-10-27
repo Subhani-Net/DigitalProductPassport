@@ -15,7 +15,7 @@ mostly `@ignore @stub` until built.
 
 The **strength is not the calculator** (that is commodity — CarbonChain/SAP/cbam-tools own it).
 The product is four **friction-reduction pillars**, built in phases, on top of a commodity
-canonical model + engine. Competitor gap map: `../competition/friction-gap-analysis.md`.
+canonical model + engine. Competitor gap map: `competition/friction-gap-analysis.md`.
 **Beyond processing (the six jobs that are the product): `jobs-to-be-done.md`** — Extract,
 Judge, Prove, Coordinate, Advise, Complete.
 
@@ -112,7 +112,7 @@ services-reach as the Xero-partner line.
 
 - **Runnable (green):** CBAM calculation (`cbam-calculation.feature`), DPP registry
   connectivity/authorization/registration (`registry-*.feature`), **importer declaration &
-  settlement** (`cbam-importer-declaration.feature` → `DppCore/CbamDeclaration.cs`).
+  settlement** (`cbam-importer-declaration.feature` → `../product/src/DppCore/CbamDeclaration.cs`).
 - **Stubbed (`@ignore`):** all role outcomes above (`roles/*.feature`) — promoted sprint by sprint.
 
 ## How this maps to the build

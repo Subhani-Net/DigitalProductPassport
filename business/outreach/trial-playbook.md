@@ -54,9 +54,9 @@ You do not yet have the full application, nor the verifier-grade consultant. Tha
 first pilots are run **manually ("concierge")**, and you must be honest about stage.
 
 **What you already have enough of:**
-- The **CBAM methodology** (documented in `learning/cbam-101/201`, `research/cbam-data-catalogue.md`,
-  `research/data-inputs-reference.md`) — enough to compute a *draft* SEE for a simple BF-BOF/EAF case.
-- The **calculator** (`src/DppCore/CbamCalculator.cs` + `CbamDeclaration.cs`) + the **demo data pack**.
+- The **CBAM methodology** (documented in `../../knowledge/learning/`, `../../knowledge/research/cbam-data-catalogue.md`,
+  `../../knowledge/research/data-inputs-reference.md`) — enough to compute a *draft* SEE for a simple BF-BOF/EAF case.
+- The **calculator** (`../../product/src/DppCore/CbamCalculator.cs` + `CbamDeclaration.cs`) + the **demo data pack**.
 - The **demo** as proof of the method.
 
 **What you honestly deliver in a pilot (manual, 2 weeks):**

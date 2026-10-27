@@ -1,122 +1,123 @@
-# INDEX — Artifacts by Dimension (Learn · Implement · Present)
+# INDEX — Artifacts by Dimension (Product · Knowledge · Business)
 
-**Product boundary:** the actual product is **`src/` only**. Everything else in this repository
-is supporting material (learning, presentation/GTM, research, governance). Use this index to
-separate the product from the work around it.
+Clean tree: **4 tracked top-level folders** — `product/` (software), `knowledge/` (what we've
+learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `reference/` and
+`scratch/`.
 
-| Dimension | Where | What it is |
-|---|---|---|
-| **Implement (PRODUCT)** | `src/` | The software + schemas + fixtures. This is what we build and ship. |
-| **Learn** | `learning/`, `research/`, `terminology.md`, `exploration/` | Courses, body of knowledge, regulations, standards, market research, reference notes. |
-| **Present** | `business/`, `competition/`, `cleancarbonai/` | Roadmap, sprint/presentation plans, funding, market sizing, competitive intel, customer-facing artifacts. |
-| **Governance** | `AGENTS.md`, `SESSION-CONTEXT.md`, `README.md`, `INDEX.md`, `compliance-matrix.md` | Working rules, session state, index, conformance evidence. |
-| **External (not ours)** | `reference/`, `scratch/` | Cloned tools + spike artifacts (gitignored). |
+| Top folder | What it is |
+|---|---|
+| **`product/`** | The software: `src/` (code + schemas + fixtures), `tests/`, `demo/` (seedable data). **This is the product.** |
+| **`knowledge/`** | `learning/` (courses), `research/` (reference), `exploration/` (early notes). |
+| **`business/`** | Roadmap/spec/planning, `investor/` (deck + website + brand), `outreach/`, `competition/`, `cleancarbonai/`, `workitems/`. |
+| **`tools/`** | Scripts (e.g. `crypt-docs.ps1`). |
+| Root docs | `README.md`, `INDEX.md`, `AGENTS.md`, `SESSION-CONTEXT.md`, `terminology.md`, `compliance-matrix.md`. |
+| Gitignored | `reference/` (cloned tools), `scratch/` (spike host). |
 
 ---
 
-## 1. IMPLEMENT — the product (`src/`)
+## 1. PRODUCT (`product/`)
 
+### 1.1 Source (`product/src/`)
 | Path | Purpose | Status |
 |---|---|---|
-| `src/README.md` | Product source overview + build plan pointer | — |
-| `src/DppRegistryClient/DppRegistryClient.csproj` | C#/.NET 10 console client project | ✅ |
-| `src/DppRegistryClient/Program.cs` | OIDC token → register metadata → fetch proof | ✅ (T1-REG-002) |
-| `src/model/calc-inputs.schema.json` | Throwaway canonical calc-input stub (L1) | ✅ stub |
-| `src/fixtures/steel-calc-inputs.sample.json` | Sample steel calc inputs (arithmetic verified) | ✅ |
-| `src/fixtures/registry-entry.model.sample.json` | Registry metadata entry sample | ✅ |
-| `src/fixtures/steel-hrc-batch.md` | Original fixture narrative (placeholder) | placeholder |
+| `product/src/README.md` | Product source overview | — |
+| `product/src/DppCore/` | Calculator, declaration/settlement, economics, registry client | ✅ |
+| `product/src/DppRegistryClient/` | C#/.NET 10 console client | ✅ (T1-REG-002) |
+| `product/src/model/calc-inputs.schema.json` | Canonical calc-input stub | ✅ stub |
+| `product/src/fixtures/` | Sample calc inputs + registry entry + batch narrative | ✅ |
 
-> Everything else is **not** the product. New product code goes under `src/` only.
-
-## 2. LEARN
-
-### 2.1 Courses (`learning/`)
+### 1.2 Tests (`product/tests/`)
 | Path | Purpose |
 |---|---|
-| `learning/README.md` | Course catalogue + SME competency map |
-| `learning/cbambok.md` | CBAM Body of Knowledge (legislation, processes, units) |
-| `learning/glossary.md` | Terms + course mapping + inbox |
-| `learning/cbam-101/` | **Complete** Foundations (7 modules + assessment) |
-| `learning/cbam-201/` | **Complete** Practitioner (9 modules + assessment) |
-| `learning/cbam-301/README.md` | Planned Expert/SME (stub) |
+| `product/tests/DppCore.Tests/` | xUnit + Reqnroll (BDD) suite — 44 green, 86 spec stubs |
+| `product/tests/DppCore.Tests/Features/` | Gherkin: calc, registry, data-layer, pillars, roles |
 
-### 2.2 Reference research (`research/`)
+### 1.3 Demo (`product/demo/`)
 | Path | Purpose |
 |---|---|
-| `research/regulations.md` | EU laws, CBAM/ESPR timeline, L1 sign-off |
-| `research/cbam-registry-workflow.md` | Official CBAM Registry workflow (AMM/O3CI/DRMC) |
-| `research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
-| `research/data-inputs-reference.md` | **What gets submitted to the authority** — field-level (CBAM O3CI/AMM + DPP metadata) |
-| `research/data-layer.md` | **Data capture / transfer / transform** — the exporter→importer pipeline nitty-gritty |
-| `research/cbam-input-sources.md` | Static/dynamic/real-time data sources |
-| `research/tracepass-steel-inventory.md` | TracePass steel: 84 fields / 29 required (required subset + CBAM overlap) |
-| `research/tracepass-steel-fields-table.md` | **Full 84-field steel/aluminium table** (English descriptions) |
-| `research/standards.md` | CEN/CENELEC, schemas, certification |
-| `research/architecture.md` | DPP technical architecture (3-layer) |
-| `research/learning-roadmap.md` | Learning plan |
-| `research/tools.md` | Open-source repos/platforms |
-| `research/sources.md` | Bibliography |
-| `research/glossary.md` | Deep glossary (incl. CBAM workflow) |
-| `research/goto-market-sizing.md` | Market sizing + **revenue model** |
-| `research/cbam-verifier-accreditation.md` | Verifier-agency path + syllabus |
+| `product/demo/README.md` | End-to-end journey + anchors |
+| `product/demo/*.json` | Seed fixtures (BF-BOF/EAF/DRI/Al, precursor chain, importer, edge cases, expected outputs) |
 
-### 2.3 Other learning
+## 2. KNOWLEDGE (`knowledge/`)
+
+### 2.1 Courses (`knowledge/learning/`)
 | Path | Purpose |
 |---|---|
-| `terminology.md` | Shortcut legend (P/M/L/C/S/D/T/E keys) |
-| `exploration/` | Initial/exploratory notes (brainstorm, early SaaS read, adjacent ideas, company/people lists) |
+| `knowledge/learning/README.md` | Course catalogue + SME competency map |
+| `knowledge/learning/cbambok.md` | CBAM Body of Knowledge |
+| `knowledge/learning/glossary.md` | Terms + course mapping |
+| `knowledge/learning/cbam-101/` | **Complete** Foundations |
+| `knowledge/learning/cbam-201/` | **Complete** Practitioner |
+| `knowledge/learning/cbam-301/README.md` | Planned Expert/SME |
 
-## 3. PRESENT
-
-### 3.1 Business & planning (`business/`)
+### 2.2 Reference research (`knowledge/research/`)
 | Path | Purpose |
 |---|---|
-| `business/product-roadmap.md` | Product map, phases, funding pointer, risks |
-| `business/sprint-plan.md` | Epics, stories, sprints, **3-dimension milestone view** |
-| `business/specification-by-example.md` | **BDD/SpecFlow playbook** (Example Mapping, hierarchy, loop) |
-| `business/product-spec.md` | **Product specification** — outcomes → rules → scenarios per role |
-| `business/jobs-to-be-done.md` | **The beyond-processing core** — Extract/Judge/Prove/Coordinate/Advise/Complete + improvement loop |
-| `business/system-intricacies.md` | **How the system works** — JSON seam, guarantees, challenges→fixes, mandatory vs good-to-have |
-| `business/product-gaps.md` | **Gaps & uncovered scope** — activation, cold-start, ops, our own compliance, engine long tail, non-goals |
-| `business/presentation-plan.md` | **Present dimension**: explainers, scripts, signal rubric, target list |
-| `business/outreach/` | **Outreach pack**: target list, exporter one-pager, scripts, trial playbook |
-| `business/project-gantt.md` | Dated task view (roadmap §5) |
-| `business/investor/` | **Investor pack**: deck · pitch · business plan · investment plan (encrypted) · **website/** (deck + marketing site + investor page) · **brand/** (identity) |
-| `business/README.md` | Business-track activity tracker |
+| `knowledge/research/regulations.md` | EU laws, CBAM/ESPR timeline |
+| `knowledge/research/cbam-registry-workflow.md` | CBAM Registry workflow (AMM/O3CI/DRMC) |
+| `knowledge/research/cbam-data-catalogue.md` | Master data-request catalogue (A–H) |
+| `knowledge/research/data-inputs-reference.md` | What is submitted to the authority (field-level) |
+| `knowledge/research/data-layer.md` | Capture / transfer / transform pipeline |
+| `knowledge/research/cbam-input-sources.md` | Static/dynamic/real-time sources |
+| `knowledge/research/tracepass-steel-inventory.md` | Steel field inventory (84 / 29 required) |
+| `knowledge/research/tracepass-steel-fields-table.md` | Full 84-field table |
+| `knowledge/research/standards.md` | CEN/CENELEC, schemas |
+| `knowledge/research/architecture.md` | Technical architecture (3-layer) |
+| `knowledge/research/learning-roadmap.md` | Learning plan |
+| `knowledge/research/tools.md` | Open-source repos/platforms |
+| `knowledge/research/sources.md` | Bibliography |
+| `knowledge/research/glossary.md` | Deep glossary |
+| `knowledge/research/goto-market-sizing.md` | Market sizing + revenue model |
+| `knowledge/research/cbam-verifier-accreditation.md` | Verifier-agency path |
 
-### 3.2 Competitive & GTM
+### 2.3 Other
 | Path | Purpose |
 |---|---|
-| `competition/landscape.md` | Competitor matrix + threat scorecards |
-| `competition/friction-gap-analysis.md` | **4-pillar friction map** — where incumbents are weak + what we adopt |
-| `competition/mapping-to-roadmap.md` | Competitors vs our roadmap |
-| `competition/dossiers/` | Per-player dossiers (CarbonChain, SAP, Minespider…) |
-| `cleancarbonai/` | CleanCarbon.ai competitive KD |
+| `knowledge/exploration/` | Initial/exploratory notes |
+| `terminology.md` | Shortcut legend |
 
-### 3.3 Demo (seedable end-to-end data)
+## 3. BUSINESS (`business/`)
+
+### 3.1 Planning & spec
 | Path | Purpose |
 |---|---|
-| `demo/README.md` | Demo journey (capture → validate → transfer → consume → assure → sell-twice → wedge) |
-| `demo/*.json` | Seed fixtures (BF-BOF, EAF, DRI, primary Al, precursor chain, importer, edge cases, expected outputs) |
+| `business/product-roadmap.md` | Phases, milestones, risks |
+| `business/sprint-plan.md` | Epics/stories/sprints + milestone view |
+| `business/product-spec.md` | Specification — outcomes → rules → scenarios |
+| `business/jobs-to-be-done.md` | Beyond-processing core (6 jobs) |
+| `business/system-intricacies.md` | JSON seam, guarantees, challenges→fixes |
+| `business/product-gaps.md` | Gaps & uncovered scope |
+| `business/specification-by-example.md` | BDD playbook |
+| `business/presentation-plan.md` | Present dimension |
+| `business/project-gantt.md` | Dated task view |
+| `business/README.md` | Business activity tracker |
 
-## 4. GOVERNANCE
-
+### 3.2 Investor / outreach / competition / work items
 | Path | Purpose |
 |---|---|
-| `AGENTS.md` | Working principles & constraint checklist |
-| `SESSION-CONTEXT.md` | Resume state, decisions, work queue, environment |
-| `README.md` | Project index / map of content |
-| `INDEX.md` | This file — 3-dimension artifact index |
-| `compliance-matrix.md` | T1/T2 conformance evidence (product evidence) |
-| `workitems/README.md` | **Jira-style work-item register** — status, notes, artifacts, commit links |
-| `.gitignore` / `.gitattributes` | Repo hygiene |
+| `business/investor/` | Deck · pitch · business plan · investment plan (encrypted) · `website/` · `brand/` |
+| `business/outreach/` | Target list · exporter one-pager · scripts · trial playbook · consultant channel |
+| `business/competition/` | Landscape, friction-gap analysis, dossiers |
+| `business/cleancarbonai/` | CleanCarbon.ai competitive KD |
+| `business/workitems/` | Jira-style work-item register + gaps backlog |
 
-## 5. EXTERNAL (gitignored, not ours)
-
+## 4. TOOLS
 | Path | Purpose |
 |---|---|
-| `reference/mock-eu-registry` | CIRPASS-2 T1 target |
-| `reference/deploy-resources` | Full test-environment compose |
-| `reference/tracepass-dpp-schemas` | Field schemas |
-| `reference/freeDPP` | C# reference server |
+| `tools/crypt-docs.ps1` | Lock/unlock local-only docs (AES-256) |
+
+## 5. GOVERNANCE (root)
+| Path | Purpose |
+|---|---|
+| `AGENTS.md` | Working principles & checklist |
+| `SESSION-CONTEXT.md` | Resume state, decisions, work queue |
+| `README.md` | Map of content |
+| `INDEX.md` | This file |
+| `compliance-matrix.md` | T1/T2 conformance evidence |
+| `terminology.md` | Shortcut legend |
+
+## 6. EXTERNAL (gitignored)
+| Path | Purpose |
+|---|---|
+| `reference/mock-eu-registry` · `deploy-resources` · `tracepass-dpp-schemas` · `freeDPP` | Cloned tools |
 | `scratch/spike-host` | Static DPP host (:9090) |

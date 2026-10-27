@@ -59,12 +59,12 @@ Each outcome → a handful of rules → a few scenarios each.
 | Compare actual vs default cost | 3 routes (Scenario Outline) | real IR 2025/2621 defaults |
 
 **Result:** one `Feature` with ~5 scenario blocks (not one per fuel). See
-`tests/DppCore.Tests/Features/cbam-calculation.feature`.
+`../product/tests/DppCore.Tests/Features/cbam-calculation.feature`.
 
 ## Traceability
 
 | Story | Scenarios | Step defs | Code |
 |---|---|---|---|
-| E3-C5 CBAM engine | `cbam-calculation.feature` | `Steps/CbamCalculationSteps.cs` | `DppCore/CbamCalculator.cs`, `CbamEconomics.cs` |
+| E3-C5 CBAM engine | `cbam-calculation.feature` | `../product/tests/DppCore.Tests/Steps/CbamCalculationSteps.cs` | `../product/src/DppCore/CbamCalculator.cs`, `CbamEconomics.cs` |
 
 Keep this table in `workitems/README.md` as stories are promoted.

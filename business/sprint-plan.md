@@ -13,7 +13,7 @@ Anchor: **Sept 2026**. Sprints 0–2 = P0 (foundation/learning); Sprints 3+ = P1
 
 ### Build story DoD (every C-chunk piece)
 - [ ] Works: small, independently verifiable slice of functionality.
-- [ ] **T1 conformance** passed against CIRPASS-2 mock registry / TracePass schema (where applicable), recorded in `compliance-matrix.md`.
+- [ ] **T1 conformance** passed against CIRPASS-2 mock registry / TracePass schema (where applicable), recorded in `../compliance-matrix.md`.
 - [ ] **No-break regression**: prior fixtures still pass.
 - [ ] **Schemas-as-data** — no hard-coded field sets.
 - [ ] Compliance-matrix row added/updated with evidence + date.
@@ -57,7 +57,7 @@ and converts study into working artefacts immediately.
 **Guardrail (the only rule):** *build trails learning by one step.* Never freeze a schema,
 encode a calculation, or testify conformance on an **unvalidated spec**. If the learning for a
 decision isn't done, the technical task stays a throwaway prototype (fixtures only), not a
-frozen interface. Enforced by the `AGENTS.md` checklist + schema-as-data + fixture regression.
+frozen interface. Enforced by the `../AGENTS.md` checklist + schema-as-data + fixture regression.
 
 **Why it's sound:** most technical tasks *are* documentation-driven, so learning and building
 feed each other; the risk (rework from unvalidated specs) is neutralised by keeping the trail
@@ -92,7 +92,7 @@ Purpose: eliminate **build-to-avoid** by making every milestone ship a customer-
 ### 3.3 Gap accommodation (from `product-gaps.md`, priority-ordered)
 
 Folded into the existing frozen-date sprints as spec/decision items. Gaps are tracked as work
-items `G01–G10` in `../workitems/README.md`.
+items `G01–G10` in `workitems/README.md`.
 
 | Gap | Action | Sprint |
 |---|---|---|
@@ -113,8 +113,8 @@ Story IDs: `E<epic>-<id>`. Effort: **S** 1–2d · **M** 3–5d · **L** 6–10d
 | ID | Learning story | Acceptance | Parallel technical micro-output | Effort | Depends |
 |----|----------------|-----------|----------------------------------|--------|---------|
 | E0-HARNESS | Stand up conformance harness baseline + request EU DPP Registry **test-env** access | mock registry + spike host restart script; test-env account requested | runnable rig (mock registry + validator + TracePass) — **done-ish** | S | — |
-| E0-L1 | Study CBAM calculation rules (IR 2023/1773, 2025/2547/2546) → wedge spec | notes + takeaway in `research/regulations.md`; calc inputs listed | **calc input list** coded as a stub schema/F#/C# model (fixtures only) | M | — |
-| E0-L2 | Study EC Registry User Guide (Economic Operators) + test-env walkthrough | notes in `research/tools.md`/`regulations.md`; T1 target clarified | registry-client skeleton (OIDC + register call to **test env**) | M | E0-HARNESS |
+| E0-L1 | Study CBAM calculation rules (IR 2023/1773, 2025/2547/2546) → wedge spec | notes + takeaway in `../knowledge/research/regulations.md`; calc inputs listed | **calc input list** coded as a stub schema/F#/C# model (fixtures only) | M | — |
+| E0-L2 | Study EC Registry User Guide (Economic Operators) + test-env walkthrough | notes in `../knowledge/research/tools.md`/`../knowledge/research/regulations.md`; T1 target clarified | registry-client skeleton (OIDC + register call to **test env**) | M | E0-HARNESS |
 | E0-L4 | Study TracePass iron & steel field set | field inventory (in-force vs anticipated) → feeds C2 | TracePass steel schema **loaded and validated** against the fixture | M | — |
 | E0-L5 | Study GS1 Digital Link | carrier notes → feeds C6 | QR/URI resolver spike against GS1 Resolver | S | — |
 | E0-L6 | Study CEN/CENELEC DPP standards (acquire docs) | standard IDs + data-model implications; purchase recorded | JSON-LD passport **skeleton** (throwaway until CEN confirmed) | M | — |

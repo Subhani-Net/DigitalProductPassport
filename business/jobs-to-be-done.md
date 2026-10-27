@@ -6,7 +6,7 @@ the **commodity substrate** (CarbonChain / cbam-tools / Dpp-tool already own it)
 processing. Each is stated as: **challenge → our solution → how we continuously improve.**
 
 Companion docs: `product-spec.md` (the what) · `system-intricacies.md` (the how) ·
-`../competition/friction-gap-analysis.md` (why us) · `../research/data-layer.md` (the data).
+`competition/friction-gap-analysis.md` (why us) · `../knowledge/research/data-layer.md` (the data).
 
 ---
 

@@ -85,4 +85,4 @@ defensible; the field proves it. Field work before the core wastes the consultan
 risks building the wrong thing.
 
 > Cross-refs: `sprint-plan.md` (chunks/sprints — unchanged) · `product-roadmap.md` §5 (dates)
-> · `../research/cbam-input-sources.md` (S0–S3 detail) · `../research/cbam-verifier-accreditation.md`.
+> · `../knowledge/research/cbam-input-sources.md` (S0–S3 detail) · `../knowledge/research/cbam-verifier-accreditation.md`.

@@ -51,7 +51,7 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
    calculation models for C5), never the stamp.
 3. Moat = **encoded validation intelligence** (3-layer view: plumbing = commodity,
    regulated calculation = engineerable, validation intelligence = the moat) — see roadmap §2.
-4. Pricing L/B/H: €1–3k / €8–15k / €30–60k per yr (anchors in `research/goto-market-sizing.md`).
+4. Pricing L/B/H: €1–3k / €8–15k / €30–60k per yr (anchors in `knowledge/research/goto-market-sizing.md`).
 5. GTM anchored on in-force wedges (CBAM definitive; textiles disclosure duty), not on DPP
    indicative dates; schemas-as-data everywhere.
 6. C#/.NET default for the core (no blockers found); reference-only use of AGPL open-dpp.
@@ -61,7 +61,7 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
    `business/system-intricacies.md`.
 8. **Product = 4 friction pillars** (Capture, Validation intelligence, Audit room, Trust) built
    in phases on a commodity calc/canonical substrate; competitors' offerings are building blocks
-   (adopt, not rebuild) — see `business/product-spec.md` §0 + `competition/friction-gap-analysis.md`.
+   (adopt, not rebuild) — see `business/product-spec.md` §0 + `business/competition/friction-gap-analysis.md`.
 9. **Spec-first development:** Gherkin scenarios are the executable product spec; `@ignore @stub`
    until implemented. Runnable so far: calc, registry, importer-declaration.
 10. **Cold-start (G02, locked Oct 2026): exporter-first wedge.** Primary onboarding = non-EU
@@ -73,22 +73,16 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
 ## File map
 
 ```
-root:  README.md · AGENTS.md · compliance-matrix.md · terminology.md · SESSION-CONTEXT.md (this file)
-business/: product-roadmap.md (§5 = single source of truth) · project-gantt.md · sprint-plan.md ·
-       product-spec.md · jobs-to-be-done.md · system-intricacies.md · product-gaps.md ·
-       specification-by-example.md · presentation-plan.md · execution-modes.md · README.md
-business/investor/: investor-deck.md · pitch.md · business-plan.md · investment-plan.md(.enc)
-research/ (definitive & high-value): regulations.md · cbam-registry-workflow.md ·
-       cbam-data-catalogue.md (r2) · cbam-input-sources.md · goto-market-sizing.md ·
-       standards.md · architecture.md · learning-roadmap.md · tools.md · sources.md · glossary.md
-exploration/ (lower priority): DPP_Initial_Brainstorm · saas-opportunity ·
-       adjacent-opportunities · companies · people · consultancies
-competition/: landscape.md (+threat scorecards) · dossiers/ (carbonchain, sap, minespider,
-       circularise, circlor, verifiers) · mapping-to-roadmap.md
-cleancarbonai/: CleanCarbon.ai dossier
-learning/ (taught courses): README (catalogue) · cbam-101/ (COMPLETE) · cbam-201/ (COMPLETE) ·
-       cbam-301/ (planned) · cbambok.md · glossary.md
-src/: fixtures/steel-hrc-batch.md (placeholder) — code goes here from C2 onward
+root:  README.md · INDEX.md · AGENTS.md · SESSION-CONTEXT.md (this file) · terminology.md · compliance-matrix.md
+product/ (the software): src/ (DppCore, DppRegistryClient, model, fixtures) · tests/ (xUnit + Reqnroll) · demo/ (seedable data pack)
+knowledge/ (what we learned): learning/ (cbam-101/201 complete, 301 planned, cbambok, glossary) ·
+       research/ (regulations, registry workflow, data catalogue, data-inputs, data-layer, tracepass,
+       standards, architecture, market sizing, verifier path, sources) · exploration/ (early notes)
+business/ (strategy/GTM/investor): product-roadmap · project-gantt · sprint-plan · product-spec ·
+       jobs-to-be-done · system-intricacies · product-gaps · specification-by-example · presentation-plan ·
+       execution-modes · README · investor/ (deck, pitch, business-plan, investment-plan(.enc), website/, brand/) ·
+       outreach/ · competition/ · cleancarbonai/ · workitems/
+tools/: crypt-docs.ps1
 reference/ (gitignored): mock-eu-registry · deploy-resources · tracepass-dpp-schemas · freeDPP
 scratch/ (gitignored): spike-host (python static DPP host, port 9090)
 ```
