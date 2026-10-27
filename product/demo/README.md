@@ -36,3 +36,11 @@ code exists. Values are **illustrative**, anchored to public references: EC defa
   `../tests/DppCore.Tests/Features/pillars/end-to-end.feature`.
 - **Run (later, build phase):** a `seed`/`run-demo` command loads these fixtures and emits the
   declaration, evidence dossier, passport and proof — the demo artifacts.
+
+## Pilot docket (synthetic source documents)
+
+Realistic, synthetic **source documents** for a mythical SME exporter — to learn what real bills/
+certificates look like and how to read them. One step at a time; see `pilot-docket/README.md`.
+
+- `pilot-docket/01-electricity-bill/` — bill facsimile + reading guide + extracted fields +
+  canonical fragment + concierge test run (528,400 kWh → 375.164 tCO₂ indirect).

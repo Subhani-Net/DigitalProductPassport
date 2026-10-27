@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricity Bill — CSPDCL (synthetic sample)</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; background:#e9e9e9; margin:0; padding:24px; color:#111; font-size:13px; }
+  .sheet { width: 800px; margin: 0 auto; background:#fff; padding: 28px 34px; box-shadow: 0 1px 6px rgba(0,0,0,.18); }
+  .specimen { border:2px dashed #b3261e; color:#b3261e; text-align:center; font-weight:700;
+              letter-spacing:.12em; font-size:11px; padding:6px; margin-bottom:18px; }
+  .head { display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid #111; padding-bottom:12px; }
+  .head h1 { font-size:16px; margin:0; }
+  .head .sub { font-size:11px; color:#555; margin-top:3px; }
+  .head .tag { text-align:right; font-size:11px; color:#555; }
+  .head .tag strong { font-size:14px; color:#111; }
+  h2 { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#555; margin:20px 0 6px; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th, td { border:1px solid #cfcfcf; padding:6px 8px; text-align:left; }
+  th { background:#f3f3f3; font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#444; }
+  td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+  .two { display:flex; gap:20px; }
+  .two > div { flex:1; }
+  .total td { font-weight:700; background:#f7f7f7; font-size:14px; }
+  .note { margin-top:18px; font-size:10.5px; color:#666; border-top:1px dashed #bbb; padding-top:10px; }
+  .due { color:#b3261e; font-weight:700; }
+  .highlight { background:#fffbe6; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="specimen">SYNTHETIC SAMPLE — NOT A REAL BILL — FOR CBAM PILOT TRAINING ONLY</div>
+
+  <div class="head">
+    <div>
+      <h1>Chhattisgarh State Power Distribution Company Limited (CSPDCL)</h1>
+      <div class="sub">Office of the Executive Engineer (O&amp;M), Urla Division, Raipur — 493221</div>
+      <div class="sub">GSTIN: 22AAACC1234F1Z5 (illustrative) &nbsp;|&nbsp; www.cspdcl.co.in (illustrative)</div>
+    </div>
+    <div class="tag">
+      <strong>ELECTRICITY BILL</strong><br>
+      HT Industrial (33 kV)<br>
+      Bill No. 2026/09/HT/0044789<br>
+      Bill Date: 05/10/2026
+    </div>
+  </div>
+
+  <h2>Consumer details</h2>
+  <table>
+    <tr><th>Consumer Name</th><td>Shree Balaji Steel &amp; Alloys Pvt Ltd</td><th>Consumer No.</th><td class="num">1520044789</td></tr>
+    <tr><th>Address</th><td>Plot 14, Industrial Area, Urla, Raipur, Chhattisgarh 493221</td><th>Tariff</th><td>HT Industrial (33 kV)</td></tr>
+    <tr><th>Sanctioned Contract Demand</th><td class="num">1,500 kVA</td><th>Security Deposit</th><td class="num">₹ 9,50,000</td></tr>
+  </table>
+
+  <h2>Meter &amp; consumption (billing period 01/09/2026 – 30/09/2026, 30 days)</h2>
+  <table>
+    <tr>
+      <th>Meter No.</th><th class="num">Previous Reading</th><th class="num">Present Reading</th>
+      <th class="num">Difference</th><th class="num">CT/PT Multiplier</th><th class="num">Units Consumed (kWh)</th>
+    </tr>
+    <tr>
+      <td>EM-3301-8842</td><td class="num">24,86,200</td><td class="num">30,14,600</td>
+      <td class="num">5,28,400</td><td class="num">1.0</td><td class="num highlight"><strong>5,28,400</strong></td>
+    </tr>
+  </table>
+  <table style="margin-top:8px;">
+    <tr><th>Maximum Demand Recorded</th><td class="num">1,120 kVA</td><th>Power Factor</th><td class="num">0.94</td><th>Meter Status</th><td>OK / Normal</td></tr>
+  </table>
+
+  <h2>Charges</h2>
+  <table>
+    <tr><th>Description</th><th>Basis</th><th class="num">Amount (₹)</th></tr>
+    <tr><td>Energy Charges</td><td>₹5.10 / kWh × 5,28,400 kWh</td><td class="num">26,94,840.00</td></tr>
+    <tr><td>Demand Charges</td><td>₹420 / kVA × 1,120 kVA</td><td class="num">4,70,400.00</td></tr>
+    <tr><td>Fuel &amp; Power Purchase Cost Adjustment (FPPCA)</td><td>₹0.85 / kWh × 5,28,400 kWh</td><td class="num">4,49,140.00</td></tr>
+    <tr><td>Electricity Duty @ 8%</td><td>8% of 36,14,380.00</td><td class="num">2,89,150.40</td></tr>
+    <tr><td>Meter Rent</td><td>—</td><td class="num">1,500.00</td></tr>
+    <tr class="total"><td colspan="2">TOTAL AMOUNT PAYABLE</td><td class="num">39,05,030.40</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>Due date: <span class="due">15/10/2026</span></strong> — late payment attracts a surcharge.
+    Pay online via the CSPDCL portal / authorised banks. This is a computer-generated synthetic
+    sample for a CBAM pilot; it carries no legal or financial effect.
+  </div>
+
+</div>
+</body>
+</html>

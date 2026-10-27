@@ -37,6 +37,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 |---|---|
 | `product/demo/README.md` | End-to-end journey + anchors |
 | `product/demo/*.json` | Seed fixtures (BF-BOF/EAF/DRI/Al, precursor chain, importer, edge cases, expected outputs) |
+| `product/demo/pilot-docket/` | **Synthetic source documents** (step 01: electricity bill) + reading guides + concierge runs |
 
 ## 2. KNOWLEDGE (`knowledge/`)
 

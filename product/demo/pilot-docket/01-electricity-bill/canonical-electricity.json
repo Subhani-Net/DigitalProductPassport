@@ -1,0 +1,20 @@
+{
+  "_fragment": "electricity",
+  "_note": "Canonical fragment for one source. Merged into the client's full canonical model (C2) as later documents arrive. Not yet schema-complete on its own.",
+  "installation": {
+    "id": "DEMO-STEEL-EAF-01",
+    "name": "Shree Balaji Steel & Alloys Pvt Ltd",
+    "country": "IN",
+    "unLocode": "INRPR",
+    "productionRoute": "EAF",
+    "routeParameters": { "scrapRatio": 0.98 }
+  },
+  "reportingPeriod": 2026,
+  "electricity": {
+    "mwh": 528.4,
+    "emissionFactorTCO2PerMWh": 0.71,
+    "contractualFactor": false,
+    "period": "2026-09",
+    "source": "01-electricity-bill/bill.md"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "documentType": "electricity-bill",
+  "synthetic": true,
+  "utility": "Chhattisgarh State Power Distribution Company Limited (CSPDCL)",
+  "billNumber": "2026/09/HT/0044789",
+  "billDate": "2026-10-05",
+  "consumerNumber": "1520044789",
+  "consumerName": "Shree Balaji Steel & Alloys Pvt Ltd",
+  "address": "Plot 14, Industrial Area, Urla, Raipur, Chhattisgarh 493221",
+  "tariff": "HT Industrial (33 kV)",
+  "sanctionedContractDemandKva": 1500,
+  "billingPeriod": { "from": "2026-09-01", "to": "2026-09-30", "days": 30 },
+  "meterNumber": "EM-3301-8842",
+  "readings": { "previous": 2486200, "present": 3014600, "difference": 528400 },
+  "ctPtMultiplier": 1.0,
+  "unitsConsumedKwh": 528400,
+  "maxDemandKva": 1120,
+  "powerFactor": 0.94,
+  "charges": {
+    "energyChargeInr": 2694840.00,
+    "demandChargeInr": 470400.00,
+    "fuelSurchargeInr": 449140.00,
+    "electricityDutyInr": 289150.40,
+    "meterRentInr": 1500.00,
+    "totalInr": 3905030.40
+  },
+  "cbam": {
+    "feeds": "indirect emissions — purchased electricity activity data",
+    "valueKwh": 528400,
+    "formula": "indirect_tCO2 = (kWh / 1000) * gridEmissionFactor_tCO2_per_MWh",
+    "note": "Monthly consumption only. Annualise across 12 bills for the reporting year. Grid EF comes from the country/grid dataset, not the bill."
+  }
+}
