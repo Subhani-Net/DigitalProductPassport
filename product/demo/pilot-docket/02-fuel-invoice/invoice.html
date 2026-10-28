@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Invoice — Natural Gas (synthetic sample)</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; background:#e9e9e9; margin:0; padding:24px; color:#111; font-size:13px; }
+  .sheet { width: 800px; margin: 0 auto; background:#fff; padding: 28px 34px; box-shadow: 0 1px 6px rgba(0,0,0,.18); }
+  .specimen { border:2px dashed #b3261e; color:#b3261e; text-align:center; font-weight:700;
+              letter-spacing:.12em; font-size:11px; padding:6px; margin-bottom:18px; }
+  .head { display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid #111; padding-bottom:12px; }
+  .head h1 { font-size:16px; margin:0; }
+  .head .sub { font-size:11px; color:#555; margin-top:3px; }
+  .head .tag { text-align:right; font-size:11px; color:#555; }
+  .head .tag strong { font-size:14px; color:#111; }
+  h2 { font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:#555; margin:20px 0 6px; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th, td { border:1px solid #cfcfcf; padding:6px 8px; text-align:left; }
+  th { background:#f3f3f3; font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#444; }
+  td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+  .total td { font-weight:700; background:#f7f7f7; font-size:14px; }
+  .note { margin-top:18px; font-size:10.5px; color:#666; border-top:1px dashed #bbb; padding-top:10px; }
+  .highlight { background:#fffbe6; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="specimen">SYNTHETIC SAMPLE — NOT A REAL INVOICE — FOR CBAM PILOT TRAINING ONLY</div>
+
+  <div class="head">
+    <div>
+      <h1>Raipur Industrial Gas Pvt Ltd (illustrative)</h1>
+      <div class="sub">Industrial Gas Supply — City Gas Distribution</div>
+      <div class="sub">Plot 6, Sector 2, Industrial Estate, Urla, Raipur, Chhattisgarh 493221</div>
+      <div class="sub">GSTIN: 22AAACR5678G1Z2 &nbsp;|&nbsp; SAC/HSN: 2711 &nbsp;|&nbsp; State Code: 22 (Chhattisgarh)</div>
+    </div>
+    <div class="tag">
+      <strong>TAX INVOICE</strong><br>
+      Invoice No.: RIG/2026-27/0912<br>
+      Invoice Date: 03/10/2026<br>
+      Due Date: 18/10/2026
+    </div>
+  </div>
+
+  <h2>Billed to</h2>
+  <table>
+    <tr><th>Buyer</th><td>Shree Balaji Steel &amp; Alloys Pvt Ltd</td><th>Buyer GSTIN</th><td>22AABCS1234M1Z7</td></tr>
+    <tr><th>Address</th><td>Plot 14, Industrial Area, Urla, Raipur, Chhattisgarh 493221</td><th>Place of Supply</th><td>Chhattisgarh (22)</td></tr>
+  </table>
+
+  <h2>Supply details (delivery period 01/09/2026 – 30/09/2026)</h2>
+  <table>
+    <tr><th>Gas Meter No.</th><th class="num">Opening Reading (SCM)</th><th class="num">Closing Reading (SCM)</th><th class="num">Quantity Supplied (SCM)</th></tr>
+    <tr><td>GM-7781</td><td class="num">4,20,000</td><td class="num">6,00,000</td><td class="num highlight"><strong>1,80,000</strong></td></tr>
+  </table>
+
+  <h2>Invoice lines</h2>
+  <table>
+    <tr><th>Description</th><th>HSN/SAC</th><th class="num">Qty</th><th>Unit</th><th class="num">Rate (₹)</th><th class="num">Amount (₹)</th></tr>
+    <tr>
+      <td>Natural Gas — Industrial (Pipeline), Delivery 01–30 Sep 2026</td>
+      <td>2711</td>
+      <td class="num">1,80,000</td>
+      <td>SCM</td>
+      <td class="num">48.00</td>
+      <td class="num">86,40,000.00</td>
+    </tr>
+  </table>
+
+  <h2>Tax &amp; total</h2>
+  <table>
+    <tr><th>Description</th><th class="num">Amount (₹)</th></tr>
+    <tr><td>Taxable Value</td><td class="num">86,40,000.00</td></tr>
+    <tr><td>CGST @ 9%</td><td class="num">7,77,600.00</td></tr>
+    <tr><td>SGST @ 9%</td><td class="num">7,77,600.00</td></tr>
+    <tr class="total"><td>INVOICE TOTAL</td><td class="num">1,01,95,200.00</td></tr>
+  </table>
+
+  <div class="note">
+    Quantity is measured by the gas meter in <strong>SCM (Standard Cubic Metres ≈ Nm³)</strong> at the
+    buyer's site. <strong>Net Calorific Value (NCV) and emission factor are NOT stated on this invoice</strong>
+    — they are supplied separately by the laboratory / Certificate of Analysis. This is a
+    computer-generated synthetic sample for a CBAM pilot; no legal or financial effect.
+  </div>
+
+</div>
+</body>
+</html>

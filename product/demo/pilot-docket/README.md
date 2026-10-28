@@ -30,7 +30,7 @@ then the same steps become the product).
 | Step | Document | Status |
 |---|---|---|
 | **01** | Electricity bill | **ready** |
-| 02 | Fuel invoice (natural gas / coal) | pending |
+| **02** | Fuel invoice (natural gas) | **ready** |
 | 03 | Weighbridge ticket | pending |
 | 04 | Mill Test Certificate (EN 10204 3.1) | pending |
 | 05 | Heat/batch production log | pending |

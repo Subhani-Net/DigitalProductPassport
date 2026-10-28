@@ -1,0 +1,33 @@
+{
+  "documentType": "fuel-invoice",
+  "fuel": "natural-gas",
+  "synthetic": true,
+  "supplier": "Raipur Industrial Gas Pvt Ltd (illustrative)",
+  "supplierGstin": "22AAACR5678G1Z2",
+  "invoiceNumber": "RIG/2026-27/0912",
+  "invoiceDate": "2026-10-03",
+  "dueDate": "2026-10-18",
+  "buyer": "Shree Balaji Steel & Alloys Pvt Ltd",
+  "buyerGstin": "22AABCS1234M1Z7",
+  "deliveryPeriod": { "from": "2026-09-01", "to": "2026-09-30" },
+  "gasMeterNumber": "GM-7781",
+  "readings": { "openingScm": 420000, "closingScm": 600000, "differenceScm": 180000 },
+  "quantityScm": 180000,
+  "rateInrPerScm": 48.00,
+  "taxableValueInr": 8640000.00,
+  "cgstInr": 777600.00,
+  "sgstInr": 777600.00,
+  "invoiceTotalInr": 10195200.00,
+  "externalFactors": {
+    "note": "NOT on the invoice — obtain separately.",
+    "ncvTjPerScm": 0.0000355,
+    "ncvSource": "Certificate of Analysis / lab (illustrative)",
+    "emissionFactorTCO2PerTJ": 56,
+    "oxidationFactor": 1.0
+  },
+  "cbam": {
+    "feeds": "direct emissions — fuel source stream (natural gas)",
+    "formula": "direct_tCO2 = quantityScm * ncvTjPerScm * emissionFactorTCO2PerTJ * oxidationFactor",
+    "note": "Volume is from the invoice; NCV and EF are external."
+  }
+}

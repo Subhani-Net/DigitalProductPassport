@@ -1,0 +1,25 @@
+{
+  "_fragment": "sourceStream (natural gas)",
+  "_note": "Canonical fragment for one source stream. NCV/EF come from the CoA/lab, not the invoice. Merged into the client's full canonical model (C2).",
+  "installation": {
+    "id": "DEMO-STEEL-EAF-01",
+    "name": "Shree Balaji Steel & Alloys Pvt Ltd",
+    "country": "IN",
+    "unLocode": "INRPR",
+    "productionRoute": "EAF",
+    "routeParameters": { "scrapRatio": 0.98 }
+  },
+  "reportingPeriod": 2026,
+  "sourceStreams": [
+    {
+      "name": "Natural gas",
+      "activityData": 180000,
+      "unit": "Nm3",
+      "ncvTJPerUnit": 0.0000355,
+      "emissionFactorTCO2PerTJ": 56,
+      "oxidationFactor": 1.0,
+      "period": "2026-09",
+      "source": "02-fuel-invoice/invoice.md"
+    }
+  ]
+}

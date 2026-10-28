@@ -44,3 +44,5 @@ certificates look like and how to read them. One step at a time; see `pilot-dock
 
 - `pilot-docket/01-electricity-bill/` — bill facsimile + reading guide + extracted fields +
   canonical fragment + concierge test run (528,400 kWh → 375.164 tCO₂ indirect).
+- `pilot-docket/02-fuel-invoice/` — natural-gas invoice + reading guide + extracted fields +
+  canonical fragment + concierge run (180,000 SCM → 6.39 TJ → 357.84 tCO₂ direct).

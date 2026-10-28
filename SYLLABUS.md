@@ -49,8 +49,8 @@ register is `business/workitems/`.
 | Step | Document | Status |
 |---|---|---|
 | 01 | Electricity bill | ✅ (528,400 kWh → 375.164 tCO₂ indirect) |
-| 02 | Fuel invoice (natural gas / coal) | ⬜ next |
-| 03 | Weighbridge ticket | ⬜ |
+| 02 | Fuel invoice (natural gas) | ✅ (180,000 SCM → 6.39 TJ → 357.84 tCO₂ direct) |
+| 03 | Weighbridge ticket | ⬜ next |
 | 04 | Mill Test Certificate (EN 10204 3.1) | ⬜ |
 | 05 | Heat/batch production log | ⬜ |
 | 06 | Monthly fuel register | ⬜ |
