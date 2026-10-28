@@ -112,6 +112,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | Path | Purpose |
 |---|---|
 | `AGENTS.md` | Working principles & checklist |
+| `SYLLABUS.md` | Overall picture — 4 rails + ordered next steps |
 | `SESSION-CONTEXT.md` | Resume state, decisions, work queue |
 | `README.md` | Map of content |
 | `INDEX.md` | This file |

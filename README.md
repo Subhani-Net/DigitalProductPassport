@@ -43,6 +43,7 @@ answers with references.
 | File | Contents |
 |------|----------|
 | `README.md` | This map of content |
+| `SYLLABUS.md` | **Overall picture** — the 4 rails + syllabus of next steps (status) |
 | `INDEX.md` | **Artifact map** (Product · Knowledge · Business) |
 | `SESSION-CONTEXT.md` | **Start here when resuming** — state, decisions, work queue |
 | `AGENTS.md` | Working principles & constraints |
