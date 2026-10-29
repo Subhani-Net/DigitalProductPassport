@@ -45,11 +45,13 @@ then the same steps become the product).
 ```
 pilot-docket/
   README.md
-  01-electricity-bill/
-    bill.html              facsimile (open in a browser)
-    bill.md                plain-text version
-    reading-guide.md       how to read it + CBAM relevance
-    extracted-fields.json  answer key (raw doc fields)
-    canonical-electricity.json  canonical fragment for this source
-    run.md                 concierge test-run (kWh → indirect emissions)
+  01-electricity-bill/   (step 01 - ready)
+  02-fuel-invoice/       (step 02 - ready)
+  practice-multi-product/  (one installation -> 3 CN codes -> allocation -> report -> declaration -> verifier)
 ```
+
+## Multi-product practice
+
+`practice-multi-product/` exercises the core modelling problem end-to-end: one installation,
+**three CN codes**, shared streams **allocated** to per-good SEE, then the CBAM report, the
+importer declaration lines, and the verifier dossier — plus an assumptions register.

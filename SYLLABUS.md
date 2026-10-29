@@ -59,6 +59,10 @@ register is `business/workitems/`.
 | 09 | Extraction sheet (all docs → canonical) | ⬜ |
 | 10 | Pilot report (SEE + evidence + actual-vs-default saving) | ⬜ |
 
+> **Practice done — multi-product end-to-end:** `product/demo/pilot-docket/practice-multi-product/`
+> shows one installation → 3 CN codes → allocation → CBAM report → importer declaration → verifier
+> dossier (with an assumptions register). This is the C2–C5 blueprint in action.
+
 ### Part D — Product build (planned; each chunk test-gated)
 | # | Chunk | Pillar |
 |---|---|---|

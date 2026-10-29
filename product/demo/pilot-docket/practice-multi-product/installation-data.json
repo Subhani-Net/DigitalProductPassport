@@ -1,0 +1,47 @@
+{
+  "installation": {
+    "id": "DEMO-STEEL-EAF-01",
+    "name": "Shree Balaji Steel & Alloys Pvt Ltd",
+    "country": "IN",
+    "unLocode": "INRPR",
+    "productionRoute": "EAF",
+    "routeParameters": { "scrapRatio": 0.98, "electricityKwhPerTonne": 440 }
+  },
+  "reportingPeriod": 2026,
+  "sourceStreams": [
+    {
+      "name": "Natural gas (reheat)",
+      "activityData": 13521127,
+      "unit": "Nm3",
+      "ncvTJPerUnit": 0.0000355,
+      "emissionFactorTCO2PerTJ": 56,
+      "oxidationFactor": 1.0
+    },
+    {
+      "name": "Graphite electrodes",
+      "activityData": 960,
+      "unit": "t",
+      "ncvTJPerUnit": 0.033,
+      "emissionFactorTCO2PerTJ": 93,
+      "oxidationFactor": 1.0
+    }
+  ],
+  "electricity": { "mwh": 211200, "emissionFactorTCO2PerMWh": 0.71, "contractualFactor": false },
+  "allocation": {
+    "method": "mass",
+    "basis": "activityLevelTonnes",
+    "note": "Same EAF route for all goods → mass-based allocation. A per-product override is supported."
+  },
+  "goods": [
+    { "cnCode": "7214", "product": "TMT bars / rods", "activityLevelTonnes": 300000 },
+    { "cnCode": "7213", "product": "Wire rod", "activityLevelTonnes": 120000 },
+    { "cnCode": "7208", "product": "Hot-rolled flat", "activityLevelTonnes": 60000 }
+  ],
+  "_note": "Standalone illustrative annual dataset sized to 480,000 t. It is NOT derived from the smaller single-month Step-01/02 documents.",
+  "assumptions": [
+    { "id": "A1", "item": "Annual electricity", "value": "211,200 MWh (440 kWh/t × 480,000 t)", "flag": "estimate" },
+    { "id": "A2", "item": "Natural gas NCV", "value": "0.0000355 TJ/SCM (lab, illustrative)", "flag": "lab" },
+    { "id": "A3", "item": "Allocation", "value": "mass-based across goods (same route)", "flag": "method" },
+    { "id": "A4", "item": "Grid emission factor", "value": "0.71 tCO2/MWh (illustrative India grid)", "flag": "factor" }
+  ]
+}

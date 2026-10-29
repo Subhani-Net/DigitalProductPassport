@@ -1,0 +1,17 @@
+{
+  "declarant": { "eori": "DE123456789012345", "name": "Demo Importer GmbH (illustrative)", "role": "importer" },
+  "year": 2034,
+  "certificatePriceEuroPerTonne": 75.36,
+  "installationReference": "DEMO-STEEL-EAF-01",
+  "lines": [
+    { "cnCode": "7214", "product": "TMT bars / rods", "netMassTonnes": 2000, "seeTCO2PerTonne": 0.374538, "embeddedTCO2": 749.076, "determination": "actual" },
+    { "cnCode": "7213", "product": "Wire rod", "netMassTonnes": 800, "seeTCO2PerTonne": 0.374538, "embeddedTCO2": 299.630, "determination": "actual" },
+    { "cnCode": "7208", "product": "Hot-rolled flat", "netMassTonnes": 500, "seeTCO2PerTonne": 0.374538, "embeddedTCO2": 187.269, "determination": "actual" }
+  ],
+  "totals": {
+    "totalEmbeddedTCO2e": 1235.975,
+    "obligation2034_100pct": 1235.975,
+    "obligation2026_2_5pct": 30.899,
+    "certificateCost2034Eur": 93143.08
+  }
+}

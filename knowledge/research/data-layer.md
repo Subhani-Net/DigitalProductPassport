@@ -97,16 +97,27 @@ UN/LOCODE (installation) · CN/HS/TARIC (goods) · **steel mill ID** (batch → 
 ## 3. Data transformation (raw → canonical → declaration)
 
 ### 3.1 Canonical model (C2) — the single shape
-One internal model serves both sides (and later the DPP — the sell-twice property). Direction:
+One internal model serves both sides (and later the DPP — the sell-twice property).
+**One document per installation per reporting year**, with a **`goods[]` array** (an installation
+produces many CN codes; shared streams are allocated across goods).
+
 ```jsonc
 installation { id, country, unLocode, productionRoute, routeParameters }
-reportingPeriod, production { cnCode, activityLevelTonnes }
-sourceStreams[] { name, activityData, unit, ncvTJPerUnit, emissionFactorTCO2PerTJ, oxidationFactor }
-electricity { mwh, emissionFactorTCO2PerMWh, contractualFactor }
-precursors[] { name, massTonnes, seeTCO2PerTonne }
-result { directTCO2, indirectTCO2, seeTCO2PerTonne, determination }
+reportingPeriod
+sourceStreams[] { name, activityData, unit, ncvTJPerUnit, emissionFactorTCO2PerTJ, oxidationFactor }  // shared
+electricity { mwh, emissionFactorTCO2PerMWh, contractualFactor }                                     // shared
+precursors[] { name, massTonnes, seeTCO2PerTonne }                                                    // per good if complex
+allocation { method, basis, overrideAllowed }                                                         // mass/energy/process
+goods[] {
+  cnCode, product, activityLevelTonnes,
+  directTCO2, indirectTCO2, precursorTCO2, seeTCO2PerTonne, determination
+}
+assumptions[] { id, item, value, flag }                                                               // gap register
 ```
-Already stubbed as `../../product/src/model/calc-inputs.schema.json` (throwaway; finalised in C2).
+
+> **Change from the stub:** the current `product/src/model/calc-inputs.schema.json` has a single
+> `production.cnCode` — C2 must become **`goods[]` + allocation + assumptions**. Practised in
+> `../../product/demo/pilot-docket/practice-multi-product/`.
 
 ### 3.2 Harmonization rules (C4) — rules-as-data, never hardcoded
 - **Unit normalization:** convert t/Nm³ → TJ via NCV; keep TJ/MWh as-is.

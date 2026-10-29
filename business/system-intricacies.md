@@ -85,5 +85,27 @@ gotchas" document.
 - **Schemas-as-data:** the canonical model is a JSON Schema (draft 2020-12); versioned in-repo.
 - **Determinism:** pure, side-effect-free transforms; `seed(demo data) → same outputs` is a test.
 
-> Mirrors the Gherkin stubs in `../tests/DppCore.Tests/Features/pillars/` and
-> `../tests/DppCore.Tests/Features/roles/`. This is the "how", those are the "what".
+## 6. CBAM Report Engine (C2–C5 capability blueprint)
+
+**Requirement:** whatever the exporter hands over, we produce a correct CBAM report. The
+complexity is ours, not the customer's ("no ifs, no buts" — but documented, not hidden).
+
+- **Intake (flexible):** accept installation-level data *or* per-product figures, plus messy files
+  (bills, invoices, tickets, MTCs, logs, spreadsheets). Two paths, reconciled to one truth.
+- **Canonical model:** one document **per installation per year** with **`goods[]`** (multi-CN),
+  shared `sourceStreams`/`electricity`, an **`allocation`** block, and an **`assumptions[]`** register.
+- **Allocation:** rules-based by default (mass/energy/process) with a **per-product override**;
+  override must reconcile to the installation total, residual logged.
+- **Assumptions register:** every gap gets a documented, flagged value — never a blank field, never
+  a silent default. Always attached to the report.
+- **Report outputs:** per-CN SEE (direct + indirect + precursors), determination (actual/default),
+  actual-vs-default saving, certificate estimate, evidence trail, declaration-ready projection,
+  and a verifier dossier.
+- **Boundary:** we deliver **verifier-ready, not verified** — the stamp is an accredited partner
+  verifier's (independence rule).
+
+**Practised end-to-end:** `../product/demo/pilot-docket/practice-multi-product/`
+(one installation → 3 CN codes → allocation → report → importer declaration → verifier dossier).
+
+> Mirrors the Gherkin stubs in `../product/tests/DppCore.Tests/Features/pillars/` and
+> `../product/tests/DppCore.Tests/Features/roles/`. This is the "how", those are the "what".
