@@ -61,7 +61,7 @@ answers with references.
 | Path | Contents |
 |------|----------|
 | `knowledge/learning/` | CBAM 101 / 201 (complete), 301 (planned), CBAMBOK, glossary |
-| `knowledge/research/` | Regulations, CBAM workflow, data catalogue, data-inputs reference, data layer, **submission cadence & importer risk**, TracePass, standards, architecture, market sizing, verifier path, sources |
+| `knowledge/research/` | Regulations, CBAM workflow, data catalogue, data-inputs reference, data layer, **submission cadence & importer risk**, **declaration & installation mapping**, TracePass, standards, architecture, market sizing, verifier path, sources |
 | `knowledge/exploration/` | Initial/exploratory notes |
 
 ### `business/` — strategy, GTM, investor
