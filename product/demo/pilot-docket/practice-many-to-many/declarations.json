@@ -1,0 +1,26 @@
+{
+  "year": 2034,
+  "certificatePriceEuroPerTonne": 75.36,
+  "declarations": [
+    {
+      "importerId": "DEMO-IMP-X",
+      "name": "Demo Importer X GmbH",
+      "lines": [
+        { "cnCode": "7214", "installationId": "DEMO-STEEL-EAF-01", "netMassTonnes": 1200, "seeTCO2PerTonne": 0.374538, "determination": "actual", "embeddedTCO2": 449.4456 },
+        { "cnCode": "7214", "installationId": "DEMO-STEEL-BFBOF-01", "netMassTonnes": 800, "seeTCO2PerTonne": 2.03754, "determination": "actual", "embeddedTCO2": 1630.032 }
+      ],
+      "totalsByCn": { "7214": { "quantityTonnes": 2000, "embeddedTCO2": 2079.4776 } },
+      "certificateObligation": { "2034_100pct": 2079.4776, "2026_2_5pct": 51.9869 }
+    },
+    {
+      "importerId": "DEMO-IMP-Y",
+      "name": "Demo Importer Y BV",
+      "lines": [
+        { "cnCode": "7214", "installationId": "DEMO-STEEL-EAF-01", "netMassTonnes": 500, "seeTCO2PerTonne": 0.374538, "determination": "actual", "embeddedTCO2": 187.269 },
+        { "cnCode": "7214", "installationId": "DEMO-STEEL-BFBOF-01", "netMassTonnes": 300, "seeTCO2PerTonne": 2.03754, "determination": "actual", "embeddedTCO2": 611.262 }
+      ],
+      "totalsByCn": { "7214": { "quantityTonnes": 800, "embeddedTCO2": 798.531 } },
+      "certificateObligation": { "2034_100pct": 798.531, "2026_2_5pct": 19.9633 }
+    }
+  ]
+}

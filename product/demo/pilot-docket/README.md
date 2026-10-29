@@ -48,10 +48,12 @@ pilot-docket/
   01-electricity-bill/   (step 01 - ready)
   02-fuel-invoice/       (step 02 - ready)
   practice-multi-product/  (one installation -> 3 CN codes -> allocation -> report -> declaration -> verifier)
+  practice-many-to-many/   (2 installations x 2 importers -> per-installation SEE mapping -> declarations)
 ```
 
-## Multi-product practice
+## Practices
 
-`practice-multi-product/` exercises the core modelling problem end-to-end: one installation,
-**three CN codes**, shared streams **allocated** to per-good SEE, then the CBAM report, the
-importer declaration lines, and the verifier dossier — plus an assumptions register.
+- `practice-multi-product/` — one installation, **3 CN codes**: allocation → per-good SEE → report →
+  importer declaration → verifier dossier.
+- `practice-many-to-many/` — **2 installations × 2 importers**: same CN code from different
+  installations with different SEE → per-line mapping → aggregated declarations.

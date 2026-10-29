@@ -1,0 +1,9 @@
+{
+  "importRecords": [
+    { "importerId": "DEMO-IMP-X", "importerName": "Demo Importer X GmbH", "installationId": "DEMO-STEEL-EAF-01", "cnCode": "7214", "netMassTonnes": 1200 },
+    { "importerId": "DEMO-IMP-X", "importerName": "Demo Importer X GmbH", "installationId": "DEMO-STEEL-BFBOF-01", "cnCode": "7214", "netMassTonnes": 800 },
+    { "importerId": "DEMO-IMP-Y", "importerName": "Demo Importer Y BV", "installationId": "DEMO-STEEL-EAF-01", "cnCode": "7214", "netMassTonnes": 500 },
+    { "importerId": "DEMO-IMP-Y", "importerName": "Demo Importer Y BV", "installationId": "DEMO-STEEL-BFBOF-01", "cnCode": "7214", "netMassTonnes": 300 }
+  ],
+  "_note": "Each line already carries the installation (from the customs/supplier record). This is what makes actual values possible; without it, the importer falls to the default."
+}

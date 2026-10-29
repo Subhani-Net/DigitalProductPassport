@@ -62,6 +62,9 @@ register is `business/workitems/`.
 > **Practice done — multi-product end-to-end:** `product/demo/pilot-docket/practice-multi-product/`
 > shows one installation → 3 CN codes → allocation → CBAM report → importer declaration → verifier
 > dossier (with an assumptions register). This is the C2–C5 blueprint in action.
+>
+> **Practice done — many-to-many:** `product/demo/pilot-docket/practice-many-to-many/`
+> shows 2 installations × 2 importers → per-installation SEE mapping → aggregated declarations.
 
 ### Part D — Product build (planned; each chunk test-gated)
 | # | Chunk | Pillar |

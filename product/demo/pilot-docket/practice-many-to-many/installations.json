@@ -1,0 +1,19 @@
+{
+  "installations": [
+    {
+      "id": "DEMO-STEEL-EAF-01",
+      "name": "Shree Balaji Steel & Alloys Pvt Ltd (EAF)",
+      "country": "IN",
+      "route": "EAF",
+      "seeTCO2PerTonne": { "7214": 0.374538, "7213": 0.4, "7208": 0.446304 }
+    },
+    {
+      "id": "DEMO-STEEL-BFBOF-01",
+      "name": "Bharat Integrated Steel Ltd (BF-BOF)",
+      "country": "IN",
+      "route": "BF-BOF",
+      "seeTCO2PerTonne": { "7214": 2.03754 }
+    }
+  ],
+  "_note": "One installation -> SEE per CN code. Uploaded once; reused by every linked declarant."
+}
