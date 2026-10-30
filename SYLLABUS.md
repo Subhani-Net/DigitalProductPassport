@@ -65,6 +65,9 @@ register is `business/workitems/`.
 >
 > **Practice done — many-to-many:** `product/demo/pilot-docket/practice-many-to-many/`
 > shows 2 installations × 2 importers → per-installation SEE mapping → aggregated declarations.
+>
+> **Practice done — whole submission reports:** `product/demo/pilot-docket/practice-submission-reports/`
+> shows 3 exporters × 3 importers → complete CBAM submission report per importer.
 
 ### Part D — Product build (planned; each chunk test-gated)
 | # | Chunk | Pillar |

@@ -1,0 +1,59 @@
+{
+  "reportingYear": 2026,
+  "declarationDue": "2027-09-30",
+  "certificatePriceEuroPerTonne": 75.36,
+  "cbamFactor2026": 0.025,
+  "cbamFactor2034Illustrative": 1.0,
+  "submissions": [
+    {
+      "declarant": { "eori": "DE123456789012345", "name": "Demo Importer X GmbH", "role": "importer" },
+      "lines": [
+        { "cnCode": "7214", "installationId": "E1", "netMassTonnes": 1200, "seeTCO2PerTonne": 0.374538, "determination": "actual", "embeddedTCO2": 449.4456 },
+        { "cnCode": "7214", "installationId": "E2", "netMassTonnes": 800, "seeTCO2PerTonne": 2.03754, "determination": "actual", "embeddedTCO2": 1630.032 },
+        { "cnCode": "7208", "installationId": "E2", "netMassTonnes": 300, "seeTCO2PerTonne": 1.95, "determination": "actual", "embeddedTCO2": 585.0 },
+        { "cnCode": "7213", "installationId": "E3", "netMassTonnes": 400, "seeTCO2PerTonne": 0.55, "determination": "actual", "embeddedTCO2": 220.0 }
+      ],
+      "byCn": {
+        "7214": { "quantityTonnes": 2000, "embeddedTCO2": 2079.4776 },
+        "7208": { "quantityTonnes": 300, "embeddedTCO2": 585.0 },
+        "7213": { "quantityTonnes": 400, "embeddedTCO2": 220.0 }
+      },
+      "totals": { "quantityTonnes": 2700, "embeddedTCO2e": 2884.4776 },
+      "certificateObligation": { "2026_2_5pct": 72.1119, "2034_100pct_illustrative": 2884.4776, "cost2034Eur": 217374.23 },
+      "defaultComparison": { "defaultEmbeddedTCO2e": 5670.0, "savingTCO2e": 2785.52 }
+    },
+    {
+      "declarant": { "eori": "NL987654321098765", "name": "Demo Importer Y BV", "role": "importer" },
+      "lines": [
+        { "cnCode": "7214", "installationId": "E1", "netMassTonnes": 500, "seeTCO2PerTonne": 0.374538, "determination": "actual", "embeddedTCO2": 187.269 },
+        { "cnCode": "7213", "installationId": "E1", "netMassTonnes": 200, "seeTCO2PerTonne": 0.4, "determination": "actual", "embeddedTCO2": 80.0 },
+        { "cnCode": "7208", "installationId": "E1", "netMassTonnes": 100, "seeTCO2PerTonne": 0.446304, "determination": "actual", "embeddedTCO2": 44.6304 },
+        { "cnCode": "7214", "installationId": "E3", "netMassTonnes": 600, "seeTCO2PerTonne": 0.52, "determination": "actual", "embeddedTCO2": 312.0 }
+      ],
+      "byCn": {
+        "7214": { "quantityTonnes": 1100, "embeddedTCO2": 499.269 },
+        "7213": { "quantityTonnes": 200, "embeddedTCO2": 80.0 },
+        "7208": { "quantityTonnes": 100, "embeddedTCO2": 44.6304 }
+      },
+      "totals": { "quantityTonnes": 1400, "embeddedTCO2e": 623.8994 },
+      "certificateObligation": { "2026_2_5pct": 15.5975, "2034_100pct_illustrative": 623.8994, "cost2034Eur": 47017.06 },
+      "defaultComparison": { "defaultEmbeddedTCO2e": 2940.0, "savingTCO2e": 2316.1 }
+    },
+    {
+      "declarant": { "eori": "FR555666777888999", "name": "Demo Importer Z SAS", "role": "importer" },
+      "lines": [
+        { "cnCode": "7208", "installationId": "E2", "netMassTonnes": 700, "seeTCO2PerTonne": 1.95, "determination": "actual", "embeddedTCO2": 1365.0 },
+        { "cnCode": "7213", "installationId": "E3", "netMassTonnes": 800, "seeTCO2PerTonne": 0.55, "determination": "actual", "embeddedTCO2": 440.0 },
+        { "cnCode": "7214", "installationId": "E1", "netMassTonnes": 300, "seeTCO2PerTonne": 0.374538, "determination": "actual", "embeddedTCO2": 112.3614 }
+      ],
+      "byCn": {
+        "7208": { "quantityTonnes": 700, "embeddedTCO2": 1365.0 },
+        "7213": { "quantityTonnes": 800, "embeddedTCO2": 440.0 },
+        "7214": { "quantityTonnes": 300, "embeddedTCO2": 112.3614 }
+      },
+      "totals": { "quantityTonnes": 1800, "embeddedTCO2e": 1917.3614 },
+      "certificateObligation": { "2026_2_5pct": 47.934, "2034_100pct_illustrative": 1917.3614, "cost2034Eur": 144492.36 },
+      "defaultComparison": { "defaultEmbeddedTCO2e": 3780.0, "savingTCO2e": 1862.64 }
+    }
+  ]
+}

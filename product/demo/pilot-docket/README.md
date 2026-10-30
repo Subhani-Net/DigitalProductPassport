@@ -49,6 +49,7 @@ pilot-docket/
   02-fuel-invoice/       (step 02 - ready)
   practice-multi-product/  (one installation -> 3 CN codes -> allocation -> report -> declaration -> verifier)
   practice-many-to-many/   (2 installations x 2 importers -> per-installation SEE mapping -> declarations)
+  practice-submission-reports/ (3 exporters x 3 importers -> WHOLE submission reports per importer)
 ```
 
 ## Practices
@@ -57,3 +58,5 @@ pilot-docket/
   importer declaration → verifier dossier.
 - `practice-many-to-many/` — **2 installations × 2 importers**: same CN code from different
   installations with different SEE → per-line mapping → aggregated declarations.
+- `practice-submission-reports/` — **3 exporters × 3 importers × multiple products**: the **whole
+  submission report** per importer (lines → per-CN aggregation → certificates → evidence → attestation).

@@ -1,0 +1,17 @@
+{
+  "importRecords": [
+    { "importerId": "I1", "importerName": "Demo Importer X GmbH", "installationId": "E1", "cnCode": "7214", "netMassTonnes": 1200 },
+    { "importerId": "I1", "importerName": "Demo Importer X GmbH", "installationId": "E2", "cnCode": "7214", "netMassTonnes": 800 },
+    { "importerId": "I1", "importerName": "Demo Importer X GmbH", "installationId": "E2", "cnCode": "7208", "netMassTonnes": 300 },
+    { "importerId": "I1", "importerName": "Demo Importer X GmbH", "installationId": "E3", "cnCode": "7213", "netMassTonnes": 400 },
+
+    { "importerId": "I2", "importerName": "Demo Importer Y BV", "installationId": "E1", "cnCode": "7214", "netMassTonnes": 500 },
+    { "importerId": "I2", "importerName": "Demo Importer Y BV", "installationId": "E1", "cnCode": "7213", "netMassTonnes": 200 },
+    { "importerId": "I2", "importerName": "Demo Importer Y BV", "installationId": "E1", "cnCode": "7208", "netMassTonnes": 100 },
+    { "importerId": "I2", "importerName": "Demo Importer Y BV", "installationId": "E3", "cnCode": "7214", "netMassTonnes": 600 },
+
+    { "importerId": "I3", "importerName": "Demo Importer Z SAS", "installationId": "E2", "cnCode": "7208", "netMassTonnes": 700 },
+    { "importerId": "I3", "importerName": "Demo Importer Z SAS", "installationId": "E3", "cnCode": "7213", "netMassTonnes": 800 },
+    { "importerId": "I3", "importerName": "Demo Importer Z SAS", "installationId": "E1", "cnCode": "7214", "netMassTonnes": 300 }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "installations": [
+    { "id": "E1", "code": "DEMO-STEEL-EAF-01", "name": "Shree Balaji Steel & Alloys Pvt Ltd (EAF)", "country": "IN", "route": "EAF",
+      "seeTCO2PerTonne": { "7214": 0.374538, "7213": 0.40, "7208": 0.446304 } },
+    { "id": "E2", "code": "DEMO-STEEL-BFBOF-01", "name": "Bharat Integrated Steel Ltd (BF-BOF)", "country": "IN", "route": "BF-BOF",
+      "seeTCO2PerTonne": { "7214": 2.03754, "7208": 1.95 } },
+    { "id": "E3", "code": "DEMO-STEEL-EAF-TR-01", "name": "Anadolu Steel A.S. (EAF)", "country": "TR", "route": "EAF",
+      "seeTCO2PerTonne": { "7214": 0.52, "7213": 0.55 } }
+  ],
+  "_note": "Three installation operators (exporters). Each uploads once; SEE per CN code; reused by every linked importer."
+}
