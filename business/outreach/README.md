@@ -5,7 +5,9 @@ Ties to `../presentation-plan.md` (the Present dimension) and the demo data pack
 
 | File | What |
 |---|---|
-| `target-list.md` | 15 candidate targets (5 exporter / 5 importer / 5 verifier) + why-fit |
+| `funnel.md` | **Customer funnel** — 8 stages, conversion targets, channels, cadence |
+| `leads-india-exporters.md` | **31 real Indian SME exporter leads** (steel pipes, forgings, aluminium extrusion, fasteners) |
+| `target-list.md` | Target-list template (personas + sourcing channels) |
 | `exporter-one-pager.md` | The customer-facing one-pager (send after a warm reply) |
 | `outreach-scripts.md` | Cold email + LinkedIn scripts (exporter primary, verifier, importer) |
 | `trial-playbook.md` | **What to do when someone says "good for a trial"** |

@@ -85,7 +85,7 @@ register is `business/workitems/`.
 | # | Action | Status |
 |---|---|---|
 | E1 | Investor pack: deck, pitch, business plan, investment plan, website, brand | ✅ (refine) |
-| E2 | Target list framework (small/medium Indian exporters) | ✅ (fill real names) |
+| E2 | Target list + leads (small/medium Indian exporters) | ✅ (31 leads in `business/outreach/leads-india-exporters.md`) |
 | E3 | **5 exporter conversations** | ⬜ this week |
 | E4 | Concierge pilot (on signal, 2 weeks) | ⬜ |
 | E5 | Raise (SEIS £250k + EIS £0.75–1.0M) | ⬜ |
