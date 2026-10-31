@@ -61,6 +61,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/research/data-layer.md` | Capture / transfer / transform pipeline |
 | `knowledge/research/submission-cadence-and-risk.md` | Submission frequency (annual, retrospective) + importer risk |
 | `knowledge/research/declaration-and-mapping.md` | Importer declaration & installation mapping (many-to-many) |
+| `knowledge/research/understanding-check.md` | **Reusable CBAM FAQ / understanding check** (precise clauses, right-vs-wrong, accounting analogy) |
 | `knowledge/research/cbam-input-sources.md` | Static/dynamic/real-time sources |
 | `knowledge/research/tracepass-steel-inventory.md` | Steel field inventory (84 / 29 required) |
 | `knowledge/research/tracepass-steel-fields-table.md` | Full 84-field table |
