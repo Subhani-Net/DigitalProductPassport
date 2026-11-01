@@ -89,11 +89,12 @@ register is `business/workitems/`.
 | E3 | **5 exporter conversations** | ⬜ this week |
 | E4 | Concierge pilot (on signal, 2 weeks) | ⬜ |
 | E5 | Raise (SEIS £250k + EIS £0.75–1.0M) | ⬜ |
+| E6 | **Expert bench** (verifier-grade advisors; India + EU) | ⬜ longlist 20–30 → 5 approaches → 1 paid micro-review |
 
 ### Part F — Moat & certification (later, gated on demand)
 | # | Item |
 |---|---|
-| F1 | Verifier-grade consultant (post C2–C4) — encode validation intelligence |
+| F1 | Verifier-grade expert bench — network now; **1 paid micro-review before first pilot**; formal validation post C2–C4 — encode validation intelligence |
 | F2 | Partner accredited verifier (the stamp — never us) |
 | F3 | T2 self-assurance → T3 on customer demand |
 | F4 | Accumulate the validation rule library (the compounding moat) |

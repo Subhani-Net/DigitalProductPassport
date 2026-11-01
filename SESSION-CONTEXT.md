@@ -1,6 +1,6 @@
 # SESSION-CONTEXT — resume here when you come back
 
-Last update: Sep 2026 (end of planning/research sessions; implementation-prep session next).
+Last update: Nov 2026 (outreach + expert bench in parallel; build continues).
 
 ## Read this first, then
 
@@ -41,7 +41,9 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
   `business/outreach/trial-playbook.md`.
 - **In the background (1 day/week):** build the **M2 slice** (capture + SEE calc) so the demo
   is real; spec is **frozen** (deep enough) — add only when a conversation reveals a gap.
-- **Consultant:** engage post C2–C4 (after demand is validated), NOT before.
+- **Consultant/expert:** amended Nov 2026 — network now; **one paid 2–4 hr micro-review before the
+  first pilot report** (de-risk the methodology); formal readiness validation after C2–C4. Mix:
+  India + EU. Budget ≈ £500. Files: `business/outreach/expert-brief.md`, `expert-bench.md`.
 
 ## Decisions locked (don't re-litigate without new evidence)
 
@@ -69,6 +71,10 @@ Last update: Sep 2026 (end of planning/research sessions; implementation-prep se
     **Importers are opportunistic/secondary** — reachable from the London base (UK/EU), not
     excluded. Invite mechanics: exporter invites importer via EORI link (importer may also
     invite suppliers), but the *led* side is the exporter.
+11. **Expert bench (Nov 2026, amends #2).** Network now; **one paid 2–4 hr micro-review before the
+    first pilot report**; formal readiness validation post C2–C4; **India + EU mix**; ~£500 budget.
+    Capture every session as rules/checks/test cases
+    (`knowledge/research/expert-session-template.md`) — judgment becomes product IP.
 
 ## File map
 
@@ -114,6 +120,9 @@ scratch/ (gitignored): spike-host (python static DPP host, port 9090)
 5. **M-E — Pilot (S7+, aligns M2):** pilot conversations; harden ingestion; LOI/case study.
 6. **Ongoing:** L2 (EC DPP Registry **test-env access** — user action), L5, L7; each chunk
    T1 conformance + fixture regression + compliance-matrix row.
+7. **Expert bench (parallel):** longlist 20–30 → approach 5 → **1 paid micro-review before the
+   first pilot report** (`business/outreach/expert-bench.md`); capture via
+   `knowledge/research/expert-session-template.md`.
 
 ## Rules of engagement (from AGENTS.md)
 

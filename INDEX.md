@@ -73,6 +73,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/research/glossary.md` | Deep glossary |
 | `knowledge/research/goto-market-sizing.md` | Market sizing + revenue model |
 | `knowledge/research/cbam-verifier-accreditation.md` | Verifier-agency path |
+| `knowledge/research/expert-session-template.md` | **Knowledge-capture template** for advisor sessions (findings → rules/checks/test cases) |
 
 ### 2.3 Other
 | Path | Purpose |
@@ -100,10 +101,24 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | Path | Purpose |
 |---|---|
 | `business/investor/` | Deck · pitch · business plan · investment plan (encrypted) · `website/` · `brand/` |
-| `business/outreach/` | Target list · exporter one-pager · scripts · trial playbook · consultant channel |
+| `business/outreach/` | Funnel · 43 leads · tracker · one-pager · scripts · trial playbook · consultant channel · **expert brief + bench** |
 | `business/competition/` | Landscape, friction-gap analysis, dossiers |
 | `business/cleancarbonai/` | CleanCarbon.ai competitive KD |
 | `business/workitems/` | Jira-style work-item register + gaps backlog |
+
+### 3.3 Outreach pack (`business/outreach/`)
+| File | Purpose | Status |
+|---|---|---|
+| `funnel.md` | Customer funnel — 8 stages, targets, channels, cadence | ✅ |
+| `leads-india-exporters.md` | 43 real Indian SME exporter leads (5 segments) | ✅ |
+| `tracker.md` | Master pipeline table — 43 rows, contact/stage/next action | ✅ active |
+| `expert-brief.md` | 1-page advisor brief — ask, 6 questions, offer, terms, £500 | ✅ |
+| `expert-bench.md` | Advisor longlist + pipeline + engagement log (India + EU) | ✅ active |
+| `consultant-channel.md` | Expert channel — amended sequencing | ✅ |
+| `exporter-one-pager.md` | Customer-facing one-pager | ✅ |
+| `outreach-scripts.md` | Email/LinkedIn scripts (per-customer call pack to be built) | ✅ (evolve) |
+| `trial-playbook.md` | Concierge pilot playbook | ✅ |
+| `target-list.md` | Persona + sourcing-channel template | ✅ |
 
 ## 4. TOOLS
 | Path | Purpose |
