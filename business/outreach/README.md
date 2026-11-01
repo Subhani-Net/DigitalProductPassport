@@ -7,6 +7,7 @@ Ties to `../presentation-plan.md` (the Present dimension) and the demo data pack
 |---|---|
 | `funnel.md` | **Customer funnel** — 8 stages, conversion targets, channels, cadence |
 | `leads-india-exporters.md` | **43 real Indian SME exporter leads** (pipes, forgings, aluminium extrusion, fasteners, castings) |
+| `tracker.md` | **Master pipeline table** — 43 rows, contact/phone/email/stage/next action per company |
 | `target-list.md` | Target-list template (personas + sourcing channels) |
 | `exporter-one-pager.md` | The customer-facing one-pager (send after a warm reply) |
 | `outreach-scripts.md` | Cold email + LinkedIn scripts (exporter primary, verifier, importer) |

@@ -86,4 +86,4 @@ role and whether they export to the EU.
 4. Start with **JK Forge, Avadh Technoforge, Shivam Forge, INEX, Padmawati, Kaloti** — strongest
    EU-facing, manufacturer fit.
 
-> Add a "Status" column as you contact: New → Contacted → Engaged → Qualified → Pilot → Paid.
+> Work every lead from **`tracker.md`** (Stage: New → Contacted → Engaged → Qualified → Pilot → Paid).
