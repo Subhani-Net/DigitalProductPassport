@@ -15,10 +15,22 @@ engagement log), `../../knowledge/research/expert-session-template.md` (capture)
 
 | When | What | Why |
 |---|---|---|
-| **Now** | Longlist 20–30; approach 5; build relationships (free) | reversible, no cash |
-| **Before first pilot report** | **1 paid micro-review** (2–4 hrs) of pilot methodology + docket | protects credibility; cost of being wrong ≫ £500 |
+| **Now (parallel with customer calls)** | Longlist 20–30; approach 8–10; book the paid slot | relationships + capacity |
+| **First customer's data → internal draft v0** | Build the report; label it **"draft, pending expert review"** | real artifact first |
+| **Before external delivery** | **1 paid 3-hr review** on the report's **synthetic twin** | higher-signal critique on a real deliverable |
+| **Before external delivery** | Fix **v1** from findings; deliver v1, never v0 | protect credibility |
 | **After C2–C4** | 2–3 advisors, 2–3 days each: formal readiness validation of schema / calc / evidence | validate the locked model |
 | **Later** | Convert 1–2 to design partner / advisory retainer; then revenue-share channel | Xero model |
+
+## Data handling (customer-first review)
+
+1. Customer shares S0/S1 data under the pilot agreement.
+2. We build **draft v0** internally — marked **"draft, pending expert review"**; never sent as final.
+3. We build a **synthetic twin** (structure + plausible numbers; strip company name, EORI, exact
+   volumes/prices, supplier names, recipes, energy contracts, location).
+4. Expert signs NDA; receives the twin + evidence trail + the six questions; 3 hrs; written critique.
+5. Findings → rules/checks/test cases → **v1 delivered to the customer**.
+6. Never cite an accredited body's mark or call it "verified".
 
 ## The offer — what to propose (and what NOT to)
 

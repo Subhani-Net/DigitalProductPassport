@@ -19,6 +19,24 @@ issue the stamp.
 | 2 | Stress-test our data model / evidence dossier against ISO 14064-3 | red-flag list a verifier would raise |
 | 3 | Convert your judgment into **rules, checks and test cases** we can encode | session capture (template supplied) |
 
+## The review pack (what we send)
+
+1. **Synthetic twin of the real report** (structure + plausible numbers; no client-identifying data).
+2. **Evidence trail** (which input → which factor → which figure).
+3. **Calc assumptions** + the source-document types used.
+4. **One-page "what we want challenged"** memo with the six questions below.
+
+## Review scope
+
+| In scope | Out of scope |
+|---|---|
+| SEE methodology on the pack | legal opinion |
+| Data model / evidence vs ISO 14064-3 | accreditation advice |
+| Report/format gaps | any "verified" statement |
+
+**Deliverable:** written critique with severity + rule/check/test-case per finding
+(`knowledge/research/expert-session-template.md`). **Fee:** fixed, paid on delivery.
+
 ## The six stress-test questions
 
 1. **System boundary & precursors** — does our scope capture every step per Reg. (EU) 2025/2547
@@ -47,6 +65,10 @@ your **time and judgment**.
 - **Conflict-of-interest declaration** — including any relationship with an accredited verification body.
 - **Independence:** you advise us; you do not verify the same client's declaration (ISO 17029/14065).
 - Boundary in every deliverable: **"verifier-ready, not verified."**
+- **Data:** we send a **synthetic twin**, not raw client data. NDA regardless (defence in depth).
+- **No public "verification" claim.** An advisory review may be disclosed as *"methodology
+  peer-reviewed by an independent specialist"* — never as verification, never using an
+  accredited body's mark.
 
 ## Who we are looking for
 

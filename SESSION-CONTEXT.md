@@ -71,10 +71,11 @@ Last update: Nov 2026 (outreach + expert bench in parallel; build continues).
     **Importers are opportunistic/secondary** — reachable from the London base (UK/EU), not
     excluded. Invite mechanics: exporter invites importer via EORI link (importer may also
     invite suppliers), but the *led* side is the exporter.
-11. **Expert bench (Nov 2026, amends #2).** Network now; **one paid 2–4 hr micro-review before the
-    first pilot report**; formal readiness validation post C2–C4; **India + EU mix**; ~£500 budget.
-    Capture every session as rules/checks/test cases
-    (`knowledge/research/expert-session-template.md`) — judgment becomes product IP.
+11. **Expert bench (Nov 2026, amends #2).** Network now (approach 8–10); **customer-first review**:
+    build **draft v0** → paid 3-hr review on its **synthetic twin** → deliver **v1**; formal readiness
+    validation post C2–C4; **India + EU mix**; ~£500 budget. Capture every session as
+    rules/checks/test cases (`knowledge/research/expert-session-template.md`) — judgment becomes
+    product IP. Never call an advisory review "verified."
 
 ## File map
 

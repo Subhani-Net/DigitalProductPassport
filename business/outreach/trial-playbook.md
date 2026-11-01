@@ -73,6 +73,14 @@ first pilots are run **manually ("concierge")**, and you must be honest about st
 > your draft SEE, evidence trail and saving in ~2 weeks. Final verification is with an accredited
 > partner verifier. If the numbers are useful, we move to the product and a paid plan."
 
+**Delivery gate (Nov 2026) — customer-first, then expert:**
+1. Build the report as **draft v0** — internal only, labelled *"draft, pending expert review"*.
+2. Send the **synthetic twin** to one paid expert (3 hrs) with the evidence trail + six questions.
+3. Capture findings as rules/checks/test cases; fix.
+4. Deliver **v1** to the customer. If no expert is booked in time, deliver v0 explicitly labelled
+   *"draft — methodology under expert review"* and upgrade to v1.
+Never call it "verified"; an advisory review is not a verification statement.
+
 **The consultant gap:** the consultant is for *encoding the moat at scale* (route-specific
 validation intelligence), **not** for running the first few pilots. You already know enough to
 produce a verifier-ready draft for a simple case; engage the consultant (post C2–C4) once you've

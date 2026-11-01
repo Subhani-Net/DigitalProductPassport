@@ -89,7 +89,7 @@ register is `business/workitems/`.
 | E3 | **5 exporter conversations** | ⬜ this week |
 | E4 | Concierge pilot (on signal, 2 weeks) | ⬜ |
 | E5 | Raise (SEIS £250k + EIS £0.75–1.0M) | ⬜ |
-| E6 | **Expert bench** (verifier-grade advisors; India + EU) | ⬜ longlist 20–30 → 5 approaches → 1 paid micro-review |
+| E6 | **Expert bench** (verifier-grade advisors; India + EU) | ⬜ longlist 20–30 → 8–10 approaches → 1 paid review on customer v0 → v1 delivery |
 
 ### Part F — Moat & certification (later, gated on demand)
 | # | Item |
