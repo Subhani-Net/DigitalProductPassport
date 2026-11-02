@@ -64,6 +64,46 @@ definitive-phase **annual** correctness, exporter-first, verifier-ready evidence
 
 ---
 
+## 4a. What we mean by "evidence" and "reuse" (the tests)
+
+These two differentiators are easy to hand-wave. Here is the precise meaning and a test for each.
+
+### Evidence — audit trail vs verifier-grade dossier
+An **"audit trail"** (a competitor claim) usually records **who changed what, when** — activity
+inside the vendor's UI. It proves *something happened*, not that the number is **true or
+sufficient**.
+
+Our evidence is an **assurance artifact**:
+- **Dossier** — a period-level, **exportable** pack outside the SaaS: source-document index,
+  methodology, assumptions, factor versions, calculations, open issues. A verifier who is *not*
+  our customer can audit it.
+- **Drill-down to source** — the chain **declaration line → SEE → calculation → factor
+  (source/version) → activity data → source document → row/page**. Not just "field came from
+  upload X."
+- **Determination flags** — every line marked **actual vs default**, with reason, date, version.
+  This is what the verifier's risk/materiality work and the importer's liability depend on.
+
+**The verifier test:** pick any declaration line. Without vendor help, can you (a) open the
+source document, (b) see the factor and version, (c) recompute the number, (d) see actual vs
+default? **Yes → dossier-grade. Only "last edited by X" → audit-trail-grade.**
+*Analogy: audit trail = CCTV of who touched the spreadsheet; dossier = accountant's working
+papers where every number ties to a receipt.*
+
+### Reuse — importer portal vs publish-once
+- **Importer-controlled portal:** the importer creates the workspace and invites the exporter to
+  submit into **that importer's silo**. Five EU buyers → up to five invites/accounts/uploads and
+  five datasets; the importer controls access.
+- **Upload once, EORI reuse:** the **exporter/installation** is the origin of truth — **one
+  dataset per reporting period**. Each importer is **linked by EORI** and retrieves the *same*
+  verified data. One upload, N buyers; consistency is structural; exporter controls access;
+  zero-exposure target. Matches the registry's **operator (O3CI)** flow.
+
+**The new-buyer test:** add an EU buyer tomorrow — do you **upload/enter data again** (portal) or
+**just link EORI** (reuse)?
+
+*Fair caveat: a portal may reduce re-keying within its own platform; the difference is **who
+leads** and whether the dataset is buyer-agnostic. Ours is exporter-published.*
+
 ## 5. Claims we can make / cannot make
 
 | ✅ Can say | ❌ Must not say |
