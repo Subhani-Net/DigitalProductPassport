@@ -1,5 +1,8 @@
 # Module 5 — Precursors & Complex Goods
 
+> **Deep dive:** `../cbam-precursors/` — focused course on the calculation, the data request,
+> and the timeline/scenario matrix (CY2026 → 30 Sep 2027).
+
 ## 5.1 The precursor rule
 A **precursor** is any input material into a production process that is itself an **Annex I
 (CBAM) good**. **Fact** (IR 2025/2547 Art. 1(7)). For **complex goods**, embedded emissions

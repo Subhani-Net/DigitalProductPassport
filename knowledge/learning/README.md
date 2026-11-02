@@ -11,6 +11,7 @@ Current courses:
 | **CBAM 101 — Foundations** | Beginner | **Complete** → `cbam-101/` |
 | **CBAM 201 — Practitioner** | Intermediate | **Complete** → `cbam-201/` |
 | **CBAM 301 — Expert / SME** | Advanced | Planned (outline below) |
+| **CBAM Precursors & Timeline** | Practitioner+ | **Complete** → `cbam-precursors/` |
 | **LCA/EPD Deep Primer** | Reference (advanced) | **Complete** → `lca-epd-primer.md` |
 | *(DPP 101 companion)* | Beginner | Backlog (after CBAM 301) |
 

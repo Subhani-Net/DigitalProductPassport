@@ -37,6 +37,10 @@ Status: ✅ defined here · 🔗 in `../research/glossary.md` · 📥 in inbox (
 | **NCA / verifier / accreditation** | National authority; accredited verifier issues the report. | 101 | 🔗 |
 | **De minimis (50 t)** | Importer exemption below 50 t/yr. | 101 | ✅ |
 | **Carbon-price deduction** | Deducting carbon already priced in the country of origin. | 101 | ✅ |
+| **Reporting period** | Year whose emissions are reported; a precursor's default period = year the complex good was produced. | 201 | ✅ |
+| **Weighted average (precursors)** | Used where same-CN-code precursors come from multiple installations/periods. | 201 | ✅ |
+| **Yield / consumption (Mᵢ)** | Precursor mass *consumed* (not output); losses raise the final SEE. | 201 | ✅ |
+| **Verification report (period)** | Actual precursor data needs a valid report covering the right period, else defaults. | 201 | ✅ |
 
 ## C. Carbon accounting & standards
 
