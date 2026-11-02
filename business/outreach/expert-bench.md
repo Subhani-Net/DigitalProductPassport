@@ -76,6 +76,14 @@ vendors/competitors — useful for market intel, **not** for an independent advi
 | 6 | Nilesh Bhattad | CleanCarbon.ai (Thinksmart) | Director | India | EEPC/SEPC-empanelled CBAM consultant; steel, Al, fasteners | nb@cleancarbon.ai | EEPC CBAM portal | **competitor** | — | Parked (intel) |
 | 7 | Harsh Choudhry | Sentra.world | Co-Founder & CEO | India | carbon accounting platform, CBAM | harsh.choudhry@sentra.world | EEPC CBAM portal | **competitor/platform** | — | Parked (intel) |
 | 8 | Prashant Sharma | CleanCarbon.ai | CBAM Analyst | India (110005) | CBAM consulting support, Al/steel | LinkedIn (`in/prashant-sharma-9a6a3b40a`) | LinkedIn search | **competitor** | — | Parked |
+| 9 | Madeeha Anwar Husain | KPMG India | ESG Analyst / CBAM Specialist; **certified ISO 14064-1/2/3 auditor & verifier** | India | Iron & steel, CBAM, ISO 14064 verification, decarbonisation; MBA Finance; IIM Lucknow | [LinkedIn](https://www.linkedin.com/in/madeeha-anwar-husain-b00810226/) | LinkedIn public headline (DDG, Nov 2026) | **employer = KPMG** — verify conflict / outside-work permission | **H** | Target |
+| 10 | Prabhakar R | (TBC) | (TBC) | India (TBC) | Profile supplied by user; details to verify on connect | [LinkedIn](https://www.linkedin.com/in/prabhakar-r-6389ab20/) | user-supplied URL (Nov 2026) | TBC | **H** | Verify |
+
+> **Rows 9–10 are user-sourced (Nov 2026).** Verify role, seniority, availability and conflict
+> before the paid review. Madeeha's ISO 14064-3 auditor/verifier background is a strong fit for the
+> methodology review — but she is employed by **KPMG**, so check outside-work permission and any
+> independence restriction (and her seniority: headline says "ESG Analyst"). Prabhakar's public
+> profile was not retrievable by our tools (LinkedIn 999 / not indexed) — confirm details manually.
 
 > Public business emails are as published by EEPC India for exporter use. Re-verify before sending.
 
