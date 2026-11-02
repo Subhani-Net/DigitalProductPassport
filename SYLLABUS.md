@@ -98,6 +98,7 @@ register is `business/workitems/`.
 | F2 | Partner accredited verifier (the stamp — never us) |
 | F3 | T2 self-assurance → T3 on customer demand |
 | F4 | Accumulate the validation rule library (the compounding moat) |
+| F5 | LCA/EPD literacy — understand the boundary; **partner, don't build** (`knowledge/learning/lca-epd-primer.md`) |
 
 ---
 

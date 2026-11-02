@@ -76,6 +76,10 @@ Last update: Nov 2026 (outreach + expert bench in parallel; build continues).
     validation post C2–C4; **India + EU mix**; ~£500 budget. Capture every session as
     rules/checks/test cases (`knowledge/research/expert-session-template.md`) — judgment becomes
     product IP. Never call an advisory review "verified."
+12. **Positioning vs breadth (Nov 2026).** Sentra = **competitor only** (not partner). LCA/EPD =
+    **partner/defer, don't build**. We sell the **CBAM evidence/validation layer**, not a
+    full-suite carbon-accounting platform. See `business/positioning.md`,
+    `business/capability-map.md`, `knowledge/learning/lca-epd-primer.md`.
 
 ## File map
 

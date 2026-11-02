@@ -12,6 +12,7 @@ size). "Claim:" = vendor statement; "Fact:" = independently verifiable.
 | **SAP** (Sustainability Footprint Mgmt + Green Ledger) | Announced Jun 2026: "end-to-end CBAM solution… starting with CBAM declarants"; embedded emissions, certificates, report generation | Declarants (EU importers) | "audit-ready… Green Ledger" | none (footprint only) | **HIGH** (large EU declarants) |
 | **CleanCarbon.ai** | Full service (see `../cleancarbonai/`) | India exporters + EU-side buyers | in-house ISO 14065/17029 certs | none | HIGH (India-exporter segment) |
 | Sinai | CBAM module: "cost simulations", "generate, validate and submit CBAM reports", "auditable and verifiable" | companies outside EU | "verified by TÜV" | none | MEDIUM |
+| **Sentra.World** | Carbon-accounting suite (CCF/PCF/LCA/EPD, 25k factors, 150+ steel plant models); EEPC CBAM panel; **no CBAM evidence/registry claim in public copy** | India exporters (exporter-first) | none claimed | none claimed | **MEDIUM** (`dossiers/sentra.md`) |
 | Greenly | CBAM module: "quarterly XML reports for direct download to the EU portal", declarant + international-supplier tabs, €75.36 Q1-2026 price content | both sides | ISO 14040/14044 LCA output | YES (DPP/ESPR retail module) | MEDIUM (FR/EU SMEs) |
 | Normative | CBAM = coaching session only, no software module | n/a | "independently verified by TÜV SÜD" | none | LOW |
 | Persefoni | none found | n/a | SOC2/ISO 27001, ledger audit trail | none | LOW |
@@ -19,9 +20,11 @@ size). "Claim:" = vendor statement; "Fact:" = independently verifiable.
 | Salesforce Net Zero Cloud | none found | n/a | audit-ready reports | none | LOW |
 | Sweep | none found | n/a | audit trails, KPMG/ERM partners | none | LOW |
 
-**Arena A read:** only CarbonChain, SAP (declarants) and CleanCarbon (India service) fight
-our M2 revenue directly; generalists own enterprise Scope-1-3 spend but have no CBAM/DPP
-depth. Greenly shows the SME wedge with XML-to-portal automation.
+**Arena A read:** CarbonChain, SAP (declarants), CleanCarbon (India service) and Sentra (India
+exporter carbon suite) fight our M2 revenue directly; generalists own enterprise Scope-1-3 spend
+but have no CBAM/DPP depth. Greenly shows the SME wedge with XML-to-portal automation. Sentra's
+breadth (LCA/EPD) is adjacent, not CBAM evidence depth. We compete on validation + evidence +
+reuse, not breadth (`dossiers/sentra.md`).
 
 ## Arena B — DPP platforms (2028–29 market)
 

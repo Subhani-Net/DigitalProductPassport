@@ -11,6 +11,7 @@ Current courses:
 | **CBAM 101 — Foundations** | Beginner | **Complete** → `cbam-101/` |
 | **CBAM 201 — Practitioner** | Intermediate | **Complete** → `cbam-201/` |
 | **CBAM 301 — Expert / SME** | Advanced | Planned (outline below) |
+| **LCA/EPD Deep Primer** | Reference (advanced) | **Complete** → `lca-epd-primer.md` |
 | *(DPP 101 companion)* | Beginner | Backlog (after CBAM 301) |
 
 **Reference body of knowledge:** `cbambok.md` — article-anchored terms across legislation,
@@ -54,6 +55,8 @@ Goal: operate at verifier-grade judgment and advise at policy level.
 - Deep sector science: steel route chemistry, aluminium PFC slope method, benchmark maths.
 - Defaults methodology and where they mislead; anti-fraud/Plausibility.
 - CBAM ↔ ETS ↔ DPP interplay; importer/operator liability edge cases; policy horizon.
+- **LCA/PCF/EPD literacy** — boundaries, modules, PCRs; where an EPD is an input vs a CBAM
+  artefact (`lca-epd-primer.md`).
 
 ## How to use with the rest of the KB
 - **Parallel technical track:** each learning block is paired with a small technical

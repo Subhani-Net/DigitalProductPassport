@@ -50,6 +50,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/learning/cbam-101/` | **Complete** Foundations |
 | `knowledge/learning/cbam-201/` | **Complete** Practitioner |
 | `knowledge/learning/cbam-301/README.md` | Planned Expert/SME |
+| `knowledge/learning/lca-epd-primer.md` | **Deep LCA/PCF/EPD primer** + CBAM bridge (what an EPD is/isn't) |
 
 ### 2.2 Reference research (`knowledge/research/`)
 | Path | Purpose |
@@ -92,6 +93,8 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/jobs-to-be-done.md` | Beyond-processing core (6 jobs) |
 | `business/system-intricacies.md` | JSON seam, guarantees, challenges→fixes |
 | `business/product-gaps.md` | Gaps & uncovered scope |
+| `business/capability-map.md` | **Honest deep/partial/thin/absent map** + 90-day gap plan |
+| `business/positioning.md` | **Positioning** — CBAM evidence layer; claims, objections, vs Sentra/CleanCarbon |
 | `business/specification-by-example.md` | BDD playbook |
 | `business/presentation-plan.md` | Present dimension |
 | `business/project-gantt.md` | Dated task view |
@@ -102,7 +105,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 |---|---|
 | `business/investor/` | Deck · pitch · business plan · investment plan (encrypted) · `website/` · `brand/` |
 | `business/outreach/` | Funnel · 43 leads · tracker · one-pager · scripts · trial playbook · consultant channel · **expert brief + bench** |
-| `business/competition/` | Landscape, friction-gap analysis, dossiers |
+| `business/competition/` | Landscape, friction-gap analysis, dossiers (incl. `sentra.md`) |
 | `business/cleancarbonai/` | CleanCarbon.ai competitive KD |
 | `business/workitems/` | Jira-style work-item register + gaps backlog |
 

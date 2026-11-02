@@ -10,5 +10,7 @@ Planned modules:
 3. Deep sector science: steel route chemistry; aluminium PFC slope method; benchmark maths.
 4. Defaults methodology and its failure modes; anti-fraud / plausibility.
 5. CBAM ↔ ETS ↔ DPP interplay; liability edge cases; policy horizon.
+6. **LCA/PCF/EPD literacy** — boundaries, modules, PCRs; where an EPD is an input vs a CBAM
+   artefact → `../lca-epd-primer.md`.
 
 Companion: `../../research/cbam-verifier-accreditation.md` (role + self-study syllabus).
