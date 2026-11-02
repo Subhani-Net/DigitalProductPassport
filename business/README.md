@@ -11,6 +11,7 @@ cross-referenced to it. Dated milestones follow `product-roadmap.md` §5.
 | `investor/investment-plan.md` | The master business plan: activities, costing, investment requirement, SEIS/EIS phased plan, MVP iterations |
 | `capability-map.md` | Honest deep / partial / thin / absent map + 90-day gap-closing plan |
 | `positioning.md` | Positioning — the CBAM evidence layer; claims, objections, vs Sentra/CleanCarbon |
+| `website/README.md` | **Customer-facing static site** (Veriflow) — pages, placeholders, deploy |
 | `README.md` | This index + activity tracker |
 
 ## Activity tracker

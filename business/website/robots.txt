@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PLACEHOLDER: replace with the live domain
+Sitemap: https://veriflow.example/sitemap.xml

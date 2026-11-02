@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it works — Veriflow</title>
+  <meta name="description" content="How Veriflow turns exporter documents into a verifier-ready CBAM evidence pack: capture, validate, prove, reuse.">
+  <link rel="canonical" href="https://veriflow.example/how-it-works.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Veriflow home">
+        <img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">
+        <span class="brand-name">Veriflow</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="how-it-works.html" aria-current="page">How it works</a>
+        <a href="pilot.html">Pilot</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html" class="btn small">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="index.html">Home</a> / How it works</p>
+        <p class="kicker">The process</p>
+        <h1>From paper to a verifier-ready CBAM pack.</h1>
+        <p class="lead mt-2">Four moves: capture the documents, validate the data, prove the number, and reuse it across every EU buyer.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap prose">
+        <h2>1. Capture — documents, not ERP access</h2>
+        <p>Most exporters do not have a clean emissions database. They have electricity and fuel bills, purchase invoices, weighbridge tickets, mill certificates (EN 10204), production logs and Excel. That is enough to start.</p>
+        <p>We map each document to the data point it supports, with the source retained. No ERP project, no meter installation, no OT integration for the pilot.</p>
+        <ul class="checklist">
+          <li>Electricity and fuel bills, meter logs</li>
+          <li>Purchase invoices and weighbridge tickets</li>
+          <li>Mill certificates and batch/heat numbers</li>
+          <li>Production, yield and allocation records</li>
+          <li>Supplier precursor data, where available</li>
+        </ul>
+
+        <h2>2. Validate — the number has to survive a verifier</h2>
+        <p>A calculator is commodity. The product is judgement: route-specific boundaries, precursor handling, allocation, units and plausibility. We check the things an accredited verifier will check.</p>
+        <ul class="checklist">
+          <li>System boundary and source-stream completeness</li>
+          <li>Precursors for complex goods — <span class="nums">Σ(Mᵢ × SEEᵢ)</span></li>
+          <li>Allocation across products and co-products</li>
+          <li>Units, NCV and oxidation factors</li>
+          <li>Plausibility against route benchmarks</li>
+          <li>Actual vs default determination, per line</li>
+        </ul>
+
+        <h2>3. Prove — an evidence pack, not a claim</h2>
+        <p>Every declarable figure is traceable along a chain: declaration line → SEE → calculation → factor (source and version) → activity data → source document → row/page.</p>
+        <p>We also assemble the documentation a verifier reads first: the monitoring and evidence protocol for the installation, the assumptions, the open issues, and the determination flags.</p>
+        <div class="callout"><strong>The verifier test:</strong> pick any line. Can you, without the vendor's help, open the source document, see the factor and version, recompute the number, and see whether it is actual or default? If yes, it is dossier-grade evidence.</div>
+
+        <h2>4. Reuse — upload once, link every buyer</h2>
+        <p>The installation is the origin of truth. One dataset per reporting period. Each EU importer is linked by EORI and retrieves the same verified data — no re-keying per customer, no divergent copies.</p>
+        <div class="callout"><strong>The new-buyer test:</strong> add an EU buyer tomorrow. Do you upload again, or just link EORI? With Veriflow, you link.</div>
+      </div>
+    </section>
+
+    <section class="wash">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">The deliverable</p>
+          <h2>What is inside the pack.</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Component</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td>Specific embedded emissions (SEE)</td><td>The per-tonne figure per product/CN code, calculated to the CBAM methodology.</td></tr>
+              <tr><td>Evidence dossier</td><td>Source-document index, factors, calculations, assumptions and open issues.</td></tr>
+              <tr><td>Drill-down trail</td><td>From the declaration line to the invoice, meter log or mill certificate behind it.</td></tr>
+              <tr><td>Determination flags</td><td>Every line marked actual or default, with the reason and period.</td></tr>
+              <tr><td>Saving analysis</td><td>Actual vs default in tCO₂e/t and in euros, so your buyer sees the value.</td></tr>
+              <tr><td>Reuse link</td><td>The installation dataset, linkable to each importer via EORI.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted mt-1">The accredited partner verifier issues the verification report. We produce the evidence they review.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap prose">
+        <h2>Precursors, without the headache</h2>
+        <p>Most steel and aluminium goods are <strong>complex</strong>: they are made from inputs that are themselves CBAM goods — pig iron, crude steel, hot-rolled coil, aluminium ingot. Those inputs carry their own embedded emissions.</p>
+        <p>The rule is recursive: add the emissions of each covered precursor to the emissions of the final good.</p>
+        <div class="callout"><span class="nums">EE<sub>inpMat</sub> = Σ (Mᵢ × SEEᵢ)</span><br><span class="small muted">Mᵢ = mass of precursor consumed · SEEᵢ = its specific embedded emissions</span></div>
+        <p>Where a precursor has no verified data for the right period, the legal default applies — and we flag it. The difference between verified actual and default is often the biggest lever in the whole report.</p>
+
+        <h2>The monitoring plan is the cover page</h2>
+        <p>A monitoring plan is the installation's rule book: what is measured, how, with which instrument, how often and by whom. It is the first thing a verifier reads.</p>
+        <p>We build a forward-looking plan where it helps, and an honest <strong>evidence and methodology protocol</strong> for a year that has already elapsed. We document what was actually done — we do not backdate a plan.</p>
+
+        <h2>The annual clock</h2>
+        <p>CBAM is retrospective. You capture data during the calendar year, then declare that year by 30 September of the next. The first declaration for 2026 imports is due 30 September 2027.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Clock</th><th>When</th><th>What happens</th></tr></thead>
+            <tbody>
+              <tr><td>Capture</td><td>1 Jan – 31 Dec</td><td>Meters, invoices, supplier data, evidence.</td></tr>
+              <tr><td>Declare</td><td>1 Jan – 30 Sep next year</td><td>Assemble, verify, declare, surrender certificates.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted mt-1">Who files? The EU importer files the declaration. The exporter supplies the installation data. The verifier verifies.</p>
+
+        <h2>What we do not do</h2>
+        <ul class="cross">
+          <li>We do not install or calibrate meters, or run CEMS.</li>
+          <li>We do not issue the verification stamp.</li>
+          <li>We do not do full LCA, EPD or corporate ESG reporting.</li>
+          <li>We do not invent a retrospective monitoring plan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>See it on your own data.</h2>
+        <p>A two-week pilot, one installation, one reporting period.</p>
+        <div class="hero-actions">
+          <a class="btn" href="pilot.html">See the pilot</a>
+          <a class="btn ghost" href="contact.html">Book a call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">
+            <span class="brand-name">Veriflow</span>
+          </a>
+          <p>Verifier-ready CBAM evidence for steel and aluminium exporters. Verifier-ready, not verified.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="how-it-works.html">How it works</a>
+          <a href="pilot.html">Pilot</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Book a call</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <!-- PLACEHOLDER: replace domain, email and phone -->
+          <a href="mailto:hello@veriflow.example">hello@veriflow.example</a>
+          <a href="tel:+440000000000">+44 (0) 0000 000 000</a>
+          <span class="small muted">London, United Kingdom</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Veriflow. Working name and placeholder contact details.</span>
+        <span>Verifier-ready, not verified. Verification by accredited partners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

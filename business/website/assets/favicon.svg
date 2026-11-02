@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Veriflow">
+  <rect width="32" height="32" rx="7" fill="#14634A"/>
+  <path d="M8 10.5l8 11.5 8-11.5" fill="none" stroke="#FBFBF9" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11 10.5h10" stroke="#9CD3C0" stroke-width="2" stroke-linecap="round"/>
+</svg>

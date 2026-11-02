@@ -8,7 +8,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 |---|---|
 | **`product/`** | The software: `src/` (code + schemas + fixtures), `tests/`, `demo/` (seedable data). **This is the product.** |
 | **`knowledge/`** | `learning/` (courses), `research/` (reference), `exploration/` (early notes). |
-| **`business/`** | Roadmap/spec/planning, `investor/` (deck + website + brand), `outreach/`, `competition/`, `cleancarbonai/`, `workitems/`. |
+| **`business/`** | Roadmap/spec/planning, `investor/` (deck + website + brand), `website/` (customer), `outreach/`, `competition/`, `cleancarbonai/`, `workitems/`. |
 | **`tools/`** | Scripts (e.g. `crypt-docs.ps1`). |
 | Root docs | `README.md`, `INDEX.md`, `AGENTS.md`, `SESSION-CONTEXT.md`, `terminology.md`, `compliance-matrix.md`. |
 | Gitignored | `reference/` (cloned tools), `scratch/` (spike host). |
@@ -123,6 +123,17 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `outreach-scripts.md` | Email/LinkedIn scripts (per-customer call pack to be built) | ✅ (evolve) |
 | `trial-playbook.md` | Concierge pilot playbook | ✅ |
 | `target-list.md` | Persona + sourcing-channel template | ✅ |
+
+### 3.4 Customer website (`business/website/`)
+| File | Purpose |
+|---|---|
+| `business/website/index.html` | **Landing page** — problem, offer, 4 pillars, how it works, deliverable, pricing, FAQ |
+| `business/website/how-it-works.html` | Process, precursors, monitoring plan, annual clock, boundaries |
+| `business/website/pilot.html` | 2-week pilot, timeline, guardrails |
+| `business/website/contact.html` | Contact (placeholders) + enquiry form |
+| `business/website/assets/` | `styles.css`, `site.js`, `favicon.svg` |
+| `business/website/README.md` | Placeholders, deploy, claims policy |
+| `business/website/robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
 
 ## 4. TOOLS
 | Path | Purpose |
