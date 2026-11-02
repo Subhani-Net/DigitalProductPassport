@@ -21,6 +21,8 @@ before external delivery**; formal readiness validation after C2–C4.
 | **Verification bodies (India desks)** | ex-verifiers, method rigour | SGS · Bureau Veritas · TÜV SÜD · DNV · Intertek · DEKRA |
 | **Academia** | metallurgy / process emissions | IIT metallurgy depts · NML Jamshedpur |
 | **Trade bodies** | technical leads + member intros | Indian Steel Association · Aluminium Association of India · EEPC |
+| **EEPC CBAM portal** | official named consultant panel (5 providers, emails) | cbam.eepcindia.org |
+| **NABCB** | India's accreditation body → accredited CBAM verifiers | ask for the CBAM verifier list |
 | **Pilot referrals** | trusted, already in context | ask during concierge pilots |
 
 ## Approach portfolio (who to approach)
@@ -58,7 +60,34 @@ Lead with the **artifact, not a pitch** — offer the synthetic docket (no NDA n
 4. Any conflict with an accredited verification body?
 5. Available in the next two weeks?
 
-## Longlist / pipeline
+## Named profiles — India (first batch, Nov 2026)
+
+Sourced from the **EEPC India CBAM portal** (official Nodal Body for iron/steel & aluminium) and
+public LinkedIn/Leafr results. **Conflict flag matters:** several EEPC-listed providers are software
+vendors/competitors — useful for market intel, **not** for an independent advisory bench.
+
+| # | Name | Organisation | Role | Base | Expertise / fit | Public contact | Source | Conflict | Pri | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Supriya Bansal | AVA Insights Partners LLP | Partner | India | ESG / CBAM advisory consultancy | SUPRIYA.BANSAL@AVALLP.IN | EEPC CBAM portal | none known | **H** | Target |
+| 2 | Nitish Gautam | Independent | Sustainability & ESG consultant | India | GHG accounting, CBAM, EcoVadis, BRSR, SBTi; chemical engineer; iron/steel/chemicals | LinkedIn (`in/nitish-gautam`) | LinkedIn search | none known | **H** | Target |
+| 3 | Nilesh Shedge | CarbonMinus (Inizent) | CTO | India | carbon accounting, CBAM | nilesh@carbonminus.com | EEPC CBAM portal | product overlap (software) | M | Screen |
+| 4 | Thiruvenkateswaran R | ClimeUp (Greenworks) | MD & CEO | India | ESG/sustainability software, CBAM | thiru@climeup.ai | EEPC CBAM portal | product overlap | M | Screen |
+| 5 | Gaurav (surname TBC) | Independent (Leafr) | Steel PCF consultant | TBC | Product Carbon Footprints across steel facilities | via Leafr | Leafr testimonial | none known | **H** | Identify |
+| 6 | Nilesh Bhattad | CleanCarbon.ai (Thinksmart) | Director | India | EEPC/SEPC-empanelled CBAM consultant; steel, Al, fasteners | nb@cleancarbon.ai | EEPC CBAM portal | **competitor** | — | Parked (intel) |
+| 7 | Harsh Choudhry | Sentra.world | Co-Founder & CEO | India | carbon accounting platform, CBAM | harsh.choudhry@sentra.world | EEPC CBAM portal | **competitor/platform** | — | Parked (intel) |
+| 8 | Prashant Sharma | CleanCarbon.ai | CBAM Analyst | India (110005) | CBAM consulting support, Al/steel | LinkedIn (`in/prashant-sharma-9a6a3b40a`) | LinkedIn search | **competitor** | — | Parked |
+
+> Public business emails are as published by EEPC India for exporter use. Re-verify before sending.
+
+### Verification / academic routes (to source named advisors)
+
+| Route | Why | Action |
+|---|---|---|
+| **NABCB** (National Accreditation Board for Certification Bodies) | India's accreditation body; points to accredited CBAM verifiers | ask for the CBAM verifier list / named contacts |
+| TÜV SÜD South Asia · SGS India · Bureau Veritas India · Intertek India · DNV India | verification bodies with Indian staff; source ex-verifiers / associates | ask for ex-staff / associate network |
+| IIT metallurgy depts · NML Jamshedpur | process / emissions depth for boundary & precursors | find steel/energy faculty |
+
+## Longlist / pipeline (organisation-level routes → convert to named people)
 
 | # | Name / organisation | Type | Base | Expertise (steel / Al / ISO 14064-3 / registry) | Source | Pri | Status | Next action | Notes |
 |---|---|---|---|---|---|---|---|---|---|
