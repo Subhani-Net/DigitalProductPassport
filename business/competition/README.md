@@ -38,6 +38,7 @@ A player scores High threat when it overlaps multiple of OUR differentiators:
 | `landscape.md` | Arena × player matrix with threat scorecards (built after waves) |
 | `dossiers/` | Deep fact-dossiers for the shortlisted high-relevance players |
 | `dossiers/sentra.md` | Sentra.World — broad carbon-accounting suite; **MEDIUM**; competitor-only |
+| `dossiers/climeup.md` | ClimeUp CBAM® — importer-led; public copy still transitional/quarterly; **MEDIUM–HIGH** |
 | `mapping-to-roadmap.md` | White space, adopt-vs-watch, per-arena positioning |
 
 Anchor dossier for Arena A: `../cleancarbonai/`.

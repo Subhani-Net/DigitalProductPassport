@@ -106,7 +106,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 |---|---|
 | `business/investor/` | Deck · pitch · business plan · investment plan (encrypted) · `website/` · `brand/` |
 | `business/outreach/` | Funnel · 43 leads · tracker · one-pager · scripts · trial playbook · consultant channel · **expert brief + bench** |
-| `business/competition/` | Landscape, friction-gap analysis, dossiers (incl. `sentra.md`) |
+| `business/competition/` | Landscape, friction-gap analysis, dossiers (incl. `sentra.md`, `climeup.md`) |
 | `business/cleancarbonai/` | CleanCarbon.ai competitive KD |
 | `business/workitems/` | Jira-style work-item register + gaps backlog |
 

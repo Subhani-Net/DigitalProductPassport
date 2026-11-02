@@ -71,7 +71,7 @@ vendors/competitors — useful for market intel, **not** for an independent advi
 | 1 | Supriya Bansal | AVA Insights Partners LLP | Partner | India | ESG / CBAM advisory consultancy | SUPRIYA.BANSAL@AVALLP.IN | EEPC CBAM portal | none known | **H** | Target |
 | 2 | Nitish Gautam | Independent | Sustainability & ESG consultant | India | GHG accounting, CBAM, EcoVadis, BRSR, SBTi; chemical engineer; iron/steel/chemicals | LinkedIn (`in/nitish-gautam`) | LinkedIn search | none known | **H** | Target |
 | 3 | Nilesh Shedge | CarbonMinus (Inizent) | CTO | India | carbon accounting, CBAM | nilesh@carbonminus.com | EEPC CBAM portal | product overlap (software) | M | Screen |
-| 4 | Thiruvenkateswaran R | ClimeUp (Greenworks) | MD & CEO | India | ESG/sustainability software, CBAM | thiru@climeup.ai | EEPC CBAM portal | product overlap | M | Screen |
+| 4 | Thiruvenkateswaran R | ClimeUp (Greenworks) | MD & CEO | India | ESG/sustainability + CBAM platform (importer-led; public copy transitional) | thiru@climeup.ai | EEPC CBAM portal | **competitor** | — | Parked (intel) |
 | 5 | Gaurav (surname TBC) | Independent (Leafr) | Steel PCF consultant | TBC | Product Carbon Footprints across steel facilities | via Leafr | Leafr testimonial | none known | **H** | Identify |
 | 6 | Nilesh Bhattad | CleanCarbon.ai (Thinksmart) | Director | India | EEPC/SEPC-empanelled CBAM consultant; steel, Al, fasteners | nb@cleancarbon.ai | EEPC CBAM portal | **competitor** | — | Parked (intel) |
 | 7 | Harsh Choudhry | Sentra.world | Co-Founder & CEO | India | carbon accounting platform, CBAM | harsh.choudhry@sentra.world | EEPC CBAM portal | **competitor/platform** | — | Parked (intel) |

@@ -56,7 +56,11 @@ We own: **capture → validate → prove → reuse**. Not: corporate footprint, 
 | DPP bridge | Not claimed | No | Planned (sell-twice) |
 | Threat | MEDIUM | HIGH (India segment) | — |
 
-**Source:** `competition/dossiers/sentra.md`, `cleancarbonai/competitive-analysis.md`.
+**Source:** `competition/dossiers/sentra.md`, `competition/dossiers/climeup.md`, `cleancarbonai/competitive-analysis.md`.
+
+**ClimeUp CBAM®:** importer-led, broad suite (6 categories, GHG/ESG/PCF/LCA), but its public
+CBAM copy still sells **quarterly + Transitional Registry** (the pre-2026 regime). Our edge:
+definitive-phase **annual** correctness, exporter-first, verifier-ready evidence, reuse.
 
 ---
 
@@ -91,6 +95,11 @@ We own: **capture → validate → prove → reuse**. Not: corporate footprint, 
 **"Do you do corporate footprint / BRSR / CSRD?"**
 > "No — that's a different buyer and a different job. We stay on CBAM so we can be excellent at
 > it. For broader reporting we'd point you to a platform."
+
+**"ClimeUp is 'end-to-end'."**
+> "End-to-end for the *transitional* quarterly report. The definitive phase is **annual** — authorised
+> declarant, annual declaration, certificates, verification. Ask them which regime their product
+> files today. We're built for the definitive phase, exporter-first, with verifier-ready evidence."
 
 **"How do I know your number is right?"**
 > "Every figure drills down: document → factor → calculation. An independent expert reviews the
