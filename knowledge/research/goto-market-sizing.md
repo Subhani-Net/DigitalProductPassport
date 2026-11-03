@@ -72,6 +72,26 @@ Market read for the CBAM → DPP platform (recorded Sep 2026). Tagging disciplin
 the served market we can land solo in years 1–3 is **tens → low hundreds**: ~10–25 by
 mid-2027 (wedge), ~50–150 by 2028, then the DPP obligation converts the same buyers.
 
+## Whole market vs product-specific market (Nov 2026)
+
+**Context vs addressable.** A widely shared Aug 2026 vendor article puts the **Europe carbon
+accounting software market** at **USD 6.91bn (2025) → 8.50bn (2026) → 44.36bn (2034)**, 22.95%
+CAGR. That is the **whole market** — all sectors, all company sizes, Scope 1–3,
+CSRD/ETS/CBAM/EUDR/PEF. It is **not our TAM**, and must never be presented as one.
+
+| Layer | What | Size | Use |
+|---|---|---|---|
+| **Whole market (TAM context)** | Europe carbon accounting software | USD 6.91bn 2025 → 8.50bn 2026 → 44.36bn 2034 (vendor projection) | context only |
+| **CBAM metals category (SAM)** | EU declarants + non-EU exporters + verifiers | 6,000–12,000 EU metals declarants; 20,000–50,000 non-EU exporters globally; **India ~800–1,500** EU-exporting CBAM SMEs (estimate) | our category |
+| **Exporter-first wedge (SOM)** | Indian/UK SME steel & aluminium exporters | **~400–700 reachable**; **20–150 served by 2028** | our plan |
+
+**Bottom-up check:** 400–1,000 reachable exporters × €4–8k ≈ **€1.6–8M/year** for the India
+exporter wedge. Base-case ARR path stays **€0.3–1.8M by 2028**. Source note, accuracy flags and
+the article's CBAM errors: `europe-carbon-accounting-market.md`.
+
+> **Guardrail:** label the $44.4bn as *"Europe carbon accounting software market (vendor
+> projection)"*; show SAM/SOM separately; never imply it is our addressable market.
+
 ## Why they buy (triggers, priority order)
 
 1. **Money saved:** actual verified values vs punitive defaults (defaults raise cost

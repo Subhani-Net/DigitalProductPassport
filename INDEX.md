@@ -74,6 +74,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/research/sources.md` | Bibliography |
 | `knowledge/research/glossary.md` | Deep glossary |
 | `knowledge/research/goto-market-sizing.md` | Market sizing + revenue model |
+| `knowledge/research/europe-carbon-accounting-market.md` | **Source note** — Europe carbon accounting market (whole vs product-specific; accuracy flags) |
 | `knowledge/research/cbam-verifier-accreditation.md` | Verifier-agency path |
 | `knowledge/research/expert-session-template.md` | **Knowledge-capture template** for advisor sessions (findings → rules/checks/test cases) |
 

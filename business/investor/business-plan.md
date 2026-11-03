@@ -18,6 +18,10 @@ calculator. *Beyond processing:* Extract · Judge · Prove · Coordinate · Advi
 6,000–12,000 EU metals declarants; 20,000–50,000 non-EU exporters; €75.36/t certificate price.
 Legally compelled spend.
 
+*Context, not our TAM:* the Europe carbon accounting software market is projected at USD 8.50bn
+in 2026 by one vendor estimate — but our addressable market is the **CBAM metals/exporter slice**,
+not that headline. See `../../knowledge/research/europe-carbon-accounting-market.md`.
+
 ## 4. Competitive position
 Supplier-side + verifier-ready + zero-exposure + metals-DPP bridge. Moat = accumulated validation
 intelligence. (`../competition/friction-gap-analysis.md`)

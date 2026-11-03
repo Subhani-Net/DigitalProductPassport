@@ -11,6 +11,7 @@ attend seminars, or watch webcasts.
 | MoveTheNeedle.news | EU DPP Registry is live — what manufacturers must do | article | 21 Aug 2026 | https://movetheneedle.news |
 | GOV.UK | EU Battery Passport requirements survey | gov | 15 Jun 2026 | https://www.gov.uk |
 | Leafr | CBAM Consultant — role, projects, how to hire (consultant marketplace) | article / hiring | 2026 | https://www.leafr.com/job-roles/cbam-consultant |
+| Market Data Forecast | Europe carbon accounting software market — $44.4bn by 2034 (vendor projection; contains CBAM "quarterly" error) | article / vendor research | 18 Aug 2026 | https://www.linkedin.com/pulse/europe-carbon-accounting-software-market-heading-gpzcf/ |
 
 ## Official EU
 
