@@ -115,8 +115,9 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | File | Purpose | Status |
 |---|---|---|
 | `funnel.md` | Customer funnel — 8 stages, targets, channels, cadence | ✅ |
-| `leads-india-exporters.md` | 43 real Indian SME exporter leads (5 segments) | ✅ |
-| `tracker.md` | Master pipeline table — 43 rows, contact/stage/next action | ✅ active |
+| `leads-india-exporters.md` | 51 real Indian SME exporter leads (5 segments) | ✅ |
+| `tracker.md` | Master pipeline table — 51 rows, contact/stage/next action | ✅ active |
+| `leads-priority.md` | Contact-ready call sheet — Tier 1/2, angles, weekly sheet | ✅ active |
 | `expert-brief.md` | 1-page advisor brief — ask, 6 questions, offer, terms, £500 | ✅ |
 | `expert-bench.md` | Advisor longlist + pipeline + engagement log (India + EU) | ✅ active |
 | `consultant-channel.md` | Expert channel — amended sequencing | ✅ |

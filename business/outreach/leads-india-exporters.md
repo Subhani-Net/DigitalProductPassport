@@ -79,6 +79,19 @@ role and whether they export to the EU.
 | 42 | Poonam Metals | alloy steel castings | Rajkot, Gujarat | poonammetals.co.in | M | L |
 | 43 | Sunrise Export | alloy steel investment castings | Rajkot, Gujarat | investmentcastingexport.com | M | L |
 
+## F. More steel & investment castings (IndiaMART Verified Exporter)
+
+| # | Company | Product | Location | Website | Priority | Verify |
+|---|---|---|---|---|---|---|
+| 44 | Satadhar Tec Mec | alloy steel investment castings | Rajkot, Gujarat | satadhartecmec.com | H | L |
+| 45 | MNC International | alloy steel railway spindle castings | Rajkot, Gujarat | mncexport.com | H | L |
+| 46 | Aqurate Metal Cast | alloy steel castings | Vadodara, Gujarat | aquratemetalcast.com | H | L |
+| 47 | Somnath Precision Cast | En8 steel castings | Kotda Sangani, Gujarat | somnathcasting.com | H | L |
+| 48 | V T Export | precision investment castings | Rajkot, Gujarat | vtexport.co.in | M | M (verify trader) |
+| 49 | Sulohak Cast | SS pipe fittings investment castings | Rajkot, Gujarat | sulohakengineering.com | H | L |
+| 50 | Pee Vee Impex | cast steel components | Ludhiana, Punjab | peeveeimpex.com | M | M (verify trader) |
+| 51 | Metloy (Blast Tech) | alloy steel castings | Ahmedabad, Gujarat | — | M | L (IndiaMART seller page) |
+
 ## Next actions
 1. **Verify role** for `M` rows (manufacturer vs trader) — traders are lower priority (data lives upstream).
 2. **Find the export/sustainability contact** on LinkedIn or the site's contact page.

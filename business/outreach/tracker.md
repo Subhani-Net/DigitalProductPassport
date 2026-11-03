@@ -1,6 +1,6 @@
 # Outreach Tracker — Indian SME exporters
 
-Master pipeline for all **43 leads** in `leads-india-exporters.md`. One row per company. Update the
+Master pipeline for all **51 leads** in `leads-india-exporters.md`. One row per company. Update the
 row the moment something happens (the same day, not later).
 
 **Status (Stage):** `New` → `Contacted` → `Engaged` → `Qualified` → `Pilot` → `Paid` → `Lost`
@@ -14,7 +14,7 @@ row the moment something happens (the same day, not later).
 
 | Stage | Count |
 |---|---|
-| New | 43 |
+| New | 51 |
 | Contacted | 0 |
 | Engaged | 0 |
 | Qualified | 0 |
@@ -69,10 +69,18 @@ row the moment something happens (the same day, not later).
 | 41 | Aay Ess Castings Pvt Ltd | Castings | alloy steel castings | Doraha, PB | aayesscastings.com | H | | | | New | | | | 16 yrs |
 | 42 | Poonam Metals | Castings | alloy steel castings | Rajkot, GJ | poonammetals.co.in | M | | | | New | | | | 15 yrs; verify role |
 | 43 | Sunrise Export | Castings | alloy steel investment castings | Rajkot, GJ | investmentcastingexport.com | M | | | | New | | | | 6 yrs; verify role |
+| 44 | Satadhar Tec Mec | Castings | alloy steel investment castings | Rajkot, GJ | satadhartecmec.com | H | | | | New | | | | Verified Exporter |
+| 45 | MNC International | Castings | alloy steel railway spindle castings | Rajkot, GJ | mncexport.com | H | | | | New | | | | Verified Exporter |
+| 46 | Aqurate Metal Cast | Castings | alloy steel castings | Vadodara, GJ | aquratemetalcast.com | H | | | | New | | | | 14 yrs |
+| 47 | Somnath Precision Cast | Castings | En8 steel castings | Kotda Sangani, GJ | somnathcasting.com | H | | | | New | | | | 6 yrs |
+| 48 | V T Export | Castings | precision investment castings | Rajkot, GJ | vtexport.co.in | M | | | | New | | | | verify trader vs manufacturer |
+| 49 | Sulohak Cast | Castings | SS pipe fittings investment castings | Rajkot, GJ | sulohakengineering.com | H | | | | New | | | | 9 yrs |
+| 50 | Pee Vee Impex | Castings | cast steel components | Ludhiana, PB | peeveeimpex.com | M | | | | New | | | | verify trader vs manufacturer |
+| 51 | Metloy (Blast Tech) | Castings | alloy steel castings | Ahmedabad, GJ | — | M | | | | New | | | | 7 yrs; IndiaMART seller page |
 
 ## How to work the week
 
-1. Pick **10 rows** (start with the `H` rows marked "first call").
+1. Pick **10 rows** from `leads-priority.md` (Tier 1, then Tier 2).
 2. **Call** → fill Contact, Phone/WhatsApp, set Stage = `Contacted`, Last touch = today, Next action = "send one-pager".
 3. Send **WhatsApp + email** to the named person → Next action = "follow-up call", Next date = +3 days.
 4. Follow up → Stage = `Engaged` (call held) or `Qualified` (pain confirmed) → book walkthrough.
