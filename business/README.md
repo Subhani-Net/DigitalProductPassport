@@ -12,6 +12,7 @@ cross-referenced to it. Dated milestones follow `product-roadmap.md` §5.
 | `capability-map.md` | Honest deep / partial / thin / absent map + 90-day gap-closing plan |
 | `positioning.md` | Positioning — the CBAM evidence layer; claims, objections, vs Sentra/CleanCarbon |
 | `website/README.md` | **Customer-facing static site** (Veriflow) — pages, placeholders, deploy |
+| `website/specs/README.md` | **App shell spec** — auth, tenants, uploads, dashboard, security (separate from engine) |
 | `README.md` | This index + activity tracker |
 
 ## Activity tracker

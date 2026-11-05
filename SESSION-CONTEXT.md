@@ -80,6 +80,11 @@ Last update: Nov 2026 (outreach + expert bench in parallel; build continues).
     **partner/defer, don't build**. We sell the **CBAM evidence/validation layer**, not a
     full-suite carbon-accounting platform. See `business/positioning.md`,
     `business/capability-map.md`, `knowledge/learning/lca-epd-primer.md`.
+13. **App shell spec separate from engine (Nov 2026).** The customer app shell (auth, tenants,
+    uploads, dashboard, security) is specified in `business/website/specs/`; the CBAM engine BDDs
+    in `product/tests/` stay untouched and manual/phased. Enhanced set: data model, OpenAPI, UI
+    flows, security, Gherkin. ADR-001 proposes C#/.NET + EF Core + Azure Blob + managed auth —
+    **pending review**.
 
 ## File map
 

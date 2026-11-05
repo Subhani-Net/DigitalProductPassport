@@ -1,0 +1,1037 @@
+openapi: 3.0.3
+info:
+  title: Veriflow Application Shell API
+  version: 0.2.0
+  description: |
+    Contract for the customer-facing application shell: authentication, tenants
+    (installations), document upload and management, report display, and the
+    evidence room.
+
+    This is NOT the CBAM calculation engine. SEE values are engine outputs,
+    produced manually and in phases, and stored as report snapshots.
+
+    Every tenant-scoped path includes `installationId`; the server MUST enforce
+    membership and role on every call (never trust the client).
+servers:
+  - url: https://api.veriflow.example
+    description: Placeholder — replace with the deployed API origin
+tags:
+  - name: Auth
+  - name: Installations
+  - name: Team
+  - name: Documents
+  - name: Reports
+  - name: System
+security:
+  - bearerAuth: []
+
+paths:
+  /health:
+    get:
+      tags: [System]
+      summary: Liveness check
+      security: []
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+  /api/auth/register:
+    post:
+      tags: [Auth]
+      summary: Register a user and create their first installation
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password, displayName, companyName, sector]
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  minLength: 12
+                  description: Argon2id/bcrypt; never stored in plain text.
+                displayName:
+                  type: string
+                  maxLength: 120
+                companyName:
+                  type: string
+                  maxLength: 200
+                sector:
+                  type: string
+                  enum: [IRON_STEEL, ALUMINIUM]
+                country:
+                  type: string
+                  default: IN
+      responses:
+        "201":
+          description: User and installation created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: "#/components/schemas/User"
+                  installation:
+                    $ref: "#/components/schemas/Installation"
+                  accessToken:
+                    type: string
+                  refreshToken:
+                    type: string
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+
+  /api/auth/login:
+    post:
+      tags: [Auth]
+      summary: Log in with email and password
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+      responses:
+        "200":
+          description: Authenticated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: "#/components/schemas/User"
+                  accessToken:
+                    type: string
+                  refreshToken:
+                    type: string
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+
+  /api/auth/refresh:
+    post:
+      tags: [Auth]
+      summary: Rotate a refresh token for a new access token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [refreshToken]
+              properties:
+                refreshToken:
+                  type: string
+      responses:
+        "200":
+          description: New tokens (the old refresh token is revoked)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                  refreshToken:
+                    type: string
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/auth/logout:
+    post:
+      tags: [Auth]
+      summary: Revoke the current session
+      responses:
+        "204":
+          description: Logged out
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/auth/verify-email:
+    post:
+      tags: [Auth]
+      summary: Verify an email address with a token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token]
+              properties:
+                token:
+                  type: string
+      responses:
+        "204":
+          description: Email verified
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/auth/forgot-password:
+    post:
+      tags: [Auth]
+      summary: Request a password reset (always returns 204)
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email]
+              properties:
+                email:
+                  type: string
+                  format: email
+      responses:
+        "204":
+          description: Accepted (no account enumeration)
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+
+  /api/auth/reset-password:
+    post:
+      tags: [Auth]
+      summary: Reset a password with a token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [token, password]
+              properties:
+                token:
+                  type: string
+                password:
+                  type: string
+                  minLength: 12
+      responses:
+        "204":
+          description: Password updated; existing sessions revoked
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/me:
+    get:
+      tags: [Auth]
+      summary: Current user and their installations
+      responses:
+        "200":
+          description: Current user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: "#/components/schemas/User"
+                  memberships:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Membership"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/installations:
+    get:
+      tags: [Installations]
+      summary: List installations the user can access
+      responses:
+        "200":
+          description: Installations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Installation"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+    post:
+      tags: [Installations]
+      summary: Create an additional installation (exporter owner only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [companyName, sector]
+              properties:
+                companyName:
+                  type: string
+                  maxLength: 200
+                country:
+                  type: string
+                  default: IN
+                sector:
+                  type: string
+                  enum: [IRON_STEEL, ALUMINIUM]
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Installation"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/installations/{installationId}:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+    get:
+      tags: [Installations]
+      summary: Get one installation (member only)
+      responses:
+        "200":
+          description: Installation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Installation"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    patch:
+      tags: [Installations]
+      summary: Update installation profile (owner only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                companyName:
+                  type: string
+                  maxLength: 200
+                country:
+                  type: string
+                sector:
+                  type: string
+                  enum: [IRON_STEEL, ALUMINIUM]
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Installation"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /api/installations/{installationId}/members:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+    get:
+      tags: [Team]
+      summary: List members of an installation
+      responses:
+        "200":
+          description: Members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Membership"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /api/installations/{installationId}/invitations:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+    post:
+      tags: [Team]
+      summary: Invite a consultant or verifier (owner only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, role]
+              properties:
+                email:
+                  type: string
+                  format: email
+                role:
+                  type: string
+                  enum: [EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+      responses:
+        "201":
+          description: Invitation created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invitation"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "409":
+          $ref: "#/components/responses/Conflict"
+
+  /api/invitations/{token}/accept:
+    post:
+      tags: [Team]
+      summary: Accept an invitation (creates/activates membership)
+      parameters:
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Membership activated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Membership"
+        "410":
+          description: Invitation expired or already used
+
+  /api/installations/{installationId}/documents/upload-intent:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/IdempotencyKey"
+    post:
+      tags: [Documents]
+      summary: Create a pre-signed upload URL and a document record
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UploadIntentRequest"
+      responses:
+        "201":
+          description: Upload intent created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UploadIntentResponse"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+        "429":
+          $ref: "#/components/responses/TooManyRequests"
+
+  /api/installations/{installationId}/documents/{documentId}/complete:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/DocumentId"
+    post:
+      tags: [Documents]
+      summary: Confirm the upload completed and start scanning/processing
+      responses:
+        "200":
+          description: Document accepted for processing
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Document"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/installations/{installationId}/documents:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/Page"
+      - $ref: "#/components/parameters/PageSize"
+    get:
+      tags: [Documents]
+      summary: List documents for the installation
+      responses:
+        "200":
+          description: Documents
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Document"
+                  page:
+                    type: integer
+                  pageSize:
+                    type: integer
+                  total:
+                    type: integer
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+  /api/installations/{installationId}/documents/{documentId}:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/DocumentId"
+    get:
+      tags: [Documents]
+      summary: Get a document (metadata; download via a short-lived URL)
+      responses:
+        "200":
+          description: Document
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Document"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+    delete:
+      tags: [Documents]
+      summary: Soft-delete a document (owner or member, per policy)
+      responses:
+        "204":
+          description: Deleted
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /api/installations/{installationId}/reports:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/Page"
+      - $ref: "#/components/parameters/PageSize"
+    get:
+      tags: [Reports]
+      summary: List reports for the installation
+      responses:
+        "200":
+          description: Reports
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/EmissionReport"
+                  page:
+                    type: integer
+                  pageSize:
+                    type: integer
+                  total:
+                    type: integer
+        "403":
+          $ref: "#/components/responses/Forbidden"
+    post:
+      tags: [Reports]
+      summary: Create a draft report record (engine output is attached later)
+      parameters:
+        - $ref: "#/components/parameters/IdempotencyKey"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [periodStart, periodEnd]
+              properties:
+                periodStart:
+                  type: string
+                  format: date
+                periodEnd:
+                  type: string
+                  format: date
+      responses:
+        "201":
+          description: Draft created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EmissionReport"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/installations/{installationId}/reports/{reportId}:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/ReportId"
+    get:
+      tags: [Reports]
+      summary: Get a report (with goods lines and evidence links)
+      responses:
+        "200":
+          description: Report
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EmissionReport"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /api/installations/{installationId}/reports/{reportId}/download:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/ReportId"
+    get:
+      tags: [Reports]
+      summary: Get a short-lived download URL for the report dossier
+      responses:
+        "200":
+          description: Download URL
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  url:
+                    type: string
+                    format: uri
+                  expiresAt:
+                    type: string
+                    format: date-time
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /api/installations/{installationId}/dashboard:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+    get:
+      tags: [Reports]
+      summary: Dashboard summary (display only; values are engine snapshots)
+      responses:
+        "200":
+          description: Dashboard
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Dashboard"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    InstallationId:
+      name: installationId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    DocumentId:
+      name: documentId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    ReportId:
+      name: reportId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    Page:
+      name: page
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    PageSize:
+      name: pageSize
+      in: query
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: false
+      description: Client-generated UUID to make retries safe.
+      schema:
+        type: string
+        format: uuid
+
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        displayName:
+          type: string
+        status:
+          type: string
+          enum: [ACTIVE, INVITED, SUSPENDED]
+        emailVerified:
+          type: boolean
+        createdAt:
+          type: string
+          format: date-time
+
+    Installation:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        companyName:
+          type: string
+        country:
+          type: string
+        sector:
+          type: string
+          enum: [IRON_STEEL, ALUMINIUM]
+        status:
+          type: string
+          enum: [ACTIVE, SUSPENDED, ARCHIVED]
+        createdAt:
+          type: string
+          format: date-time
+
+    Membership:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        installationId:
+          type: string
+          format: uuid
+        role:
+          type: string
+          enum: [EXPORTER_OWNER, EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+        status:
+          type: string
+          enum: [INVITED, ACTIVE, REVOKED]
+
+    Invitation:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        role:
+          type: string
+          enum: [EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+        expiresAt:
+          type: string
+          format: date-time
+
+    Document:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        installationId:
+          type: string
+          format: uuid
+        fileName:
+          type: string
+        mimeType:
+          type: string
+        sizeBytes:
+          type: integer
+        docType:
+          type: string
+          enum: [UTILITY_BILL, FUEL_LOG, PRECURSOR_INVOICE, MILL_CERTIFICATE, PRODUCTION_LOG]
+        status:
+          type: string
+          enum: [UPLOADED, PROCESSING, READY_FOR_AUDIT, REJECTED, QUARANTINED]
+        scanStatus:
+          type: string
+          enum: [PENDING, CLEAN, INFECTED, FAILED]
+        uploadedAt:
+          type: string
+          format: date-time
+        processedAt:
+          type: string
+          format: date-time
+          nullable: true
+
+    UploadIntentRequest:
+      type: object
+      required: [fileName, mimeType, sizeBytes, docType]
+      properties:
+        fileName:
+          type: string
+          maxLength: 255
+        mimeType:
+          type: string
+          enum: [application/pdf, image/jpeg, image/png, text/csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet]
+        sizeBytes:
+          type: integer
+          minimum: 1
+          maximum: 26214400
+          description: Max 25 MB.
+        docType:
+          type: string
+          enum: [UTILITY_BILL, FUEL_LOG, PRECURSOR_INVOICE, MILL_CERTIFICATE, PRODUCTION_LOG]
+        sha256:
+          type: string
+          description: Optional client-side hash for integrity/dedupe.
+
+    UploadIntentResponse:
+      type: object
+      required: [documentId, uploadUrl, storageKey, expiresAt, method]
+      properties:
+        documentId:
+          type: string
+          format: uuid
+        uploadUrl:
+          type: string
+          format: uri
+          description: Pre-signed URL (Azure Blob SAS or S3). Short-lived.
+        storageKey:
+          type: string
+        method:
+          type: string
+          enum: [PUT]
+        headers:
+          type: object
+          additionalProperties:
+            type: string
+        expiresAt:
+          type: string
+          format: date-time
+
+    GoodsLine:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        cnCode:
+          type: string
+        description:
+          type: string
+        netMassTonnes:
+          type: number
+        see:
+          type: number
+          description: Engine output snapshot, tCO2e/t.
+        determination:
+          type: string
+          enum: [ACTUAL, DEFAULT]
+        embeddedTCO2e:
+          type: number
+
+    EmissionReport:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        installationId:
+          type: string
+          format: uuid
+        periodStart:
+          type: string
+          format: date
+        periodEnd:
+          type: string
+          format: date
+        status:
+          type: string
+          enum: [DRAFT, IN_REVIEW, VERIFIED, PUBLISHED, ARCHIVED]
+        calculatedSEE:
+          type: number
+          description: Engine output snapshot, tCO2e/t.
+        defaultSEE:
+          type: number
+        estimatedSavings:
+          type: number
+        currency:
+          type: string
+          example: EUR
+        carbonPricePaid:
+          type: number
+          nullable: true
+        version:
+          type: integer
+        goods:
+          type: array
+          items:
+            $ref: "#/components/schemas/GoodsLine"
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Dashboard:
+      type: object
+      properties:
+        installation:
+          $ref: "#/components/schemas/Installation"
+        counts:
+          type: object
+          properties:
+            documents:
+              type: integer
+            documentsPending:
+              type: integer
+            reports:
+              type: integer
+        latestReport:
+          allOf:
+            - $ref: "#/components/schemas/EmissionReport"
+          nullable: true
+        calculatedSEE:
+          type: number
+          nullable: true
+        defaultSEE:
+          type: number
+          nullable: true
+        estimatedSavingsEuros:
+          type: number
+          nullable: true
+        documentAuditStatus:
+          type: string
+          example: "2 of 14 documents ready"
+        generatedAt:
+          type: string
+          format: date-time
+
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string
+          example: forbidden
+        message:
+          type: string
+        requestId:
+          type: string
+
+    ValidationError:
+      type: object
+      required: [error, fields]
+      properties:
+        error:
+          type: string
+          example: validation_error
+        fields:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+              message:
+                type: string
+
+  responses:
+    Unauthorized:
+      description: Missing or invalid credentials
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Forbidden:
+      description: Authenticated but not allowed (role or tenant)
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    NotFound:
+      description: Not found in this tenant
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    Conflict:
+      description: Duplicate or conflicting state
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    ValidationError:
+      description: Request failed validation
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ValidationError"
+    TooManyRequests:
+      description: Rate limited
+      headers:
+        Retry-After:
+          schema:
+            type: integer
+        X-RateLimit-Limit:
+          schema:
+            type: integer
+        X-RateLimit-Remaining:
+          schema:
+            type: integer
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"

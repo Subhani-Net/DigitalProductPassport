@@ -1,0 +1,69 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Veriflow Core SaaS API Engine",
+    "version": "1.0.0",
+    "description": "Spec-driven API backend handling authentication, secure source intake, and CBAM report distribution."
+  },
+  "paths": {
+    "/api/auth/register": {
+      "post": {
+        "summary": "Onboard new Indian Exporter installation",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["email", "password", "companyName", "sector"],
+                "properties": {
+                  "email": { "type": "string", "format": "email" },
+                  "password": { "type": "string", "minLength": 8 },
+                  "companyName": { "type": "string" },
+                  "sector": { "type": "string", "enum": ["IRON_STEEL", "ALUMINIUM"] }
+                }
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "Installation registered successfully" } }
+      }
+    },
+    "/api/documents/upload-intent": {
+      "post": {
+        "summary": "Generate a secure pre-signed AWS S3 URL for raw document intake",
+        "properties": {
+          "fileName": { "type": "string" },
+          "fileType": { "type": "string", "enum": ["UTILITY_BILL", "FUEL_LOG", "PRECURSOR_INVOICE", "MILL_CERTIFICATE", "PRODUCTION_LOG"] }
+        },
+        "responses": {
+          "200": {
+            "description": "Pre-signed URL generated for secure front-end uploading without hitting main server bandwidth."
+          }
+        }
+      }
+    },
+    "/api/reports/dashboard": {
+      "get": {
+        "summary": "Fetch real-time emissions data and financial tax tracking stats",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "calculatedSEE": { "type": "number" },
+                    "defaultSEERate": { "type": "number" },
+                    "estimatedSavingsEuros": { "type": "number" },
+                    "documentAuditStatus": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -29,6 +29,12 @@ offer. Separate from the investor site in `../investor/website/`.
 
 Deployment workflow: `.github/workflows/azure-static-web-apps.yml`.
 
+## Application shell spec
+
+The logged-in web app (auth, tenants, uploads, dashboard, security) is specified separately in
+[`specs/`](specs/README.md). It is **not** part of this marketing site and does **not** include
+the CBAM engine, which stays in `product/` and is delivered manually in phases.
+
 ## Preview locally
 
 Static pages (form POST will fail locally, as expected):

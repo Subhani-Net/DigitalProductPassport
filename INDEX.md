@@ -139,6 +139,14 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/website/api/` | Azure Function — `POST /api/contact` → Table Storage |
 | `business/website/staticwebapp.config.json` | SWA routing, headers, temp-domain `noindex` |
 | `business/website/README.md` | Local run, Azure deploy, form, placeholders, claims policy |
+| `business/website/specs/README.md` | **App shell spec** — scope, separation from engine |
+| `business/website/specs/data-model.md` | Enhanced entities, tenancy, statuses, constraints |
+| `business/website/specs/openapi.yaml` | API contract — auth, tenants, documents, reports |
+| `business/website/specs/ui-flows.md` | Screens, roles/permissions, states, accessibility |
+| `business/website/specs/security.md` | AuthN/AuthZ, tenant isolation, upload, privacy, audit |
+| `business/website/specs/features/` | App-shell Gherkin (`@ignore @stub`) — separate from engine BDDs |
+| `business/website/specs/decisions/ADR-001-stack-storage-auth.md` | Stack/storage/auth decision (proposed) |
+| `business/website/specs/*.txt` | Original raw schema/API inputs (kept for traceability) |
 | `business/website/robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
 | `.github/workflows/azure-static-web-apps.yml` | Deploy workflow (SWA) |
 

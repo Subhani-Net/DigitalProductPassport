@@ -1,0 +1,73 @@
+// User Authentication & Roles
+model User {
+  id            String       @id @default(uuid())
+  email         String       @unique
+  passwordHash  String
+  role          Role         @default(EXPORTER) // EXPORTER, CONSULTANT, VERIFIER
+  installation  Installation? @relation(fields: [installationId], references: [id])
+  installationId String?
+  createdAt     DateTime     @default(now())
+}
+
+enum Role {
+  EXPORTER
+  CONSULTANT
+  VERIFIER
+}
+
+// Tenant/Installation Boundary
+model Installation {
+  id             String       @id @default(uuid())
+  companyName    String
+  country        String       @default("IN") // Target India
+  sector         Sector       // IRON_STEEL or ALUMINIUM
+  documents      Document[]
+  emissionReports EmissionReport[]
+  users          User[]
+}
+
+enum Sector {
+  IRON_STEEL
+  ALUMINIUM
+}
+
+// Ingested Source Documents
+model Document {
+  id             String       @id @default(uuid())
+  fileName       String
+  s3Url          String       // Secure asset path
+  fileType       DocType
+  status         DocStatus    @default(UPLOADED)
+  uploadedAt     DateTime     @default(now())
+  installationId String
+  installation   Installation @relation(fields: [installationId], references: [id])
+}
+
+enum DocType {
+  UTILITY_BILL
+  FUEL_LOG
+  PRECURSOR_INVOICE
+  MILL_CERTIFICATE
+  PRODUCTION_LOG
+}
+
+enum DocStatus {
+  UPLOADED
+  PROCESSING
+  READY_FOR_AUDIT
+  REJECTED
+}
+
+// Generated Emissions & Financial Output
+model EmissionReport {
+  id               String       @id @default(uuid())
+  reportingPeriod  String       // e.g., "CY 2026"
+  calculatedSEE    Float        // tCO2e per tonne
+  defaultSEERate   Float        // Official EU Default fallback
+  estimatedSavings Float        // Euro denominated delta
+  localTaxPaid     Float        // Domestic credit mapping
+  reportUrl        String       // Path to finalized XML/PDF dossier
+  createdAt        DateTime     @default(now())
+  installationId   String
+  installation     Installation @relation(fields: [installationId], references: [id])
+}
