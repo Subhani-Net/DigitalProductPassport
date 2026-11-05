@@ -1,0 +1,28 @@
+name: Deploy Veriflow site to Azure Static Web Apps
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "business/website/**"
+      - ".github/workflows/azure-static-web-apps.yml"
+  workflow_dispatch:
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build and deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "business/website"
+          api_location: "business/website/api"
+          output_location: ""
+          skip_app_build: true

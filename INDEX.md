@@ -129,13 +129,18 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 ### 3.4 Customer website (`business/website/`)
 | File | Purpose |
 |---|---|
-| `business/website/index.html` | **Landing page** — problem, offer, 4 pillars, how it works, deliverable, pricing, FAQ |
+| `business/website/index.html` | **Landing page** — offer, problem, pillars, pricing, FAQ |
 | `business/website/how-it-works.html` | Process, precursors, monitoring plan, annual clock, boundaries |
 | `business/website/pilot.html` | 2-week pilot, timeline, guardrails |
 | `business/website/contact.html` | Contact (placeholders) + enquiry form |
+| `business/website/privacy.html` · `terms.html` | Legal pages (working drafts) |
+| `business/website/thank-you.html` · `404.html` | Form success / not-found |
 | `business/website/assets/` | `styles.css`, `site.js`, `favicon.svg` |
-| `business/website/README.md` | Placeholders, deploy, claims policy |
+| `business/website/api/` | Azure Function — `POST /api/contact` → Table Storage |
+| `business/website/staticwebapp.config.json` | SWA routing, headers, temp-domain `noindex` |
+| `business/website/README.md` | Local run, Azure deploy, form, placeholders, claims policy |
 | `business/website/robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
+| `.github/workflows/azure-static-web-apps.yml` | Deploy workflow (SWA) |
 
 ## 4. TOOLS
 | Path | Purpose |

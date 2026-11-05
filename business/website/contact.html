@@ -81,42 +81,55 @@
 
           <div>
             <h2>Send a note</h2>
-            <p class="mt-1 small muted">This static form opens your email client. A form endpoint will be connected before launch.</p>
-            <form class="form mt-2" action="mailto:hello@veriflow.example" method="post" enctype="text/plain">
+            <p class="mt-1 small muted">Your enquiry is stored securely and reviewed by a person. We do not send marketing email.</p>
+            <form class="form mt-2" id="contact-form" action="/api/contact" method="post">
               <div class="field">
                 <label for="name">Your name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required>
+                <input id="name" name="name" type="text" autocomplete="name" maxlength="200" required>
               </div>
               <div class="field">
                 <label for="company">Company</label>
-                <input id="company" name="company" type="text" autocomplete="organization" required>
+                <input id="company" name="company" type="text" autocomplete="organization" maxlength="200" required>
               </div>
               <div class="field">
                 <label for="role">Role</label>
-                <input id="role" name="role" type="text" placeholder="Owner / Export manager / Sustainability">
+                <input id="role" name="role" type="text" maxlength="120" placeholder="Owner / Export manager / Sustainability">
               </div>
               <div class="field">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
               </div>
               <div class="field">
                 <label for="country">Country</label>
-                <input id="country" name="country" type="text" autocomplete="country-name">
+                <input id="country" name="country" type="text" autocomplete="country-name" maxlength="120">
               </div>
               <div class="field">
                 <label for="products">Products / CN codes</label>
-                <input id="products" name="products" type="text" placeholder="e.g. HRC 7208, castings 7325">
+                <input id="products" name="products" type="text" maxlength="500" placeholder="e.g. HRC 7208, castings 7325">
               </div>
               <div class="field">
                 <label for="markets">EU markets</label>
-                <input id="markets" name="markets" type="text" placeholder="e.g. Germany, Italy, Netherlands">
+                <input id="markets" name="markets" type="text" maxlength="500" placeholder="e.g. Germany, Italy, Netherlands">
               </div>
               <div class="field">
                 <label for="message">Anything else?</label>
-                <textarea id="message" name="message" placeholder="Volumes, reporting period, deadlines, current data sources…"></textarea>
+                <textarea id="message" name="message" maxlength="5000" placeholder="Volumes, reporting period, deadlines, current data sources…"></textarea>
               </div>
+
+              <!-- Honeypot: hidden from people, catches bots. -->
+              <div class="hp" aria-hidden="true">
+                <label for="website">Website</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <label class="checkbox" for="consent">
+                <input id="consent" name="consent" type="checkbox" required>
+                <span>I agree to the <a href="privacy.html">privacy notice</a> and to being contacted about my enquiry.</span>
+              </label>
+
               <button class="btn" type="submit">Send enquiry</button>
-              <p class="form-note">By sending this, you agree to be contacted about your enquiry. We do not sell your data.</p>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+              <p class="form-note">We store your enquiry and do not sell your data.</p>
             </form>
           </div>
         </div>
@@ -145,6 +158,8 @@
           <h4>Company</h4>
           <a href="contact.html">Contact</a>
           <a href="contact.html">Book a call</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
         </div>
         <div>
           <h4>Contact</h4>

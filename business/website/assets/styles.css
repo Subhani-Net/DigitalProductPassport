@@ -254,6 +254,13 @@ td .neg { color: var(--signal); font-weight: 600; }
 .field textarea { min-height: 120px; resize: vertical; }
 .field .hint { font-size: 13px; color: var(--muted); }
 .form-note { font-size: 13px; color: var(--muted); }
+.form-status { min-height: 1.2em; font-size: 14px; font-weight: 600; }
+.form-status.ok { color: var(--accent-ink); }
+.form-status.err { color: var(--signal); }
+.checkbox { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; }
+.checkbox input { width: auto; margin-top: 3px; }
+/* Honeypot — visually hidden, not display:none (some bots skip hidden fields). */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding: 56px 0 40px; background: var(--paper); }

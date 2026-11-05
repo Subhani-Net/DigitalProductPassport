@@ -1,0 +1,9 @@
+{
+  "name": "veriflow-contact-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contact-form capture for the Veriflow static site (Azure Static Web Apps managed function).",
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0"
+  }
+}
