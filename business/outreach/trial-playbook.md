@@ -1,5 +1,8 @@
 # Trial Playbook — "We're good for a trial"
 
+> **Operational kit:** use `../pilot/runbook.md` and the templates in `../pilot/` to deliver the
+> pilot consistently.
+
 When a prospect says *"we're good for a trial"*, **do not hand over free access with no ask.**
 Convert it into a **structured pilot** with a defined goal, a time-box, and an exchange. A free
 trial with no commitment is how you lose weeks and learn nothing.

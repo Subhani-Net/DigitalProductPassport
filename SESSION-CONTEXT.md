@@ -134,6 +134,8 @@ scratch/ (gitignored): spike-host (python static DPP host, port 9090)
 7. **Expert bench (parallel):** longlist 20–30 → approach 5 → **1 paid micro-review before the
    first pilot report** (`business/outreach/expert-bench.md`); capture via
    `knowledge/research/expert-session-template.md`.
+8. **Pilot toolkit (Nov 2026):** dry-run `business/pilot/` on `product/demo/pilot-docket/`;
+   prepare the NDA/privacy note; book one expert review; then run the first client pilot.
 
 ## Rules of engagement (from AGENTS.md)
 

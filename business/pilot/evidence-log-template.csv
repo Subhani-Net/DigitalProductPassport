@@ -1,0 +1,7 @@
+id,data_point,value,unit,period,source_document,source_location,extraction,determination,confidence,notes
+E1,Grid electricity consumed,528400,MWh,Jan-Dec 2026,electricity-bills-2026.pdf,p.1-12,manual,ACTUAL,high,12 monthly bills
+E2,Natural gas consumed,180000,SCM,Jan-Dec 2026,gas-invoices-2026.pdf,p.1-10,manual,ACTUAL,high,converted to TJ
+P1,HRC consumed,1050,tonnes,CY 2026,hrc-invoices.xlsx,rows 2-40,manual,ACTUAL,high,95.2% yield
+P2,HRC SEE,1.90,tCO2e/t,CY 2026,supplier-verification-2026.pdf,p.2,manual,ACTUAL,high,verifier report ref
+P3,Pig iron SEE,2.10,tCO2e/t,CY 2026,EU default table,-,default,DEFAULT,n/a,no verified data
+O1,Output CN 7209,1000,tonnes,CY 2026,production-log.xlsx,rows 2-14,manual,ACTUAL,high,per CN code

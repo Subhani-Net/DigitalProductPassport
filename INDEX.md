@@ -77,6 +77,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/research/europe-carbon-accounting-market.md` | **Source note** — Europe carbon accounting market (whole vs product-specific; accuracy flags) |
 | `knowledge/research/cbam-verifier-accreditation.md` | Verifier-agency path |
 | `knowledge/research/expert-session-template.md` | **Knowledge-capture template** for advisor sessions (findings → rules/checks/test cases) |
+| `knowledge/research/cbam-pilot-toolkit.md` | **Source digest** — CBAM pilot toolkit PDF; accuracy flags; operational actions |
 
 ### 2.3 Other
 | Path | Purpose |
@@ -152,6 +153,15 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/website/specs/*.txt` | Original raw schema/API inputs (kept for traceability) |
 | `business/website/robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
 | `.github/workflows/azure-static-web-apps.yml` | Deploy workflow (SWA) |
+
+### 3.5 Pilot toolkit (`business/pilot/`)
+| File | Purpose |
+|---|---|
+| `business/pilot/README.md` | Overview, roles, action checklist |
+| `business/pilot/data-request-checklist.md` | Client intake (send on day 0) |
+| `business/pilot/diagnostic-report-template.md` | The deliverable template |
+| `business/pilot/evidence-log-template.md` · `.csv` | Figure-to-source ledger |
+| `business/pilot/runbook.md` | Step-by-step 2-week pilot procedure |
 
 ## 4. TOOLS
 | Path | Purpose |
