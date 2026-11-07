@@ -144,6 +144,9 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/website/specs/openapi.yaml` | API contract — auth, tenants, documents, reports |
 | `business/website/specs/ui-flows.md` | Screens, roles/permissions, states, accessibility |
 | `business/website/specs/security.md` | AuthN/AuthZ, tenant isolation, upload, privacy, audit |
+| `business/website/specs/auth-stub.md` | Auth interface + dev stub (production auth separate) |
+| `business/website/specs/engine-stub.md` | `IEmissionEngine` + synthetic snapshot (real engine separate) |
+| `business/website/specs/implementation-stories.md` | **Build plan** — epics, stories, sequence |
 | `business/website/specs/features/` | App-shell Gherkin (`@ignore @stub`) — separate from engine BDDs |
 | `business/website/specs/decisions/ADR-001-stack-storage-auth.md` | Stack/storage/auth decision (proposed) |
 | `business/website/specs/*.txt` | Original raw schema/API inputs (kept for traceability) |

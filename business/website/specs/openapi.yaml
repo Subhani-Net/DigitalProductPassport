@@ -19,6 +19,7 @@ tags:
   - name: Auth
   - name: Installations
   - name: Team
+  - name: Permissions
   - name: Documents
   - name: Reports
   - name: System
@@ -373,6 +374,160 @@ paths:
         "403":
           $ref: "#/components/responses/Forbidden"
 
+  /api/permissions:
+    get:
+      tags: [Permissions]
+      summary: List the global permission catalog
+      responses:
+        "200":
+          description: Permission catalog
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Permission"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/installations/{installationId}/permission-groups:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+    get:
+      tags: [Permissions]
+      summary: List system templates and custom groups for the installation
+      responses:
+        "200":
+          description: Permission groups
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/PermissionGroup"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+    post:
+      tags: [Permissions]
+      summary: Create a custom permission group for the installation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PermissionGroupInput"
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PermissionGroup"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "409":
+          $ref: "#/components/responses/Conflict"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/installations/{installationId}/permission-groups/{groupId}:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/GroupId"
+    put:
+      tags: [Permissions]
+      summary: Update a custom group (system groups are read-only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PermissionGroupInput"
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PermissionGroup"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+    delete:
+      tags: [Permissions]
+      summary: Delete a custom group (system groups are read-only)
+      responses:
+        "204":
+          description: Deleted
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /api/installations/{installationId}/members/{membershipId}/permission-group:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/MembershipId"
+    put:
+      tags: [Permissions]
+      summary: Assign a permission group to a member
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [permissionGroupId]
+              properties:
+                permissionGroupId:
+                  type: string
+                  format: uuid
+      responses:
+        "200":
+          description: Updated membership
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Membership"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
+  /api/installations/{installationId}/members/{membershipId}/permissions:
+    parameters:
+      - $ref: "#/components/parameters/InstallationId"
+      - $ref: "#/components/parameters/MembershipId"
+    put:
+      tags: [Permissions]
+      summary: Replace a member's per-permission overrides
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "#/components/schemas/PermissionOverride"
+      responses:
+        "200":
+          description: Updated membership with effective permissions
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Membership"
+        "403":
+          $ref: "#/components/responses/Forbidden"
+        "404":
+          $ref: "#/components/responses/NotFound"
+        "422":
+          $ref: "#/components/responses/ValidationError"
+
   /api/installations/{installationId}/invitations:
     parameters:
       - $ref: "#/components/parameters/InstallationId"
@@ -385,14 +540,14 @@ paths:
           application/json:
             schema:
               type: object
-              required: [email, role]
+              required: [email, permissionGroupId]
               properties:
                 email:
                   type: string
                   format: email
-                role:
+                permissionGroupId:
                   type: string
-                  enum: [EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+                  format: uuid
       responses:
         "201":
           description: Invitation created
@@ -682,6 +837,20 @@ components:
       schema:
         type: string
         format: uuid
+    GroupId:
+      name: groupId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    MembershipId:
+      name: membershipId
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
     Page:
       name: page
       in: query
@@ -759,12 +928,82 @@ components:
         installationId:
           type: string
           format: uuid
-        role:
-          type: string
-          enum: [EXPORTER_OWNER, EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+        permissionGroup:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            name:
+              type: string
+        effectivePermissions:
+          type: array
+          items:
+            type: string
         status:
           type: string
           enum: [INVITED, ACTIVE, REVOKED]
+
+    Permission:
+      type: object
+      properties:
+        key:
+          type: string
+          example: document.upload
+        category:
+          type: string
+          example: documents
+        description:
+          type: string
+
+    PermissionGroup:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        installationId:
+          type: string
+          format: uuid
+          nullable: true
+          description: null for system templates.
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        isSystem:
+          type: boolean
+        permissions:
+          type: array
+          items:
+            type: string
+
+    PermissionGroupInput:
+      type: object
+      required: [name, permissions]
+      properties:
+        name:
+          type: string
+          maxLength: 120
+        description:
+          type: string
+          maxLength: 500
+        permissions:
+          type: array
+          minItems: 1
+          items:
+            type: string
+
+    PermissionOverride:
+      type: object
+      required: [permissionKey, effect]
+      properties:
+        permissionKey:
+          type: string
+        effect:
+          type: string
+          enum: [ALLOW, DENY]
 
     Invitation:
       type: object
@@ -775,9 +1014,9 @@ components:
         email:
           type: string
           format: email
-        role:
+        permissionGroupId:
           type: string
-          enum: [EXPORTER_MEMBER, CONSULTANT, VERIFIER]
+          format: uuid
         expiresAt:
           type: string
           format: date-time

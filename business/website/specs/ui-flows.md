@@ -4,22 +4,63 @@ The shell is what the customer *sees and does*: sign in, manage their installati
 documents, watch status, and read the report the engine produced. It is deliberately **not** a
 calculator.
 
-## 1. Roles and permissions
+## 1. Permissions (groups + granular)
 
-| Action | Owner | Member | Consultant | Verifier |
+Authorization is **permission-based**. Every member is assigned a **permission group per
+installation**; the owner can add per-permission **ALLOW/DENY overrides**. The named roles below
+are the built-in group templates — they can be copied and customised per installation.
+
+### Permission keys (all activities)
+
+| Activity | Permission key |
+|---|---|
+| View installation / dashboard | `installation.read` |
+| Edit installation profile | `installation.update` |
+| View members | `member.read` |
+| Invite members | `member.invite` |
+| Revoke members / change groups or overrides | `member.manage` |
+| View permission groups | `permission_group.read` |
+| Create / edit custom groups | `permission_group.manage` |
+| View documents | `document.read` |
+| Upload documents | `document.upload` |
+| Delete documents | `document.delete` |
+| View reports | `report.read` |
+| Create draft report | `report.create` |
+| Publish report / attach engine output | `report.publish` |
+| Download dossier | `report.download` |
+| Open evidence room | `evidence.read` |
+| View audit events | `audit.read` |
+| View settings | `settings.read` |
+| Change settings / sessions | `settings.manage` |
+
+### Default group templates
+
+| Permission | Owner | Member | Consultant | Verifier |
 |---|---|---|---|---|
-| View installation / dashboard | ✅ | ✅ | ✅ (assigned) | ✅ (assigned) |
-| Upload document | ✅ | ✅ | ✅ | ❌ |
-| Delete document | ✅ | own uploads only | ❌ | ❌ |
-| Create draft report | ✅ | ✅ | ❌ | ❌ |
-| Attach engine output / publish report | ✅ | ❌ | ❌ | ❌ |
-| View report + evidence | ✅ | ✅ | ✅ | ✅ |
-| Download dossier | ✅ | ✅ | ✅ | ✅ |
-| Invite / revoke members | ✅ | ❌ | ❌ | ❌ |
-| Change installation profile | ✅ | ❌ | ❌ | ❌ |
+| `installation.read` | ✅ | ✅ | ✅ | ✅ |
+| `installation.update` | ✅ | — | — | — |
+| `member.read` | ✅ | ✅ | — | — |
+| `member.invite` | ✅ | — | — | — |
+| `member.manage` | ✅ | — | — | — |
+| `permission_group.read` | ✅ | — | — | — |
+| `permission_group.manage` | ✅ | — | — | — |
+| `document.read` | ✅ | ✅ | ✅ | — |
+| `document.upload` | ✅ | ✅ | ✅ | — |
+| `document.delete` | ✅ | ✅ (own) | — | — |
+| `report.read` | ✅ | ✅ | ✅ | ✅ |
+| `report.create` | ✅ | ✅ | — | — |
+| `report.publish` | ✅ | — | — | — |
+| `report.download` | ✅ | ✅ | ✅ | ✅ |
+| `evidence.read` | ✅ | ✅ | ✅ | ✅ |
+| `audit.read` | ✅ | — | — | — |
+| `settings.read` | ✅ | ✅ | ✅ | ✅ |
+| `settings.manage` | ✅ | — | — | — |
 
-> The UI hides what a role cannot do; the **API enforces it**. Verifier = read-only evidence room;
-> the formal verification remains external.
+**Effective permissions** = group permissions ∪ ALLOW overrides − DENY overrides.
+
+> The UI hides what a member cannot do; the **API enforces every permission key**. Custom groups
+> are scoped to one installation. Verifier is **read-only for now**; its future capabilities are
+> deferred.
 
 ## 2. Screens
 
@@ -73,17 +114,24 @@ Cards, not calculations:
   - Status timeline: Draft → In review → Verified → Published.
 - If no report: "No report yet — the engine runs in phases. Upload documents to prepare."
 
-### 2.7 Team
-- Members with roles; invite by email (Consultant / Verifier / Member); pending invitations;
-  resend/revoke; remove member.
-- Role changes are owner-only; every change writes an `AuditEvent`.
+### 2.7 Permission groups
+- List system templates (read-only) and custom groups (per installation).
+- Create/copy/edit a custom group; choose permission keys; preview effective access.
+- Assign a group to a member; add **ALLOW/DENY overrides** per permission key.
+- Only holders of `permission_group.manage` / `member.manage` can change this; every change writes
+  an `AuditEvent`.
 
-### 2.8 Verifier evidence room
+### 2.8 Team
+- Members with their permission group; invite by email; pending invitations; resend/revoke;
+  remove member.
+- Owner assigns/changes the group and overrides; every change writes an `AuditEvent`.
+
+### 2.9 Verifier evidence room
 - Read-only: installation, report, goods lines, evidence links, download.
 - No upload/delete/publish.
 - Clearly labelled: **"Evidence room — verification is issued by an accredited partner."**
 
-### 2.9 Settings
+### 2.10 Settings
 - Profile (name, email), password change, active sessions (revoke), notification preferences.
 - Danger zone: request account/installation deletion (retention rules apply).
 

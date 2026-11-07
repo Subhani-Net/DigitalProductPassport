@@ -9,28 +9,28 @@ Feature: Team and invitations
     Given a signed-in installation owner
 
   Scenario: Invite a consultant
-    When the owner invites "consultant@example.com" as "CONSULTANT"
+    When the owner invites "consultant@example.com" with the "Consultant" permission group
     Then an invitation is created
     And the consultant can view, but not publish, reports after accepting
 
   Scenario: Invite a verifier
-    When the owner invites "verifier@example.com" as "VERIFIER"
+    When the owner invites "verifier@example.com" with the "Verifier" permission group
     Then the invitation is created
     And the verifier gets read-only access after accepting
 
   Scenario: Accept an invitation
     Given a valid invitation for "new@example.com"
     When the invitee accepts it
-    Then a membership is activated with the invited role
+    Then a membership is activated with the invited permission group
 
   Scenario: Expired invitation is rejected
     Given an invitation older than 7 days
     When the invitee accepts it
     Then the request is rejected with "gone"
 
-  Scenario: Only the owner can change roles
-    Given an exporter member
-    When the member tries to change another member's role
+  Scenario: Only a member with member.manage can change groups
+    Given an exporter member without "member.manage"
+    When the member tries to change another member's permission group
     Then the request is rejected with "forbidden"
 
   Scenario: Revoke a member

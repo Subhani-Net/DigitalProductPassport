@@ -31,8 +31,11 @@ The enhanced spec below supersedes them for implementation. The originals stay f
 | `openapi.yaml` | Corrected/expanded API contract (auth, tenants, documents, reports, security) |
 | `ui-flows.md` | Screens, states, roles/permissions, upload UX, display rules |
 | `security.md` | AuthN/AuthZ, tenant isolation, file security, privacy, audit |
+| `auth-stub.md` | Auth interface + dev stub; production auth is a separate story |
+| `engine-stub.md` | `IEmissionEngine` + synthetic snapshot; real engine is a separate story |
+| `implementation-stories.md` | **Epics + stories + sequence** (the build plan) |
 | `features/*.feature` | Gherkin acceptance specs for the app shell (`@ignore @stub`) |
-| `decisions/ADR-001-stack-storage-auth.md` | Stack/storage/auth decision (proposed) |
+| `decisions/ADR-001-stack-storage-auth.md` | **Accepted** stack/storage/tenancy/auth decisions |
 
 ## Non-goals (explicit)
 
@@ -49,6 +52,17 @@ The enhanced spec below supersedes them for implementation. The originals stay f
 4. Read the Gherkin features; promote `@ignore @stub` to runnable as slices ship.
 5. Resolve the ADR questions (stack, storage, auth) before implementation.
 
+## Decisions (accepted, Nov 2026)
+
+- **C#/.NET + EF Core**, single PostgreSQL database with **row-level security**.
+- **Azure Blob + SAS** for document uploads.
+- **Permission groups + per-installation, per-member granular permissions** (ALLOW/DENY overrides).
+- **Auth is a stub**; production auth is a separate story.
+- **Engine is a stub** (`IEmissionEngine`, synthetic snapshot); production engine is separate,
+  manual and phased.
+- **Verifier is read-only for now**; capabilities deferred.
+
 ## Status
 
-Draft, November 2026. The raw `.txt` specs are inputs; this set is the reviewable baseline.
+Draft, November 2026. Raw `.txt` specs are inputs; this set is the reviewable baseline. The build
+plan is in `implementation-stories.md`.

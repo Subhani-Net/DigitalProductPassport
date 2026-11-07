@@ -14,6 +14,9 @@ screen in `openapi.yaml` / `ui-flows.md` must satisfy this document.
 
 ## 2. Authentication
 
+- **Current state:** authentication is a **stub** (`auth-stub.md`). Production auth (provider,
+  MFA, email, reset, rotation) is a **separate story**. The stub must never be deployed as the
+  real auth.
 - Passwords: **Argon2id** (preferred) or bcrypt with a strong work factor; never plain text.
 - Password policy: minimum 12 characters; check against a breached-password list.
 - **Email verification** before full access; tokens are single-use and expire.
@@ -29,12 +32,18 @@ screen in `openapi.yaml` / `ui-flows.md` must satisfy this document.
 
 - Every tenant path includes `installationId`; the server **must** verify an `ACTIVE` membership
   for `(currentUser, installationId)` before any read/write.
-- Role matrix is in `ui-flows.md` §1; enforce it in middleware/handlers, not the client.
+- Authorization is **permission-based**, not role-based:
+  `effective = group permissions ∪ ALLOW overrides − DENY overrides` (`data-model.md` §2).
+- Permission keys are enforced **server-side** on every handler; the UI only hides actions.
+- Custom **permission groups** must belong to the same installation; system group templates are
+  read-only. A group from installation A must never be assignable in installation B.
 - **IDOR tests** are mandatory: a user from tenant A must get **404/403** for tenant B's
-  installation, document, or report — never data.
-- Database: enable **row-level security** (or equivalent enforced query scoping) on all tenant tables.
-- Never accept `userId`/`installationId` from the body where the path already defines it.
-- Verifier role is **read-only**; it cannot upload, delete, create, or publish.
+  installation, document, report, group, or membership — never data.
+- Database: enable **row-level security** on all tenant tables; the RLS session variable is set
+  per request. Application checks are the first gate; RLS is the backstop.
+- Never accept `userId`/`installationId`/`permissionGroupId` from the body where the path already
+  defines the tenant.
+- **Verifier is read-only for now**; its future capabilities are explicitly deferred.
 
 ## 4. Input validation
 

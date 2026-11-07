@@ -82,9 +82,10 @@ Last update: Nov 2026 (outreach + expert bench in parallel; build continues).
     `business/capability-map.md`, `knowledge/learning/lca-epd-primer.md`.
 13. **App shell spec separate from engine (Nov 2026).** The customer app shell (auth, tenants,
     uploads, dashboard, security) is specified in `business/website/specs/`; the CBAM engine BDDs
-    in `product/tests/` stay untouched and manual/phased. Enhanced set: data model, OpenAPI, UI
-    flows, security, Gherkin. ADR-001 proposes C#/.NET + EF Core + Azure Blob + managed auth —
-    **pending review**.
+    in `product/tests/` stay untouched and manual/phased. **Accepted:** C#/.NET + EF Core;
+    single DB + PostgreSQL RLS; Azure Blob + SAS; **permission groups + per-installation,
+    per-member granular permissions (ALLOW/DENY overrides)**; **auth stub** and **engine stub**
+    now; verifier read-only. Build plan: `business/website/specs/implementation-stories.md`.
 
 ## File map
 
