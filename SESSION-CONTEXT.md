@@ -136,6 +136,8 @@ scratch/ (gitignored): spike-host (python static DPP host, port 9090)
    `knowledge/research/expert-session-template.md`.
 8. **Pilot toolkit (Nov 2026):** dry-run `business/pilot/` on `product/demo/pilot-docket/`;
    prepare the NDA/privacy note; book one expert review; then run the first client pilot.
+   **Fork:** “DPP CBAM input validation” — Phase 3 mapping/validation; resume from
+   `business/pilot/HANDOFF-cbam-input-validation.md`.
 
 ## Rules of engagement (from AGENTS.md)
 

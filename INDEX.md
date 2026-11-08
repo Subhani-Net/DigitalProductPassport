@@ -162,6 +162,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/pilot/diagnostic-report-template.md` | The deliverable template |
 | `business/pilot/evidence-log-template.md` · `.csv` | Figure-to-source ledger |
 | `business/pilot/runbook.md` | Step-by-step 2-week pilot procedure |
+| `business/pilot/HANDOFF-cbam-input-validation.md` | **Fork handoff** — DPP CBAM input validation (Phase 3 scope) |
 
 ## 4. TOOLS
 | Path | Purpose |
