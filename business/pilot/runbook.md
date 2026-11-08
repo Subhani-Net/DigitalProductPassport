@@ -47,6 +47,7 @@ Operating procedure for the concierge pilot. Work top to bottom; do not skip the
 Use the Phase 3 templates:
 `boundary-worksheet.md` · `source-stream-inventory.md` · `precursor-register.md` ·
 `production-by-cn.md` · `unit-period-check.md` · `gap-register.md` (+ `.csv`) · `cn-code-helper.md`.
+Full process and worked examples: `phase3-input-validation-guide.md`.
 
 - [ ] Draft the **boundary worksheet** from the process flow and customer facts; customer confirms.
 - [ ] Complete the **source-stream inventory**; check route completeness (BF-BOF/EAF/DRI/Al).

@@ -15,6 +15,7 @@ The engine is manual for now; this kit is how we deliver it consistently.
 | `diagnostic-report-template.md` | The deliverable we hand back |
 | `evidence-log-template.md` / `.csv` | Trace every figure to a source document |
 | `runbook.md` | The step-by-step operating procedure |
+| `phase3-input-validation-guide.md` | **Full Phase 3 process** — responsibility, boundary, streams, precursors, outputs, units, gaps |
 | `boundary-worksheet.md` | Phase 3 — draft/confirm the system boundary |
 | `source-stream-inventory.md` | Phase 3 — structured source-stream checklist |
 | `precursor-register.md` | Phase 3 — CBAM-covered inputs, mass and SEE source |

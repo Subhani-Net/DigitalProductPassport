@@ -162,6 +162,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/pilot/diagnostic-report-template.md` | The deliverable template |
 | `business/pilot/evidence-log-template.md` · `.csv` | Figure-to-source ledger |
 | `business/pilot/runbook.md` | Step-by-step 2-week pilot procedure |
+| `business/pilot/phase3-input-validation-guide.md` | **Full Phase 3 process guide** — responsibility, boundary, streams, precursors, outputs, units, gaps |
 | `business/pilot/boundary-worksheet.md` | Phase 3 — draft/confirm the system boundary |
 | `business/pilot/source-stream-inventory.md` | Phase 3 — structured source-stream checklist |
 | `business/pilot/precursor-register.md` | Phase 3 — covered inputs, mass, SEE source |
