@@ -44,12 +44,17 @@ Operating procedure for the concierge pilot. Work top to bottom; do not skip the
 
 ## Phase 3 — Map & validate (days 3–5)
 
-- [ ] Define the **system boundary** (process flow, meters, fuel lines, reduction agents).
-- [ ] List **source streams** (fuels, materials, gases, electricity).
-- [ ] List **precursors** (CBAM-covered inputs) with mass and SEE source.
-- [ ] Map **production outputs** by CN code and quantity.
-- [ ] Check units, periods, and plausibility; note gaps.
-- [ ] **Gate:** every figure has an evidence-log row (or a documented gap).
+Use the Phase 3 templates:
+`boundary-worksheet.md` · `source-stream-inventory.md` · `precursor-register.md` ·
+`production-by-cn.md` · `unit-period-check.md` · `gap-register.md` (+ `.csv`) · `cn-code-helper.md`.
+
+- [ ] Draft the **boundary worksheet** from the process flow and customer facts; customer confirms.
+- [ ] Complete the **source-stream inventory**; check route completeness (BF-BOF/EAF/DRI/Al).
+- [ ] Complete the **precursor register**; validate against purchases, mill certs and weighbridge.
+- [ ] Complete **production by CN**; reconcile production/sales/stock and check mass balance/yield.
+- [ ] Run the **unit/period/factor** checks; record factors with source and version.
+- [ ] Open the **gap register**; every gap has a fallback + cost + owner + due date.
+- [ ] **Gate:** every figure has an evidence-log row (or a documented gap with a fallback).
 
 ## Phase 4 — Draft SEE (days 5–7)
 

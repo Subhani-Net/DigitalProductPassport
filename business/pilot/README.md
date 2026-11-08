@@ -15,6 +15,13 @@ The engine is manual for now; this kit is how we deliver it consistently.
 | `diagnostic-report-template.md` | The deliverable we hand back |
 | `evidence-log-template.md` / `.csv` | Trace every figure to a source document |
 | `runbook.md` | The step-by-step operating procedure |
+| `boundary-worksheet.md` | Phase 3 — draft/confirm the system boundary |
+| `source-stream-inventory.md` | Phase 3 — structured source-stream checklist |
+| `precursor-register.md` | Phase 3 — CBAM-covered inputs, mass and SEE source |
+| `production-by-cn.md` | Phase 3 — outputs by CN, reconciliation and mass balance |
+| `unit-period-check.md` | Phase 3 — units, periods, factors, plausibility |
+| `gap-register.md` / `.csv` | Phase 3 — gaps with fallback, impact, owner, due |
+| `cn-code-helper.md` | Common steel/aluminium CN codes (verify against Annex I) |
 | `../../product/demo/pilot-docket/` | Synthetic dry-run data before the first client |
 
 ## Roles
@@ -32,6 +39,7 @@ The engine is manual for now; this kit is how we deliver it consistently.
 - [x] Diagnostic report template drafted
 - [x] Evidence log template drafted
 - [x] Runbook drafted
+- [x] Phase 3 templates drafted (boundary, streams, precursors, outputs, units, gaps, CN helper)
 - [ ] Dry-run on the synthetic pilot docket
 - [ ] Prepare privacy/NDA note for clients
 - [ ] Book one independent reviewer (3 hrs)

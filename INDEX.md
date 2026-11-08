@@ -162,6 +162,13 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/pilot/diagnostic-report-template.md` | The deliverable template |
 | `business/pilot/evidence-log-template.md` · `.csv` | Figure-to-source ledger |
 | `business/pilot/runbook.md` | Step-by-step 2-week pilot procedure |
+| `business/pilot/boundary-worksheet.md` | Phase 3 — draft/confirm the system boundary |
+| `business/pilot/source-stream-inventory.md` | Phase 3 — structured source-stream checklist |
+| `business/pilot/precursor-register.md` | Phase 3 — covered inputs, mass, SEE source |
+| `business/pilot/production-by-cn.md` | Phase 3 — outputs by CN, reconciliation, mass balance |
+| `business/pilot/unit-period-check.md` | Phase 3 — units, periods, factors, plausibility |
+| `business/pilot/gap-register.md` · `.csv` | Phase 3 — gaps + fallback/impact/owner |
+| `business/pilot/cn-code-helper.md` | Common steel/aluminium CN codes |
 | `business/pilot/HANDOFF-cbam-input-validation.md` | **Fork handoff** — DPP CBAM input validation (Phase 3 scope) |
 
 ## 4. TOOLS

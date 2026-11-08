@@ -62,3 +62,21 @@ outputs by CN code, units and gaps.
 
 Build the Phase 3 templates, update the runbook, then **dry-run the whole kit** on
 `product/demo/pilot-docket/` before the first client pilot.
+
+## Fork build — defaults applied (7 Nov 2026)
+
+The Phase 3 templates are built:
+`boundary-worksheet.md`, `source-stream-inventory.md`, `precursor-register.md`,
+`production-by-cn.md`, `unit-period-check.md`, `gap-register.md` (+ `.csv`), `cn-code-helper.md`;
+`runbook.md` Phase 3 updated.
+
+Defaults chosen (review and change if needed):
+
+1. **We draft / the customer confirms** the boundary — accepted.
+2. **Structured checklists** by stream class / Annex I — accepted.
+3. **All six templates** + CN helper — built.
+4. **CN validation:** customer classification is accepted only with **customs/sales invoice**
+   evidence; ambiguity goes to the gap register.
+5. **SEE source labels:** `Actual (verified report ref)` / `Actual (unverified)` / `Default`.
+
+Next: dry-run on `product/demo/pilot-docket/` and populate the templates with those numbers.
