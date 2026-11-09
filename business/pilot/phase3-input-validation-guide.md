@@ -8,6 +8,9 @@ templates.
 `precursor-register.md`, `production-by-cn.md`, `unit-period-check.md`, `gap-register.md`,
 `cn-code-helper.md`.
 
+**Education pack:** `../../knowledge/learning/cbam-boundary-and-processes/` — facts vs
+conclusions, the processes, energy/gases/meters, and a field question bank.
+
 > **Regulatory anchors:** Reg. (EU) 2023/956 Annex IV; IR 2025/2547 (definitive calculation);
 > IR 2025/2546 (verification); IR 2025/2621 (default values). Where a detail is uncertain, it is
 > marked **[verify]** against the instrument.

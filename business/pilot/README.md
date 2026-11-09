@@ -23,6 +23,7 @@ The engine is manual for now; this kit is how we deliver it consistently.
 | `unit-period-check.md` | Phase 3 — units, periods, factors, plausibility |
 | `gap-register.md` / `.csv` | Phase 3 — gaps with fallback, impact, owner, due |
 | `cn-code-helper.md` | Common steel/aluminium CN codes (verify against Annex I) |
+| `../../knowledge/learning/cbam-boundary-and-processes/` | **Education pack** — facts vs conclusions, processes, energy/gases, meters, field questions |
 | `../../product/demo/pilot-docket/` | Synthetic dry-run data before the first client |
 
 ## Roles

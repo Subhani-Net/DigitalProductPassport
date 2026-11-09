@@ -50,6 +50,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `knowledge/learning/cbam-101/` | **Complete** Foundations |
 | `knowledge/learning/cbam-201/` | **Complete** Practitioner |
 | `knowledge/learning/cbam-precursors/` | **Focused course** — precursors, calculation, data request, timeline/scenarios |
+| `knowledge/learning/cbam-boundary-and-processes/` | **Education pack** — facts vs conclusions, plant boundary, steel/Al processes, energy/gases, meters, field question bank |
 | `knowledge/learning/cbam-301/README.md` | Planned Expert/SME |
 | `knowledge/learning/lca-epd-primer.md` | **Deep LCA/PCF/EPD primer** + CBAM bridge (what an EPD is/isn't) |
 
