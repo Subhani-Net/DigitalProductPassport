@@ -1,6 +1,8 @@
 # Expert Bench — longlist & pipeline
 
 Tracks the CBAM verifier-grade advisors we approach. Companion to `expert-brief.md`.
+**Full recruitment list:** `expert-candidates-india.md` — 40 named profiles (Tier A independent,
+Tier B company/competitor, Tier C industry) + verification/trade routes.
 **Goal:** 2–3 named advisors; **one paid 3-hr review on the customer's draft v0 (synthetic twin)
 before external delivery**; formal readiness validation after C2–C4.
 **Accepted (Nov 2026):** India + EU mix; ~£500 for the first 1–2 reviews.

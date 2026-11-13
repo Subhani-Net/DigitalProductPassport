@@ -16,6 +16,7 @@ Ties to `../presentation-plan.md` (the Present dimension) and the demo data pack
 | `../pilot/` | **Operational pilot kit** — data request, report template, evidence log, runbook |
 | `consultant-channel.md` | **Expert channel** — amended sequencing (network now, one paid micro-review before first pilot, formal validation after C2–C4) |
 | `expert-brief.md` | **1-page brief to send advisors** — ask, 6 stress-test questions, offer, terms, £500 budget |
+| `expert-candidates-india.md` | **40 named candidates** — independent, company/competitor, industry; verification/trade routes |
 | `expert-bench.md` | **Advisor longlist + pipeline + engagement log** (India + EU) |
 
 **Golden rule (from `../presentation-plan.md`):** solution-led, not probing. Show, don't interview.

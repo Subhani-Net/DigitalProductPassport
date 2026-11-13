@@ -121,6 +121,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `tracker.md` | Master pipeline table — 51 rows, contact/stage/next action | ✅ active |
 | `leads-priority.md` | Contact-ready call sheet — Tier 1/2, angles, weekly sheet | ✅ active |
 | `expert-brief.md` | 1-page advisor brief — ask, 6 questions, offer, terms, £500 | ✅ |
+| `expert-candidates-india.md` | **40 named expert candidates** (Tier A/B/C) + verification/trade routes | ✅ |
 | `expert-bench.md` | Advisor longlist + pipeline + engagement log (India + EU) | ✅ active |
 | `consultant-channel.md` | Expert channel — amended sequencing | ✅ |
 | `exporter-one-pager.md` | Customer-facing one-pager | ✅ |
