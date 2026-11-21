@@ -8,6 +8,20 @@ offer. Separate from the investor site in `../investor/website/`.
 - Contact form posts to an **Azure Static Web Apps managed function**, which stores the enquiry
   in **Azure Table Storage**. **No email is sent at this stage** (by design).
 
+## Configuration — single source of truth
+
+All shared values live in **`site.config.json`**: `brand`, `domain`, `email`, `phone`,
+`phoneHref`, `address`. Change a value once, rebuild, and every page (plus `robots.txt`,
+`sitemap.xml`, canonical/og tags and the JS form fallback) updates.
+
+- The HTML pages keep **placeholder literals** (`Veriflow`, `veriflow.example`,
+  `hello@veriflow.example`, the phone and address). **Do not edit those in the pages** —
+  edit `site.config.json` instead.
+- **`build.mjs`** (plain Node, no dependencies) stamps the config into a `dist/` folder and
+  copies `assets/` and `staticwebapp.config.json`. `api/` is deployed separately (excluded
+  from `dist/`).
+- `dist/` is generated and git-ignored. Build locally with `node business/website/build.mjs`.
+
 ## Pages
 
 | File | Purpose |
@@ -37,10 +51,11 @@ the CBAM engine, which stays in `product/` and is delivered manually in phases.
 
 ## Preview locally
 
-Static pages (form POST will fail locally, as expected):
+Build the stamped site, then serve `dist/` (form POST will fail locally, as expected):
 
 ```
-python -m http.server 8080 --directory business/website
+node business/website/build.mjs
+python -m http.server 8080 --directory business/website/dist
 # http://localhost:8080/
 ```
 
@@ -69,7 +84,7 @@ Add `api/local.settings.json` (gitignored) with:
 
 1. Create a **Static Web App** in Azure (Free tier). Source: GitHub, this repo, branch `main`.
 2. Build details:
-   - **App location:** `business/website`
+   - **App location:** `business/website/dist` *(the workflow runs `node business/website/build.mjs` first)*
    - **API location:** `business/website/api`
    - **Output location:** *(empty)*
 3. Copy the **deployment token** into GitHub → Settings → Secrets → Actions as
@@ -100,14 +115,14 @@ update `privacy.html`.
 
 | Placeholder | Where |
 |---|---|
-| **Brand name “Veriflow”** (working name) | every page |
-| **Domain `veriflow.example`** | `canonical`, `og:url`, `robots.txt`, `sitemap.xml` |
-| **Email `hello@veriflow.example`** | footers, contact, privacy/terms, form fallback |
-| **Phone `+44 (0) 0000 000 000`** | footers, contact |
-| **Address “London, United Kingdom”** | footers, contact, legal pages |
+| **Brand name “Veriflow”** (working name) | `site.config.json` → `brand` |
+| **Domain `veriflow.example`** | `site.config.json` → `domain` |
+| **Email `hello@veriflow.example`** | `site.config.json` → `email` |
+| **Phone `+44 (0) 0000 000 000`** | `site.config.json` → `phone` / `phoneHref` |
+| **Address “London, United Kingdom”** | `site.config.json` → `address` |
 | **Azure Storage connection string** | SWA app settings (secret) — never in the repo |
 | **Privacy/terms legal review** | `privacy.html`, `terms.html` |
-| **Pricing “from €4,000/year”** | `index.html` — reconcile with `goto-market-sizing.md` |
+| **Pricing “from €8,000/year”** | `index.html` — reconciled to Base tier (€8–15k) in `goto-market-sizing.md` |
 
 ## Content and claims policy
 
