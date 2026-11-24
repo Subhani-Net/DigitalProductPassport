@@ -14,6 +14,9 @@ cross-referenced to it. Dated milestones follow `product-roadmap.md` §5.
 | `website/README.md` | **Customer-facing static site** (Veriflow) — pages, placeholders, deploy |
 | `website/specs/README.md` | **App shell spec** — auth, tenants, uploads, dashboard, security (separate from engine) |
 | `pilot/README.md` | **Operational pilot toolkit** — data request, report template, evidence log, runbook |
+| `outreach/design-partner-programme.md` | **Free design-partner programme** + 10 Tier-1 targets |
+| `workitems/design-partner-proof.md` | **Work items + progress** for design-partner proof/acquisition |
+| `website/specs/claims-register.md` | Public claims + evidence |
 | `README.md` | This index + activity tracker |
 
 ## Activity tracker

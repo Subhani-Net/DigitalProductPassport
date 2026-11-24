@@ -38,7 +38,8 @@ const SKIP_TOP_LEVEL = new Set([
   ".git",
   "build.mjs",
   "site.config.json",
-  "README.md"
+  "README.md",
+  "TODO.md"
 ]);
 
 const TEXT_EXT = new Set([

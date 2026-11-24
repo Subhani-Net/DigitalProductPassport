@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample dossier — Veriflow</title>
+  <meta name="description" content="Download a synthetic CBAM reference dossier for a Rajkot re-rolling mill (CN 7214) — illustrative, not a client.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Veriflow home">
+        <img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">
+        <span class="brand-name">Veriflow</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="how-it-works.html">How it works</a>
+        <a href="pilot.html">Pilot</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html" class="btn small">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Sample dossier</p>
+        <p class="kicker">Synthetic sample</p>
+        <h1>See the evidence pack before you share a single document.</h1>
+        <p class="lead mt-2">A complete CBAM reference dossier for a <strong>Rajkot re-rolling mill</strong> (CN 7214 bars), built on synthetic data. It shows the boundary, source streams, precursor mapping, calculations, evidence trail and determination flags.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid cols-2">
+          <div>
+            <h2>What is inside</h2>
+            <ul class="checklist">
+              <li>Installation &amp; system boundary</li>
+              <li>Source streams (fuel, electricity, precursors)</li>
+              <li>Precursor register with mass and SEE source</li>
+              <li>Production by CN code and mass balance</li>
+              <li>Direct + precursor emissions and SEE</li>
+              <li>Actual-vs-default saving (illustrative)</li>
+              <li>Figure-to-source evidence log</li>
+              <li>Determination flags and assumptions</li>
+            </ul>
+            <div class="callout"><strong>Synthetic and illustrative.</strong> No real client, supplier or verification body is represented. The dossier exists to show the method and the evidence standard.</div>
+            <div class="callout"><strong>Verifier-ready, not verified.</strong> This is an evidence pack for review by an accredited CBAM verifier — not a verification opinion.</div>
+          </div>
+
+          <div>
+            <h2>Download the sample</h2>
+            <p class="small muted">Enter your email and we will send you the PDF. We use it only to follow up on your interest; no marketing lists.</p>
+
+            <form class="form mt-2" id="sample-form" action="/api/sample-dossier" method="post">
+              <div class="field">
+                <label for="s-name">Your name <span class="small muted">(optional)</span></label>
+                <input id="s-name" name="name" type="text" autocomplete="name" maxlength="200">
+              </div>
+              <div class="field">
+                <label for="s-company">Company <span class="small muted">(optional)</span></label>
+                <input id="s-company" name="company" type="text" autocomplete="organization" maxlength="200">
+              </div>
+              <div class="field">
+                <label for="s-email">Email</label>
+                <input id="s-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                <span class="hint">We will validate the address before releasing the download.</span>
+              </div>
+
+              <div class="hp" aria-hidden="true">
+                <label for="s-website">Website</label>
+                <input id="s-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <label class="checkbox" for="s-consent">
+                <input id="s-consent" name="consent" type="checkbox" required>
+                <span>I agree to the <a href="privacy.html">privacy notice</a> and to being contacted about the sample.</span>
+              </label>
+
+              <button class="btn" type="submit">Send me the sample</button>
+              <p id="sample-status" class="form-status" role="status" aria-live="polite"></p>
+              <a id="sample-download" class="btn ghost hide" href="assets/samples/rajkot-reference-dossier.pdf" download>Download the synthetic dossier (PDF)</a>
+              <noscript><p class="small muted">JavaScript is required to reveal the download link. Email hello@veriflow.example for the sample.</p></noscript>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Want this on your own data?</h2>
+        <p>A two-week pilot, one installation, one reporting period.</p>
+        <div class="hero-actions">
+          <a class="btn" href="pilot.html">See the pilot</a>
+          <a class="btn ghost" href="contact.html">Book a call</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img class="brand-mark" src="assets/favicon.svg" alt="" width="28" height="28">
+            <span class="brand-name">Veriflow</span>
+          </a>
+          <p>Verifier-ready CBAM evidence for steel and aluminium exporters. Verifier-ready, not verified.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="how-it-works.html">How it works</a>
+          <a href="pilot.html">Pilot</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Book a call</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <!-- PLACEHOLDER: replace domain, email and phone -->
+          <a href="mailto:hello@veriflow.example">hello@veriflow.example</a>
+          <a href="tel:+440000000000">+44 (0) 0000 000 000</a>
+          <span class="small muted">London, United Kingdom</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Veriflow. Working name and placeholder contact details.</span>
+        <span>Verifier-ready, not verified. Verification by accredited partners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

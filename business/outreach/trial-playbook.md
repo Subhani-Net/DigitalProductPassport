@@ -52,7 +52,6 @@ trial with no commitment is how you lose weeks and learn nothing.
 ---
 
 ## Concierge pilot — what you can honestly deliver *before* the app exists
-
 You do not yet have the full application, nor the verifier-grade consultant. That is fine — the
 first pilots are run **manually ("concierge")**, and you must be honest about stage.
 
@@ -91,3 +90,19 @@ validated demand, not before.
 
 **Rule: one pilot at a time.** Each manual pilot also *generates* the app's requirements — it is
 the spec, not a distraction. But do not take more pilots than you can deliver by hand.
+
+---
+
+## Free design-partner variant (Nov 2026)
+
+For **2–3 selected partners**, run the pilot **free** with an explicit exchange:
+
+- one installation, one period, **two weeks**, no fee, no obligation to buy;
+- they provide real (S0/S1) data, a named champion, 30 minutes of feedback, and permission to
+  reference (named or anonymous);
+- if it works, we discuss the annual plan at a preferred first-year price; if not, we ask for the
+  reason.
+
+**Guardrails:** time-boxed, no free consulting beyond scope, data confidential, and **no**
+“reviewed/verified” claims until genuinely earned. Full programme:
+`design-partner-programme.md`.

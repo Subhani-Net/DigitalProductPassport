@@ -139,6 +139,9 @@ scratch/ (gitignored): spike-host (python static DPP host, port 9090)
    prepare the NDA/privacy note; book one expert review; then run the first client pilot.
    **Fork:** “DPP CBAM input validation” — Phase 3 mapping/validation; resume from
    `business/pilot/HANDOFF-cbam-input-validation.md`.
+9. **Design-partner proof (Nov 2026):** sample dossier + email-gated download built; public claims
+   corrected; review/verifier claims deferred. Track DP-01…DP-15 in
+   `business/workitems/design-partner-proof.md`; run the 10 Tier-1 design-partner calls.
 
 ## Rules of engagement (from AGENTS.md)
 

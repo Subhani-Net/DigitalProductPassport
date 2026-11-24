@@ -13,6 +13,7 @@ Ties to `../presentation-plan.md` (the Present dimension) and the demo data pack
 | `exporter-one-pager.md` | The customer-facing one-pager (send after a warm reply) |
 | `outreach-scripts.md` | Cold email + LinkedIn scripts (exporter primary, verifier, importer) |
 | `trial-playbook.md` | **What to do when someone says "good for a trial"** |
+| `design-partner-programme.md` | **Free design-partner programme** — offer, exchange, 10 Tier-1 targets |
 | `../pilot/` | **Operational pilot kit** — data request, report template, evidence log, runbook |
 | `consultant-channel.md` | **Expert channel** — amended sequencing (network now, one paid micro-review before first pilot, formal validation after C2–C4) |
 | `expert-brief.md` | **1-page brief to send advisors** — ask, 6 stress-test questions, offer, terms, £500 budget |

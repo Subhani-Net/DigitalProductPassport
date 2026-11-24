@@ -122,6 +122,12 @@ G03 (ops minimal) → G04 (compliance watch) → G05–G08 (phase 2–3) → G10
 
 ---
 
+## Design-partner proof & acquisition (Nov 2026)
+
+Detailed register: **`design-partner-proof.md`** — items DP-01…DP-15, statuses and progress log.
+Scope: 2–3 free design partners, synthetic reference dossier, claims register, email-gated sample
+download, and deferred review/verifier claims.
+
 ## How to add a work item
 
 ```

@@ -30,6 +30,8 @@ All shared values live in **`site.config.json`**: `brand`, `domain`, `email`, `p
 | `how-it-works.html` | Process, precursors, monitoring plan, annual clock, boundaries |
 | `pilot.html` | 2-week pilot: what you give/get, timeline, guardrails |
 | `contact.html` | Contact details (placeholder) + enquiry form |
+| `sample-dossier.html` | **Email-gated sample download** (synthetic Rajkot dossier) |
+| `assets/samples/rajkot-reference-dossier.pdf` | **Synthetic sample dossier** (PDF, 10 pages) |
 | `privacy.html` | Privacy notice (working draft) |
 | `terms.html` | Website terms (working draft) |
 | `thank-you.html` | Form success page |
@@ -37,7 +39,7 @@ All shared values live in **`site.config.json`**: `brand`, `domain`, `email`, `p
 | `assets/styles.css` | The design system |
 | `assets/site.js` | Mobile nav, footer year, contact-form `fetch` |
 | `assets/favicon.svg` | Brand mark / favicon |
-| `api/` | Azure Function: `POST /api/contact` → Table Storage |
+| `api/` | Azure Functions: `POST /api/contact` and `POST /api/sample-dossier` → Table Storage |
 | `staticwebapp.config.json` | Routing, headers, `X-Robots-Tag: noindex` |
 | `robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
 
@@ -106,6 +108,18 @@ update `privacy.html`.
 - Honeypot: hidden `website` field.
 - No IP address is stored.
 
+## Sample dossier gate
+
+- Page: `sample-dossier.html`; client validation in `assets/site.js`.
+- Server: `api/sample-dossier/index.js` validates email + consent, writes to
+  **`SampleDossierRequests`**, and returns `downloadUrl`.
+- App setting `SAMPLE_DOSSIER_URL` (optional) overrides the default
+  `/assets/samples/rajkot-reference-dossier.pdf`.
+- **Soft gating** by default: the PDF lives under `assets/samples/`. For **hard gating**, set
+  `SAMPLE_DOSSIER_URL` to a **short-lived Azure Blob SAS URL** (or proxy the file through the
+  function), and keep the container private.
+- The PDF is **synthetic** — no client data, names or logos.
+
 ## Privacy and terms
 
 `privacy.html` and `terms.html` are **working drafts**. Controller identity is
@@ -121,6 +135,7 @@ update `privacy.html`.
 | **Phone `+44 (0) 0000 000 000`** | `site.config.json` → `phone` / `phoneHref` |
 | **Address “London, United Kingdom”** | `site.config.json` → `address` |
 | **Azure Storage connection string** | SWA app settings (secret) — never in the repo |
+| **`SAMPLE_DOSSIER_URL`** (optional) | SWA app setting — use a short-lived Blob SAS for hard gating |
 | **Privacy/terms legal review** | `privacy.html`, `terms.html` |
 | **Pricing “from €8,000/year”** | `index.html` — reconciled to Base tier (€8–15k) in `goto-market-sizing.md` |
 
@@ -143,5 +158,6 @@ is reused.
 1. Create the Azure SWA + Storage account and set the secrets/settings.
 2. Replace brand/domain/contact placeholders; remove `noindex` at go-live.
 3. Add email notification (later).
-4. Add a real pilot case study (with consent).
+4. Replace the soft-gated sample URL with a short-lived Blob SAS.
+5. Add a real pilot case study (with consent).
 5. Optional: privacy-friendly analytics + OG image.

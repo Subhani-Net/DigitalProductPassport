@@ -99,6 +99,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/product-gaps.md` | Gaps & uncovered scope |
 | `business/capability-map.md` | **Honest deep/partial/thin/absent map** + 90-day gap plan |
 | `business/positioning.md` | **Positioning** — CBAM evidence layer; claims, objections, vs Sentra/CleanCarbon |
+| `business/workitems/design-partner-proof.md` | **Design-partner proof/acquisition** — work items + progress |
 | `business/specification-by-example.md` | BDD playbook |
 | `business/presentation-plan.md` | Present dimension |
 | `business/project-gantt.md` | Dated task view |
@@ -127,6 +128,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `exporter-one-pager.md` | Customer-facing one-pager | ✅ |
 | `outreach-scripts.md` | Email/LinkedIn scripts (per-customer call pack to be built) | ✅ (evolve) |
 | `trial-playbook.md` | Concierge pilot playbook | ✅ |
+| `design-partner-programme.md` | **Free design-partner programme** + 10 Tier-1 targets | ✅ active |
 | `target-list.md` | Persona + sourcing-channel template | ✅ |
 
 ### 3.4 Customer website (`business/website/`)
@@ -136,10 +138,12 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/website/how-it-works.html` | Process, precursors, monitoring plan, annual clock, boundaries |
 | `business/website/pilot.html` | 2-week pilot, timeline, guardrails |
 | `business/website/contact.html` | Contact (placeholders) + enquiry form |
+| `business/website/sample-dossier.html` | **Email-gated sample download** (synthetic Rajkot dossier) |
+| `business/website/assets/samples/rajkot-reference-dossier.pdf` | Synthetic sample dossier (10 pages) |
 | `business/website/privacy.html` · `terms.html` | Legal pages (working drafts) |
 | `business/website/thank-you.html` · `404.html` | Form success / not-found |
 | `business/website/assets/` | `styles.css`, `site.js`, `favicon.svg` |
-| `business/website/api/` | Azure Function — `POST /api/contact` → Table Storage |
+| `business/website/api/` | Azure Functions — `POST /api/contact`, `POST /api/sample-dossier` → Table Storage |
 | `business/website/staticwebapp.config.json` | SWA routing, headers, temp-domain `noindex` |
 | `business/website/README.md` | Local run, Azure deploy, form, placeholders, claims policy |
 | `business/website/specs/README.md` | **App shell spec** — scope, separation from engine |
@@ -147,11 +151,12 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/website/specs/openapi.yaml` | API contract — auth, tenants, documents, reports |
 | `business/website/specs/ui-flows.md` | Screens, roles/permissions, states, accessibility |
 | `business/website/specs/security.md` | AuthN/AuthZ, tenant isolation, upload, privacy, audit |
+| `business/website/specs/claims-register.md` | **Public claims + evidence** (earned / prohibited) |
 | `business/website/specs/auth-stub.md` | Auth interface + dev stub (production auth separate) |
 | `business/website/specs/engine-stub.md` | `IEmissionEngine` + synthetic snapshot (real engine separate) |
 | `business/website/specs/implementation-stories.md` | **Build plan** — epics, stories, sequence |
 | `business/website/specs/features/` | App-shell Gherkin (`@ignore @stub`) — separate from engine BDDs |
-| `business/website/specs/decisions/ADR-001-stack-storage-auth.md` | Stack/storage/auth decision (proposed) |
+| `business/website/specs/decisions/ADR-001-stack-storage-auth.md` | Stack/storage/auth decision (accepted) |
 | `business/website/specs/*.txt` | Original raw schema/API inputs (kept for traceability) |
 | `business/website/robots.txt` · `sitemap.xml` | Crawl hints (placeholder domain) |
 | `.github/workflows/azure-static-web-apps.yml` | Deploy workflow (SWA) |
@@ -172,6 +177,7 @@ learned), `business/` (strategy, GTM, investor), `tools/`; plus gitignored `refe
 | `business/pilot/unit-period-check.md` | Phase 3 — units, periods, factors, plausibility |
 | `business/pilot/gap-register.md` · `.csv` | Phase 3 — gaps + fallback/impact/owner |
 | `business/pilot/cn-code-helper.md` | Common steel/aluminium CN codes |
+| `business/pilot/sample-dossier/` | Synthetic Rajkot reference dossier (HTML + PDF + README) |
 | `business/pilot/HANDOFF-cbam-input-validation.md` | **Fork handoff** — DPP CBAM input validation (Phase 3 scope) |
 
 ## 4. TOOLS
