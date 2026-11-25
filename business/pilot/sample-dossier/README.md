@@ -5,7 +5,7 @@ bars** from purchased **billets (CN 7207)**. It exists to show the method, the e
 the determination flags — **not** a real client.
 
 - HTML source: `rajkot-reference-dossier.html`
-- PDF: `rajkot-reference-dossier.pdf` (10 pages)
+- PDF: `rajkot-reference-dossier.pdf` (11 pages)
 - Published copy: `business/website/assets/samples/rajkot-reference-dossier.pdf`
 - Download page: `business/website/sample-dossier.html` (email-gated)
 
@@ -28,6 +28,12 @@ the determination flags — **not** a real client.
 **Scope note:** for iron & steel, only direct emissions are counted initially; the electricity
 figure is shown separately and excluded from the direct SEE in this example. Verify against
 Annex II / IR 2025/2547.
+
+## Voice & persona
+
+Written as a **trusted CBAM advisor**: plain, precise, commercial — addresses the reader as
+"you", states the boundary honestly ("verifier-ready, not verified"), and treats the number as a
+**pricing asset**, not a compliance chore. No hype; every claim traces to the evidence log.
 
 ## Why these choices
 

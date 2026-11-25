@@ -2,257 +2,354 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>CBAM Reference Dossier — Rajkot Reference Plant (Synthetic Sample)</title>
+<title>CBAM Carbon Margin Diagnostic — Rajkot Reference Plant (Sample)</title>
 <style>
-  @page { size: A4; margin: 16mm 15mm 18mm 15mm; }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #141a18;
-    font-size: 10.5pt;
-    line-height: 1.45;
+  @page { size: A4; margin: 17mm 15mm 20mm 15mm; }
+
+  :root {
+    --ink: #101418;
+    --paper: #ffffff;
+    --accent: #14634a;
+    --accent-ink: #0b3b2e;
+    --muted: #5f6b6a;
+    --hairline: #e4e6e3;
+    --tint: #eef4f1;
+    --signal: #b3261e;
   }
-  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; color: #0b3b2e; margin: 0 0 8px; }
-  h1 { font-size: 26pt; line-height: 1.1; }
-  h2 { font-size: 15pt; border-bottom: 1.5px solid #14634a; padding-bottom: 4px; margin-top: 18px; }
-  h3 { font-size: 12pt; margin-top: 14px; }
-  p { margin: 0 0 8px; }
-  small, .small { font-size: 8.8pt; color: #5f6b6a; }
-  .kicker { font-size: 8.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: #5f6b6a; font-weight: 700; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    color: var(--ink);
+    font-size: 10.5pt;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; color: var(--ink); font-weight: 600; letter-spacing: -0.01em; }
+  h1 { font-size: 27pt; line-height: 1.08; }
+  h2 { font-size: 14.5pt; margin: 0 0 10px; }
+  h3 { font-size: 11.5pt; margin: 14px 0 6px; }
+  p { margin: 0 0 9px; color: #26312d; }
+  small, .small { font-size: 8.6pt; color: var(--muted); }
+  strong { color: var(--ink); }
+
   .page { page-break-after: always; position: relative; z-index: 1; }
   .page:last-of-type { page-break-after: auto; }
-  .watermark {
-    position: fixed; top: 45%; left: 50%; transform: translate(-50%, -50%) rotate(-28deg);
-    font-size: 54pt; font-weight: 800; letter-spacing: 0.08em;
-    color: rgba(11, 59, 46, 0.06); z-index: 0; white-space: nowrap; pointer-events: none;
+
+  .kicker {
+    font-size: 8.5pt; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 10px;
   }
-  .cover { padding-top: 28mm; }
-  .cover h1 { max-width: 20ch; }
-  .cover .sub { font-size: 12pt; color: #33403c; margin-top: 10px; max-width: 60ch; }
-  .brandbar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e4e6e3; padding-bottom: 8px; margin-bottom: 22px; }
-  .brand { font-family: Georgia, serif; font-weight: 700; font-size: 14pt; color: #14634a; }
-  .badge { display: inline-block; font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; color: #0b3b2e; background: #e7f0ec; border-radius: 999px; padding: 3px 9px; font-weight: 700; }
-  .badge.warn { background: #fbe9e7; color: #8a1c14; }
-  table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: 9.2pt; }
-  th, td { border: 1px solid #e4e6e3; padding: 5px 7px; vertical-align: top; text-align: left; }
-  th { background: #f3f5f2; font-size: 8.3pt; text-transform: uppercase; letter-spacing: 0.06em; color: #5f6b6a; }
+
+  .brandbar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 2px solid var(--accent); margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 9px; font-family: Georgia, serif; font-weight: 700; font-size: 14pt; color: var(--accent-ink); }
+  .brand .mark { width: 22px; height: 22px; border-radius: 6px; background: var(--accent); color: #fff; display: grid; place-items: center; font-family: Georgia, serif; font-size: 13pt; }
+  .badge { font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink); background: var(--tint); border: 1px solid #d4e3dc; border-radius: 999px; padding: 4px 11px; font-weight: 700; }
+
+  .watermark {
+    position: fixed; top: 46%; left: 50%; transform: translate(-50%, -50%) rotate(-26deg);
+    font-size: 66pt; font-weight: 800; letter-spacing: 0.14em; color: rgba(20, 99, 74, 0.05);
+    z-index: 0; white-space: nowrap; pointer-events: none;
+  }
+
+  /* Cover */
+  .cover { display: flex; flex-direction: column; min-height: 246mm; }
+  .cover .spacer { flex: 1; }
+  .cover h1 { max-width: 19ch; margin-top: 6px; }
+  .cover .lede { font-size: 12pt; color: #33403c; max-width: 52ch; margin-top: 14px; }
+  .cover-meta { margin-top: 28px; border-top: 1px solid var(--hairline); }
+  .cover-meta .row { display: flex; border-bottom: 1px solid var(--hairline); }
+  .cover-meta .k { width: 150px; padding: 9px 0; font-size: 8pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .cover-meta .v { padding: 9px 0; color: var(--ink); }
+  .cover .conf { margin-top: 18px; font-size: 8.6pt; color: var(--muted); }
+
+  /* Sections */
+  .sechead { display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--hairline); padding-bottom: 8px; margin-bottom: 16px; }
+  .sechead .n { font-family: Georgia, serif; font-size: 15pt; color: var(--accent); }
+  .sechead h2 { margin: 0; border: 0; }
+  .sechead .desc { margin-left: auto; font-size: 8.6pt; color: var(--muted); text-align: right; }
+
+  /* Key metrics */
+  .metrics { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin: 8px 0 16px; }
+  .metric { border: 1px solid var(--hairline); border-radius: 10px; padding: 14px 15px; background: #fff; }
+  .metric .big { font-family: Georgia, serif; font-size: 22pt; color: var(--accent-ink); font-weight: 700; line-height: 1; margin: 4px 0 6px; }
+  .metric .big.pos { color: var(--accent); }
+  .metric .lbl { font-size: 8.3pt; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+  .metric .sub { font-size: 8.6pt; color: var(--muted); }
+
+  /* Tables */
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 16px; font-size: 9.3pt; }
+  thead th { background: var(--tint); color: var(--accent-ink); text-align: left; font-size: 8pt; letter-spacing: 0.06em; text-transform: uppercase; padding: 7px 10px; border: 1px solid var(--hairline); }
+  tbody td { padding: 7px 10px; border: 1px solid var(--hairline); vertical-align: top; color: #26312d; }
+  tbody tr:nth-child(even) td { background: #fafbfa; }
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
-  .pos { color: #0b3b2e; font-weight: 700; }
-  .warn { color: #8a1c14; font-weight: 700; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .box { border: 1px solid #e4e6e3; border-radius: 6px; padding: 10px 12px; }
-  .box .big { font-family: Georgia, serif; font-size: 18pt; color: #0b3b2e; font-weight: 700; }
-  .note { border-left: 3px solid #14634a; padding: 4px 0 4px 10px; margin: 10px 0; color: #1d2b26; }
-  .note.warn { border-left-color: #b3261e; }
-  ul { margin: 4px 0 10px 18px; padding: 0; }
-  li { margin-bottom: 4px; }
-  .footer { position: fixed; bottom: 6mm; left: 15mm; right: 15mm; display: flex; justify-content: space-between; font-size: 8pt; color: #5f6b6a; border-top: 1px solid #e4e6e3; padding-top: 4px; }
+  td strong { color: var(--accent-ink); }
+
+  /* Callouts */
+  .callout { border-left: 3px solid var(--accent); background: var(--tint); padding: 11px 14px; margin: 14px 0; border-radius: 0 8px 8px 0; color: #1d2b26; }
+  .callout.note { border-left-color: var(--signal); background: #fbf0ef; }
+  .callout strong { color: var(--ink); }
+
+  /* Lists */
+  ul { margin: 4px 0 12px 18px; }
+  li { margin-bottom: 5px; color: #26312d; }
+  ol { margin: 4px 0 12px 18px; }
+  ol li { margin-bottom: 6px; }
+
+  .flag { display: inline-block; font-size: 7.6pt; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 700; border-radius: 999px; padding: 2px 8px; }
+  .flag.actual { background: #e7f0ec; color: var(--accent-ink); }
+  .flag.default { background: #f6eee5; color: #7a4d16; }
+  .flag.reported { background: #eef0f6; color: #3a4470; }
+
+  .signoff { border: 1px solid var(--hairline); border-radius: 10px; padding: 18px; margin-top: 18px; }
+  .signoff .name { font-family: Georgia, serif; font-size: 14pt; color: var(--accent-ink); }
+  .signoff .role { font-size: 9pt; color: var(--muted); }
+
+  .footer {
+    position: fixed; bottom: 8mm; left: 15mm; right: 15mm;
+    display: flex; justify-content: space-between; font-size: 7.8pt; color: #9aa5a2;
+    border-top: 1px solid var(--hairline); padding-top: 5px;
+  }
 </style>
 </head>
 <body>
-<div class="watermark">SYNTHETIC — ILLUSTRATIVE, NOT A CLIENT</div>
+<div class="watermark">SAMPLE</div>
 
-<!-- COVER -->
+<!-- ============ COVER ============ -->
 <section class="page cover">
   <div class="brandbar">
-    <span class="brand">VERIFLOW</span>
-    <span class="badge warn">Synthetic sample</span>
+    <div class="brand"><span class="mark">V</span> Veriflow</div>
+    <span class="badge">Synthetic sample</span>
   </div>
-  <p class="kicker">CBAM reference dossier</p>
-  <h1>Rajkot Reference Plant — CN 7214 bars</h1>
-  <p class="sub">A complete, auditable example of a verifier-ready CBAM pack for a re-rolling mill, built on synthetic data. It shows the boundary, source streams, precursor mapping, calculations, evidence trail and determination flags — not a real client.</p>
-  <table style="margin-top:22px">
-    <tr><th>Prepared for</th><td>Rajkot Reference Plant (synthetic), Gujarat, India</td></tr>
-    <tr><th>Reporting period</th><td>CY 2026</td></tr>
-    <tr><th>Product</th><td>Hot-rolled steel bars, CN 7214</td></tr>
-    <tr><th>Production route</th><td>Re-rolling mill: purchased billets (CN 7207) → reheat → rolling → bars</td></tr>
-    <tr><th>Status</th><td><strong>Verifier-ready, not verified</strong> · synthetic, illustrative</td></tr>
-    <tr><th>Prepared by</th><td>Veriflow (working name) · 7 November 2026</td></tr>
-  </table>
-  <div class="note warn"><strong>Important:</strong> all figures, names and references in this dossier are synthetic and illustrative. No real client, supplier or verification body is represented. The dossier exists to show the method and the evidence standard.</div>
+  <div class="spacer"></div>
+  <p class="kicker">CBAM Carbon Margin Diagnostic</p>
+  <h1>Your carbon position, proven to the tonne.</h1>
+  <p class="lede">An evidence pack that turns a plant's bills, invoices and mill certificates into a verifier-ready carbon figure — the number your EU buyer can trust and reuse.</p>
+  <div class="cover-meta">
+    <div class="row"><div class="k">Prepared for</div><div class="v">Rajkot Reference Plant (sample), Gujarat, India</div></div>
+    <div class="row"><div class="k">Facility scoped</div><div class="v">Re-rolling mill — billets to hot-rolled bars</div></div>
+    <div class="row"><div class="k">Product</div><div class="v">Hot-rolled steel bars · CN 7214</div></div>
+    <div class="row"><div class="k">Reporting period</div><div class="v">CY 2026</div></div>
+    <div class="row"><div class="k">Status</div><div class="v"><strong>Verifier-ready, not verified</strong></div></div>
+  </div>
+  <p class="conf">Veriflow (working name) · 7 November 2026 · Confidential · Illustrative synthetic data — not a client</p>
 </section>
 
-<!-- EXECUTIVE -->
+<!-- ============ ABOUT / PERSONA ============ -->
 <section class="page">
-  <p class="kicker">Executive summary</p>
-  <h2>What the number is</h2>
-  <div class="grid">
-    <div class="box"><div class="small">Calculated SEE (draft actual)</div><div class="big">2.04</div><div class="small">tCO₂e per tonne · CN 7214</div></div>
-    <div class="box"><div class="small">EU default reference</div><div class="big">2.10</div><div class="small">tCO₂e per tonne · illustrative</div></div>
-    <div class="box"><div class="small">Difference</div><div class="big pos">−0.06</div><div class="small">tCO₂e per tonne vs default</div></div>
-    <div class="box"><div class="small">Buyer-side certificate saving</div><div class="big pos">€4.52</div><div class="small">per tonne · at €75.36/t (Q1 2026)</div></div>
-  </div>
-  <div class="note">On a 1,000 t order this is ≈ <strong>€4,520</strong> in avoided certificate cost for the buyer; on 10,000 t, ≈ <strong>€45,200</strong>. The saving accrues primarily to the importer; the exporter benefits through retained orders and pricing. Figures are illustrative until verified.</div>
-  <h3>Basis</h3>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <p class="kicker">A note from Veriflow</p>
+  <h2>What this dossier is — and what it is not</h2>
+  <p>Veriflow builds <strong>verifier-ready CBAM evidence</strong> for steel and aluminium exporters. We take the documents your plant already produces — electricity and fuel bills, purchase invoices, weighbridge tickets and mill certificates — and turn them into a carbon figure an accredited verifier can check, and your EU buyer can reuse across every order.</p>
+  <p>This dossier is a <strong>worked example</strong> on synthetic data for a typical Indian re-rolling mill. It is here to show you the standard we hold ourselves to: every number ties to a source, every line is flagged actual or default, and nothing is claimed that we cannot show.</p>
+  <div class="callout"><strong>One boundary, stated plainly:</strong> we prepare evidence for review; the verification stamp is issued by an accredited partner verifier. We say "verifier-ready, not verified" on purpose — because that independence is what protects you.</div>
+  <h3>How to read this document</h3>
   <ul>
-    <li>Complex good: the billet precursor dominates the SEE.</li>
-    <li>For iron &amp; steel, only direct emissions are counted initially; electricity is shown separately and excluded from the CBAM direct SEE (confirm against Annex II / IR 2025/2547).</li>
-    <li>Billet SEE is an <strong>actual (synthetic verification report)</strong>; there are no default-substituted precursor lines in this example.</li>
+    <li><strong>The executive summary</strong> gives you the answer at a glance.</li>
+    <li><strong>Sections 1–4</strong> establish what was measured and where it came from.</li>
+    <li><strong>Section 5</strong> shows the calculation; <strong>Section 6</strong> is the audit trail behind it.</li>
+    <li><strong>Sections 7–8</strong> record the assumptions, the open items, and the next steps.</li>
   </ul>
+  <div class="callout note"><strong>Synthetic and illustrative.</strong> No real client, supplier or verification body is represented. Figures use the EU certificate price of €75.36/t (Q1 2026) and may move quarterly.</div>
 </section>
 
-<!-- BOUNDARY -->
+<!-- ============ EXECUTIVE SUMMARY ============ -->
 <section class="page">
-  <p class="kicker">Section 1</p>
-  <h2>Installation &amp; system boundary</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <p class="kicker">Executive summary</p>
+  <h2>The number, and what it is worth</h2>
+  <div class="metrics">
+    <div class="metric"><div class="lbl">Calculated SEE</div><div class="big">2.04</div><div class="sub">tCO₂e per tonne · CN 7214</div></div>
+    <div class="metric"><div class="lbl">EU default reference</div><div class="big">2.10</div><div class="sub">tCO₂e per tonne · illustrative</div></div>
+    <div class="metric"><div class="lbl">Difference</div><div class="big pos">−0.06</div><div class="sub">tCO₂e per tonne vs default</div></div>
+    <div class="metric"><div class="lbl">Buyer-side saving</div><div class="big pos">€4.52</div><div class="sub">per tonne · at €75.36/t</div></div>
+  </div>
+  <p>On a 1,000 t order that is approximately <strong>€4,520</strong> in avoided certificate cost for the buyer; on 10,000 t, approximately <strong>€45,200</strong>. The certificate saving accrues primarily to the EU importer — your buyer; you benefit through retained orders and the ability to defend, rather than discount, your price.</p>
+  <h3>Why the number moves</h3>
+  <ul>
+    <li>The bars are a <strong>complex good</strong>: the purchased billets carry most of the carbon, so the <strong>upstream data is the biggest lever</strong>.</li>
+    <li>For iron &amp; steel, only <strong>direct</strong> emissions are counted initially; electricity is shown separately (see Section 5).</li>
+    <li>The billet SEE is an <strong>actual value</strong> (synthetic verification reference) — no punitive default is substituted in this example.</li>
+  </ul>
+  <div class="callout"><strong>Bottom line:</strong> a verifiable number is not a compliance chore — it is a pricing asset. This dossier is the evidence behind that number.</div>
+</section>
+
+<!-- ============ SECTION 1 ============ -->
+<section class="page">
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">01</span><h2>Facility &amp; system boundary</h2><span class="desc">what is inside, what is not</span></div>
   <table>
-    <tr><th>Operator</th><td>Rajkot Reference Plant (synthetic)</td></tr>
-    <tr><th>Location</th><td>Rajkot, Gujarat, India</td></tr>
-    <tr><th>Sector</th><td>Iron &amp; steel</td></tr>
-    <tr><th>Route</th><td>Re-rolling mill (no ironmaking or steelmaking on site)</td></tr>
-    <tr><th>Processes in scope</th><td>Billet storage → reheat furnace → rolling mill → cutting/bundling</td></tr>
-    <tr><th>Inputs</th><td>Purchased billets (CN 7207), natural gas, electricity</td></tr>
-    <tr><th>Outputs</th><td>Bars (CN 7214), mill scale, trim/scrap</td></tr>
-    <tr><th>Outside the fence</th><td>Upstream billet production (captured as a precursor), outbound logistics</td></tr>
+    <tr><td style="width:34%"><strong>Operator</strong></td><td>Rajkot Reference Plant (sample)</td></tr>
+    <tr><td><strong>Location</strong></td><td>Rajkot, Gujarat, India</td></tr>
+    <tr><td><strong>Sector</strong></td><td>Iron &amp; steel</td></tr>
+    <tr><td><strong>Route</strong></td><td>Re-rolling mill — no ironmaking or steelmaking on site</td></tr>
+    <tr><td><strong>In scope</strong></td><td>Billet storage → reheat furnace → rolling mill → cutting/bundling</td></tr>
+    <tr><td><strong>Inputs</strong></td><td>Purchased billets (CN 7207), natural gas, electricity</td></tr>
+    <tr><td><strong>Outputs</strong></td><td>Bars (CN 7214), mill scale, trim/scrap</td></tr>
+    <tr><td><strong>Outside the fence</strong></td><td>Upstream billet production (captured as a precursor), outbound logistics</td></tr>
   </table>
   <h3>Metering and records</h3>
   <table>
-    <tr><th>Meter / record</th><th>Measures</th><th>Unit</th><th>Source</th></tr>
-    <tr><td>Gas meter + invoices</td><td>Natural gas to reheat furnace</td><td>SCM</td><td>Utility invoices</td></tr>
-    <tr><td>Electricity meter + bills</td><td>Rolling mill and auxiliaries</td><td>kWh</td><td>Utility bills</td></tr>
-    <tr><td>Weighbridge</td><td>Billets in, bars out</td><td>t</td><td>Weighbridge tickets</td></tr>
-    <tr><td>Production log</td><td>Output by product / CN</td><td>t</td><td>Plant records</td></tr>
+    <thead><tr><th>Meter / record</th><th>Measures</th><th>Unit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Gas meter + invoices</td><td>Natural gas to the reheat furnace</td><td>SCM</td><td>Utility invoices</td></tr>
+      <tr><td>Electricity meter + bills</td><td>Rolling mill and auxiliaries</td><td>kWh</td><td>Utility bills</td></tr>
+      <tr><td>Weighbridge</td><td>Billets in, bars out</td><td>t</td><td>Weighbridge tickets</td></tr>
+      <tr><td>Production log</td><td>Output by product / CN code</td><td>t</td><td>Plant records</td></tr>
+    </tbody>
   </table>
-  <div class="note">Boundary prepared by Veriflow from synthetic plant facts; a real pilot requires the operator's written confirmation and the verifier's assessment.</div>
+  <div class="callout note">In a live engagement this boundary is prepared from your plant facts and confirmed in writing by you, then assessed by an accredited verifier.</div>
 </section>
 
-<!-- SOURCE STREAMS -->
+<!-- ============ SECTION 2 ============ -->
 <section class="page">
-  <p class="kicker">Section 2</p>
-  <h2>Source streams</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">02</span><h2>Source streams</h2><span class="desc">what we counted</span></div>
   <table>
-    <tr><th>Stream</th><th>Class</th><th class="num">Quantity</th><th>Unit</th><th>Source</th></tr>
-    <tr><td>Natural gas</td><td>Fuel</td><td class="num">180,000</td><td>SCM</td><td>Gas invoices 2026</td></tr>
-    <tr><td>Grid electricity</td><td>Electricity</td><td class="num">528,400</td><td>kWh</td><td>Electricity bills 2026</td></tr>
-    <tr><td>Billets (CN 7207)</td><td>Precursor</td><td class="num">1,050</td><td>t</td><td>Purchase invoices + weighbridge</td></tr>
-    <tr><td>Mill scale / trim</td><td>By-product</td><td class="num">50</td><td>t</td><td>Weighbridge / production log</td></tr>
+    <thead><tr><th>Stream</th><th>Class</th><th class="num">Quantity</th><th>Unit</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Natural gas</td><td>Fuel</td><td class="num">180,000</td><td>SCM</td><td>Gas invoices 2026</td></tr>
+      <tr><td>Grid electricity</td><td>Electricity</td><td class="num">528,400</td><td>kWh</td><td>Electricity bills 2026</td></tr>
+      <tr><td>Billets (CN 7207)</td><td>Precursor</td><td class="num">1,050</td><td>t</td><td>Purchase invoices + weighbridge</td></tr>
+      <tr><td>Mill scale / trim</td><td>By-product</td><td class="num">50</td><td>t</td><td>Weighbridge / production log</td></tr>
+    </tbody>
   </table>
-  <div class="note">Route completeness: a re-rolling mill should show billets, reheat fuel and electricity. No coke, sinter, BF/BOF or process gases are expected on site.</div>
+  <p>For a re-rolling mill the expected streams are billets, reheat fuel and electricity — no coke, sinter, blast furnace or steelmaking gases are present on site. This is a completeness check, not an assumption: a missing stream is flagged, never guessed.</p>
 </section>
 
-<!-- PRECURSORS -->
+<!-- ============ SECTION 3 ============ -->
 <section class="page">
-  <p class="kicker">Section 3</p>
-  <h2>Precursor register</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">03</span><h2>Precursors</h2><span class="desc">the carbon in your inputs</span></div>
   <table>
-    <tr><th>Input</th><th>CN</th><th class="num">Mass (t)</th><th class="num">SEE (tCO₂e/t)</th><th>SEE source</th><th>Document</th></tr>
-    <tr><td>Steel billets</td><td>7207</td><td class="num">1,050</td><td class="num">1.60</td><td>Actual (synthetic verification ref SYN-2026-001)</td><td>Supplier report + invoices</td></tr>
+    <thead><tr><th>Input</th><th>CN</th><th class="num">Mass (t)</th><th class="num">SEE (tCO₂e/t)</th><th>SEE source</th><th>Document</th></tr></thead>
+    <tbody>
+      <tr><td>Steel billets</td><td>7207</td><td class="num">1,050</td><td class="num">1.60</td><td>Actual — synthetic verification ref SYN-2026-001</td><td>Supplier report + invoices</td></tr>
+    </tbody>
   </table>
-  <div class="note"><strong>Precursor contribution:</strong> 1,050 × 1.60 = <strong>1,680.00 tCO₂e</strong>. The precursor is ~82% of the total embedded emissions — the biggest lever is upstream verified data.</div>
+  <div class="callout"><strong>Precursor contribution:</strong> 1,050 × 1.60 = <strong>1,680.00 tCO₂e</strong> — about 82% of the total. The biggest lever in this report is upstream verified data.</div>
   <h3>What is not a precursor</h3>
   <ul>
-    <li>Scrap (CN 7204) is excluded from CBAM scope.</li>
+    <li>Scrap (CN 7204) is outside CBAM scope.</li>
     <li>Natural gas and electricity are source streams, not precursors.</li>
   </ul>
 </section>
 
-<!-- PRODUCTION & MASS BALANCE -->
+<!-- ============ SECTION 4 ============ -->
 <section class="page">
-  <p class="kicker">Section 4</p>
-  <h2>Production &amp; mass balance</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">04</span><h2>Production &amp; mass balance</h2><span class="desc">inputs, outputs, yield</span></div>
   <table>
-    <tr><th>Product</th><th>CN</th><th class="num">Output (t)</th><th>Source</th></tr>
-    <tr><td>Hot-rolled bars</td><td>7214</td><td class="num">1,000</td><td>Production log + sales invoices</td></tr>
+    <thead><tr><th>Product</th><th>CN</th><th class="num">Output (t)</th><th>Source</th></tr></thead>
+    <tbody><tr><td>Hot-rolled bars</td><td>7214</td><td class="num">1,000</td><td>Production log + sales invoices</td></tr></tbody>
   </table>
   <table>
-    <tr><th>Mass balance</th><th class="num">Tonnes</th><th>Note</th></tr>
-    <tr><td>Billets in</td><td class="num">1,050</td><td>Purchases + weighbridge</td></tr>
-    <tr><td>Bars out</td><td class="num">1,000</td><td>Output</td></tr>
-    <tr><td>Yield</td><td class="num">95.2%</td><td>Within a plausible re-rolling range</td></tr>
-    <tr><td>Losses / by-products</td><td class="num">50</td><td>Scale, trim, scrap</td></tr>
+    <thead><tr><th>Mass balance</th><th class="num">Tonnes</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Billets in</td><td class="num">1,050</td><td>Purchases + weighbridge</td></tr>
+      <tr><td>Bars out</td><td class="num">1,000</td><td>Output</td></tr>
+      <tr><td><strong>Yield</strong></td><td class="num"><strong>95.2%</strong></td><td>Within a plausible re-rolling range</td></tr>
+      <tr><td>Losses / by-products</td><td class="num">50</td><td>Scale, trim, scrap</td></tr>
+    </tbody>
   </table>
   <h3>Energy intensity</h3>
   <table>
-    <tr><th>Metric</th><th class="num">Value</th><th>Note</th></tr>
-    <tr><td>Natural gas</td><td class="num">6.39 TJ</td><td>180,000 SCM</td></tr>
-    <tr><td>Electricity</td><td class="num">528.4 MWh</td><td>528,400 kWh</td></tr>
-    <tr><td>Electricity intensity</td><td class="num">0.528 MWh/t</td><td>Plausible for rolling</td></tr>
+    <thead><tr><th>Metric</th><th class="num">Value</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Natural gas</td><td class="num">6.39 TJ</td><td>180,000 SCM</td></tr>
+      <tr><td>Electricity</td><td class="num">528.4 MWh</td><td>528,400 kWh</td></tr>
+      <tr><td>Electricity intensity</td><td class="num">0.528 MWh/t</td><td>Plausible for rolling</td></tr>
+    </tbody>
   </table>
 </section>
 
-<!-- EMISSIONS -->
+<!-- ============ SECTION 5 ============ -->
 <section class="page">
-  <p class="kicker">Section 5</p>
-  <h2>Emissions breakdown</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">05</span><h2>Emissions &amp; SEE</h2><span class="desc">the calculation</span></div>
   <table>
-    <tr><th>Component</th><th class="num">tCO₂e</th><th>Basis</th></tr>
-    <tr><td>Direct — reheat furnace (natural gas)</td><td class="num">357.84</td><td>6.39 TJ × 56 tCO₂/TJ</td></tr>
-    <tr><td>Precursors — billets</td><td class="num">1,680.00</td><td>1,050 t × 1.60 tCO₂e/t</td></tr>
-    <tr><td><strong>Total embedded (direct + precursor)</strong></td><td class="num"><strong>2,037.84</strong></td><td>Per 1,000 t output</td></tr>
-    <tr><td><strong>SEE</strong></td><td class="num"><strong>2.04</strong></td><td>2,037.84 ÷ 1,000 (rounded)</td></tr>
-    <tr><td>Indirect — electricity (reported separately)</td><td class="num">375.16</td><td>528.4 MWh × 0.71 tCO₂/MWh</td></tr>
+    <thead><tr><th>Component</th><th class="num">tCO₂e</th><th>Basis</th></tr></thead>
+    <tbody>
+      <tr><td>Direct — reheat furnace (natural gas)</td><td class="num">357.84</td><td>6.39 TJ × 56 tCO₂/TJ</td></tr>
+      <tr><td>Precursors — billets</td><td class="num">1,680.00</td><td>1,050 t × 1.60 tCO₂e/t</td></tr>
+      <tr><td><strong>Total embedded (direct + precursor)</strong></td><td class="num"><strong>2,037.84</strong></td><td>Per 1,000 t output</td></tr>
+      <tr><td><strong>SEE</strong></td><td class="num"><strong>2.04</strong></td><td>2,037.84 ÷ 1,000 (rounded)</td></tr>
+      <tr><td>Indirect — electricity (reported separately)</td><td class="num">375.16</td><td>528.4 MWh × 0.71 tCO₂/MWh</td></tr>
+    </tbody>
   </table>
-  <div class="note warn"><strong>Scope note:</strong> for iron &amp; steel, only direct emissions are counted initially. The electricity figure is shown for completeness and is <strong>not</strong> included in the CBAM direct SEE in this example. Confirm the current rule against Annex II / IR 2025/2547 before filing.</div>
+  <div class="callout note"><strong>Scope note:</strong> for iron &amp; steel, only direct emissions are counted initially. The electricity figure is shown for completeness and is <strong>not</strong> included in the CBAM direct SEE in this example. Confirm the current rule against Annex II / IR 2025/2547 before filing.</div>
   <h3>Actual vs default</h3>
   <table>
-    <tr><th>Line</th><th class="num">Value</th></tr>
-    <tr><td>Calculated SEE (actual)</td><td class="num pos">2.04 tCO₂e/t</td></tr>
-    <tr><td>EU default reference (illustrative)</td><td class="num warn">2.10 tCO₂e/t</td></tr>
-    <tr><td>Difference</td><td class="num pos">0.06 tCO₂e/t</td></tr>
-    <tr><td>Buyer-side saving at €75.36/t</td><td class="num pos">€4.52/t · €4,520 per 1,000 t</td></tr>
+    <thead><tr><th>Line</th><th class="num">Value</th><th>Flag</th></tr></thead>
+    <tbody>
+      <tr><td>Calculated SEE (actual)</td><td class="num"><strong>2.04 tCO₂e/t</strong></td><td><span class="flag actual">Actual</span></td></tr>
+      <tr><td>EU default reference (illustrative)</td><td class="num">2.10 tCO₂e/t</td><td><span class="flag default">Default ref</span></td></tr>
+      <tr><td>Difference</td><td class="num"><strong>0.06 tCO₂e/t</strong></td><td></td></tr>
+      <tr><td>Buyer-side saving at €75.36/t</td><td class="num"><strong>€4.52/t</strong> · €4,520 per 1,000 t</td><td></td></tr>
+    </tbody>
   </table>
 </section>
 
-<!-- EVIDENCE -->
+<!-- ============ SECTION 6 ============ -->
 <section class="page">
-  <p class="kicker">Section 6</p>
-  <h2>Evidence log</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">06</span><h2>Evidence log</h2><span class="desc">every number, to its source</span></div>
   <table>
-    <tr><th>ID</th><th>Data point</th><th class="num">Value</th><th>Source document</th><th>Determination</th></tr>
-    <tr><td>E1</td><td>Natural gas consumed</td><td class="num">180,000 SCM</td><td>Gas invoices 2026 (synthetic)</td><td>ACTUAL</td></tr>
-    <tr><td>E2</td><td>Grid electricity</td><td class="num">528,400 kWh</td><td>Electricity bills 2026 (synthetic)</td><td>ACTUAL (reported separately)</td></tr>
-    <tr><td>P1</td><td>Billet mass</td><td class="num">1,050 t</td><td>Purchase invoices + weighbridge (synthetic)</td><td>ACTUAL</td></tr>
-    <tr><td>P2</td><td>Billet SEE</td><td class="num">1.60 tCO₂e/t</td><td>Supplier verification ref SYN-2026-001 (synthetic)</td><td>ACTUAL (synthetic)</td></tr>
-    <tr><td>O1</td><td>Output CN 7214</td><td class="num">1,000 t</td><td>Production log + sales invoices (synthetic)</td><td>ACTUAL</td></tr>
-    <tr><td>F1</td><td>Gas emission factor</td><td class="num">56 tCO₂/TJ</td><td>Standard factor (verify version)</td><td>FACTOR</td></tr>
-    <tr><td>F2</td><td>Grid factor</td><td class="num">0.71 tCO₂/MWh</td><td>Country grid factor (illustrative)</td><td>FACTOR</td></tr>
+    <thead><tr><th>ID</th><th>Data point</th><th class="num">Value</th><th>Source document</th><th>Determination</th></tr></thead>
+    <tbody>
+      <tr><td>E1</td><td>Natural gas consumed</td><td class="num">180,000 SCM</td><td>Gas invoices 2026 (synthetic)</td><td><span class="flag actual">Actual</span></td></tr>
+      <tr><td>E2</td><td>Grid electricity</td><td class="num">528,400 kWh</td><td>Electricity bills 2026 (synthetic)</td><td><span class="flag reported">Reported</span></td></tr>
+      <tr><td>P1</td><td>Billet mass</td><td class="num">1,050 t</td><td>Purchase invoices + weighbridge (synthetic)</td><td><span class="flag actual">Actual</span></td></tr>
+      <tr><td>P2</td><td>Billet SEE</td><td class="num">1.60 tCO₂e/t</td><td>Supplier verification ref SYN-2026-001 (synthetic)</td><td><span class="flag actual">Actual</span></td></tr>
+      <tr><td>O1</td><td>Output CN 7214</td><td class="num">1,000 t</td><td>Production log + sales invoices (synthetic)</td><td><span class="flag actual">Actual</span></td></tr>
+      <tr><td>F1</td><td>Gas emission factor</td><td class="num">56 tCO₂/TJ</td><td>Standard factor (verify version)</td><td><span class="flag reported">Factor</span></td></tr>
+      <tr><td>F2</td><td>Grid factor</td><td class="num">0.71 tCO₂/MWh</td><td>Country grid factor (illustrative)</td><td><span class="flag reported">Factor</span></td></tr>
+    </tbody>
   </table>
-  <div class="note">Every figure in this dossier maps to a row above. A real pack carries the actual invoices, meter logs, mill certificates and verification reports, with page/row references.</div>
+  <p>Every figure in this dossier maps to a row above. A live pack carries the actual invoices, meter logs, mill certificates and verification reports, with page and row references so an accredited verifier can drill into any number.</p>
 </section>
 
-<!-- ASSUMPTIONS -->
+<!-- ============ SECTION 7 ============ -->
 <section class="page">
-  <p class="kicker">Section 7</p>
-  <h2>Determinations, assumptions &amp; gaps</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">07</span><h2>Assumptions, flags &amp; gaps</h2><span class="desc">what to close in a live run</span></div>
   <table>
-    <tr><th>Item</th><th>Status</th><th>Note</th></tr>
-    <tr><td>Billet SEE</td><td>Actual (synthetic)</td><td>No default substituted in this example</td></tr>
-    <tr><td>Indirect electricity</td><td>Reported separately</td><td>Excluded from direct SEE for steel — confirm</td></tr>
-    <tr><td>Carbon price paid in India</td><td>None</td><td>No Art. 9 deduction claimed</td></tr>
-    <tr><td>Allocation</td><td>Not required</td><td>Single product; by-products accounted in mass balance</td></tr>
+    <thead><tr><th>Item</th><th>Status</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Billet SEE</td><td><span class="flag actual">Actual</span></td><td>No default substituted in this example</td></tr>
+      <tr><td>Indirect electricity</td><td><span class="flag reported">Reported</span></td><td>Excluded from direct SEE for steel — confirm</td></tr>
+      <tr><td>Carbon price paid in India</td><td><span class="flag default">None</span></td><td>No Art. 9 deduction claimed</td></tr>
+      <tr><td>Allocation</td><td><span class="flag actual">Not required</span></td><td>Single product; by-products in mass balance</td></tr>
+    </tbody>
   </table>
-  <h3>Gaps to close in a real pilot</h3>
+  <h3>To close in a live engagement</h3>
   <ul>
-    <li>Replace synthetic documents with the client's actual invoices, meter logs and certificates.</li>
+    <li>Replace synthetic documents with your actual invoices, meter logs and certificates.</li>
     <li>Obtain a supplier verification report covering the right period, or flag the default.</li>
     <li>Confirm the CN classification with customs/sales invoices.</li>
     <li>Confirm whether indirect emissions apply for the year.</li>
   </ul>
-  <div class="note warn"><strong>Verifier-ready, not verified.</strong> This dossier is an evidence pack for review by an accredited CBAM verifier; it is not a verification opinion.</div>
+  <div class="callout note"><strong>Verifier-ready, not verified.</strong> This dossier is an evidence pack for review by an accredited CBAM verifier; it is not a verification opinion.</div>
 </section>
 
-<!-- NEXT -->
+<!-- ============ SECTION 8 ============ -->
 <section class="page">
-  <p class="kicker">Section 8</p>
-  <h2>Next actions</h2>
+  <div class="brandbar"><div class="brand"><span class="mark">V</span> Veriflow</div><span class="badge">Synthetic sample</span></div>
+  <div class="sechead"><span class="n">08</span><h2>Next steps</h2><span class="desc">from evidence to edge</span></div>
   <ol>
-    <li>Share this draft with the EU buyer to support pricing and contract discussions.</li>
-    <li>Appoint an accredited verifier; present this evidence pack for review.</li>
-    <li>Replace synthetic sources with the client's actual documents; close the gap register.</li>
-    <li>Move to an annual plan to manage the reporting cycle continuously.</li>
+    <li><strong>Share the draft with your EU buyer</strong> to support pricing and contract discussions.</li>
+    <li><strong>Appoint an accredited verifier</strong> and present this evidence pack for review.</li>
+    <li><strong>Close the gaps</strong> — replace synthetic sources with your actual documents.</li>
+    <li><strong>Move to an annual plan</strong> to manage the reporting cycle continuously.</li>
   </ol>
-  <h3>What this sample demonstrates</h3>
-  <ul>
-    <li>Boundary and route mapping for a re-rolling mill.</li>
-    <li>Precursor handling for a complex good (billets → bars).</li>
-    <li>Direct emissions and a separate indirect figure.</li>
-    <li>Actual-vs-default saving with assumptions.</li>
-    <li>A figure-to-source evidence trail and determination flags.</li>
-  </ul>
-  <p class="small">Synthetic sample · Veriflow (working name) · 7 November 2026 · Verifier-ready, not verified.</p>
+  <div class="signoff">
+    <div class="name">Prepared by Veriflow</div>
+    <div class="role">CBAM evidence for steel &amp; aluminium exporters · hello@veriflow.example</div>
+    <p class="small" style="margin-top:8px">Synthetic sample · Illustrative, not a client · Verifier-ready, not verified · © Veriflow 2026</p>
+  </div>
 </section>
 
-<div class="footer"><span>Veriflow — synthetic CBAM reference dossier</span><span>SYNTHETIC · illustrative, not a client · verifier-ready, not verified</span></div>
+<div class="footer"><span>Veriflow · CBAM Carbon Margin Diagnostic</span><span>Sample · verifier-ready, not verified</span></div>
 </body>
 </html>
