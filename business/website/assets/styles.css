@@ -280,3 +280,14 @@ td .neg { color: var(--signal); font-weight: 600; }
 .center { text-align: center; }
 .center h1, .center h2, .center p { margin-left: auto; margin-right: auto; }
 .hide { display: none !important; }
+
+/* Markup progression (escalating default penalties) */
+.markup { display: grid; gap: 8px; margin-top: 14px; }
+.markup-step {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  border: 1px solid var(--hairline); border-radius: 8px; padding: 8px 12px;
+  background: #fbfbf9; font-size: 14px;
+}
+.markup-yr { font-weight: 700; color: var(--ink); min-width: 52px; font-variant-numeric: tabular-nums; }
+.markup-val { font-weight: 700; color: var(--signal); }
+.markup-cost { color: var(--muted); font-size: 13px; }
